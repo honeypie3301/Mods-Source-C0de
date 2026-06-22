@@ -67,6 +67,7 @@ public class RotOnEntityTickUpdateProcedure {
 	private static final double SONIC_BOOM_MIN_DIST = 2.5;           // Target must be at least this far away (totem or no totem)
 	private static final double SONIC_BOOM_COOLDOWN = 240.0;         // Cooldown in ticks (12.0s)
 	private static final double SONIC_BOOM_TORSO_Y_FACTOR = 1;       // Configurable Y level offset factor for sonic boom torso relative to entity height
+	private static final double WARDEN_LEARN_REQUIRED_TICKS = 300.0; // Ticks (e.g. 15 seconds) of combat against a Warden required to learn the sonic boom
 
 	// --- Laser Settings ---
 	private static final double LASER_Y_OFFSET = 0.25;              // Configurable laser Y level offset relative to eye position
@@ -90,13 +91,49 @@ public class RotOnEntityTickUpdateProcedure {
 	private static final int MINE_HALF_WIDTH = 1;
 	private static final float MAX_BREAKABLE_HARDNESS = 60f;
 
+	// --- Die Rider Kick Settings ---
+	private static final double DIE_KICK_SPEED = 5.2;               // Configurable high diagonal/dive speed of the Die Rider Kick
+
 	// --- Core Cooldowns (In Ticks) ---
-	private static final int TP_DODGE_CD = 18;  // Overclocked Nanite Blinks (1s)
-	private static final int TP_FLANK_CD = 30;  // Flank Teleport Cooldown (1.5s)
-	private static final int SOLAR_CD = 110;    // Solar Beam Cooldown (5.5s)
-	private static final int ADAPT_CD = 320;    // Power Adapt Cycle Cooldown (16s)
-	private static final int GRAPPLE_CD = 220;  // Mutant DNA Grapple Cooldown (11s)
-	private static final int TK_CD = 220;       // Telekinesis Cooldown (11s)
+	public static int TP_DODGE_CD = 18;  // Overclocked Nanite Blinks (1s)
+	public static int TP_FLANK_CD = 30;  // Flank Teleport Cooldown (1.5s)
+	public static int SOLAR_CD = 110;    // Solar Beam Cooldown (5.5s)
+	public static int ADAPT_CD = 320;    // Power Adapt Cycle Cooldown (16s)
+	public static int GRAPPLE_CD = 220;  // Mutant DNA Grapple Cooldown (11s)
+	public static int TK_CD = 220;       // Telekinesis Cooldown (11s)
+
+	// --- Customizable Ability Ticks and Global Cooldown Settings (Minecraft 20 ticks = 1 second) ---
+	public static double MELEE_ATTACK_CD = 20.0;
+	public static double COMBO_GLOBAL_CD = 50.0;
+	public static double COMBO_GLOBAL_CD_TOTEM = 20.0;
+	public static int TELEPORT_DODGE_COOLDOWN = 18;
+	public static int TELEPORT_FLANK_COOLDOWN = 30;
+	public static int SOLAR_BEAM_COOLDOWN = 110;
+	public static int CRYO_BEAM_COOLDOWN = 110;
+	public static int MUTANT_GRAPPLE_COOLDOWN = 220;
+	public static int TELEKINESIS_COOLDOWN = 220;
+
+	// --- Customizable Damage Settings for Every Single Move / Ability ---
+	public static double MELEE_PUNCH_DAMAGE = 18.0;          // Base regular melee damage (was 18.0 as behavior value)
+	public static double SONIC_BOOM_DMG = 38.0;             // Sonic Boom damage (was 38.0)
+	public static double SONIC_BOOM_DMG_TOTEM = 65.0;       // Sonic Boom damage when totem is active (was 65.0)
+	public static double SONIC_BOOM_SPLASH_DAMAGE = 10.0;   // Sonic Boom splash damage (was 10.0)
+	public static double SONIC_BOOM_SPLASH_TOTEM_DMG = 22.0;// Sonic Boom splash damage when totem is active (was 22.0)
+	public static double SOLAR_BEAM_DMG_BASE = 8.0;         // Solar Beam damage base per hit interval (was 8.0)
+	public static double SOLAR_BEAM_DMG_BOOST = 18.0;       // Solar Beam damage boost against cold targets (was 18.0)
+	public static double CRYO_BEAM_DMG_BASE = 8.0;          // Cryo Beam damage base per hit interval (was 8.0)
+	public static double CRYO_BEAM_DMG_BOOST = 18.0;        // Cryo Beam damage boost against Nether targets (was 18.0)
+	public static double MUTANT_DNA_GRAPPLE_DMG = 4.0;      // Life drain damage per tick of grapple (was 4.0)
+
+	// --- Customizable Damage Settings for Combo Moves ---
+	public static double COMBO_SEISMIC_SLAM_DMG = 35.0;      // Damage for Seismic Land/Ground Crush move (was finalDamage * 1.5)
+	public static double COMBO_OVERHEAD_SLAM_DMG = 40.0;     // Damage for Overhead Slam hammer hit (was 25.0)
+	public static double COMBO_JUDGMENT_KICK_DMG = 50.0;     // Damage for Judgment Dropkick impact (was punchDmg * 3.5)
+	public static double COMBO_DIE_RIDER_KICK_DMG = 65.0;    // Damage for Die Rider Kick impact (was 55.0)
+	public static double COMBO_GRAPPLE_SIPHON_DMG = 12.0;    // Damage for Grapple siphon combo step
+	public static double COMBO_TK_SLAM_DMG = 15.0;           // Damage for Telekinesis slam combo step
+	public static double COMBO_NANITE_BLITZ_DMG = 8.0;       // Damage for Nanite blink blitz strike
+	public static double COMBO_THERMAL_SHOCK_DMG = 25.0;     // Damage for Thermal-cryo shock combo step
 
 	private static final String K_WOODBOUND = "the_backwoods:woodbound_entities";
 
@@ -128,7 +165,7 @@ public class RotOnEntityTickUpdateProcedure {
 	public static void onServerChat(ServerChatEvent event) {
 		if (!DEBUG_MODE) return;
 		String msg = event.getRawText().trim().toLowerCase();
-		if (msg.equals("slam") || msg.equals("overhead") || msg.equals("dropkick") || msg.equals("kick") || msg.equals("die") || msg.equals("rider") || msg.equals("kickrider")) {
+		if (msg.equals("slam") || msg.equals("overhead") || msg.equals("dropkick") || msg.equals("kick") || msg.equals("die") || msg.equals("rider") || msg.equals("kickrider") || msg.equals("triple") || msg.equals("highsky") || msg.equals("punchkick") || msg.equals("punchrider") || msg.equals("testoverhead") || msg.equals("testrider") || msg.equals("resetanim")) {
 			ServerPlayer player = event.getPlayer();
 			if (player != null) {
 				ServerLevel level = player.serverLevel();
@@ -169,6 +206,43 @@ public class RotOnEntityTickUpdateProcedure {
 						rot.hasImpulse = true;
 						playHostileSound(level, rot.getX(), rot.getY(), rot.getZ(), "entity.iron_golem.attack", 1.5F, 0.8F);
 						level.sendParticles(ParticleTypes.CLOUD, rot.getX(), rot.getY() + 0.5, rot.getZ(), 10, 0.2, 0.2, 0.2, 0.05);
+					} else if (msg.equals("triple")) {
+						// Instantly unlock and trigger Custom Combo 1 (Triple Threat)
+						rot.getPersistentData().putBoolean("unlocked_triple_threat_combo", true);
+						rot.getPersistentData().putDouble("sentinel_cc1_stage", 1);
+						rot.getPersistentData().putDouble("sentinel_cc1_ticks", 5); // Start almost instantly
+					} else if (msg.equals("highsky")) {
+						// Instantly unlock and trigger Custom Combo 2 (High Sky Slam)
+						rot.getPersistentData().putBoolean("unlocked_high_sky_slam_combo", true);
+						rot.getPersistentData().putDouble("sentinel_cc2_stage", 1);
+					} else if (msg.equals("punchkick")) {
+						// Instantly unlock and trigger Custom Combo 3 (Punch + Dropkick)
+						rot.getPersistentData().putBoolean("unlocked_knockback_dropkick_combo", true);
+						rot.getPersistentData().putDouble("sentinel_cc3_stage", 1);
+					} else if (msg.equals("punchrider")) {
+						// Instantly unlock and trigger Custom Combo 4 (Punch + Rider Kick)
+						rot.getPersistentData().putBoolean("unlocked_knockback_rider_combo", true);
+						rot.getPersistentData().putDouble("sentinel_cc4_stage", 1);
+					} else if (msg.equals("testoverhead")) {
+						// Toggle direct clean looping of Overhead (prep + strike) without displacement
+						boolean current = rot.getPersistentData().getBoolean("debug_force_overhead");
+						rot.getPersistentData().putBoolean("debug_force_overhead", !current);
+						rot.getPersistentData().putBoolean("debug_force_rider", false);
+						player.sendSystemMessage(Component.literal("§e[AI Debug] Loop Overhead Animation: " + (!current ? "§a§lON" : "§c§lOFF")));
+					} else if (msg.equals("testrider")) {
+						// Toggle direct clean looping of Rider Kick animation
+						boolean current = rot.getPersistentData().getBoolean("debug_force_rider");
+						rot.getPersistentData().putBoolean("debug_force_rider", !current);
+						rot.getPersistentData().putBoolean("debug_force_overhead", false);
+						player.sendSystemMessage(Component.literal("§e[AI Debug] Loop Rider Kick Animation: " + (!current ? "§a§lON" : "§c§lOFF")));
+					} else if (msg.equals("resetanim")) {
+						// Instantly disable loops and reset
+						rot.getPersistentData().putBoolean("debug_force_overhead", false);
+						rot.getPersistentData().putBoolean("debug_force_rider", false);
+						rot.getPersistentData().putDouble("rot_overhead_ticks", 0);
+						rot.getPersistentData().putDouble("sentinel_die_kick_phase", 0);
+						rot.getPersistentData().putDouble("sentinel_die_kick_ticks", 0);
+						player.sendSystemMessage(Component.literal("§a[AI Debug] All forced test animations reset."));
 					}
 				}
 			}
@@ -391,6 +465,15 @@ public class RotOnEntityTickUpdateProcedure {
 		tickCooldown(entity, "sentinel_omni_sonic_cooldown", 1);
 		tickCooldown(entity, "sentinel_omni_sonic_charge_ticks", 1);
 		tickCooldown(entity, "sentinel_combo_active_ticks", 1);
+		tickCooldown(entity, "sentinel_minos_ticks", 1);
+		tickCooldown(entity, "sentinel_cc1_ticks", 1);
+		tickCooldown(entity, "sentinel_cc1_cd", 1);
+		tickCooldown(entity, "sentinel_cc2_ticks", 1);
+		tickCooldown(entity, "sentinel_cc2_cd", 1);
+		tickCooldown(entity, "sentinel_cc3_ticks", 1);
+		tickCooldown(entity, "sentinel_cc3_cd", 1);
+		tickCooldown(entity, "sentinel_cc4_ticks", 1);
+		tickCooldown(entity, "sentinel_cc4_cd", 1);
 
 		double shockwaveStage = entity.getPersistentData().getDouble("sentinel_shockwave_stage");
 		if (shockwaveStage > 0) {
@@ -491,7 +574,12 @@ public class RotOnEntityTickUpdateProcedure {
 			if (entity instanceof LivingEntity living) {
 				living.setYBodyRot(living.getYRot());
 			}
-			return;
+			double cc1 = entity.getPersistentData().getDouble("sentinel_cc1_stage");
+			double cc2 = entity.getPersistentData().getDouble("sentinel_cc2_stage");
+			double cc3 = entity.getPersistentData().getDouble("sentinel_cc3_stage");
+			if (cc1 <= 0 && cc2 <= 0 && cc3 <= 0) {
+				return;
+			}
 		}
 
 		if (entity instanceof LivingEntity living) {
@@ -514,6 +602,10 @@ public class RotOnEntityTickUpdateProcedure {
 
 		Entity combatTarget = acquireTarget(world, entity, x, y, z);
 		handleAdaptationScaling(entity, combatTarget != null);
+
+		if (handleCustomCombos(world, entity, combatTarget)) {
+			return;
+		}
 
 		if (handleOverheadState(world, entity, combatTarget)) {
 			return;
@@ -910,8 +1002,7 @@ public class RotOnEntityTickUpdateProcedure {
 						// Massive knockback on combat target
 						Vec3 pushVec = targetLiv.position().subtract(entity.position()).normalize();
 						double pushForce = totemActive ? 3.0 : 2.2;
-						targetLiv.setDeltaMovement(pushVec.x * pushForce, 0.6, pushVec.z * pushForce);
-						targetLiv.hasImpulse = true;
+						applyKnockbackAndSync(targetLiv, pushVec.x * pushForce, 0.6, pushVec.z * pushForce);
 
 						// Trigger the Vertical Shockwave!
 						entity.getPersistentData().putDouble("sentinel_shockwave_stage", 1);
@@ -926,13 +1017,66 @@ public class RotOnEntityTickUpdateProcedure {
 							if (shouldIgnoreCombatFilter(entity) || shouldIgnoreCombatFilter(near) || (!near.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND))) && !(near instanceof RotEntity))) {
 								near.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), 15.0F);
 								Vec3 pushAway = near.position().subtract(entity.position()).normalize();
-								near.setDeltaMovement(pushAway.x * 2.2, 0.45, pushAway.z * 2.2);
-								near.hasImpulse = true;
+								applyKnockbackAndSync(near, pushAway.x * 2.2, 0.45, pushAway.z * 2.2);
 							}
 						}
 					}
 				}
 				entity.getPersistentData().putDouble("sentinel_landing_ticks", 20); // Freeze the rot for a second right after judgement dropkick impact!
+			}
+			handlePassengerAndGrowth(entity);
+			return;
+		}
+
+		double minosTicks = entity.getPersistentData().getDouble("sentinel_minos_ticks");
+		if (minosTicks > 0) {
+			if (combatTarget != null) {
+				lockLookAtTarget(entity, combatTarget);
+			}
+			entity.setDeltaMovement(entity.getDeltaMovement().x() * 0.05, entity.getDeltaMovement().y(), entity.getDeltaMovement().z() * 0.05);
+
+			if (minosTicks == 48 || minosTicks == 36 || minosTicks == 24 || minosTicks == 12) {
+				if (combatTarget instanceof LivingEntity targetLiv) {
+					// 1. Teleport behind/near target
+					double targetYaw = targetLiv.getYRot();
+					double radians = Math.toRadians(targetYaw);
+					double tx = targetLiv.getX() - Math.sin(radians) * -1.4;
+					double tz = targetLiv.getZ() + Math.cos(radians) * -1.4;
+					double ty = targetLiv.getY();
+
+					if (world instanceof ServerLevel level) {
+						LivingEntity ls = entity instanceof LivingEntity ? (LivingEntity) entity : null;
+						level.sendParticles(ParticleTypes.PORTAL, entity.getX(), entity.getY() + 0.5, entity.getZ(), 8, 0.2, 0.2, 0.2, 0.05);
+						teleportEntity(entity, tx, ty, tz);
+						level.sendParticles(ParticleTypes.PORTAL, tx, ty + 0.5, tz, 8, 0.2, 0.2, 0.2, 0.05);
+
+						playHostileSound(level, tx, ty, tz, "item.chorus_fruit.teleport", 1.2F, 1.1F);
+						playHostileSound(level, tx, ty, tz, "entity.player.attack.sweep", 1.4F, (float) (0.8 + (50 - minosTicks) * 0.01));
+						playHostileSound(level, tx, ty, tz, "entity.iron_golem.attack", 1.3F, 0.9F);
+
+						level.sendParticles(ParticleTypes.SWEEP_ATTACK, targetLiv.getX(), targetLiv.getY() + 1.0, targetLiv.getZ(), 3, 0.2, 0.2, 0.2, 0.0);
+						level.sendParticles(ParticleTypes.CRIT, targetLiv.getX(), targetLiv.getY() + 1.0, targetLiv.getZ(), 12, 0.3, 0.3, 0.3, 0.1);
+
+						// Swap arms animations tick
+						if (minosTicks == 48 || minosTicks == 24) {
+							entity.getPersistentData().putDouble("sentinel_left_punch_ticks", 10);
+						} else {
+							entity.getPersistentData().putDouble("sentinel_right_punch_ticks", 10);
+						}
+
+						float punchDamage = 30.0F;
+						if (ls != null) {
+							targetLiv.hurt(ls.damageSources().mobAttack(ls), punchDamage);
+						} else {
+							targetLiv.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), punchDamage);
+						}
+
+						Vec3 pushVec = targetLiv.position().subtract(entity.position()).normalize();
+						double pushForce = 2.4;
+						targetLiv.setDeltaMovement(pushVec.x * pushForce, 0.45, pushVec.z * pushForce);
+						targetLiv.hasImpulse = true;
+					}
+				}
 			}
 			handlePassengerAndGrowth(entity);
 			return;
@@ -1109,6 +1253,7 @@ public class RotOnEntityTickUpdateProcedure {
 
 		// 5. RANDOM SPECIAL TRIGGERS when ready (with global cooldown to slow switching and prevent overlapping)
 		double globalCd = entity.getPersistentData().getDouble("sentinel_global_ability_cooldown");
+		double coreCd = entity.getPersistentData().getBoolean("sentinel_totem_active") ? 20.0 : 50.0;
 
 		if (globalCd <= 0) {
 			// Omnidirectional sonic boom if surrounded by targets
@@ -1121,7 +1266,7 @@ public class RotOnEntityTickUpdateProcedure {
 						if (omniSonicCd <= 0) {
 							entity.getPersistentData().putDouble("sentinel_omni_sonic_cooldown", 300); // 15s cooldown
 							entity.getPersistentData().putDouble("sentinel_omni_sonic_charge_ticks", 30); // 1.5s charge up
-							entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", 60); // 3s global cd
+							entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
 							playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.warden.sonic_charge", 1.8F, 0.45F);
 							return;
 						}
@@ -1142,7 +1287,7 @@ public class RotOnEntityTickUpdateProcedure {
 					entity.getPersistentData().putDouble("sentinel_cryo_charge_ticks", 1);
 					entity.getPersistentData().putInt("sentinel_laser_target_id", combatTarget.getId());
 					entity.getPersistentData().putDouble(K_SOLAR_CD, SOLAR_CD + 180);
-					entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", 100); // 5s cooldown
+					entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
 					return;
 				}
 			} else {
@@ -1154,7 +1299,7 @@ public class RotOnEntityTickUpdateProcedure {
 				if (!availableLasers.isEmpty() && (dist > 6.0 || (entity.getPersistentData().getBoolean("sentinel_totem_active") && dist > TOTEM_LASER_MIN_DIST)) && entity.getPersistentData().getDouble(K_SOLAR_CD) <= 0 && Math.random() < 0.05) {
 					entity.getPersistentData().putInt("sentinel_laser_target_id", combatTarget.getId());
 					entity.getPersistentData().putDouble(K_SOLAR_CD, SOLAR_CD + 180);
-					entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", 120); // 6s cooldown
+					entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
 
 					String selectedLaser = availableLasers.get((int) (Math.random() * availableLasers.size()));
 					if ("solar".equals(selectedLaser)) {
@@ -1171,7 +1316,7 @@ public class RotOnEntityTickUpdateProcedure {
 				if (entity.getPersistentData().getBoolean("unlocked_telekinesis") && entity.getPersistentData().getDouble(K_TK_CD) <= 0 && dist <= 12.0 && Math.random() < 0.04) {
 					entity.getPersistentData().putDouble(K_TK_TICKS, 25);
 					entity.getPersistentData().putDouble(K_TK_CD, TK_CD);
-					entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", 60); // 3s cooldown
+					entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
 					playHostileSound(world, entity.getX(), entity.getY(), entity.getZ(), "entity.warden.heartbeat", 0.8F, 0.50F);
 					return;
 				}
@@ -1181,7 +1326,7 @@ public class RotOnEntityTickUpdateProcedure {
 		if (globalCd <= 0 && entity.getPersistentData().getBoolean("unlocked_grapple") && entity.getPersistentData().getDouble(K_GRAPPLE_CD) <= 0 && dist <= 8.5 && Math.random() < 0.03) {
 			entity.getPersistentData().putDouble(K_GRAPPLE_TICKS, 32); // 32 ticks (1.6s) siphon
 			entity.getPersistentData().putDouble(K_GRAPPLE_CD, GRAPPLE_CD);
-			entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", 60); // 3s cooldown
+			entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
 			playHostileSound(world, entity.getX(), entity.getY(), entity.getZ(), "entity.warden.sniff", 1.1F, 0.85F);
 			return;
 		}
@@ -1807,7 +1952,11 @@ public class RotOnEntityTickUpdateProcedure {
 			}
 			boolean isWardenEntity = targetId.contains("warden");
 			if (isWardenEntity) {
-				data.putBoolean("fought_warden_entity", true);
+				double wardenTicks = data.getDouble("sentinel_warden_combat_ticks") + 1.0;
+				data.putDouble("sentinel_warden_combat_ticks", wardenTicks);
+				if (wardenTicks >= WARDEN_LEARN_REQUIRED_TICKS) {
+					data.putBoolean("fought_warden_entity", true);
+				}
 			}
 		}
 
@@ -1932,6 +2081,57 @@ public class RotOnEntityTickUpdateProcedure {
 			data.putBoolean("unlocked_dropkick_combo", true);
 			announceLearnedAbility(self);
 		}
+
+		double reqMinosTicks = data.getDouble("sentinel_required_minos_ticks");
+		if (reqMinosTicks <= 0) {
+			reqMinosTicks = 400.0 + self.getRandom().nextDouble() * 400.0; // 20-40 seconds of combat
+			data.putDouble("sentinel_required_minos_ticks", reqMinosTicks);
+		}
+		if (combatTicks >= reqMinosTicks && !data.getBoolean("unlocked_minos_combo")) {
+			data.putBoolean("unlocked_minos_combo", true);
+			announceLearnedAbility(self);
+		}
+
+		// Three New Custom Combos (learned over time in active combat after 20-30 seconds)
+		double reqCombo1Ticks = data.getDouble("sentinel_required_cc1_ticks_learn");
+		if (reqCombo1Ticks <= 0) {
+			reqCombo1Ticks = 400.0 + self.getRandom().nextDouble() * 200.0; // 20-30 seconds (400 to 600 ticks)
+			data.putDouble("sentinel_required_cc1_ticks_learn", reqCombo1Ticks);
+		}
+		if (combatTicks >= reqCombo1Ticks && !data.getBoolean("unlocked_triple_threat_combo")) {
+			data.putBoolean("unlocked_triple_threat_combo", true);
+			announceLearnedAbility(self);
+		}
+
+		double reqCombo2Ticks = data.getDouble("sentinel_required_cc2_ticks_learn");
+		if (reqCombo2Ticks <= 0) {
+			reqCombo2Ticks = 400.0 + self.getRandom().nextDouble() * 200.0; // 20-30 seconds
+			data.putDouble("sentinel_required_cc2_ticks_learn", reqCombo2Ticks);
+		}
+		if (combatTicks >= reqCombo2Ticks && !data.getBoolean("unlocked_high_sky_slam_combo")) {
+			data.putBoolean("unlocked_high_sky_slam_combo", true);
+			announceLearnedAbility(self);
+		}
+
+		double reqCombo3Ticks = data.getDouble("sentinel_required_cc3_ticks_learn");
+		if (reqCombo3Ticks <= 0) {
+			reqCombo3Ticks = 400.0 + self.getRandom().nextDouble() * 200.0; // 20-30 seconds
+			data.putDouble("sentinel_required_cc3_ticks_learn", reqCombo3Ticks);
+		}
+		if (combatTicks >= reqCombo3Ticks && !data.getBoolean("unlocked_knockback_dropkick_combo")) {
+			data.putBoolean("unlocked_knockback_dropkick_combo", true);
+			announceLearnedAbility(self);
+		}
+
+		double reqCombo4Ticks = data.getDouble("sentinel_required_cc4_ticks_learn");
+		if (reqCombo4Ticks <= 0) {
+			reqCombo4Ticks = 600.0 + self.getRandom().nextDouble() * 300.0; // 30-45 seconds
+			data.putDouble("sentinel_required_cc4_ticks_learn", reqCombo4Ticks);
+		}
+		if (combatTicks >= reqCombo4Ticks && !data.getBoolean("unlocked_knockback_rider_combo")) {
+			data.putBoolean("unlocked_knockback_rider_combo", true);
+			announceLearnedAbility(self);
+		}
 	}
 
 	private static void announceLearnedAbility(LivingEntity self) {
@@ -2027,7 +2227,7 @@ public class RotOnEntityTickUpdateProcedure {
 		}
 
 		// Initial base damage
-		double basePunchDmg = 8.0;
+		double basePunchDmg = MELEE_PUNCH_DAMAGE;
 
 		// Select a high-impact combat combo if the target is a LivingEntity and abilities are unlocked!
 		boolean unlockedSonicBoom = self.getPersistentData().getBoolean("unlocked_sonic_boom");
@@ -2038,9 +2238,11 @@ public class RotOnEntityTickUpdateProcedure {
 		boolean unlockedTP = self.getPersistentData().getBoolean("unlocked_teleportation");
 		boolean unlockedOverhead = self.getPersistentData().getBoolean("unlocked_overhead_combo");
 		boolean unlockedDropkick = self.getPersistentData().getBoolean("unlocked_dropkick_combo");
+		boolean unlockedMinos = self.getPersistentData().getBoolean("unlocked_minos_combo");
 
 		int selectCombo = 0; // 0 = none, 1 = airborne, 2 = grapple-siphon, 3 = tk-slam, 4 = nanite-tp-blitz, 5 = seismic-slam, 6 = thermal-shock, 7 = blink-storm
-		if (target instanceof LivingEntity && Math.random() < (self.getPersistentData().getBoolean("sentinel_totem_active") ? 0.85 : 0.28)) { //combo chance
+		double globalCd = self.getPersistentData().getDouble("sentinel_global_ability_cooldown");
+		if (globalCd <= 0 && target instanceof LivingEntity && Math.random() < (self.getPersistentData().getBoolean("sentinel_totem_active") ? 0.85 : 0.28)) { //combo chance
 			java.util.List<Integer> availableCombos = new java.util.ArrayList<>();
 			if (unlockedSonicBoom || unlockedSolar || unlockedCryo) availableCombos.add(1);
 			if (unlockedGrapple) availableCombos.add(2);
@@ -2055,10 +2257,35 @@ public class RotOnEntityTickUpdateProcedure {
 			if (unlockedTP) availableCombos.add(11);
 			if (unlockedTK) availableCombos.add(12);
 			if (unlockedDropkick && self.distanceTo(target) > 6.0) availableCombos.add(13);
+			if (unlockedMinos) availableCombos.add(14);
+
+			// Unocked Custom Combos
+			if (self.getPersistentData().getBoolean("unlocked_triple_threat_combo") && self.getPersistentData().getDouble("sentinel_cc1_cd") <= 0) availableCombos.add(101);
+			if (self.getPersistentData().getBoolean("sentinel_totem_active") && self.getPersistentData().getBoolean("unlocked_high_sky_slam_combo") && self.getPersistentData().getDouble("sentinel_cc2_cd") <= 0) availableCombos.add(102);
+			if (self.getPersistentData().getBoolean("unlocked_knockback_dropkick_combo") && self.getPersistentData().getDouble("sentinel_cc3_cd") <= 0) availableCombos.add(103);
+			if (self.getPersistentData().getBoolean("unlocked_knockback_rider_combo") && self.getPersistentData().getDouble("sentinel_cc4_cd") <= 0) availableCombos.add(104);
 
 			if (!availableCombos.isEmpty()) {
 				selectCombo = availableCombos.get((int) (Math.random() * availableCombos.size()));
-				self.getPersistentData().putDouble("sentinel_combo_active_ticks", 40);
+				double coreCd = self.getPersistentData().getBoolean("sentinel_totem_active") ? COMBO_GLOBAL_CD_TOTEM : COMBO_GLOBAL_CD;
+				self.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
+				
+				if (selectCombo == 101) {
+					self.getPersistentData().putDouble("sentinel_cc1_stage", 1);
+					self.getPersistentData().putDouble("sentinel_cc1_ticks", 20); // 1s gap
+					self.getPersistentData().putDouble("sentinel_combo_active_ticks", 120);
+				} else if (selectCombo == 102) {
+					self.getPersistentData().putDouble("sentinel_cc2_stage", 1);
+					self.getPersistentData().putDouble("sentinel_combo_active_ticks", 180);
+				} else if (selectCombo == 103) {
+					self.getPersistentData().putDouble("sentinel_cc3_stage", 1);
+					self.getPersistentData().putDouble("sentinel_combo_active_ticks", 120);
+				} else if (selectCombo == 104) {
+					self.getPersistentData().putDouble("sentinel_cc4_stage", 1);
+					self.getPersistentData().putDouble("sentinel_combo_active_ticks", 120);
+				} else {
+					self.getPersistentData().putDouble("sentinel_combo_active_ticks", 40);
+				}
 			}
 		}
 
@@ -2328,6 +2555,9 @@ public class RotOnEntityTickUpdateProcedure {
 			self.getPersistentData().putDouble("sentinel_die_kick_phase", 1);
 			self.getPersistentData().putDouble("sentinel_die_kick_ticks", 22); // RISE timeline (roughly 1 second rise)
 			playHostileSound(level, self.getX(), self.getY(), self.getZ(), "entity.iron_golem.attack", 1.5F, 0.8F);
+		} else if (selectCombo == 14 && target instanceof LivingEntity liv) {
+			// MINOS PRIME COMBO Initializer
+			self.getPersistentData().putDouble("sentinel_minos_ticks", 50);
 		} else {
 			// Normal knockback
 			target.setDeltaMovement(sweepPush.x * knockbackStrength, 0.26, sweepPush.z * knockbackStrength);
@@ -2424,7 +2654,11 @@ public class RotOnEntityTickUpdateProcedure {
 		double solarCharge = self.getPersistentData().getDouble("sentinel_solar_charge_ticks");
 		double cryoFire = self.getPersistentData().getDouble("sentinel_cryo_fire_ticks");
 		double cryoCharge = self.getPersistentData().getDouble("sentinel_cryo_charge_ticks");
-		boolean ignoreLOS = solarFire > 0 || solarCharge > 0 || cryoFire > 0 || cryoCharge > 0;
+		boolean ignoreLOS = solarFire > 0 || solarCharge > 0 || cryoFire > 0 || cryoCharge > 0
+			|| self.getPersistentData().getDouble("sentinel_cc1_stage") > 0
+			|| self.getPersistentData().getDouble("sentinel_cc2_stage") > 0
+			|| self.getPersistentData().getDouble("sentinel_cc3_stage") > 0
+			|| self.getPersistentData().getDouble("sentinel_cc4_stage") > 0;
 
 		if (self instanceof Mob mob && ignoreLOS) {
 			int targetId = self.getPersistentData().getInt("sentinel_laser_target_id");
@@ -2495,7 +2729,7 @@ public class RotOnEntityTickUpdateProcedure {
 		}
 
 		if (!bypassFactionFilter) {
-			if (target instanceof RotEntity || target instanceof Villager || target instanceof AmbientCreature || target instanceof Animal || target instanceof Slime) return false;
+			if (target instanceof RotEntity || target instanceof Villager || target instanceof AmbientCreature || target instanceof Animal || target instanceof Slime || target instanceof net.minecraft.world.entity.animal.WaterAnimal) return false;
 		}
 
 		if (target instanceof Player p) {
@@ -3032,7 +3266,12 @@ public class RotOnEntityTickUpdateProcedure {
 	private static boolean isDoingCombo(Entity entity) {
 		return entity.getPersistentData().getDouble("sentinel_combo_active_ticks") > 0
 			|| entity.getPersistentData().getDouble("sentinel_sky_warp_slam_ticks") > 0
-			|| entity.getPersistentData().getDouble("sentinel_judgment_ticks") > 0;
+			|| entity.getPersistentData().getDouble("sentinel_judgment_ticks") > 0
+			|| entity.getPersistentData().getDouble("sentinel_minos_ticks") > 0
+			|| entity.getPersistentData().getDouble("sentinel_cc1_stage") > 0
+			|| entity.getPersistentData().getDouble("sentinel_cc2_stage") > 0
+			|| entity.getPersistentData().getDouble("sentinel_cc3_stage") > 0
+			|| entity.getPersistentData().getDouble("sentinel_cc4_stage") > 0;
 	}
 
 	private static void handlePassengerAndGrowth(Entity entity) {
@@ -3076,6 +3315,15 @@ public class RotOnEntityTickUpdateProcedure {
 			for (ServerPlayer player : level.getPlayers(p -> p.position().distanceToSqr(x, y, z) <= range * range)) {
 				player.connection.send(packet);
 			}
+		}
+	}
+
+	private static void applyKnockbackAndSync(Entity victim, double vx, double vy, double vz) {
+		victim.setDeltaMovement(vx, vy, vz);
+		victim.hasImpulse = true;
+		victim.hurtMarked = true;
+		if (victim instanceof ServerPlayer sp) {
+			sp.connection.send(new net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket(sp));
 		}
 	}
 
@@ -3174,6 +3422,12 @@ public class RotOnEntityTickUpdateProcedure {
 		double leftPunchTicks = entity.getPersistentData().getDouble("sentinel_left_punch_ticks");
 		double rightPunchTicks = entity.getPersistentData().getDouble("sentinel_right_punch_ticks");
 		double overheadTicks = entity.getPersistentData().getDouble("rot_overhead_ticks");
+		if (entity.getPersistentData().getBoolean("debug_force_overhead")) {
+			if (overheadTicks <= 1) {
+				entity.getPersistentData().putDouble("rot_overhead_ticks", 20);
+				overheadTicks = 20;
+			}
+		}
 		double slamPhase = entity.getPersistentData().getDouble("sentinel_slam_phase");
 		double skyWarpTicks = entity.getPersistentData().getDouble("sentinel_sky_warp_slam_ticks");
 
@@ -3275,7 +3529,8 @@ public class RotOnEntityTickUpdateProcedure {
 				rot.getEntityData().set(RotEntity.DATA_is_ground_crushing, isGroundCrushing);
 			} catch (Exception e) {}
 			try {
-				rot.getEntityData().set(RotEntity.DATA_is_rider_charging, (judgmentTicks > 0 && judgmentTicks <= 20) || dieKickPhase == 2 || dieKickPhase == 3);
+				boolean forceRider = entity.getPersistentData().getBoolean("debug_force_rider");
+				rot.getEntityData().set(RotEntity.DATA_is_rider_charging, forceRider || (judgmentTicks > 0 && judgmentTicks <= 20) || dieKickPhase == 2 || dieKickPhase == 3);
 			} catch (Exception e) {}
 		}
 	}
@@ -3477,13 +3732,13 @@ public class RotOnEntityTickUpdateProcedure {
 					double distance = direction.length();
 					if (distance > 0.1) {
 						// Lock onto target's position with high diagonal speed
-						Vec3 velocity = direction.normalize().scale(5.2);
+						Vec3 velocity = direction.normalize().scale(DIE_KICK_SPEED);
 						entity.setDeltaMovement(velocity);
 					}
 				} else {
 					// No combat target, just dive in the looking direction
 					Vec3 look = entity.getLookAngle();
-					entity.setDeltaMovement(look.x * 5.2, -1.8, look.z * 5.2);
+					entity.setDeltaMovement(look.x * DIE_KICK_SPEED, -1.8, look.z * DIE_KICK_SPEED);
 				}
 				entity.hasImpulse = true;
 
@@ -3555,8 +3810,7 @@ public class RotOnEntityTickUpdateProcedure {
 			Vec3 push = victim.position().subtract(self.position()).multiply(1.0, 0.0, 1.0).normalize();
 			double pushMult = totemActive ? 5.5 : 3.5;
 			double pushUp = totemActive ? 1.4 : 0.95;
-			victim.setDeltaMovement(push.x * pushMult, pushUp, push.z * pushMult);
-			victim.hasImpulse = true;
+			applyKnockbackAndSync(victim, push.x * pushMult, pushUp, push.z * pushMult);
 		}
 	}
 
@@ -3631,11 +3885,324 @@ public class RotOnEntityTickUpdateProcedure {
 			Class<?> citadelClass = Class.forName("com.github.alexmodguy.citadel.Citadel");
 			java.lang.reflect.Method sendMethod = citadelClass.getMethod("sendMSGToAll", Object.class);
 			sendMethod.invoke(null, msgInstance);
-		} catch (ClassNotFoundException e) {
-			// Citadel is not installed, ignore camera shake
 		} catch (Exception e) {
 			// Other exceptions, safely ignore
 		}
+	}
+
+	private static boolean handleCustomCombos(LevelAccessor world, Entity entity, @Nullable Entity combatTarget) {
+		if (combatTarget == null) {
+			// If target is lost, reset any active custom combos
+			entity.getPersistentData().putDouble("sentinel_cc1_stage", 0);
+			entity.getPersistentData().putDouble("sentinel_cc2_stage", 0);
+			entity.getPersistentData().putDouble("sentinel_cc3_stage", 0);
+			entity.getPersistentData().putDouble("sentinel_cc4_stage", 0);
+			return false;
+		}
+
+		double cc1 = entity.getPersistentData().getDouble("sentinel_cc1_stage");
+		double cc2 = entity.getPersistentData().getDouble("sentinel_cc2_stage");
+		double cc3 = entity.getPersistentData().getDouble("sentinel_cc3_stage");
+		double cc4 = entity.getPersistentData().getDouble("sentinel_cc4_stage");
+
+		if (cc1 <= 0 && cc2 <= 0 && cc3 <= 0 && cc4 <= 0) return false;
+
+		// If standard skill subprocesses are active, let them tick naturally
+		if (entity.getPersistentData().getDouble("sentinel_slam_phase") > 0 
+			|| entity.getPersistentData().getDouble("sentinel_judgment_ticks") > 0 
+			|| entity.getPersistentData().getDouble("sentinel_die_kick_phase") > 0) {
+			return false;
+		}
+
+		// We have an active custom combo!
+		lockLookAtTarget(entity, combatTarget);
+
+		// Disable default movement behavior during active combo executing stage
+		if (entity instanceof Mob mob) {
+			mob.getNavigation().stop();
+		}
+
+		// BLINK TO TARGET IF FAR AWAY at the very start of the combo! (for chat trigger distance-bridging)
+		if ((cc1 == 1 || cc2 == 1 || cc3 == 1 || cc4 == 1) && entity.distanceTo(combatTarget) > 5.0) {
+			if (world instanceof ServerLevel level) {
+				level.sendParticles(ParticleTypes.REVERSE_PORTAL, entity.getX(), entity.getY() + 1.0, entity.getZ(), 20, 0.4, 0.8, 0.4, 0.1);
+				playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.enderman.teleport", 1.2F, 0.5F);
+			}
+			
+			// Teleport right next to the target
+			Vec3 dir = combatTarget.position().subtract(entity.position()).normalize();
+			double targetX = combatTarget.getX() - dir.x * 2.5;
+			double targetY = combatTarget.getY();
+			double targetZ = combatTarget.getZ() - dir.z * 2.5;
+			entity.teleportTo(targetX, targetY, targetZ);
+			
+			if (world instanceof ServerLevel level) {
+				level.sendParticles(ParticleTypes.REVERSE_PORTAL, targetX, targetY + 1.0, targetZ, 20, 0.4, 0.8, 0.4, 0.1);
+				playHostileSound(level, targetX, targetY, targetZ, "entity.enderman.teleport", 1.2F, 0.55F);
+			}
+		}
+
+		boolean totemActive = entity.getPersistentData().getBoolean("sentinel_totem_active");
+
+		if (cc1 > 0) {
+			// ==========================================
+			// COMBO 1: Triple Threat (Crush -> Judgment -> Die)
+			// ==========================================
+			double cc1Ticks = entity.getPersistentData().getDouble("sentinel_cc1_ticks");
+			if (cc1 == 1) {
+				// Init phase: Trigger the real Ground Crush (slam move)
+				entity.setDeltaMovement(0.0, 1.9, 0.0);
+				entity.hasImpulse = true;
+				if (world instanceof ServerLevel level) {
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.iron_golem.attack", 1.5F, 0.8F);
+					level.sendParticles(ParticleTypes.CLOUD, entity.getX(), entity.getY() + 0.5, entity.getZ(), 10, 0.2, 0.2, 0.2, 0.05);
+				}
+
+				entity.getPersistentData().putDouble("sentinel_slam_phase", 1);
+				entity.getPersistentData().putDouble("sentinel_slam_ticks", 22);
+
+				entity.getPersistentData().putDouble("sentinel_cc1_stage", 2);
+				entity.getPersistentData().putDouble("sentinel_cc1_ticks", 2); // short delay
+			} else if (cc1 == 2) {
+				// Wait for standard Ground Crush (slam_phase back to 0) to complete
+				double slamPhase = entity.getPersistentData().getDouble("sentinel_slam_phase");
+				if (slamPhase == 0) {
+					// Once slam is complete (and player is flung), initiate judgment dropkick state!
+					entity.getPersistentData().putDouble("sentinel_judgment_ticks", 60);
+					
+					// Clear landing freeze so the entity can execute dropkick immediately
+					entity.getPersistentData().putDouble("sentinel_landing_ticks", 0);
+
+					entity.getPersistentData().putDouble("sentinel_cc1_stage", 3);
+					entity.getPersistentData().putDouble("sentinel_cc1_ticks", 40); // safety max ticks to check impact
+				}
+			} else if (cc1 == 3) {
+				// Wait for dropkick completion
+				double judgmentTicks = entity.getPersistentData().getDouble("sentinel_judgment_ticks");
+				if (judgmentTicks == 0) {
+					// Dropkick landed or complete! Fling player high again for follow up!
+					Vec3 pushVec = combatTarget.position().subtract(entity.position()).normalize();
+					double pushForce = totemActive ? 3.5 : 2.5;
+					applyKnockbackAndSync(combatTarget, pushVec.x * pushForce, 1.45, pushVec.z * pushForce);
+
+					entity.getPersistentData().putDouble("sentinel_cc1_stage", 4);
+					entity.getPersistentData().putDouble("sentinel_cc1_ticks", 20); // wait 1s (20 ticks) of landing freeze/target rise
+				}
+			} else if (cc1 == 4) {
+				// Wait for 20 ticks target rise to finish (landing freeze recovery)
+				if (cc1Ticks == 0) {
+					// Follow up with Die Rider Kick!
+					entity.setDeltaMovement(0.0, 1.95, 0.0);
+					entity.hasImpulse = true;
+
+					entity.getPersistentData().putDouble("sentinel_die_kick_phase", 1);
+					entity.getPersistentData().putDouble("sentinel_die_kick_ticks", 22);
+					entity.getPersistentData().putDouble("sentinel_landing_ticks", 0); // cancel freeze
+
+					if (world instanceof ServerLevel level) {
+						playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.iron_golem.attack", 1.5F, 0.8F);
+						level.sendParticles(ParticleTypes.CLOUD, entity.getX(), entity.getY() + 0.5, entity.getZ(), 10, 0.2, 0.2, 0.2, 0.05);
+					}
+					entity.getPersistentData().putDouble("sentinel_cc1_stage", 5);
+				}
+			} else if (cc1 == 5) {
+				// Wait for Die Rider Kick to complete
+				double dieKickPhase = entity.getPersistentData().getDouble("sentinel_die_kick_phase");
+				double landingTicks = entity.getPersistentData().getDouble("sentinel_landing_ticks");
+				if (dieKickPhase == 0 && landingTicks == 0) {
+					// Completed Rider Kick completely! Put on cooldown
+					double cd = totemActive ? 400.0 : 800.0;
+					entity.getPersistentData().putDouble("sentinel_cc1_cd", cd);
+					entity.getPersistentData().putDouble("sentinel_cc1_stage", 0);
+				}
+				handlePassengerAndGrowth(entity);
+			}
+			handlePassengerAndGrowth(entity);
+			return true;
+		}
+
+		if (cc2 > 0) {
+			// ==========================================
+			// COMBO 2: High Sky Slam (Uppercut -> Peak Rot Jump -> Overhead Slam -> Crush)
+			// ==========================================
+			double cc2Ticks = entity.getPersistentData().getDouble("sentinel_cc2_ticks");
+			double cc2Air = entity.getPersistentData().getDouble("sentinel_cc2_air_ticks");
+
+			if (cc2 == 1) {
+				// Launch player up super high (25-45 blocks high)
+				if (entity instanceof LivingEntity ls) ls.swing(InteractionHand.MAIN_HAND, true);
+				double launchHeightVel = 2.8 + Math.random() * 1.0; // Perfect vertical launch velocity for 25-45 blocks!
+				applyKnockbackAndSync(combatTarget, 0.0, launchHeightVel, 0.0);
+
+				if (world instanceof ServerLevel level) {
+					level.sendParticles(ParticleTypes.CLOUD, combatTarget.getX(), combatTarget.getY() + 0.2, combatTarget.getZ(), 15, 0.4, 0.4, 0.4, 0.15);
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.iron_golem.attack", 1.5F, 0.6F);
+				}
+
+				entity.getPersistentData().putDouble("sentinel_cc2_air_ticks", 1);
+				entity.getPersistentData().putDouble("sentinel_cc2_stage", 2);
+			} else if (cc2 == 2) {
+				entity.getPersistentData().putDouble("sentinel_cc2_air_ticks", cc2Air + 1);
+				// Wait for target to reach peak height (velocity close to 0 or downward)
+				if (cc2Air >= 15 && combatTarget.getDeltaMovement().y() <= 0.1) {
+					// The Rot also jumps to peak level and teleports right above the player
+					entity.teleportTo(combatTarget.getX(), combatTarget.getY() + 1.5, combatTarget.getZ());
+					entity.setDeltaMovement(0.0, -0.1, 0.0); // Orient slightly downward
+
+					// Slam the player down (Overhead Slam)
+					applyKnockbackAndSync(combatTarget, 0.0, -3.5, 0.0);
+
+					// Deal Overhead slam damage
+					combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) COMBO_OVERHEAD_SLAM_DMG);
+
+					if (world instanceof ServerLevel level) {
+						level.sendParticles(ParticleTypes.SONIC_BOOM, combatTarget.getX(), combatTarget.getY() + 0.5, combatTarget.getZ(), 2, 0.1, 0.1, 0.1, 0.0);
+						playHostileSound(level, combatTarget.getX(), combatTarget.getY(), combatTarget.getZ(), "entity.iron_golem.attack", 1.8F, 0.55F);
+						playHostileSound(level, combatTarget.getX(), combatTarget.getY(), combatTarget.getZ(), "entity.generic.explode", 1.5F, 0.5F);
+						sendCameraShake(0.5F, 15, 15.0F);
+					}
+
+					entity.getPersistentData().putDouble("sentinel_cc2_stage", 3);
+				}
+			} else if (cc2 == 3) {
+				// Wait for player to slam into the ground
+				if (combatTarget.onGround()) {
+					// Start the 1 second gap (landing ticks/freeze of 1s)
+					entity.getPersistentData().putDouble("sentinel_cc2_ticks", 20); // 1s gap
+					entity.getPersistentData().putDouble("sentinel_cc2_stage", 4);
+				}
+			} else if (cc2 == 4) {
+				// Wait until 1s gap is complete
+				if (cc2Ticks == 0) {
+					// Execute follow-up Ground Crush move as they are on the ground!
+					double px = combatTarget.getX();
+					double py = combatTarget.getY();
+					double pz = combatTarget.getZ();
+
+					// Teleport to them or slam them from current position
+					entity.teleportTo(px, py, pz);
+					executeCrushLandingBlast(world, entity, combatTarget, true);
+					combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) COMBO_SEISMIC_SLAM_DMG);
+
+					// Put on cooldown
+					double cd = totemActive ? 400.0 : 800.0;
+					entity.getPersistentData().putDouble("sentinel_cc2_cd", cd);
+					entity.getPersistentData().putDouble("sentinel_cc2_stage", 0);
+				}
+			}
+			handlePassengerAndGrowth(entity);
+			return true;
+		}
+
+		if (cc3 > 0) {
+			// ==========================================
+			// COMBO 3: Punch + Dropkick Combo
+			// ==========================================
+			double cc3Ticks = entity.getPersistentData().getDouble("sentinel_cc3_ticks");
+			if (cc3 == 1) {
+				// Swing hands
+				if (entity instanceof LivingEntity ls) ls.swing(InteractionHand.MAIN_HAND, true);
+				
+				// Punch with hard knockback (high speed / magnitude)
+				Vec3 knockDir = combatTarget.position().subtract(entity.position()).normalize();
+				applyKnockbackAndSync(combatTarget, knockDir.x * 2.2, 0.35, knockDir.z * 2.2);
+
+				// Deal punch damage
+				combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) MELEE_PUNCH_DAMAGE);
+
+				if (world instanceof ServerLevel level) {
+					level.sendParticles(ParticleTypes.CRIT, combatTarget.getX(), combatTarget.getY() + 0.8, combatTarget.getZ(), 15, 0.3, 0.3, 0.3, 0.2);
+					// Heavy punch special pitched-down sound mix!
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.iron_golem.attack", 1.6F, 0.45F);
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.generic.explode", 0.8F, 0.45F);
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.warden.sonic_boom", 0.6F, 0.4F);
+				}
+
+				entity.getPersistentData().putDouble("sentinel_cc3_ticks", 15); // slightly shorter gap (0.75s) to make it feel more connected!
+				entity.getPersistentData().putDouble("sentinel_cc3_stage", 2);
+			} else if (cc3 == 2) {
+				// Wait gap
+				if (cc3Ticks == 0) {
+					// Follow up with Dropkick!
+					entity.getPersistentData().putDouble("sentinel_judgment_ticks", 60);
+					entity.getPersistentData().putDouble("sentinel_cc3_stage", 3);
+				}
+			} else if (cc3 == 3) {
+				// Wait for Judgment Dropkick to execute and land
+				double judgmentTicks = entity.getPersistentData().getDouble("sentinel_judgment_ticks");
+				double landingTicks = entity.getPersistentData().getDouble("sentinel_landing_ticks");
+				if (judgmentTicks == 0 && landingTicks == 0) {
+					// Completed combo!
+					double cd = totemActive ? 400.0 : 800.0;
+					entity.getPersistentData().putDouble("sentinel_cc3_cd", cd);
+					entity.getPersistentData().putDouble("sentinel_cc3_stage", 0);
+				}
+				handlePassengerAndGrowth(entity);
+			}
+			handlePassengerAndGrowth(entity);
+			return true;
+		}
+
+		if (cc4 > 0) {
+			// ==========================================
+			// COMBO 4: Punch + Rider Kick Combo
+			// ==========================================
+			double cc4Ticks = entity.getPersistentData().getDouble("sentinel_cc4_ticks");
+			if (cc4 == 1) {
+				// Swing hands
+				if (entity instanceof LivingEntity ls) ls.swing(InteractionHand.MAIN_HAND, true);
+				
+				// Punch with hard knockback (high speed / magnitude)
+				Vec3 knockDir = combatTarget.position().subtract(entity.position()).normalize();
+				applyKnockbackAndSync(combatTarget, knockDir.x * 2.2, 0.35, knockDir.z * 2.2);
+
+				// Deal punch damage
+				combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) MELEE_PUNCH_DAMAGE);
+
+				if (world instanceof ServerLevel level) {
+					level.sendParticles(ParticleTypes.CRIT, combatTarget.getX(), combatTarget.getY() + 0.8, combatTarget.getZ(), 15, 0.3, 0.3, 0.3, 0.2);
+					// Heavy punch special pitched-down sound mix!
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.iron_golem.attack", 1.6F, 0.45F);
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.generic.explode", 0.8F, 0.45F);
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.warden.sonic_boom", 0.6F, 0.4F);
+				}
+
+				entity.getPersistentData().putDouble("sentinel_cc4_ticks", 15); // slightly shorter gap (0.75s) to make it feel more connected!
+				entity.getPersistentData().putDouble("sentinel_cc4_stage", 2);
+			} else if (cc4 == 2) {
+				// Wait gap
+				if (cc4Ticks == 0) {
+					// Follow up with Die Rider Kick!
+					entity.setDeltaMovement(0.0, 1.95, 0.0);
+					entity.hasImpulse = true;
+
+					entity.getPersistentData().putDouble("sentinel_die_kick_phase", 1);
+					entity.getPersistentData().putDouble("sentinel_die_kick_ticks", 22);
+					entity.getPersistentData().putDouble("sentinel_landing_ticks", 0); // cancel freeze
+
+					if (world instanceof ServerLevel level) {
+						playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.iron_golem.attack", 1.5F, 0.8F);
+						level.sendParticles(ParticleTypes.CLOUD, entity.getX(), entity.getY() + 0.5, entity.getZ(), 10, 0.2, 0.2, 0.2, 0.05);
+					}
+					entity.getPersistentData().putDouble("sentinel_cc4_stage", 3);
+				}
+			} else if (cc4 == 3) {
+				// Wait for Rider Kick completion
+				double dieKickPhase = entity.getPersistentData().getDouble("sentinel_die_kick_phase");
+				double landingTicks = entity.getPersistentData().getDouble("sentinel_landing_ticks");
+				if (dieKickPhase == 0 && landingTicks == 0) {
+					// Completed combo!
+					double cd = totemActive ? 400.0 : 800.0;
+					entity.getPersistentData().putDouble("sentinel_cc4_cd", cd);
+					entity.getPersistentData().putDouble("sentinel_cc4_stage", 0);
+				}
+				handlePassengerAndGrowth(entity);
+			}
+			handlePassengerAndGrowth(entity);
+			return true;
+		}
+
+		return false;
 	}
 
 	private static boolean shouldIgnoreCombatFilter(Entity entity) {
