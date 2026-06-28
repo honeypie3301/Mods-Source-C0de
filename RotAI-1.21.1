@@ -60,14 +60,30 @@ public class RotOnEntityTickUpdateProcedure {
 	//                          CONFIGURABLE SETTINGS
 	// =========================================================================
 	public static boolean DEBUG_MODE = true; // DEBUG MODE: ON/OFF (Set to true to enable testing via chat commands 'slam' and 'overhead')
+	public static boolean ENABLE_EXTRACTION_GRAPPLE = false; // Toggle extraction grapple ability
+	public static boolean ENABLE_TELEKINESIS = false; // Toggle telekinesis ability
+	public static double COOLDOWN_MULTIPLIER = 1.5; // Global cooldown multiplier (e.g., 2.0 = double cooldown, 0.5 = half cooldown)
 	private static final double TARGET_RANGE = 96.0;
 
+	// --- Movement & Spacing Settings ---
+	public static double ROT_PLAYER_BACK_OFF_DISTANCE = 1.6; // Configurable minimum safe distance to maintain from player (was 0.5)
+	public static double ROT_PILLAR_BACK_OFF_DISTANCE = 15.0; // Configurable distance to maintain while circling a player's pillar (Scene 2)
+	public static double ROT_PILLAR_INITIAL_ATTACK_DELAY = 1000.0; // Configurable delay in ticks (e.g., 100 ticks = 5 seconds) before any attack can be launched after starting to circle (Scene 2)
+	public static double ROT_PILLAR_ATTACK_CHANCE = 0.005; // Configurable chance per tick to attack while circling target's pillar (e.g., 0.005 = 0.5% chance, lower is slower/waits longer)
+	public static double ROT_PILLAR_CIRCLING_SPEED = 0.8; // Configurable cruising speed factor (as a multiplier of base speed) during circling (Scene 2)
+	public static double ROT_PILLAR_CIRCLING_CHANCE = 0.15; // Configurable ratio of circling vs staring (e.g., 0.15 = 15% circling, 85% staring) (Scene 2)
+
+	// --- Sonic Scream Settings ---
+	public static double SONIC_SCREAM_COOLDOWN = 1200.0; // Strictly 1 minute cooldown in ticks (60s * 20)
+
 	// --- Sonic Boom Settings ---
-	private static final double SONIC_BOOM_RANGE = 24.0;             // Configurable sonic boom max reach/range
-	private static final double SONIC_BOOM_MIN_DIST = 2.5;           // Target must be at least this far away (totem or no totem)
-	private static final double SONIC_BOOM_COOLDOWN = 240.0;         // Cooldown in ticks (12.0s)
-	private static final double SONIC_BOOM_TORSO_Y_FACTOR = 1;       // Configurable Y level offset factor for sonic boom torso relative to entity height
-	private static final double WARDEN_LEARN_REQUIRED_TICKS = 300.0; // Ticks (e.g. 15 seconds) of combat against a Warden required to learn the sonic boom
+	public static double SONIC_BOOM_RANGE = 24.0;             // Configurable sonic boom max reach/range
+	public static double SONIC_BOOM_MIN_DIST = 2.5;           // Target must be at least this far away (totem or no totem)
+	public static double SONIC_BOOM_COOLDOWN = 324.0;         // Cooldown in ticks (16.2s - increased by 35%)
+	public static double SONIC_BOOM_TORSO_Y_FACTOR = 1;       // Configurable Y level offset factor for sonic boom torso relative to entity height
+	public static double WARDEN_LEARN_REQUIRED_TICKS = 405.0; // Ticks of combat against a Warden required to learn the sonic boom (increased by 35%)
+	public static double SONIC_BOOM_ANIMATION_TICKS = 90.0;  // Total ticks for the sonic boom animation state (50 ticks = 2.5s)
+	public static double SONIC_BOOM_TRIGGER_TICK = 36.0;     // Ticks remaining when the sonic boom damages/fires (50 - 18 = 32 ticks, or 1.6s from starting)
 
 	// --- Laser Settings ---
 	private static final double LASER_Y_OFFSET = 0.25;              // Configurable laser Y level offset relative to eye position
@@ -87,12 +103,12 @@ public class RotOnEntityTickUpdateProcedure {
 
 	// --- Mining / Block-Breaking Settings ---
 	private static final int MINE_REACH = 3;
-	private static final int MINE_HEIGHT = 4;
+	private static final int MINE_HEIGHT = 3;
 	private static final int MINE_HALF_WIDTH = 1;
 	private static final float MAX_BREAKABLE_HARDNESS = 60f;
 
 	// --- Die Rider Kick Settings ---
-	private static final double DIE_KICK_SPEED = 5.2;               // Configurable high diagonal/dive speed of the Die Rider Kick
+	private static final double DIE_KICK_SPEED = 6.0;               // Configurable high diagonal/dive speed of the Die Rider Kick
 
 	// --- Core Cooldowns (In Ticks) ---
 	public static int TP_DODGE_CD = 18;  // Overclocked Nanite Blinks (1s)
@@ -113,6 +129,41 @@ public class RotOnEntityTickUpdateProcedure {
 	public static int MUTANT_GRAPPLE_COOLDOWN = 220;
 	public static int TELEKINESIS_COOLDOWN = 220;
 
+	// --- Customizable Combo Cooldown Settings ---
+	public static double COMBO_TRIPLE_THREAT_CD = 1000.0;
+	public static double COMBO_TRIPLE_THREAT_CD_TOTEM = 800.0;
+	public static double COMBO_HIGH_SKY_SLAM_CD = 1000.0;
+	public static double COMBO_HIGH_SKY_SLAM_CD_TOTEM = 800.0;
+	public static double COMBO_PUNCH_DROPKICK_CD = 1000.0;
+	public static double COMBO_PUNCH_DROPKICK_CD_TOTEM = 800.0;
+	public static double COMBO_PUNCH_RIDER_KICK_CD = 1000.0;
+	public static double COMBO_PUNCH_RIDER_KICK_CD_TOTEM = 800.0;
+
+	// --- Customizable Omnidirectional Sonic Boom Settings ---
+	public static double OMNI_SONIC_BOOM_CD = 300.0;               // Cooldown of the ability in ticks (300 ticks = 15s)
+	public static double OMNI_SONIC_BOOM_ANIMATION_TICKS = 190.0;  // Total duration of the animation (9.5s = 190 ticks)
+	public static double OMNI_SONIC_BOOM_TRIGGER_TICK = 20.0;      // Remainder of ticks when sonic burst is released
+	public static double OMNI_SONIC_BOOM_RANGE = 24.0;             // Max range of the radial sonic shockwave
+	public static boolean OMNI_SONIC_BOOM_SHOW_PARTICLES = true;   // Toggle to enable/disable visual particles to see the entity animation clearly
+
+	// --- Adaptation Performance Settings ---
+	public static double ADAPTATION_REGEN_BASE_HEAL = 1.0;               // Base health amount healed per regeneration cycle (halved)
+	public static double ADAPTATION_REGEN_MAX_HEALTH_RATIO = 0.0075;     // Percent of max health added to the base heal (0.0075 = 0.75%, halved)
+	public static double ADAPTATION_REGEN_COMBAT_MULTIPLIER = 2.0;       // Speed up of regeneration based on combat duration ticks
+	public static double ADAPTATION_REGEN_HEALTH_LOW_BURST = 3.5;        // Healing speed multiplier when below 25% health (extreme burst)
+	public static double ADAPTATION_REGEN_HEALTH_MID_BURST = 2.0;        // Healing speed multiplier when below 50% health (moderate burst)
+
+	public static double ADAPTATION_RESISTANCE_DECAY = 0.95;             // Speed of recent damage pool decaying every tick (closer to 1.0 = slower decay / stronger resistance)
+	public static double ADAPTATION_RESISTANCE_HIGH_THRESHOLD = 70.0;    // Recent damage threshold for Resistance II (level 1) (doubled to halve adaptation trigger speed)
+	public static double ADAPTATION_RESISTANCE_MID_THRESHOLD = 40.0;     // Recent damage threshold for Resistance I (level 0) (doubled to halve adaptation trigger speed)
+	public static double ADAPTATION_RESISTANCE_LOW_THRESHOLD = 16.0;     // Recent damage threshold for Resistance I (level 0) (doubled to halve adaptation trigger speed)
+
+	public static double ADAPTATION_SPEED_MIN_MULTIPLIER = -0.45;        // Starting speed reduction modifier base (-0.45 = -45% initial speed penalty)
+	public static double ADAPTATION_SPEED_MAX_MULTIPLIER = 0.10;         // Maximum speed bonus multiplier with teleport unlocked (e.g. up to +10%)
+	public static double ADAPTATION_SPEED_MAX_FALLBACK = 0.25;           // Maximum speed bonus multiplier fallback without teleport (e.g. up to +25%)
+	public static double ADAPTATION_SPEED_SCALING_TELEPORT = 1000.0;     // Scaling ticks factor divisor for teleport speed adaptation
+	public static double ADAPTATION_SPEED_SCALING_FALLBACK = 600.0;      // Scaling ticks factor divisor for fallback speed adaptation
+
 	// --- Customizable Damage Settings for Every Single Move / Ability ---
 	public static double MELEE_PUNCH_DAMAGE = 18.0;          // Base regular melee damage (was 18.0 as behavior value)
 	public static double SONIC_BOOM_DMG = 38.0;             // Sonic Boom damage (was 38.0)
@@ -128,6 +179,11 @@ public class RotOnEntityTickUpdateProcedure {
 	// --- Customizable Damage Settings for Combo Moves ---
 	public static double COMBO_SEISMIC_SLAM_DMG = 35.0;      // Damage for Seismic Land/Ground Crush move (was finalDamage * 1.5)
 	public static double COMBO_OVERHEAD_SLAM_DMG = 40.0;     // Damage for Overhead Slam hammer hit (was 25.0)
+
+	// --- Customizable Overhead Attack Timing Settings ---
+	public static double OVERHEAD_TOTAL_TICKS = 56.0;        // Total duration of the overhead attack tick sequence (doubled to let the animation finish)
+	public static double OVERHEAD_PREP_THRESHOLD = 31.0;     // Ticks at or above which the Rot is in windup preparing phase (perfectly contiguous)
+	public static double OVERHEAD_STRIKE_TICK = 30.0;        // Precise tick when strike damage/impact executing is triggered (1.3s * 20 = 26 ticks elapsed -> tick 30)
 	public static double COMBO_JUDGMENT_KICK_DMG = 50.0;     // Damage for Judgment Dropkick impact (was punchDmg * 3.5)
 	public static double COMBO_DIE_RIDER_KICK_DMG = 65.0;    // Damage for Die Rider Kick impact (was 55.0)
 	public static double COMBO_GRAPPLE_SIPHON_DMG = 12.0;    // Damage for Grapple siphon combo step
@@ -151,7 +207,25 @@ public class RotOnEntityTickUpdateProcedure {
 	private static final String K_TK_CD = "sentinel_tk_cd";
 	private static final String K_TK_TICKS = "sentinel_tk_ticks";
 
-	private static float lerpAngle(float pct, float start, float end) {
+	
+	private static double getDynamicGlobalCooldown(Entity entity) {
+		if (entity.getPersistentData().getBoolean("sentinel_totem_active")) {
+			return 20.0; // Minimum cooldown if totem is active
+		}
+		double phaseDuration = entity.getPersistentData().getDouble("sentinel_cd_phase_duration");
+		if (phaseDuration <= 0) {
+			phaseDuration = 900.0 + entity.level().getRandom().nextDouble() * 1500.0; // 45s to 120s
+			entity.getPersistentData().putDouble("sentinel_cd_phase_duration", phaseDuration);
+		}
+		
+		double rawCombatTicks = entity.getPersistentData().getDouble("sentinel_combat_ticks");
+		double t = Math.min(rawCombatTicks / phaseDuration, 1.0);
+		double ease = -(Math.cos(Math.PI * t) - 1.0) / 2.0;
+
+		return 160.0 - (ease * 140.0);
+	}
+
+private static float lerpAngle(float pct, float start, float end) {
 		float delta = Mth.wrapDegrees(end - start);
 		return start + delta * pct;
 	}
@@ -165,7 +239,7 @@ public class RotOnEntityTickUpdateProcedure {
 	public static void onServerChat(ServerChatEvent event) {
 		if (!DEBUG_MODE) return;
 		String msg = event.getRawText().trim().toLowerCase();
-		if (msg.equals("slam") || msg.equals("overhead") || msg.equals("dropkick") || msg.equals("kick") || msg.equals("die") || msg.equals("rider") || msg.equals("kickrider") || msg.equals("triple") || msg.equals("highsky") || msg.equals("punchkick") || msg.equals("punchrider") || msg.equals("testoverhead") || msg.equals("testrider") || msg.equals("resetanim")) {
+		if (msg.equals("slam") || msg.equals("overhead") || msg.equals("dropkick") || msg.equals("kick") || msg.equals("die") || msg.equals("rider") || msg.equals("kickrider") || msg.equals("triple") || msg.equals("highsky") || msg.equals("punchkick") || msg.equals("punchrider") || msg.equals("testoverhead") || msg.equals("testrider") || msg.equals("resetanim") || msg.equals("sonic") || msg.equals("sonicboom") || msg.equals("testsonic") || msg.equals("fall") || msg.equals("falling") || msg.equals("testfall")) {
 			ServerPlayer player = event.getPlayer();
 			if (player != null) {
 				ServerLevel level = player.serverLevel();
@@ -183,7 +257,7 @@ public class RotOnEntityTickUpdateProcedure {
 						level.sendParticles(ParticleTypes.CLOUD, rot.getX(), rot.getY() + 0.5, rot.getZ(), 10, 0.2, 0.2, 0.2, 0.05);
 					} else if (msg.equals("overhead")) {
 						// Instantly force suspension/overhead bypass on player's head
-						rot.getPersistentData().putDouble("rot_overhead_ticks", 20);
+						rot.getPersistentData().putDouble("rot_overhead_ticks", OVERHEAD_TOTAL_TICKS);
 						rot.getPersistentData().putDouble("sentinel_slam_phase", 0);
 						rot.getPersistentData().putString("overhead_target_uuid", player.getUUID().toString());
 					} else if (msg.equals("dropkick") || msg.equals("kick")) {
@@ -235,13 +309,52 @@ public class RotOnEntityTickUpdateProcedure {
 						rot.getPersistentData().putBoolean("debug_force_rider", !current);
 						rot.getPersistentData().putBoolean("debug_force_overhead", false);
 						player.sendSystemMessage(Component.literal("§e[AI Debug] Loop Rider Kick Animation: " + (!current ? "§a§lON" : "§c§lOFF")));
+					} else if (msg.equals("sonic") || msg.equals("sonicboom")) {
+						// Instantly trigger custom sonic boom sequence
+						rot.getPersistentData().putDouble("sentinel_sonic_ticks", SONIC_BOOM_ANIMATION_TICKS);
+						rot.getPersistentData().putBoolean("unlocked_sonic_boom", true);
+						playHostileSound(level, rot.getX(), rot.getY(), rot.getZ(), "entity.warden.sonic_charge", 1.4F, 0.4F);
+						player.sendSystemMessage(Component.literal("§a[AI Debug] Forcing Sonic Boom attack."));
+					} else if (msg.equals("testsonic")) {
+						// Toggle direct clean looping of Sonic Boom animation
+						boolean current = rot.getPersistentData().getBoolean("debug_force_sonic");
+						rot.getPersistentData().putBoolean("debug_force_sonic", !current);
+						rot.getPersistentData().putBoolean("debug_force_overhead", false);
+						rot.getPersistentData().putBoolean("debug_force_rider", false);
+						rot.getPersistentData().putBoolean("debug_force_fall", false);
+						player.sendSystemMessage(Component.literal("§e[AI Debug] Loop Sonic Boom Animation: " + (!current ? "§a§lON" : "§c§lOFF")));
+					} else if (msg.equals("fall") || msg.equals("falling")) {
+						// Instantly trigger temporary falling state
+						rot.getPersistentData().putBoolean("is_falling_heavy", true);
+						try {
+							rot.getEntityData().set(RotEntity.DATA_is_falling_heavy, true);
+						} catch (Exception e) {}
+						player.sendSystemMessage(Component.literal("§a[AI Debug] Forcing Heavy Fall state."));
+					} else if (msg.equals("testfall")) {
+						// Toggle direct clean looping of Falling animation
+						boolean current = rot.getPersistentData().getBoolean("debug_force_fall");
+						rot.getPersistentData().putBoolean("debug_force_fall", !current);
+						rot.getPersistentData().putBoolean("debug_force_overhead", false);
+						rot.getPersistentData().putBoolean("debug_force_rider", false);
+						rot.getPersistentData().putBoolean("debug_force_sonic", false);
+						player.sendSystemMessage(Component.literal("§e[AI Debug] Loop Fall Animation: " + (!current ? "§a§lON" : "§c§lOFF")));
 					} else if (msg.equals("resetanim")) {
 						// Instantly disable loops and reset
 						rot.getPersistentData().putBoolean("debug_force_overhead", false);
 						rot.getPersistentData().putBoolean("debug_force_rider", false);
+						rot.getPersistentData().putBoolean("debug_force_sonic", false);
+						rot.getPersistentData().putBoolean("debug_force_fall", false);
+						rot.getPersistentData().putBoolean("is_falling_heavy", false);
+						try {
+							rot.getEntityData().set(RotEntity.DATA_is_falling_heavy, false);
+						} catch (Exception e) {}
+						try {
+							rot.getEntityData().set(RotEntity.DATA_is_sonic_boom, false);
+						} catch (Exception e) {}
 						rot.getPersistentData().putDouble("rot_overhead_ticks", 0);
 						rot.getPersistentData().putDouble("sentinel_die_kick_phase", 0);
 						rot.getPersistentData().putDouble("sentinel_die_kick_ticks", 0);
+						rot.getPersistentData().putDouble("sentinel_sonic_ticks", 0);
 						player.sendSystemMessage(Component.literal("§a[AI Debug] All forced test animations reset."));
 					}
 				}
@@ -358,6 +471,18 @@ public class RotOnEntityTickUpdateProcedure {
 					entity.getPersistentData().putBoolean("sentinel_is_airborne_state", airborneState);
 				} catch (Exception e) {}
 				try {
+					boolean fallingHeavy = rot.getEntityData().get(RotEntity.DATA_is_falling_heavy);
+					entity.getPersistentData().putBoolean("is_falling_heavy", fallingHeavy);
+				} catch (Exception e) {}
+				try {
+					boolean sonicBoom = rot.getEntityData().get(RotEntity.DATA_is_sonic_boom);
+					entity.getPersistentData().putBoolean("is_sonic_boom", sonicBoom);
+				} catch (Exception e) {}
+				try {
+					boolean sonicBoomLarge = rot.getEntityData().get(RotEntity.DATA_is_sonic_boom_large);
+					entity.getPersistentData().putBoolean("is_sonic_boom_large", sonicBoomLarge);
+				} catch (Exception e) {}
+				try {
 					boolean overheadPrep = rot.getEntityData().get(RotEntity.DATA_is_overhead_preparing);
 					entity.getPersistentData().putBoolean("is_overhead_preparing", overheadPrep);
 				} catch (Exception e) {}
@@ -376,9 +501,12 @@ public class RotOnEntityTickUpdateProcedure {
 				try {
 					if (entity.tickCount <= 1) {
 						rot.getEntityData().set(RotEntity.DATA_is_rider_charging, false);
+						rot.getEntityData().set(RotEntity.DATA_is_rider_kick, false);
 					}
 					boolean riderCharging = rot.getEntityData().get(RotEntity.DATA_is_rider_charging);
 					entity.getPersistentData().putBoolean("is_rider_charging", riderCharging);
+					boolean riderKick = rot.getEntityData().get(RotEntity.DATA_is_rider_kick);
+					entity.getPersistentData().putBoolean("is_rider_kick", riderKick);
 				} catch (Exception e) {}
 			}
 			return;
@@ -389,6 +517,21 @@ public class RotOnEntityTickUpdateProcedure {
 	}
 
 	private static void executeInternal(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (!entity.getPersistentData().getBoolean("sentinel_spawn_initialized")) {
+			entity.getPersistentData().putBoolean("sentinel_spawn_initialized", true);
+			if (entity.getPersistentData().getBoolean("sentinel_should_scan")) {
+				if (entity.getPersistentData().getDouble("sentinel_slam_phase") == 0) {
+					entity.getPersistentData().putDouble("sentinel_scanning_ticks", 60);
+					entity.getPersistentData().putDouble("sentinel_scan_max_ticks", 60.0);
+					entity.getPersistentData().putDouble("sentinel_scanning_base_yaw", entity.getYRot());
+				}
+			}
+		}
+
+		if (handleScanningState(entity)) {
+			return;
+		}
+
 		if (entity.getPersistentData().getBoolean("sentinel_totem_active") && entity.tickCount % 4 == 0) {
 			if (world instanceof ServerLevel level) {
 				for (int i = 0; i < 3; i++) {
@@ -410,7 +553,9 @@ public class RotOnEntityTickUpdateProcedure {
 		if (entity instanceof LivingEntity living) {
 			if (living.getLastHurtByMob() != null) {
 				Entity attacker = living.getLastHurtByMob();
-				if (!shouldIgnoreCombatFilter(entity) && !shouldIgnoreCombatFilter(attacker) && (attacker instanceof RotEntity || attacker.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND))))) {
+				if (BuiltInRegistries.ENTITY_TYPE.getKey(attacker.getType()).toString().equals("spore:scent")) {
+					living.setLastHurtByMob(null);
+				} else if (!shouldIgnoreCombatFilter(entity) && !shouldIgnoreCombatFilter(attacker) && (attacker instanceof RotEntity || attacker.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND))))) {
 					living.setLastHurtByMob(null);
 				}
 			}
@@ -441,6 +586,8 @@ public class RotOnEntityTickUpdateProcedure {
 				}
 			}
 		}
+
+		double landingTicksBefore = entity.getPersistentData().getDouble("sentinel_landing_ticks");
 
 		tickCooldown(entity, K_TP_DODGE_CD, 1);
 		tickCooldown(entity, K_TP_FLANK_CD, 1);
@@ -474,6 +621,20 @@ public class RotOnEntityTickUpdateProcedure {
 		tickCooldown(entity, "sentinel_cc3_cd", 1);
 		tickCooldown(entity, "sentinel_cc4_ticks", 1);
 		tickCooldown(entity, "sentinel_cc4_cd", 1);
+		tickCooldown(entity, "sentinel_sonic_scream_ticks", 1);
+		tickCooldown(entity, "sentinel_sonic_scream_cooldown", 1);
+
+		double landingTicksAfter = entity.getPersistentData().getDouble("sentinel_landing_ticks");
+		if (landingTicksBefore > 0 && landingTicksAfter <= 0 && entity.getPersistentData().getBoolean("sentinel_immune_slam_landing_active")) {
+			entity.getPersistentData().putBoolean("sentinel_immune_slam_landing_active", false);
+			if (entity.getPersistentData().getBoolean("sentinel_should_scan")) {
+				int summons = entity.getPersistentData().getInt("sentinel_spore_summons_at_birth");
+				double scanTicks = Math.max(15.0, 60.0 - (summons - 1) * 15.0);
+				entity.getPersistentData().putDouble("sentinel_scanning_ticks", scanTicks);
+				entity.getPersistentData().putDouble("sentinel_scan_max_ticks", scanTicks);
+				entity.getPersistentData().putDouble("sentinel_scanning_base_yaw", entity.getYRot());
+			}
+		}
 
 		double shockwaveStage = entity.getPersistentData().getDouble("sentinel_shockwave_stage");
 		if (shockwaveStage > 0) {
@@ -485,7 +646,16 @@ public class RotOnEntityTickUpdateProcedure {
 
 			if (world instanceof ServerLevel level) {
 				int particleCount = (int) (2 * Math.PI * radius * 7.5);
-				net.minecraft.core.particles.DustParticleOptions dustOptions = new net.minecraft.core.particles.DustParticleOptions(new org.joml.Vector3f(1.0F, 0.35F, 0.05F), 2.5F);
+				net.minecraft.world.level.block.state.BlockState floorState = level.getBlockState(net.minecraft.core.BlockPos.containing(originX, originY - 0.5, originZ));
+				if (floorState.isAir()) {
+					floorState = level.getBlockState(net.minecraft.core.BlockPos.containing(originX, originY - 1.5, originZ));
+				}
+				if (floorState.isAir()) {
+					floorState = net.minecraft.world.level.block.Blocks.DIRT.defaultBlockState();
+				}
+				net.minecraft.core.particles.BlockParticleOption dustPillarOptions = new net.minecraft.core.particles.BlockParticleOption(ParticleTypes.DUST_PILLAR, floorState);
+				net.minecraft.core.particles.ParticleType<?> _tsdType = BuiltInRegistries.PARTICLE_TYPE.get(ResourceLocation.parse("trial_spawner_detection"));
+				net.minecraft.core.particles.ParticleOptions trialSpawnerDetection = _tsdType instanceof net.minecraft.core.particles.ParticleOptions _tsdOpt ? _tsdOpt : net.minecraft.core.particles.ParticleTypes.EFFECT;
 
 				for (int i = 0; i < particleCount; i++) {
 					double angle = (2 * Math.PI / particleCount) * i;
@@ -512,7 +682,8 @@ public class RotOnEntityTickUpdateProcedure {
 						double vy = sin * (2.2 * spread);
 						double vz = -cos * cosYaw * (2.2 * spread);
 
-						level.sendParticles(dustOptions, px, py, pz, 0, vx, vy, vz, 1.0);
+						level.sendParticles(dustPillarOptions, px, py, pz, 0, vx, vy, vz, 1.0);
+						level.sendParticles(trialSpawnerDetection, px, py, pz, 0, vx * 0.5, vy * 0.5, vz * 0.5, 1.0);
 					} else {
 						// Horizontal Standard Thick Ring expanding dynamically with outward velocities
 						double r = radius + (Math.random() - 0.5) * 0.8;
@@ -524,7 +695,8 @@ public class RotOnEntityTickUpdateProcedure {
 						double vx = cos * (2.2 * spread);
 						double vz = sin * (2.2 * spread);
 
-						level.sendParticles(dustOptions, px, originY + 0.15, pz, 0, vx, 0.02, vz, 1.0);
+						level.sendParticles(dustPillarOptions, px, originY + 0.15, pz, 0, vx, 0.02, vz, 1.0);
+						level.sendParticles(trialSpawnerDetection, px, originY + 0.15, pz, 0, vx * 0.5, 0.02, vz * 0.5, 1.0);
 
 						if (i % 2 == 0) {
 							double rCloud = radius + (Math.random() - 0.5) * 0.8;
@@ -549,7 +721,7 @@ public class RotOnEntityTickUpdateProcedure {
 				for (LivingEntity victim : targets) {
 					double dist = Math.sqrt(victim.distanceToSqr(originX, originY, originZ));
 					if (Math.abs(dist - radius) <= 1.5) {
-						victim.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), 15.0F);
+						victim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_seismic_slam"))), entity), 12.0F);
 						victim.setDeltaMovement(victim.getDeltaMovement().x(), 0.65, victim.getDeltaMovement().z());
 						victim.hasImpulse = true;
 						level.sendParticles(ParticleTypes.EXPLOSION, victim.getX(), victim.getY() + 0.5, victim.getZ(), 1, 0, 0, 0, 0);
@@ -602,6 +774,31 @@ public class RotOnEntityTickUpdateProcedure {
 
 		Entity combatTarget = acquireTarget(world, entity, x, y, z);
 		handleAdaptationScaling(entity, combatTarget != null);
+
+		// Track unreachable flying or pillaring target for overhead
+		if (combatTarget instanceof LivingEntity livTarget) {
+			boolean isFlying = livTarget.isFallFlying() || (!livTarget.onGround() && livTarget.getY() > entity.getY() + 2.0 && !livTarget.isInWater() && !livTarget.isInLava());
+			boolean isPillaring = isTargetPillaring(world, livTarget, entity);
+			boolean isUnreachable = (isFlying || isPillaring) && (entity.distanceTo(livTarget) > 4.5 || livTarget.getY() > entity.getY() + 2.5);
+			if (isUnreachable) {
+				double flyTicks = entity.getPersistentData().getDouble("target_unreachable_flying_ticks") + 1.0;
+				entity.getPersistentData().putDouble("target_unreachable_flying_ticks", flyTicks);
+				
+				if (flyTicks >= 120.0 && !isChannelingAbility(entity) && entity.getPersistentData().getBoolean("unlocked_overhead_combo")) {
+					// Linear chance: increases by 0.2% per tick (4% per second) capped at 50%
+					double chance = Math.min(0.50, (flyTicks - 120.0) * 0.002);
+					if (entity.getRandom().nextDouble() < chance) {
+						entity.getPersistentData().putDouble("rot_overhead_ticks", OVERHEAD_TOTAL_TICKS);
+						entity.getPersistentData().putString("overhead_target_uuid", livTarget.getUUID().toString());
+						entity.getPersistentData().putDouble("target_unreachable_flying_ticks", 0.0);
+					}
+				}
+			} else {
+				entity.getPersistentData().putDouble("target_unreachable_flying_ticks", 0.0);
+			}
+		} else {
+			entity.getPersistentData().putDouble("target_unreachable_flying_ticks", 0.0);
+		}
 
 		if (handleCustomCombos(world, entity, combatTarget)) {
 			return;
@@ -738,50 +935,138 @@ public class RotOnEntityTickUpdateProcedure {
 			return;
 		}
 
+		// Sonic Scream active state machine early check
+		double sonicScreamTicksFirstCheck = entity.getPersistentData().getDouble("sentinel_sonic_scream_ticks");
+		if (sonicScreamTicksFirstCheck > 0) {
+			executeSentinelSonicScream(world, entity, combatTarget, (int) sonicScreamTicksFirstCheck);
+			if (combatTarget != null) {
+				lockLookAtTarget(entity, combatTarget);
+			}
+			handlePassengerAndGrowth(entity);
+			return;
+		}
+
 		double omniSonicTicks = entity.getPersistentData().getDouble("sentinel_omni_sonic_charge_ticks");
 		if (omniSonicTicks > 0) {
 			entity.setDeltaMovement(entity.getDeltaMovement().x() * 0.05, entity.getDeltaMovement().y(), entity.getDeltaMovement().z() * 0.05);
-			if (world instanceof ServerLevel level) {
-				double radius = 1.0 + (30.0 - omniSonicTicks) * 0.22;
-				for (int angleDeg = 0; angleDeg < 360; angleDeg += 30) {
-					double rad = Math.toRadians(angleDeg);
-					double px = entity.getX() + Math.sin(rad) * radius;
-					double py = entity.getY() + 1.2;
-					double pz = entity.getZ() + Math.cos(rad) * radius;
-					level.sendParticles(ParticleTypes.CRIT, px, py, pz, 1, 0.01, 0.01, 0.01, 0.0);
-				}
-				level.sendParticles(ParticleTypes.PORTAL, entity.getX(), entity.getY() + 1.2, entity.getZ(), 4, 0.3, 0.3, 0.3, 0.02);
+			if (entity instanceof Mob mob) {
+				mob.getNavigation().stop();
 			}
-			if (omniSonicTicks == 1.0) {
-				if (world instanceof ServerLevel level) {
-					boolean totemActive = entity.getPersistentData().getBoolean("sentinel_totem_active");
-					double radius = totemActive ? 15.0 : 7.5;
-					for (int angleDeg = 0; angleDeg < 360; angleDeg += (totemActive ? 6 : 12)) {
-						double rad = Math.toRadians(angleDeg);
-						double dx = Math.sin(rad);
-						double dz = Math.cos(rad);
-						for (double r = 1.0; r <= radius; r += 1.5) {
-							double px = entity.getX() + dx * r;
-							double py = entity.getY() + 1.2;
-							double pz = entity.getZ() + dz * r;
-							level.sendParticles(ParticleTypes.SONIC_BOOM, px, py, pz, 1, 0.0, 0.0, 0.0, 0.0);
+			entity.getPersistentData().putBoolean("is_sonic_boom_large", true);
+
+			if (world instanceof ServerLevel level) {
+				Vec3 center = entity.position().add(0, entity.getBbHeight() * 0.5, 0);
+				
+				if (OMNI_SONIC_BOOM_SHOW_PARTICLES) {
+					// Swirling buildup phase (when omniSonicTicks is greater than OMNI_SONIC_BOOM_TRIGGER_TICK)
+					if (omniSonicTicks > OMNI_SONIC_BOOM_TRIGGER_TICK) {
+						double chargeTotal = OMNI_SONIC_BOOM_ANIMATION_TICKS - OMNI_SONIC_BOOM_TRIGGER_TICK;
+						double elapsed = OMNI_SONIC_BOOM_ANIMATION_TICKS - omniSonicTicks;
+						double progress = elapsed / chargeTotal; // 0.0 to 1.0
+						
+						// Particles swirl and shrink onto the torso
+						double radius = 6.0 - progress * 5.0; // Shrinks from 6.0 to 1.0 block radius
+						
+						// Swirling hollow sphere of SONIC_BOOM and CRIT particles (reduced density)
+						int count = (int) Math.max(4, (4.0 * Math.PI * radius * radius * 1.0));
+						if (count > 60) count = 60;
+						double goldenRatio = (1.0 + Math.sqrt(5.0)) / 2.0;
+						for (int i = 0; i < count; i++) {
+							double theta = 2 * Math.PI * i / goldenRatio;
+							double phi = Math.acos(1.0 - 2.0 * (i + 0.5) / count);
+							double sx = Math.cos(theta) * Math.sin(phi);
+							double sy = Math.sin(theta) * Math.sin(phi);
+							double sz = Math.cos(phi);
+							
+							double px = center.x + sx * radius;
+							double py = center.y + sy * radius;
+							double pz = center.z + sz * radius;
+							
+							// Add a tiny bit of random displacement
+							double rx = (level.getRandom().nextDouble() - 0.5) * 0.02;
+							double ry = (level.getRandom().nextDouble() - 0.5) * 0.02;
+							double rz = (level.getRandom().nextDouble() - 0.5) * 0.02;
+							
+							level.sendParticles(ParticleTypes.CRIT, px + rx, py + ry, pz + rz, 1, 0.0, 0.0, 0.0, 0.0);
+							if (level.getRandom().nextDouble() < 0.10) {
+								level.sendParticles(ParticleTypes.SONIC_BOOM, px + rx, py + ry, pz + rz, 1, 0.0, 0.0, 0.0, 0.0);
+							}
+						}
+						
+						// Slowly add more fireworks flashes on its torso
+						if (level.getRandom().nextDouble() < progress * 0.85) {
+							level.sendParticles(ParticleTypes.FLASH, entity.getX(), entity.getY() + 1.2, entity.getZ(), 1, 0.1, 0.1, 0.1, 0.0);
+						}
+					} else {
+						// After release (decay phase), expand/radiate outward
+						double decayTotal = OMNI_SONIC_BOOM_TRIGGER_TICK;
+						double elapsedDecay = OMNI_SONIC_BOOM_TRIGGER_TICK - omniSonicTicks;
+						double progressDecay = elapsedDecay / decayTotal; // 0.0 to 1.0
+						
+						double currentRadius = 1.0 + progressDecay * OMNI_SONIC_BOOM_RANGE;
+						
+						// Expand a majestic ring or shell outward (reduced density)
+						int count = (int) Math.max(6, (4.0 * Math.PI * currentRadius * currentRadius * 0.3));
+						if (count > 35) count = 35;
+						double goldenRatio = (1.0 + Math.sqrt(5.0)) / 2.0;
+						for (int i = 0; i < count; i++) {
+							double theta = 2 * Math.PI * i / goldenRatio;
+							double phi = Math.acos(1.0 - 2.0 * (i + 0.5) / count);
+							double sx = Math.cos(theta) * Math.sin(phi);
+							double sy = Math.sin(theta) * Math.sin(phi);
+							double sz = Math.cos(phi);
+							
+							double px = center.x + sx * currentRadius;
+							double py = center.y + sy * currentRadius;
+							double pz = center.z + sz * currentRadius;
+							
+							if (level.getRandom().nextDouble() < 0.25) {
+								level.sendParticles(ParticleTypes.SONIC_BOOM, px, py, pz, 1, 0.0, 0.0, 0.0, 0.0);
+							}
+							if (level.getRandom().nextDouble() < 0.2) {
+								level.sendParticles(ParticleTypes.CLOUD, px, py, pz, 1, 0.1, 0.1, 0.1, 0.02);
+							}
 						}
 					}
+				}
+			}
+
+			if (omniSonicTicks == OMNI_SONIC_BOOM_TRIGGER_TICK) {
+				if (world instanceof ServerLevel level) {
+					boolean totemActive = entity.getPersistentData().getBoolean("sentinel_totem_active");
+					double radius = totemActive ? OMNI_SONIC_BOOM_RANGE * 1.5 : OMNI_SONIC_BOOM_RANGE;
+					
+					// Spawning large release burst ring of sonic booms (reduced density)
+					if (OMNI_SONIC_BOOM_SHOW_PARTICLES) {
+						for (int angleDeg = 0; angleDeg < 360; angleDeg += (totemActive ? 12 : 24)) {
+							double rad = Math.toRadians(angleDeg);
+							double dx = Math.sin(rad);
+							double dz = Math.cos(rad);
+							for (double r = 1.0; r <= radius; r += 4.0) {
+								double px = entity.getX() + dx * r;
+								double py = entity.getY() + 1.2;
+								double pz = entity.getZ() + dz * r;
+								level.sendParticles(ParticleTypes.SONIC_BOOM, px, py, pz, 1, 0.0, 0.0, 0.0, 0.0);
+							}
+						}
+					}
+					
 					java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(radius), e -> e != entity && isValidTarget(e, entity));
 					for (LivingEntity targetVictim : targets) {
-						float damageVal = totemActive ? 65.0F : 38.0F;
-						targetVictim.hurt(new DamageSource(level.holderOrThrow(DamageTypes.SONIC_BOOM)), damageVal);
+						float damageVal = totemActive ? 85.0F : 48.0F; // Slightly buffed for being the ultimate 7s move!
+						targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, net.minecraft.resources.ResourceLocation.parse("the_backwoods:rot_sonic_boom"))), entity), damageVal);
 						Vec3 push = targetVictim.position().subtract(entity.position()).multiply(1.0, 0.0, 1.0).normalize();
-						double pushMult = totemActive ? 6.5 : 4.5;
-						double pushUp = totemActive ? 1.75 : 1.25;
+						double pushMult = totemActive ? 8.5 : 6.0;
+						double pushUp = totemActive ? 2.25 : 1.5;
 						targetVictim.setDeltaMovement(push.x * pushMult, pushUp, push.z * pushMult);
 						targetVictim.hasImpulse = true;
 					}
+					
 					BlockPos posCenter = BlockPos.containing(entity.position());
-					double baseRadius = totemActive ? 8.5 : 4.0;
-					int rangeBound = totemActive ? 8 : 4;
-					int heightBoundUpper = totemActive ? 5 : 3;
-					int heightBoundLower = totemActive ? -2 : -1;
+					double baseRadius = totemActive ? 12.0 : 6.5;
+					int rangeBound = totemActive ? 12 : 6;
+					int heightBoundUpper = totemActive ? 6 : 4;
+					int heightBoundLower = totemActive ? -3 : -1;
 					for (BlockPos bp : BlockPos.betweenClosed(posCenter.offset(-rangeBound, heightBoundLower, -rangeBound), posCenter.offset(rangeBound, heightBoundUpper, rangeBound))) {
 						double dx = bp.getX() - posCenter.getX();
 						double dz = bp.getZ() - posCenter.getZ();
@@ -789,26 +1074,31 @@ public class RotOnEntityTickUpdateProcedure {
 						double randomRadius = baseRadius + (Math.random() * 2.0 - 1.0);
 						if (distSq <= randomRadius * randomRadius) {
 							BlockState bs = level.getBlockState(bp);
-							if (!bs.isAir() && bs.getDestroySpeed(level, bp) >= 0 && bs.getDestroySpeed(level, bp) < (totemActive ? 60.0F : 40.0F)) {
+							if (!bs.isAir() && bs.getDestroySpeed(level, bp) >= 0 && bs.getDestroySpeed(level, bp) < (totemActive ? 80.0F : 50.0F)) {
 								level.destroyBlock(bp, false);
 							}
 						}
 					}
-					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.warden.sonic_boom", 2.2F, 0.45F);
-					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.generic.explode", 1.8F, 0.6F);
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.warden.sonic_boom", 2.5F, 0.40F);
+					playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.generic.explode", 2.0F, 0.5F);
 				}
 			}
 			handlePassengerAndGrowth(entity);
 			return;
+		} else {
+			entity.getPersistentData().putBoolean("is_sonic_boom_large", false);
 		}
 
 		double sonicTicksFirstCheck = entity.getPersistentData().getDouble("sentinel_sonic_ticks");
 		if (sonicTicksFirstCheck > 0) {
-			entity.setDeltaMovement(entity.getDeltaMovement().x() * 0.05, entity.getDeltaMovement().y(), entity.getDeltaMovement().z() * 0.05);
+			entity.setDeltaMovement(0, entity.getDeltaMovement().y(), 0);
+			if (entity instanceof Mob mob) {
+				mob.getNavigation().stop();
+			}
 			if (combatTarget != null) {
 				lockLookAtTarget(entity, combatTarget);
 			}
-			if (sonicTicksFirstCheck == 30.0 && combatTarget != null) {
+			if (sonicTicksFirstCheck == SONIC_BOOM_TRIGGER_TICK && combatTarget != null) {
 				fireSuperchargedSonicBoomEffectAndDamage(world, entity, combatTarget);
 			}
 			handlePassengerAndGrowth(entity);
@@ -841,7 +1131,7 @@ public class RotOnEntityTickUpdateProcedure {
 							livTarget.getPersistentData().putBoolean("sentinel_sky_warp_slam_impact", true);
 							double punchDmg = entity.getPersistentData().getDouble("adapted_punch_damage");
 							if (punchDmg < 8.0) punchDmg = 8.0;
-							livTarget.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (punchDmg * 2.2));
+							livTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_overhead_slam"))), entity), (float) (punchDmg * 2.2));
 						}
 					}
 				}
@@ -869,7 +1159,7 @@ public class RotOnEntityTickUpdateProcedure {
 					for (LivingEntity near : nearby) {
 						if (shouldIgnoreCombatFilter(entity) || shouldIgnoreCombatFilter(near) || (!near.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND))) && !(near instanceof RotEntity))) {
 							float nearDmg = totemActive ? 22.0F : 10.0F;
-							near.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), nearDmg);
+							near.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_overhead_slam"))), entity), nearDmg);
 							Vec3 pushAway = near.position().subtract(livTarget.position()).normalize();
 							double pushMult = totemActive ? 2.5 : 1.5;
 							near.setDeltaMovement(pushAway.x * pushMult, 0.5, pushAway.z * pushMult);
@@ -953,14 +1243,25 @@ public class RotOnEntityTickUpdateProcedure {
 					if (world instanceof ServerLevel level) {
 						double impactY = entity.getY();
 						teleportEntity(entity, targetX, impactY, targetZ);
-						net.minecraft.core.particles.DustParticleOptions orangeDust = new net.minecraft.core.particles.DustParticleOptions(new org.joml.Vector3f(1.0F, 0.35F, 0.05F), 2.0F);
+						net.minecraft.world.level.block.state.BlockState floorState = level.getBlockState(net.minecraft.core.BlockPos.containing(targetX, impactY - 0.5, targetZ));
+						if (floorState.isAir()) {
+							floorState = level.getBlockState(net.minecraft.core.BlockPos.containing(targetX, impactY - 1.5, targetZ));
+						}
+						if (floorState.isAir()) {
+							floorState = net.minecraft.world.level.block.Blocks.DIRT.defaultBlockState();
+						}
+						net.minecraft.core.particles.BlockParticleOption dustPillarOptions = new net.minecraft.core.particles.BlockParticleOption(ParticleTypes.DUST_PILLAR, floorState);
+						net.minecraft.core.particles.ParticleType<?> _tsdType = BuiltInRegistries.PARTICLE_TYPE.get(ResourceLocation.parse("trial_spawner_detection"));
+						net.minecraft.core.particles.ParticleOptions trialSpawnerDetection = _tsdType instanceof net.minecraft.core.particles.ParticleOptions _tsdOpt ? _tsdOpt : net.minecraft.core.particles.ParticleTypes.EFFECT;
+
 						for (int r = 1; r <= 3; r++) {
 							double radiusVal = r * 1.2;
 							for (int deg = 0; deg < 360; deg += 30) {
 								double rads = Math.toRadians(deg);
 								double px = targetX + Math.cos(rads) * radiusVal;
 								double pz = targetZ + Math.sin(rads) * radiusVal;
-								level.sendParticles(orangeDust, px, impactY + 0.1, pz, 1, 0.0, 0.05, 0.0, 0.01);
+								level.sendParticles(dustPillarOptions, px, impactY + 0.1, pz, 1, 0.0, 0.05, 0.0, 0.01);
+								level.sendParticles(trialSpawnerDetection, px, impactY + 0.1, pz, 1, 0.0, 0.05, 0.0, 0.01);
 							}
 						}
 
@@ -977,7 +1278,8 @@ public class RotOnEntityTickUpdateProcedure {
 								double vy = 0.05 + 0.02 * rVal;
 								double vz = Math.sin(angle) * 0.18;
 
-								level.sendParticles(orangeDust, px, py, pz, 0, vx, vy, vz, 1.0);
+								level.sendParticles(dustPillarOptions, px, py, pz, 0, vx, vy, vz, 1.0);
+								level.sendParticles(trialSpawnerDetection, px, py, pz, 0, vx * 0.5, vy, vz * 0.5, 1.0);
 							}
 						}
 
@@ -997,7 +1299,7 @@ public class RotOnEntityTickUpdateProcedure {
 
 						double punchDmg = entity.getPersistentData().getDouble("adapted_punch_damage");
 						if (punchDmg < 8.0) punchDmg = 8.0;
-						targetLiv.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (punchDmg * 3.5));
+						targetLiv.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_judgement_dropkick"))), entity), (float) (punchDmg * 3.5));
 
 						// Massive knockback on combat target
 						Vec3 pushVec = targetLiv.position().subtract(entity.position()).normalize();
@@ -1015,7 +1317,7 @@ public class RotOnEntityTickUpdateProcedure {
 						List<LivingEntity> nearby = level.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(targetX, targetY, targetZ), 8, 6, 8), e -> e != entity && e != targetLiv);
 						for (LivingEntity near : nearby) {
 							if (shouldIgnoreCombatFilter(entity) || shouldIgnoreCombatFilter(near) || (!near.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND))) && !(near instanceof RotEntity))) {
-								near.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), 15.0F);
+								near.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_judgement_dropkick"))), entity), 15.0F);
 								Vec3 pushAway = near.position().subtract(entity.position()).normalize();
 								applyKnockbackAndSync(near, pushAway.x * 2.2, 0.45, pushAway.z * 2.2);
 							}
@@ -1066,9 +1368,9 @@ public class RotOnEntityTickUpdateProcedure {
 
 						float punchDamage = 30.0F;
 						if (ls != null) {
-							targetLiv.hurt(ls.damageSources().mobAttack(ls), punchDamage);
+							targetLiv.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), ls), punchDamage);
 						} else {
-							targetLiv.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), punchDamage);
+							targetLiv.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), entity), punchDamage);
 						}
 
 						Vec3 pushVec = targetLiv.position().subtract(entity.position()).normalize();
@@ -1115,15 +1417,47 @@ public class RotOnEntityTickUpdateProcedure {
 
 		lockLookAtTarget(entity, combatTarget);
 
+		double distToTarget = entity.distanceTo(combatTarget);
+
+		boolean targetOnPillar = false;
+		if (combatTarget != null && isTargetPillaring(world, combatTarget, entity)) {
+			double tdx = combatTarget.getX() - entity.getX();
+			double tdz = combatTarget.getZ() - entity.getZ();
+			double distSqXZ = tdx * tdx + tdz * tdz;
+			double maxPillarDist = ROT_PILLAR_BACK_OFF_DISTANCE + 2.0;
+			if (distSqXZ < maxPillarDist * maxPillarDist) {
+				targetOnPillar = true;
+			}
+		}
+
+		// Keep a safe distance from Players (minimum ROT_PLAYER_BACK_OFF_DISTANCE blocks away)
+		if (!targetOnPillar && combatTarget instanceof Player && distToTarget < ROT_PLAYER_BACK_OFF_DISTANCE) {
+			Vec3 pushBack = entity.position().subtract(combatTarget.position());
+			if (pushBack.horizontalDistanceSqr() > 0.0) {
+				pushBack = new Vec3(pushBack.x, 0, pushBack.z).normalize().scale(0.12);
+				entity.setDeltaMovement(pushBack.x, entity.getDeltaMovement().y, pushBack.z);
+			} else {
+				entity.setDeltaMovement(0.1, entity.getDeltaMovement().y, 0.1);
+			}
+		}
+
 		// Drive Mob Navigation programmatically to the target to ensure elite pathfinding
 		if (entity instanceof Mob mob) {
-			double pathSpeed = 1.25;
-			if (entity.getPersistentData().getDouble("sentinel_solar_charge_ticks") > 0 || entity.getPersistentData().getDouble("sentinel_solar_fire_ticks") > 0
-				|| entity.getPersistentData().getDouble("sentinel_cryo_charge_ticks") > 0 || entity.getPersistentData().getDouble("sentinel_cryo_fire_ticks") > 0) {
-				pathSpeed = 0.1; // slow down during lasers
-			}
-			if (mob.tickCount % 5 == 0) {
-				mob.getNavigation().moveTo(combatTarget, pathSpeed);
+			if (entity.getPersistentData().getDouble("sentinel_sonic_scream_ticks") > 0) {
+				mob.getNavigation().stop();
+			} else {
+				double pathSpeed = 1.25;
+				if (entity.getPersistentData().getDouble("sentinel_solar_charge_ticks") > 0 || entity.getPersistentData().getDouble("sentinel_solar_fire_ticks") > 0
+					|| entity.getPersistentData().getDouble("sentinel_cryo_charge_ticks") > 0 || entity.getPersistentData().getDouble("sentinel_cryo_fire_ticks") > 0) {
+					pathSpeed = 0.1; // slow down during lasers
+				}
+				if (!targetOnPillar && mob.tickCount % 5 == 0) {
+					if (distToTarget > ROT_PLAYER_BACK_OFF_DISTANCE + 0.4) {
+						mob.getNavigation().moveTo(combatTarget, pathSpeed);
+					} else {
+						mob.getNavigation().stop();
+					}
+				}
 			}
 		}
 
@@ -1131,7 +1465,6 @@ public class RotOnEntityTickUpdateProcedure {
 		double combatTicks = entity.getPersistentData().getDouble("sentinel_combat_ticks");
 		boolean isWardenCombatTarget = "minecraft:warden".equals(BuiltInRegistries.ENTITY_TYPE.getKey(combatTarget.getType()).toString());
 		boolean unlockedSonicBoom = entity.getPersistentData().getBoolean("unlocked_sonic_boom");
-		double distToTarget = entity.distanceTo(combatTarget);
 		if (!isChannelingAbility(entity) && distToTarget <= SONIC_BOOM_RANGE && distToTarget >= SONIC_BOOM_MIN_DIST && ((isWardenCombatTarget && combatTicks >= 600) || unlockedSonicBoom) && entity.getPersistentData().getDouble("sentinel_warden_sonic_cooldown") <= 0 && Math.random() < 0.05) {
 			fireSuperchargedSonicBoom(world, entity, combatTarget);
 			entity.getPersistentData().putDouble("sentinel_warden_sonic_cooldown", SONIC_BOOM_COOLDOWN);
@@ -1155,7 +1488,7 @@ public class RotOnEntityTickUpdateProcedure {
 					livTarget.setDeltaMovement(0, -2.5, 0);
 					livTarget.hasImpulse = true;
 					if (world instanceof ServerLevel level) {
-						livTarget.hurt(new DamageSource(level.holderOrThrow(DamageTypes.FLY_INTO_WALL)), 15.0F);
+						livTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_seismic_slam"))), entity), 15.0F);
 						double targetNewX = livTarget.getX();
 						double targetNewY = livTarget.getY();
 						double targetNewZ = livTarget.getZ();
@@ -1188,7 +1521,7 @@ public class RotOnEntityTickUpdateProcedure {
 
 		// 2. EXTRACTION GRAPPLE (Power Siphon) State Machine - Learned slowly (Requires 300 combat ticks)
 		int grappleTicks = (int) entity.getPersistentData().getDouble(K_GRAPPLE_TICKS);
-		if (grappleTicks > 0) {
+		if (ENABLE_EXTRACTION_GRAPPLE && grappleTicks > 0) {
 			entity.getPersistentData().putDouble(K_GRAPPLE_TICKS, grappleTicks - 1);
 			executeGrappleSiphon(world, entity, combatTarget, grappleTicks - 1);
 			lockLookAtTarget(entity, combatTarget);
@@ -1198,7 +1531,7 @@ public class RotOnEntityTickUpdateProcedure {
 
 		// 3. TELEKINESIS State Machine - Learned slowly (Requires 200 combat ticks) -> No particles, lift & throw/slam!
 		int tkTicks = (int) entity.getPersistentData().getDouble(K_TK_TICKS);
-		if (tkTicks > 0) {
+		if (ENABLE_TELEKINESIS && tkTicks > 0) {
 			entity.getPersistentData().putDouble(K_TK_TICKS, tkTicks - 1);
 			executeTelekinesis(world, entity, combatTarget, tkTicks - 1);
 			lockLookAtTarget(entity, combatTarget);
@@ -1253,9 +1586,38 @@ public class RotOnEntityTickUpdateProcedure {
 
 		// 5. RANDOM SPECIAL TRIGGERS when ready (with global cooldown to slow switching and prevent overlapping)
 		double globalCd = entity.getPersistentData().getDouble("sentinel_global_ability_cooldown");
-		double coreCd = entity.getPersistentData().getBoolean("sentinel_totem_active") ? 20.0 : 50.0;
+		double coreCd = getDynamicGlobalCooldown(entity);
 
 		if (globalCd <= 0) {
+			// Sonic Scream check for flying targets
+			if (combatTarget instanceof LivingEntity livTarget) {
+				boolean isFlying = false;
+				if (livTarget instanceof Player p) {
+					isFlying = p.isFallFlying() || p.getAbilities().flying;
+				} else {
+					isFlying = livTarget instanceof net.minecraft.world.entity.animal.FlyingAnimal
+						|| livTarget instanceof net.minecraft.world.entity.monster.Phantom
+						|| livTarget instanceof net.minecraft.world.entity.monster.Ghast
+						|| livTarget instanceof net.minecraft.world.entity.monster.Vex
+						|| livTarget instanceof net.minecraft.world.entity.boss.enderdragon.EnderDragon
+						|| isWither(livTarget)
+						|| livTarget instanceof net.minecraft.world.entity.ambient.Bat;
+				}
+				boolean isEligibleScreamTarget = true;
+				if (livTarget instanceof Player p) {
+					boolean hasElytra = p.getItemBySlot(net.minecraft.world.entity.EquipmentSlot.CHEST).is(net.minecraft.world.item.Items.ELYTRA);
+					if (!hasElytra) {
+						isEligibleScreamTarget = false;
+					}
+				}
+				if (isFlying && isEligibleScreamTarget && entity.getPersistentData().getBoolean("unlocked_sonic_scream") && entity.getPersistentData().getDouble("sentinel_sonic_scream_cooldown") <= 0.0 && dist <= 24.0 && Math.random() < 0.15) {
+					entity.getPersistentData().putDouble("sentinel_sonic_scream_ticks", 240.0);
+					entity.getPersistentData().putDouble("sentinel_sonic_scream_cooldown", SONIC_SCREAM_COOLDOWN);
+					entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
+					return;
+				}
+			}
+
 			// Omnidirectional sonic boom if surrounded by targets
 			if (world instanceof ServerLevel level) {
 				java.util.List<LivingEntity> nearbyTargets = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(6.0), e -> e != entity && isValidTarget(e, entity));
@@ -1264,8 +1626,8 @@ public class RotOnEntityTickUpdateProcedure {
 					if (isSonicUnlocked) {
 						double omniSonicCd = entity.getPersistentData().getDouble("sentinel_omni_sonic_cooldown");
 						if (omniSonicCd <= 0) {
-							entity.getPersistentData().putDouble("sentinel_omni_sonic_cooldown", 300); // 15s cooldown
-							entity.getPersistentData().putDouble("sentinel_omni_sonic_charge_ticks", 30); // 1.5s charge up
+							entity.getPersistentData().putDouble("sentinel_omni_sonic_cooldown", OMNI_SONIC_BOOM_CD);
+							entity.getPersistentData().putDouble("sentinel_omni_sonic_charge_ticks", OMNI_SONIC_BOOM_ANIMATION_TICKS);
 							entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
 							playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.warden.sonic_charge", 1.8F, 0.45F);
 							return;
@@ -1313,7 +1675,7 @@ public class RotOnEntityTickUpdateProcedure {
 				}
 
 				// Standalone telekinesis fallback for non-Nether / non-hot targets
-				if (entity.getPersistentData().getBoolean("unlocked_telekinesis") && entity.getPersistentData().getDouble(K_TK_CD) <= 0 && dist <= 12.0 && Math.random() < 0.04) {
+				if (ENABLE_TELEKINESIS && entity.getPersistentData().getBoolean("unlocked_telekinesis") && entity.getPersistentData().getDouble(K_TK_CD) <= 0 && dist <= 12.0 && Math.random() < 0.04) {
 					entity.getPersistentData().putDouble(K_TK_TICKS, 25);
 					entity.getPersistentData().putDouble(K_TK_CD, TK_CD);
 					entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
@@ -1323,7 +1685,7 @@ public class RotOnEntityTickUpdateProcedure {
 			}
 		}
 
-		if (globalCd <= 0 && entity.getPersistentData().getBoolean("unlocked_grapple") && entity.getPersistentData().getDouble(K_GRAPPLE_CD) <= 0 && dist <= 8.5 && Math.random() < 0.03) {
+		if (ENABLE_EXTRACTION_GRAPPLE && globalCd <= 0 && entity.getPersistentData().getBoolean("unlocked_grapple") && entity.getPersistentData().getDouble(K_GRAPPLE_CD) <= 0 && dist <= 8.5 && Math.random() < 0.03) {
 			entity.getPersistentData().putDouble(K_GRAPPLE_TICKS, 32); // 32 ticks (1.6s) siphon
 			entity.getPersistentData().putDouble(K_GRAPPLE_CD, GRAPPLE_CD);
 			entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
@@ -1351,7 +1713,7 @@ public class RotOnEntityTickUpdateProcedure {
 				executeSentinelPunch(world, entity, combatTarget);
 				entity.getPersistentData().putDouble("sentinel_melee_cooldown", 20); // 20 ticks (1.0s) of cooldown
 			}
-		} else if (meleeCooldown <= 0 && dist <= 3.2) {
+		} else if (meleeCooldown <= 0 && dist <= ((combatTarget instanceof Player) ? 2.5 : 3.2)) {
 			// Trigger a new melee punch attack!
 			entity.getPersistentData().putDouble("sentinel_melee_windup", 8); // 8 ticks wind-up (0.4s)
 			playHostileSound(world, entity.getX(), entity.getY(), entity.getZ(), "entity.player.attack.weak", 0.9F, 0.85F);
@@ -1380,7 +1742,7 @@ public class RotOnEntityTickUpdateProcedure {
 			// Contact fire damage within 1.5 blocks range
 			if (dist <= 1.5 && self.tickCount % 4 == 0) {
 				target.setRemainingFireTicks(60);
-				target.hurt(new DamageSource(level.holderOrThrow(DamageTypes.HOT_FLOOR)), 4.0F);
+				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_inferno_laser"))), self), 4.0F);
 			}
 
 			// Clear freezing and slow debuffs
@@ -1656,8 +2018,7 @@ public class RotOnEntityTickUpdateProcedure {
 						sonicDmg *= 2.0F;
 						explosionDmg *= 2.0F;
 					}
-					targetVictim.hurt(new DamageSource(level.holderOrThrow(DamageTypes.SONIC_BOOM)), sonicDmg); // Kinetic penetration
-					targetVictim.hurt(new DamageSource(level.holderOrThrow(DamageTypes.EXPLOSION)), explosionDmg);
+					targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_inferno_laser"))), entity), sonicDmg + explosionDmg); // Fire heat penetration
 					targetVictim.setRemainingFireTicks(120);
 
 					// Organic knockback
@@ -1912,7 +2273,7 @@ public class RotOnEntityTickUpdateProcedure {
 					if (entity.getPersistentData().getBoolean("sentinel_totem_active")) {
 						dmg *= 2.0F;
 					}
-					targetVictim.hurt(new DamageSource(level.holderOrThrow(DamageTypes.FREEZE)), dmg); // Extreme cryo/freeze dmg
+					targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_cryo_laser"))), entity), dmg); // Extreme cryo/freeze dmg
 					((LivingEntity) targetVictim).setTicksFrozen(((LivingEntity) targetVictim).getTicksFrozen() + 180); // Freeze target completely!
 					((LivingEntity) targetVictim).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 4, false, false)); // Complete freeze/slowness!
 					playHostileSound(level, targetVictim.getX(), targetVictim.getY(), targetVictim.getZ(), "entity.player.hurt_freeze", 1.2F, 0.8F);
@@ -1932,6 +2293,78 @@ public class RotOnEntityTickUpdateProcedure {
 			entity.getPersistentData().putDouble("sentinel_laser_closing_ticks", LASER_CLOSING_TICKS);
 			entity.getPersistentData().putDouble(K_SOLAR_CD, SOLAR_CD + RandomSource.create().nextInt(40));
 			stopHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "the_backwoods:fractus_laser", 64.0);
+		}
+	}
+
+	private static void executeSentinelSonicScream(LevelAccessor world, Entity entity, Entity target, int ticksLeft) {
+		if (!(world instanceof ServerLevel level) || !(entity instanceof LivingEntity living)) return;
+
+		// Halt movement of the Rot completely
+		entity.setDeltaMovement(0.0, entity.getDeltaMovement().y(), 0.0);
+		if (entity instanceof Mob mob) {
+			mob.getNavigation().stop();
+		}
+
+		// Lock look target
+		if (target != null && target.isAlive()) {
+			lockLookAtTarget(entity, target);
+		}
+
+		// Play sound covering the 9-second active scream duration (active between 20 and 200 ticks left)
+		if (ticksLeft == 200) {
+			playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "the_backwoods:sonic_scream", 4.0F, 1.0F);
+		}
+
+		// Every tick during the active scream phase (between tick 20 and 200)
+		if (ticksLeft > 20 && ticksLeft <= 200) {
+			// Find all entities and players in a 24-block range
+			List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(24.0), e -> e != entity && isValidTarget(e, entity));
+			for (LivingEntity victim : targets) {
+				// Severe disorientation and immobilization (stun, no damage, no particles)
+				victim.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100, 4, false, false));
+				victim.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 9, false, false));
+
+				// Check if the target is a Player
+				if (victim instanceof Player player) {
+					// Scramble controls/keybinds: rotate camera slightly and apply random movement forces
+					player.setYRot(player.getYRot() + (float)(entity.getRandom().nextDouble() - 0.5) * 15.0F);
+					player.setXRot(player.getXRot() + (float)(entity.getRandom().nextDouble() - 0.5) * 10.0F);
+					
+					Vec3 motion = player.getDeltaMovement();
+					player.setDeltaMovement(motion.x() + (entity.getRandom().nextDouble() - 0.5) * 0.1, motion.y(), motion.z() + (entity.getRandom().nextDouble() - 0.5) * 0.1);
+					player.hurtMarked = true;
+
+					// If player is flying (via creative/modded or elytra), force them down like dead birds
+					if (player.getAbilities().flying || player.isFallFlying()) {
+						player.getAbilities().flying = false;
+						player.stopFallFlying();
+						player.onUpdateAbilities();
+						player.setDeltaMovement(player.getDeltaMovement().x(), -0.6, player.getDeltaMovement().z());
+						player.hurtMarked = true;
+					}
+				} else {
+					// Disrupt Mob AI: clear target, reset path, shake/stun movement
+					victim.setDeltaMovement(victim.getDeltaMovement().multiply(0.0, 1.0, 0.0).add((entity.getRandom().nextDouble() - 0.5) * 0.05, 0.0, (entity.getRandom().nextDouble() - 0.5) * 0.05));
+					if (victim instanceof Mob mob) {
+						mob.setTarget(null);
+						mob.getNavigation().stop();
+						mob.setYRot(mob.getYRot() + (float)(entity.getRandom().nextDouble() - 0.5) * 20.0F);
+					}
+
+					// If mob is flying (like Hindenburg, Phantoms, Vexes, Ghasts), force them down like dead birds to counter them
+					boolean targetIsFlying = victim.isFallFlying() || (!victim.onGround() && victim.getY() > entity.getY() + 2.0 && !victim.isInWater() && !victim.isInLava());
+					if (targetIsFlying) {
+						victim.setDeltaMovement(0.0, -0.6, 0.0);
+						victim.hurtMarked = true;
+					}
+				}
+			}
+		}
+
+		if (ticksLeft <= 1) {
+			entity.getPersistentData().putDouble("sentinel_sonic_scream_ticks", 0);
+			entity.getPersistentData().putDouble("sentinel_sonic_scream_cooldown", SONIC_SCREAM_COOLDOWN); // strictly 1 min cooldown
+			entity.getPersistentData().putDouble("sentinel_global_ability_cooldown", getDynamicGlobalCooldown(entity));
 		}
 	}
 
@@ -2012,7 +2445,7 @@ public class RotOnEntityTickUpdateProcedure {
 		}
 
 		// Force Telekinesis (learned in any combat overtime)
-		if (combatTicks >= 400 && !data.getBoolean("unlocked_telekinesis")) {
+		if (ENABLE_TELEKINESIS && combatTicks >= 400 && !data.getBoolean("unlocked_telekinesis")) {
 			data.putBoolean("unlocked_telekinesis", true);
 			announceLearnedAbility(self);
 		}
@@ -2022,7 +2455,7 @@ public class RotOnEntityTickUpdateProcedure {
 			reqGrappleTicks = 200.0 + self.getRandom().nextDouble() * 300.0;
 			data.putDouble("sentinel_required_grapple_ticks", reqGrappleTicks);
 		}
-		if (combatTicks >= reqGrappleTicks && !data.getBoolean("unlocked_grapple")) {
+		if (ENABLE_EXTRACTION_GRAPPLE && combatTicks >= reqGrappleTicks && !data.getBoolean("unlocked_grapple")) {
 			data.putBoolean("unlocked_grapple", true);
 			announceLearnedAbility(self);
 		}
@@ -2031,6 +2464,14 @@ public class RotOnEntityTickUpdateProcedure {
 			boolean foughtWarden = data.getBoolean("fought_warden_entity");
 			if (foughtWarden) {
 				data.putBoolean("unlocked_sonic_boom", true);
+				announceLearnedAbility(self);
+			}
+		}
+		// Sonic Scream (ONLY learned from fighting/targeting a flying enemy for some time, e.g. 160 ticks cumulative)
+		if (!data.getBoolean("unlocked_sonic_scream")) {
+			double flyingTicks = data.getDouble("sentinel_flying_target_ticks");
+			if (flyingTicks >= 160.0) {
+				data.putBoolean("unlocked_sonic_scream", true);
 				announceLearnedAbility(self);
 			}
 		}
@@ -2158,7 +2599,7 @@ public class RotOnEntityTickUpdateProcedure {
 			}
 
 			if (ticksLeft % 4 == 0) {
-				target.hurt(new DamageSource(level.holderOrThrow(DamageTypes.GENERIC_KILL)), 4.0F); // Direct biological drain
+				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_extraction_grapple"))), self), 4.0F); // Direct biological drain
 				rawSelf.setHealth(Math.min(rawSelf.getMaxHealth(), rawSelf.getHealth() + 4.5F));
 
 				level.sendParticles(ParticleTypes.SWEEP_ATTACK, self.getX(), self.getY() + 1.2, self.getZ(), 1, 0.3, 0.3, 0.3, 0.0);
@@ -2194,14 +2635,14 @@ public class RotOnEntityTickUpdateProcedure {
 				// Slam down forcefully
 				target.setDeltaMovement(0, -2.4, 0);
 				target.hasImpulse = true;
-				target.hurt(new DamageSource(level.holderOrThrow(DamageTypes.FLY_INTO_WALL)), 12.0F);
+				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_telekinesis"))), self), 12.0F);
 				playHostileSound(level, target.getX(), target.getY(), target.getZ(), "entity.iron_golem.damage", 1.0F, 0.65F);
 			} else {
 				// Slam/throw horizontally and up
 				Vec3 throwDir = target.position().subtract(self.position()).normalize();
 				double ty = Math.max(throwDir.y, 0.2);
 				target.setDeltaMovement(throwDir.x * 2.0, ty * 1.5 + 0.3, throwDir.z * 2.0);
-				target.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), 8.0F);
+				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_telekinesis"))), self), 8.0F);
 				playHostileSound(level, self.getX(), self.getY(), self.getZ(), "entity.player.attack.sweep", 1.0F, 0.6F);
 			}
 		}
@@ -2227,14 +2668,21 @@ public class RotOnEntityTickUpdateProcedure {
 		}
 
 		// Initial base damage
+		double finalDist = self.distanceTo(target);
+		double maxReach = (target instanceof Player) ? 2.5 : 3.2;
+		if (finalDist > maxReach) {
+			// Target backed up / escaped the punch!
+			return;
+		}
+
 		double basePunchDmg = MELEE_PUNCH_DAMAGE;
 
 		// Select a high-impact combat combo if the target is a LivingEntity and abilities are unlocked!
 		boolean unlockedSonicBoom = self.getPersistentData().getBoolean("unlocked_sonic_boom");
 		boolean unlockedSolar = self.getPersistentData().getBoolean("unlocked_solar_beam");
 		boolean unlockedCryo = self.getPersistentData().getBoolean("unlocked_cryo_beam");
-		boolean unlockedGrapple = self.getPersistentData().getBoolean("unlocked_grapple");
-		boolean unlockedTK = self.getPersistentData().getBoolean("unlocked_telekinesis");
+		boolean unlockedGrapple = ENABLE_EXTRACTION_GRAPPLE && self.getPersistentData().getBoolean("unlocked_grapple");
+		boolean unlockedTK = ENABLE_TELEKINESIS && self.getPersistentData().getBoolean("unlocked_telekinesis");
 		boolean unlockedTP = self.getPersistentData().getBoolean("unlocked_teleportation");
 		boolean unlockedOverhead = self.getPersistentData().getBoolean("unlocked_overhead_combo");
 		boolean unlockedDropkick = self.getPersistentData().getBoolean("unlocked_dropkick_combo");
@@ -2266,8 +2714,22 @@ public class RotOnEntityTickUpdateProcedure {
 			if (self.getPersistentData().getBoolean("unlocked_knockback_rider_combo") && self.getPersistentData().getDouble("sentinel_cc4_cd") <= 0) availableCombos.add(104);
 
 			if (!availableCombos.isEmpty()) {
-				selectCombo = availableCombos.get((int) (Math.random() * availableCombos.size()));
-				double coreCd = self.getPersistentData().getBoolean("sentinel_totem_active") ? COMBO_GLOBAL_CD_TOTEM : COMBO_GLOBAL_CD;
+				// Threat Assessment: If target has extremely high armor, aggressively favor structure-breaking heavy slams
+				boolean favorHeavy = target.getPersistentData().getBoolean("bw_threat_high_armor");
+				if (favorHeavy) {
+					java.util.List<Integer> heavyCombos = new java.util.ArrayList<>();
+					for (int c : availableCombos) {
+						if (c == 5 || c == 8 || c == 12 || c == 13 || c == 14 || c == 102) heavyCombos.add(c);
+					}
+					if (!heavyCombos.isEmpty() && Math.random() < 0.75) {
+						selectCombo = heavyCombos.get((int) (Math.random() * heavyCombos.size()));
+					} else {
+						selectCombo = availableCombos.get((int) (Math.random() * availableCombos.size()));
+					}
+				} else {
+					selectCombo = availableCombos.get((int) (Math.random() * availableCombos.size()));
+				}
+				double coreCd = getDynamicGlobalCooldown(self);
 				self.getPersistentData().putDouble("sentinel_global_ability_cooldown", coreCd);
 				
 				if (selectCombo == 101) {
@@ -2372,7 +2834,7 @@ public class RotOnEntityTickUpdateProcedure {
 			// Trigger immediate follow-up attack combo (Laser or Sonic Boom)
 			double rng = Math.random();
 			if (rng < 0.45 && unlockedSonicBoom) {
-				self.getPersistentData().putDouble("sentinel_sonic_ticks", 70);
+				self.getPersistentData().putDouble("sentinel_sonic_ticks", SONIC_BOOM_ANIMATION_TICKS);
 				playHostileSound(level, self.getX(), self.getY(), self.getZ(), "entity.warden.sonic_charge", 1.4F, 0.4F);
 			} else if (unlockedSolar || unlockedCryo) {
 				java.util.List<String> lasers = new java.util.ArrayList<>();
@@ -2463,7 +2925,7 @@ public class RotOnEntityTickUpdateProcedure {
 			level.sendParticles(ParticleTypes.SWEEP_ATTACK, target.getX(), target.getY() + 1.0, target.getZ(), 2, 0.3, 0.3, 0.3, 0.0);
 			level.sendParticles(ParticleTypes.CRIT, target.getX(), target.getY() + 1.0, target.getZ(), 8, 0.3, 0.3, 0.3, 0.08);
 		} else if (selectCombo == 8 && target instanceof LivingEntity liv) {
-			self.getPersistentData().putDouble("rot_overhead_ticks", 20);
+			self.getPersistentData().putDouble("rot_overhead_ticks", OVERHEAD_TOTAL_TICKS);
 			self.getPersistentData().putString("overhead_target_uuid", target.getUUID().toString());
 		} else if (selectCombo == 9 && target instanceof LivingEntity liv) {
 			for (int hit = 1; hit <= 3; hit++) {
@@ -2602,6 +3064,35 @@ public class RotOnEntityTickUpdateProcedure {
 		}
 	}
 
+	private static boolean isTargetPillaring(LevelAccessor level, Entity target, Entity self) {
+		if (target == null || self == null) return false;
+		if (target.getY() <= self.getY() + 2.2) return false;
+		net.minecraft.core.BlockPos targetPos = target.blockPosition();
+		int targetY = targetPos.getY() - 1;
+		int selfY = self.blockPosition().getY();
+		int startY = targetY;
+		int endY = Math.max(selfY + 1, targetY - 5);
+		if (startY < endY) return false;
+		int totalSolidCount = 0;
+		int layersChecked = 0;
+		for (int y = startY; y >= endY; y--) {
+			int layerSolidCount = 0;
+			for (int dx = -1; dx <= 1; dx++) {
+				for (int dz = -1; dz <= 1; dz++) {
+					net.minecraft.core.BlockPos p = targetPos.offset(dx, y - targetPos.getY(), dz);
+					if (level.getBlockState(p).isCollisionShapeFullBlock(level, p)) {
+						layerSolidCount++;
+					}
+				}
+			}
+			totalSolidCount += layerSolidCount;
+			layersChecked++;
+		}
+		if (layersChecked == 0) return false;
+		double avgSolid = (double) totalSolidCount / layersChecked;
+		return avgSolid < 4.5;
+	}
+
 	private static void lockLookAtTarget(Entity entity, Entity target) {
 		if (entity instanceof Mob mob) {
 			boolean isChanneling = isChannelingAbility(entity);
@@ -2686,9 +3177,16 @@ public class RotOnEntityTickUpdateProcedure {
 		}
 
 		Entity target = (self instanceof Mob mob) ? mob.getTarget() : null;
-		if (!isValidTarget(target, self, ignoreLOS || target != null)) {
-			target = findEntityInWorldRange(world, LivingEntity.class, x, y, z, TARGET_RANGE, self);
-			if (!isValidTarget(target, self, ignoreLOS)) target = null;
+		boolean targetOccupied = target instanceof LivingEntity l && isTargetOccupied(world, self, l);
+		if (!isValidTarget(target, self, ignoreLOS || target != null) || targetOccupied) {
+			Entity alternative = findEntityInWorldRange(world, LivingEntity.class, x, y, z, TARGET_RANGE, self);
+			if (alternative != null) {
+				target = alternative;
+			} else if (targetOccupied) {
+				if (!isValidTarget(target, self, ignoreLOS)) target = null;
+			} else {
+				target = null;
+			}
 		}
 
 		if (target != null && self instanceof Mob mob) {
@@ -2701,12 +3199,25 @@ public class RotOnEntityTickUpdateProcedure {
 		return target;
 	}
 
+	private static boolean isTargetOccupied(LevelAccessor world, Entity self, LivingEntity target) {
+		if (target == null) return false;
+		AABB searchBox = self.getBoundingBox().inflate(64.0);
+		List<RotEntity> otherRots = world.getEntitiesOfClass(RotEntity.class, searchBox, e -> e != self);
+		for (RotEntity other : otherRots) {
+			if (other instanceof Mob otherMob && otherMob.getTarget() == target) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	private static boolean isValidTarget(Entity target, Entity self) {
 		return isValidTarget(target, self, false);
 	}
 
 	private static boolean isValidTarget(Entity target, Entity self, boolean ignoreLineOfSight) {
 		if (target == null || !target.isAlive() || target == self) return false;
+		if (BuiltInRegistries.ENTITY_TYPE.getKey(target.getType()).toString().equals("spore:scent")) return false;
 		if (self.distanceTo(target) > TARGET_RANGE) return false;
 
 		boolean bypassFactionFilter = shouldIgnoreCombatFilter(self) || shouldIgnoreCombatFilter(target)
@@ -2716,7 +3227,15 @@ public class RotOnEntityTickUpdateProcedure {
 			if (target.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND)))) return false;
 		}
 
-		if (!ignoreLineOfSight && self instanceof LivingEntity ls && !ls.hasLineOfSight(target)) return false;
+		boolean isPlayer = target instanceof Player;
+		boolean isRetaliation = false;
+		if (self instanceof LivingEntity ls) {
+			if (ls.getLastHurtByMob() == target || (target instanceof Mob mob && mob.getTarget() == self)) {
+				isRetaliation = true;
+			}
+		}
+
+		if (!ignoreLineOfSight && !isPlayer && !isRetaliation && self instanceof LivingEntity ls && !ls.hasLineOfSight(target)) return false;
 
 		// Retaliation check: whoever attacks it (except woodbound which was checked above)
 		if (self instanceof LivingEntity ls) {
@@ -2756,7 +3275,18 @@ public class RotOnEntityTickUpdateProcedure {
 		if (!(entity instanceof LivingEntity living)) return;
 		double combatTicks = entity.getPersistentData().getDouble("sentinel_combat_ticks");
 		if (inCombat) {
-			combatTicks = Math.min(1000.0, combatTicks + 1.0);
+			combatTicks = Math.min(72000.0, combatTicks + 1.0);
+
+			// Track and increment flying target ticks if targeting a flying enemy
+			Mob mobCheck = (entity instanceof Mob m) ? m : null;
+			LivingEntity combatTarget = (mobCheck != null) ? mobCheck.getTarget() : null;
+			if (combatTarget != null) {
+				boolean isTargetFlying = combatTarget.isFallFlying() || (!combatTarget.onGround() && combatTarget.getY() > entity.getY() + 2.0 && !combatTarget.isInWater() && !combatTarget.isInLava());
+				if (isTargetFlying) {
+					double flyingTicks = entity.getPersistentData().getDouble("sentinel_flying_target_ticks");
+					entity.getPersistentData().putDouble("sentinel_flying_target_ticks", flyingTicks + 1.0);
+				}
+			}
 
 			// Realistically learn teleportation if fighting End entity, Player utilizing Ender Pearl, seeing dropped ender pearl, or in the End dimension
 			boolean learnTP = false;
@@ -2816,13 +3346,13 @@ public class RotOnEntityTickUpdateProcedure {
 		// Adaptive Wolverine-style regeneration
 		if (living.getPersistentData().getBoolean("unlocked_regen") && living.getHealth() < living.getMaxHealth()) {
 			double regenTimer = entity.getPersistentData().getDouble("sentinel_regen_timer") + 1.0;
-			double combatFactor = 1.0 + (combatTicks / 1000.0) * 2.0; // Up to 3.0x healing efficiency
+			double combatFactor = 1.0 + (combatTicks / 1000.0) * ADAPTATION_REGEN_COMBAT_MULTIPLIER; // Up to 3.0x healing efficiency
 			double healthRatio = (double) living.getHealth() / (double) living.getMaxHealth();
 			double lowHealthFactor = 1.0;
 			if (healthRatio < 0.25) {
-				lowHealthFactor = 3.5; // Trigger extreme survival burst at critical damage!
+				lowHealthFactor = ADAPTATION_REGEN_HEALTH_LOW_BURST; // Trigger extreme survival burst at critical damage!
 			} else if (healthRatio < 0.50) {
-				lowHealthFactor = 2.0; // Double the tick rate below half health
+				lowHealthFactor = ADAPTATION_REGEN_HEALTH_MID_BURST; // Double the tick rate below half health
 			}
 
 			double requiredTicks = 20.0 / (combatFactor * lowHealthFactor);
@@ -2830,7 +3360,7 @@ public class RotOnEntityTickUpdateProcedure {
 
 			if (regenTimer >= requiredTicks) {
 				regenTimer = 0.0;
-				float healAmount = (float) (2.0 + (living.getMaxHealth() * 0.015));
+				float healAmount = (float) (ADAPTATION_REGEN_BASE_HEAL + (living.getMaxHealth() * ADAPTATION_REGEN_MAX_HEALTH_RATIO));
 				living.heal(healAmount);
 			}
 			entity.getPersistentData().putDouble("sentinel_regen_timer", regenTimer);
@@ -2838,33 +3368,54 @@ public class RotOnEntityTickUpdateProcedure {
 
 		// Decay the recent damage pool for high-DPS adaptive resistance
 		double recentDamage = entity.getPersistentData().getDouble("sentinel_recent_damage");
-		recentDamage = Math.max(0.0, recentDamage * 0.95);
+		recentDamage = Math.max(0.0, recentDamage * ADAPTATION_RESISTANCE_DECAY);
 		entity.getPersistentData().putDouble("sentinel_recent_damage", recentDamage);
 
 		// Apply adaptive resistance level depending on recent DPS
-		if (recentDamage > 35.0) {
-			living.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, false, false));
-		} else if (recentDamage > 20.0) {
-			living.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, false, false));
-		} else if (recentDamage > 8.0) {
+		if (recentDamage > ADAPTATION_RESISTANCE_HIGH_THRESHOLD) {
 			living.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, false, false));
+		} else if (recentDamage > ADAPTATION_RESISTANCE_MID_THRESHOLD) {
+			living.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, false, false));
+		} else if (recentDamage > ADAPTATION_RESISTANCE_LOW_THRESHOLD) {
+			living.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, false, false));
 		}
 
-		// Speed Adaptation (Starts slow with 45% penalty. If teleport is unlocked, adapt to normal pacing. Otherwise, learn to run realistically!)
+		// Speed Adaptation (Starts slow with penalty. If teleport is unlocked, adapt to normal pacing. Otherwise, learn to run realistically!)
 		if (living.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED)) {
 			var attr = living.getAttribute(Attributes.MOVEMENT_SPEED);
 			attr.removeModifier(ResourceLocation.parse("the_backwoods:sentinel_adaptation_speed"));
 			double speedBonus;
 			boolean tpUnlocked = entity.getPersistentData().getBoolean("unlocked_teleportation");
 			if (tpUnlocked) {
-				speedBonus = -0.45 + (combatTicks / 1000.0) * 0.55; // default up to +10%
+				speedBonus = ADAPTATION_SPEED_MIN_MULTIPLIER + (combatTicks / ADAPTATION_SPEED_SCALING_TELEPORT) * (ADAPTATION_SPEED_MAX_MULTIPLIER - ADAPTATION_SPEED_MIN_MULTIPLIER);
+				if (speedBonus > ADAPTATION_SPEED_MAX_MULTIPLIER) {
+					speedBonus = ADAPTATION_SPEED_MAX_MULTIPLIER;
+				}
 			} else {
 				// Learning how to run as a fallback, capping at a modest 25% sprint speed so it remains completely realistic
-				speedBonus = -0.45 + (combatTicks / 600.0) * 0.70;
-				if (speedBonus > 0.25) {
-					speedBonus = 0.25;
+				speedBonus = ADAPTATION_SPEED_MIN_MULTIPLIER + (combatTicks / ADAPTATION_SPEED_SCALING_FALLBACK) * (ADAPTATION_SPEED_MAX_FALLBACK - ADAPTATION_SPEED_MIN_MULTIPLIER);
+				if (speedBonus > ADAPTATION_SPEED_MAX_FALLBACK) {
+					speedBonus = ADAPTATION_SPEED_MAX_FALLBACK;
 				}
 			}
+
+			// Override speedBonus to 0.0 if circling a pillar to maintain a constant, cruising speed
+			boolean targetOnPillar = false;
+			Mob mobCheck = (entity instanceof Mob m) ? m : null;
+			LivingEntity combatTarget = (mobCheck != null) ? mobCheck.getTarget() : null;
+			if (combatTarget != null && isTargetPillaring(entity.level(), combatTarget, entity)) {
+				double tdx = combatTarget.getX() - entity.getX();
+				double tdz = combatTarget.getZ() - entity.getZ();
+				double distSqXZ = tdx * tdx + tdz * tdz;
+				double maxPillarDist = ROT_PILLAR_BACK_OFF_DISTANCE + 2.0;
+				if (distSqXZ < maxPillarDist * maxPillarDist) {
+					targetOnPillar = true;
+				}
+			}
+			if (targetOnPillar) {
+				speedBonus = 0.0;
+			}
+
 			if (entity.getPersistentData().getBoolean("sentinel_totem_active")) {
 				speedBonus += 0.35;
 			}
@@ -2893,7 +3444,7 @@ public class RotOnEntityTickUpdateProcedure {
 
 	private static void fireSuperchargedSonicBoom(LevelAccessor world, Entity self, Entity target) {
 		if (!(world instanceof ServerLevel level)) return;
-		self.getPersistentData().putDouble("sentinel_sonic_ticks", 70); // Starts the 3.5s state machine
+		self.getPersistentData().putDouble("sentinel_sonic_ticks", SONIC_BOOM_ANIMATION_TICKS); // Starts the customizable state machine
 		playHostileSound(world, self.getX(), self.getY(), self.getZ(), "entity.warden.sonic_charge", 1.4F, 0.4F);
 	}
 
@@ -2919,7 +3470,7 @@ public class RotOnEntityTickUpdateProcedure {
 			for (Entity targetVictim : swept) {
 				if (!shouldIgnoreCombatFilter(self) && !shouldIgnoreCombatFilter(targetVictim) && targetVictim.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND)))) continue;
 
-				targetVictim.hurt(new DamageSource(level.holderOrThrow(DamageTypes.SONIC_BOOM)), 32.0F);
+				targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, net.minecraft.resources.ResourceLocation.parse("the_backwoods:rot_sonic_boom"))), self), 32.0F);
 				
 				Vec3 push = targetVictim.position().subtract(self.position()).normalize();
 				targetVictim.setDeltaMovement(push.x * 2.5, 0.6, push.z * 2.5);
@@ -2986,6 +3537,25 @@ public class RotOnEntityTickUpdateProcedure {
 		if (entity == null) return;
 
 		if (entity instanceof RotEntity) {
+			if (entity.getPersistentData().getDouble("sentinel_scanning_ticks") > 0) {
+				Entity attackerEnt = event.getSource().getEntity();
+				if (attackerEnt == null) attackerEnt = event.getSource().getDirectEntity();
+				if (attackerEnt != null) {
+					double dx = attackerEnt.getX() - entity.getX();
+					double dz = attackerEnt.getZ() - entity.getZ();
+					float targetYaw = (float) (Mth.atan2(dz, dx) * (180F / Math.PI)) - 90F;
+					entity.getPersistentData().putDouble("sentinel_scanning_base_yaw", targetYaw);
+					entity.getPersistentData().putDouble("sentinel_scanning_ticks", 12.0);
+					entity.getPersistentData().putDouble("sentinel_scan_max_ticks", 12.0);
+					entity.getPersistentData().putBoolean("sentinel_reacting_to_attacker", true);
+					
+					double dy = attackerEnt.getEyeY() - entity.getEyeY();
+					double dh = Math.sqrt(dx * dx + dz * dz);
+					float targetPitch = (float) (-(Mth.atan2(dy, dh) * (180F / Math.PI)));
+					entity.getPersistentData().putDouble("sentinel_scan_target_pitch", targetPitch);
+				}
+			}
+
 			// Track recent damage for high-DPS adaptive resistance
 			double damageAmount = event.getAmount();
 			double currentRecent = entity.getPersistentData().getDouble("sentinel_recent_damage");
@@ -3004,15 +3574,15 @@ public class RotOnEntityTickUpdateProcedure {
 
 			// Slowly grow damage resistance as it keeps taking damage (ONLY learned from continuous damage)
 			double continuousDmgMultiplier = 1.0 - Math.min(0.75, totalDamageTaken * 0.0015);
-			event.setAmount((float) (event.getAmount() * continuousDmgMultiplier));
+			// event.setAmount((float) (event.getAmount() * continuousDmgMultiplier));
 
 			// Dynamic adaptive resistance mitigation in real-time
 			if (newRecent > 35.0) {
-				event.setAmount(event.getAmount() * 0.20F); // 80% mitigation under extreme DPS
+				// event.setAmount(event.getAmount() * 0.20F); // 80% mitigation under extreme DPS
 			} else if (newRecent > 20.0) {
-				event.setAmount(event.getAmount() * 0.40F); // 60% mitigation under high DPS
+				// event.setAmount(event.getAmount() * 0.40F); // 60% mitigation under high DPS
 			} else if (newRecent > 8.0) {
-				event.setAmount(event.getAmount() * 0.65F); // 35% mitigation under moderate DPS
+				// event.setAmount(event.getAmount() * 0.65F); // 35% mitigation under moderate DPS
 			}
 
 			DamageSource source = event.getSource();
@@ -3207,35 +3777,118 @@ public class RotOnEntityTickUpdateProcedure {
 	}
 
 	private static void handleForwardCarveMining(LevelAccessor world, Entity self, Entity target) {
+		if (target != null && isTargetPillaring(world, target, self)) {
+			double tdx = target.getX() - self.getX();
+			double tdz = target.getZ() - self.getZ();
+			double distSqXZ = tdx * tdx + tdz * tdz;
+			double maxPillarDist = ROT_PILLAR_BACK_OFF_DISTANCE + 2.0;
+			if (distSqXZ < maxPillarDist * maxPillarDist) { // Within circling/mining range of the pillar
+				double circleTicks = 0;
+				if (self.getPersistentData() != null) {
+					circleTicks = self.getPersistentData().getDouble("rot_pillar_circle_ticks") + 1.0;
+					self.getPersistentData().putDouble("rot_pillar_circle_ticks", circleTicks);
+				}
+
+				// Manage circling vs staring state and timer
+				double stateTimer = 0.0;
+				double isCircling = 1.0; // Default to circling initially
+				double angle = self.tickCount * 0.05;
+
+				if (self.getPersistentData() != null) {
+					if (!self.getPersistentData().contains("rot_pillar_is_circling")) {
+						self.getPersistentData().putDouble("rot_pillar_is_circling", 1.0);
+					}
+					if (!self.getPersistentData().contains("rot_pillar_angle")) {
+						self.getPersistentData().putDouble("rot_pillar_angle", angle);
+					}
+					stateTimer = self.getPersistentData().getDouble("rot_pillar_state_timer");
+					isCircling = self.getPersistentData().getDouble("rot_pillar_is_circling");
+					angle = self.getPersistentData().getDouble("rot_pillar_angle");
+				}
+
+				if (stateTimer <= 0) {
+					double randState = self.getRandom().nextDouble();
+					if (randState < ROT_PILLAR_CIRCLING_CHANCE) {
+						isCircling = 1.0;
+						stateTimer = 60.0 + self.getRandom().nextInt(61); // 3-6s circling
+					} else {
+						isCircling = 0.0;
+						stateTimer = 160.0 + self.getRandom().nextInt(201); // 8-18s staring
+					}
+					if (self.getPersistentData() != null) {
+						self.getPersistentData().putDouble("rot_pillar_is_circling", isCircling);
+						self.getPersistentData().putDouble("rot_pillar_state_timer", stateTimer);
+					}
+				} else {
+					stateTimer--;
+					if (self.getPersistentData() != null) {
+						self.getPersistentData().putDouble("rot_pillar_state_timer", stateTimer);
+					}
+				}
+
+				if (isCircling == 1.0) {
+					angle += 0.05; // Circular rotation step per tick
+					if (self.getPersistentData() != null) {
+						self.getPersistentData().putDouble("rot_pillar_angle", angle);
+					}
+				}
+
+				double circleRadius = ROT_PILLAR_BACK_OFF_DISTANCE; // Distance to maintain from the pillar
+				double targetCircleX = target.getX() + Math.cos(angle) * circleRadius;
+				double targetCircleZ = target.getZ() + Math.sin(angle) * circleRadius;
+
+				if (self instanceof Mob mob) {
+					lockLookAtTarget(mob, target);
+					if (isCircling == 1.0) {
+						mob.getNavigation().moveTo(targetCircleX, self.getY(), targetCircleZ, ROT_PILLAR_CIRCLING_SPEED);
+					} else {
+						mob.getNavigation().stop();
+					}
+				}
+
+				// Only consider attacking after the initial delay has elapsed
+				if (circleTicks >= ROT_PILLAR_INITIAL_ATTACK_DELAY) {
+					// Chance to use Minos Prime moves like Overhead Slam or Die Rider Kick if target is out of reach on a tall pillar
+					double rand = self.getRandom().nextDouble();
+					if (self.getPersistentData() != null && rand < ROT_PILLAR_ATTACK_CHANCE) {
+						if (rand < (ROT_PILLAR_ATTACK_CHANCE / 2.0) && self.getPersistentData().getBoolean("unlocked_overhead_combo")) {
+							// Trigger Overhead Slam
+							self.getPersistentData().putDouble("rot_overhead_ticks", OVERHEAD_TOTAL_TICKS);
+							self.getPersistentData().putString("overhead_target_uuid", target.getUUID().toString());
+							self.getPersistentData().putDouble("rot_pillar_circle_ticks", 0.0); // Reset timer after attacking
+						} else if (self.getPersistentData().getBoolean("unlocked_knockback_rider_combo") || self.getPersistentData().getBoolean("unlocked_triple_threat_combo") || self.getPersistentData().getBoolean("unlocked_dropkick_combo")) {
+							// Trigger "Die" Rider Kick! Lift off into air first
+							self.setDeltaMovement(0.0, 1.95, 0.0);
+							self.hasImpulse = true;
+							self.getPersistentData().putDouble("sentinel_die_kick_phase", 1);
+							self.getPersistentData().putDouble("sentinel_die_kick_ticks", 22);
+							self.getPersistentData().putDouble("sentinel_landing_ticks", 0);
+							self.getPersistentData().putDouble("rot_pillar_circle_ticks", 0.0); // Reset timer after attacking
+							if (world instanceof ServerLevel level) {
+								playHostileSound(level, self.getX(), self.getY(), self.getZ(), "entity.iron_golem.attack", 1.5F, 0.8F);
+								level.sendParticles(ParticleTypes.CLOUD, self.getX(), self.getY() + 0.5, self.getZ(), 10, 0.2, 0.2, 0.2, 0.05);
+							}
+						}
+					}
+				}
+				return;
+			}
+		}
+
+		if (self.getPersistentData() != null && self.getPersistentData().contains("rot_pillar_circle_ticks")) {
+			self.getPersistentData().putDouble("rot_pillar_circle_ticks", 0.0);
+		}
+
 		double mineReach = isDoingCombo(self) ? 3.5 : MINE_REACH;
 
-		HitResult hit = self.level().clip(new ClipContext(
-				self.getEyePosition(1f),
-				self.getEyePosition(1f).add(self.getViewVector(1f).scale(mineReach)),
-				ClipContext.Block.COLLIDER,
-				ClipContext.Fluid.NONE,
-				self
-		));
-
-		if (hit.getType() != HitResult.Type.BLOCK || !(hit instanceof BlockHitResult)) {
-			if (self instanceof RotEntity rotSet) rotSet.getEntityData().set(RotEntity.DATA_mineProgress, 0);
-			return;
-		}
-
-		if (self instanceof RotEntity rotSet) {
-			rotSet.getEntityData().set(RotEntity.DATA_mineProgress, rotSet.getEntityData().get(RotEntity.DATA_mineProgress) + 1);
-		}
-
-		if (self.tickCount % 6 == 0 && self instanceof LivingEntity liv) {
-			liv.swing(InteractionHand.MAIN_HAND, true);
-		}
-
-		int progress = self instanceof RotEntity rot ? rot.getEntityData().get(RotEntity.DATA_mineProgress) : 0;
-		if (progress < 10) return;
-
-		Vec3 forward = self.getViewVector(1f).normalize();
+		float yaw = self.getYRot();
+		double rad = Math.toRadians(yaw);
+		Vec3 forward = new Vec3(-Math.sin(rad), 0, Math.cos(rad)).normalize();
 		Vec3 right = new Vec3(-forward.z, 0, forward.x).normalize();
 		int baseY = Mth.floor(self.getY());
+
+		BlockPos refPos = null;
+		float maxHardness = -1f;
 
 		for (int depth = 1; depth <= (int) Math.ceil(mineReach); depth++) {
 			double cx = self.getX() + forward.x * depth;
@@ -3248,7 +3901,69 @@ public class RotOnEntityTickUpdateProcedure {
 				for (int h = 0; h < MINE_HEIGHT; h++) {
 					BlockPos bp = BlockPos.containing(px, baseY + h, pz);
 
-					if (bp.getY() == (int) (target.getY() - 2)) continue;
+					if (target != null && bp.getY() == (int) (target.getY() - 2)) continue;
+
+					BlockState st = world.getBlockState(bp);
+					if (st.isAir()) continue;
+
+					float hard = st.getDestroySpeed(world, bp);
+					if (hard < 0 || hard >= MAX_BREAKABLE_HARDNESS) continue;
+
+					if (hard > maxHardness) {
+						maxHardness = hard;
+						refPos = bp;
+					}
+				}
+			}
+		}
+
+		if (refPos == null) {
+			if (self instanceof RotEntity rotSet) rotSet.getEntityData().set(RotEntity.DATA_mineProgress, 0);
+			return;
+		}
+
+		if (self instanceof RotEntity rotSet) {
+			rotSet.getEntityData().set(RotEntity.DATA_mineProgress, rotSet.getEntityData().get(RotEntity.DATA_mineProgress) + 1);
+		}
+
+		if (self.tickCount % 10 == 0 && self instanceof LivingEntity liv) {
+			liv.swing(InteractionHand.MAIN_HAND);
+			if (world instanceof ServerLevel level) {
+				level.sendParticles(new net.minecraft.core.particles.BlockParticleOption(ParticleTypes.BLOCK, world.getBlockState(refPos)), refPos.getX() + 0.5, refPos.getY() + 0.5, refPos.getZ() + 0.5, 8, 0.3, 0.3, 0.3, 0.1);
+			}
+			boolean lastHandLeft = false;
+			if (self.getPersistentData() != null) {
+				lastHandLeft = self.getPersistentData().getBoolean("sentinel_punch_hand_toggle");
+				self.getPersistentData().putBoolean("sentinel_punch_hand_toggle", !lastHandLeft);
+				if (lastHandLeft) {
+					self.getPersistentData().putDouble("sentinel_left_punch_ticks", 8);
+					self.getPersistentData().putDouble("sentinel_right_punch_ticks", 0);
+				} else {
+					self.getPersistentData().putDouble("sentinel_right_punch_ticks", 8);
+					self.getPersistentData().putDouble("sentinel_left_punch_ticks", 0);
+				}
+			}
+		}
+
+		float multiplier = 12f; // Splinter was 50f
+		float base = 15f;       // Splinter was 50f
+		float mineThreshold = maxHardness * multiplier + base;
+
+		int progress = self instanceof RotEntity rot ? rot.getEntityData().get(RotEntity.DATA_mineProgress) : 0;
+		if (progress < mineThreshold) return;
+
+		for (int depth = 1; depth <= (int) Math.ceil(mineReach); depth++) {
+			double cx = self.getX() + forward.x * depth;
+			double cz = self.getZ() + forward.z * depth;
+
+			for (int w = -MINE_HALF_WIDTH; w <= MINE_HALF_WIDTH; w++) {
+				double px = cx + right.x * w;
+				double pz = cz + right.z * w;
+
+				for (int h = 0; h < MINE_HEIGHT; h++) {
+					BlockPos bp = BlockPos.containing(px, baseY + h, pz);
+
+					if (target != null && bp.getY() == (int) (target.getY() - 2)) continue;
 
 					BlockState st = world.getBlockState(bp);
 					float hard = st.getDestroySpeed(world, bp);
@@ -3289,9 +4004,12 @@ public class RotOnEntityTickUpdateProcedure {
 	private static void tickCooldown(Entity e, String key, int step) {
 		double v = e.getPersistentData().getDouble(key);
 		if (v > 0) {
-			int finalStep = step;
+			double finalStep = step;
 			if (e.getPersistentData().getBoolean("sentinel_totem_active") && (key.endsWith("cd") || key.contains("_cd") || key.contains("cooldown") || key.equals("sentinel_solar_cd"))) {
-				finalStep = step * 2; // cooldowns tick down twice as fast!
+				finalStep = step * 2.0; // cooldowns tick down twice as fast!
+			}
+			if (COOLDOWN_MULTIPLIER > 0 && (key.endsWith("cd") || key.contains("_cd") || key.contains("cooldown") || key.equals("sentinel_solar_cd"))) {
+				finalStep = finalStep / COOLDOWN_MULTIPLIER;
 			}
 			e.getPersistentData().putDouble(key, Math.max(0, v - finalStep));
 		}
@@ -3381,6 +4099,11 @@ public class RotOnEntityTickUpdateProcedure {
 				.stream()
 				.sorted((e1, e2) -> {
 					if (e1 instanceof LivingEntity l1 && e2 instanceof LivingEntity l2) {
+						boolean occ1 = isTargetOccupied(world, self, l1);
+						boolean occ2 = isTargetOccupied(world, self, l2);
+						if (occ1 != occ2) {
+							return occ1 ? 1 : -1;
+						}
 						float hp1 = l1.getHealth();
 						float hp2 = l2.getHealth();
 						if (Math.abs(hp1 - hp2) > 0.05f) {
@@ -3406,7 +4129,8 @@ public class RotOnEntityTickUpdateProcedure {
 		double skyWarp = entity.getPersistentData().getDouble("sentinel_sky_warp_slam_ticks");
 		double judgment = entity.getPersistentData().getDouble("sentinel_judgment_ticks");
 		double omniSonic = entity.getPersistentData().getDouble("sentinel_omni_sonic_charge_ticks");
-		return solarCharge > 0 || solarFire > 0 || cryoCharge > 0 || cryoFire > 0 || grappleTicks > 0 || tkTicks > 0 || sonicTicks > 0 || closingTicks > 0 || skyWarp > 0 || judgment > 0 || omniSonic > 0;
+		double sonicScream = entity.getPersistentData().getDouble("sentinel_sonic_scream_ticks");
+		return solarCharge > 0 || solarFire > 0 || cryoCharge > 0 || cryoFire > 0 || grappleTicks > 0 || tkTicks > 0 || sonicTicks > 0 || closingTicks > 0 || skyWarp > 0 || judgment > 0 || omniSonic > 0 || sonicScream > 0;
 	}
 
 	private static void syncNBTFlags(Entity entity) {
@@ -3424,8 +4148,8 @@ public class RotOnEntityTickUpdateProcedure {
 		double overheadTicks = entity.getPersistentData().getDouble("rot_overhead_ticks");
 		if (entity.getPersistentData().getBoolean("debug_force_overhead")) {
 			if (overheadTicks <= 1) {
-				entity.getPersistentData().putDouble("rot_overhead_ticks", 20);
-				overheadTicks = 20;
+				entity.getPersistentData().putDouble("rot_overhead_ticks", OVERHEAD_TOTAL_TICKS);
+				overheadTicks = OVERHEAD_TOTAL_TICKS;
 			}
 		}
 		double slamPhase = entity.getPersistentData().getDouble("sentinel_slam_phase");
@@ -3436,46 +4160,43 @@ public class RotOnEntityTickUpdateProcedure {
 		boolean overheadActive = overheadTicks > 0;
 		boolean inSlamCharge = slamPhase == 2;
 
+		// [FIXED] isAirborne now only triggers properly for leaping or falling from great heights to avoid air time anim casually playing
 		boolean isAirborne = false;
-		boolean isFalling = false;
+		boolean isHeavyFalling = false;
 		if (!entity.onGround() && !entity.isInWater() && !entity.isInLava()) {
-			if (entity.getDeltaMovement().y() < -0.15) {
-				isFalling = true;
-			} else {
+			if (entity.getDeltaMovement().y() > 0.4 || (entity.getDeltaMovement().y() < -0.15 && entity.fallDistance > 2.0F)) {
 				isAirborne = true;
+			}
+			if (entity.getDeltaMovement().y() < -0.15 && entity.fallDistance > 3.0F) {
+				isHeavyFalling = true;
 			}
 		}
 
 		if (slamPhase == 1 || skyWarpTicks > 0) {
 			isAirborne = true;
-			isFalling = false;
 		} else if (slamPhase == 2) {
 			isAirborne = false;
-			isFalling = false;
 		} else if (slamPhase == 3) {
 			isAirborne = false;
-			isFalling = true;
 		}
 
 		double dieKickPhase = entity.getPersistentData().getDouble("sentinel_die_kick_phase");
 		if (dieKickPhase == 1) {
 			isAirborne = true;
-			isFalling = false;
 		} else if (dieKickPhase == 2) {
-			isAirborne = false;
-			isFalling = false;
+			isAirborne = true;
 		} else if (dieKickPhase == 3) {
 			isAirborne = false;
-			isFalling = true;
 		}
 
 		double judgmentTicks = entity.getPersistentData().getDouble("sentinel_judgment_ticks");
-		boolean charging = solarCharge > 0 || cryoCharge > 0;
-		boolean firing = solarFire > 0 || cryoFire > 0;
-		boolean closing = closingTicks > 0 && !firing && !charging;
+		double sonicScreamTicks = entity.getPersistentData().getDouble("sentinel_sonic_scream_ticks");
+		boolean charging = solarCharge > 0 || cryoCharge > 0 || (sonicScreamTicks > 200.0);
+		boolean firing = solarFire > 0 || cryoFire > 0 || (sonicScreamTicks > 20.0 && sonicScreamTicks <= 200.0);
+		boolean closing = (closingTicks > 0 && !firing && !charging) || (sonicScreamTicks > 0.0 && sonicScreamTicks <= 20.0);
 		boolean sonic = sonicTicks > 0;
 		boolean landing = landingTicks > 0;
-		boolean isGroundCrushing = slamPhase == 3 || skyWarpTicks > 0 || landingTicks > 0 || judgmentTicks > 20 || dieKickPhase == 3;
+		boolean isGroundCrushing = slamPhase == 3 || skyWarpTicks > 0 || landingTicks > 0 || judgmentTicks > 20;
 
 		entity.getPersistentData().putBoolean("laser_charging", charging);
 		entity.getPersistentData().putBoolean("is_laser_charging", charging);
@@ -3490,11 +4211,10 @@ public class RotOnEntityTickUpdateProcedure {
  
 		entity.getPersistentData().putBoolean("is_left_punching", leftPunching);
 		entity.getPersistentData().putBoolean("is_right_punching", rightPunching);
-		entity.getPersistentData().putBoolean("is_overhead", overheadTicks > 0 && overheadTicks < 14);
+		entity.getPersistentData().putBoolean("is_overhead", overheadTicks > 0);
 		entity.getPersistentData().putBoolean("is_slam_charge", inSlamCharge);
 		entity.getPersistentData().putBoolean("is_air_time", isAirborne);
-		entity.getPersistentData().putBoolean("rot_falling", isFalling);
-		entity.getPersistentData().putBoolean("is_overhead_preparing", overheadTicks >= 14);
+		entity.getPersistentData().putBoolean("is_overhead_preparing", overheadTicks >= OVERHEAD_PREP_THRESHOLD);
 		entity.getPersistentData().putBoolean("is_ground_crushing", isGroundCrushing);
 		entity.getPersistentData().putBoolean("is_airborne_state", isAirborne);
  
@@ -3517,10 +4237,10 @@ public class RotOnEntityTickUpdateProcedure {
 				rot.getEntityData().set(RotEntity.DATA_is_airborne_state, isAirborne);
 			} catch (Exception e) {}
 			try {
-				rot.getEntityData().set(RotEntity.DATA_is_overhead_preparing, overheadTicks >= 14);
+				rot.getEntityData().set(RotEntity.DATA_is_overhead_preparing, overheadTicks >= OVERHEAD_PREP_THRESHOLD);
 			} catch (Exception e) {}
 			try {
-				rot.getEntityData().set(RotEntity.DATA_is_overhead, overheadTicks > 0 && overheadTicks < 14);
+				rot.getEntityData().set(RotEntity.DATA_is_overhead, overheadTicks > 0);
 			} catch (Exception e) {}
 			try {
 				rot.getEntityData().set(RotEntity.DATA_is_slam_charge, inSlamCharge);
@@ -3529,14 +4249,36 @@ public class RotOnEntityTickUpdateProcedure {
 				rot.getEntityData().set(RotEntity.DATA_is_ground_crushing, isGroundCrushing);
 			} catch (Exception e) {}
 			try {
+				boolean forceFall = entity.getPersistentData().getBoolean("debug_force_fall");
+				rot.getEntityData().set(RotEntity.DATA_is_falling_heavy, forceFall || isHeavyFalling);
+			} catch (Exception e) {}
+			try {
 				boolean forceRider = entity.getPersistentData().getBoolean("debug_force_rider");
-				rot.getEntityData().set(RotEntity.DATA_is_rider_charging, forceRider || (judgmentTicks > 0 && judgmentTicks <= 20) || dieKickPhase == 2 || dieKickPhase == 3);
+				rot.getEntityData().set(RotEntity.DATA_is_rider_charging, forceRider || (judgmentTicks > 0 && judgmentTicks <= 20));
+			} catch (Exception e) {}
+			try {
+				rot.getEntityData().set(RotEntity.DATA_is_rider_kick, dieKickPhase == 3);
+			} catch (Exception e) {}
+			try {
+				boolean forceSonic = entity.getPersistentData().getBoolean("debug_force_sonic");
+				rot.getEntityData().set(RotEntity.DATA_is_sonic_boom, forceSonic || sonic);
+			} catch (Exception e) {}
+			try {
+				boolean sonicLarge = entity.getPersistentData().getBoolean("is_sonic_boom_large");
+				rot.getEntityData().set(RotEntity.DATA_is_sonic_boom_large, sonicLarge);
 			} catch (Exception e) {}
 		}
 	}
 
 	private static boolean handleOverheadState(LevelAccessor world, Entity entity, @Nullable Entity combatTarget) {
 		double overheadTicks = entity.getPersistentData().getDouble("rot_overhead_ticks");
+		if (entity.getPersistentData().getBoolean("debug_force_overhead")) {
+			if (overheadTicks <= 1) {
+				entity.getPersistentData().putDouble("rot_overhead_ticks", OVERHEAD_TOTAL_TICKS);
+				overheadTicks = OVERHEAD_TOTAL_TICKS;
+			}
+		}
+
 		if (overheadTicks > 0) {
 			Entity targetEntity = null;
 			if (world instanceof ServerLevel serverLevel) {
@@ -3552,7 +4294,9 @@ public class RotOnEntityTickUpdateProcedure {
 				targetEntity = combatTarget;
 			}
 
-			if (overheadTicks == 20) {
+			boolean overheadStarted = entity.getPersistentData().getBoolean("rot_overhead_started");
+			if (!overheadStarted) {
+				entity.getPersistentData().putBoolean("rot_overhead_started", true);
 				// Phase 1: the rot jumps at normal height (equivalent to jump boost 2)
 				entity.setDeltaMovement(0.0, 0.6, 0.0);
 				entity.hasImpulse = true;
@@ -3562,14 +4306,14 @@ public class RotOnEntityTickUpdateProcedure {
 					entity.teleportTo(targetEntity.getX(), targetEntity.getY() + targetEntity.getEyeHeight() + 1.2, targetEntity.getZ());
 					lockLookAtTarget(entity, targetEntity);
 				}
-			} else if (overheadTicks >= 14) {
+			} else if (overheadTicks >= OVERHEAD_PREP_THRESHOLD) {
 				// Windup/Charge duration (first 0.33s / 7 ticks total): Keep suspended completely in mid-air above target's head
 				if (targetEntity != null) {
 					entity.teleportTo(targetEntity.getX(), targetEntity.getY() + targetEntity.getEyeHeight() + 1.4, targetEntity.getZ());
 					lockLookAtTarget(entity, targetEntity);
 				}
 				entity.setDeltaMovement(0, 0, 0);
-			} else if (overheadTicks == 13) {
+			} else if (overheadTicks == OVERHEAD_STRIKE_TICK) {
 				// Phase 3: At 0.33s (tick 13), executes (snaps its body and strikes down)
 				// Hit target from above like a heavy hammer, instantly sinking them by a block
 				if (targetEntity instanceof LivingEntity liv) {
@@ -3583,12 +4327,13 @@ public class RotOnEntityTickUpdateProcedure {
 					}
 					
 					liv.teleportTo(liv.getX(), targetSunkY, liv.getZ());
+					liv.setDeltaMovement(liv.getDeltaMovement().x(), -2.5, liv.getDeltaMovement().z());
+					liv.hasImpulse = true;
+					liv.hurtMarked = true;
 					
 					net.minecraft.world.damagesource.DamageSource damageSource;
-					if (entity instanceof LivingEntity ls) {
-						damageSource = ls.damageSources().mobAttack(ls);
-					} else if (world instanceof ServerLevel level) {
-						damageSource = new net.minecraft.world.damagesource.DamageSource(level.holderOrThrow(net.minecraft.world.damagesource.DamageTypes.MOB_ATTACK));
+					if (world instanceof ServerLevel level) {
+						damageSource = new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_seismic_slam"))), entity);
 					} else {
 						damageSource = liv.damageSources().generic();
 					}
@@ -3616,6 +4361,7 @@ public class RotOnEntityTickUpdateProcedure {
 			handlePassengerAndGrowth(entity);
 			return true;
 		}
+		entity.getPersistentData().putBoolean("rot_overhead_started", false);
 		return false;
 	}
 
@@ -3738,7 +4484,7 @@ public class RotOnEntityTickUpdateProcedure {
 				} else {
 					// No combat target, just dive in the looking direction
 					Vec3 look = entity.getLookAngle();
-					entity.setDeltaMovement(look.x * DIE_KICK_SPEED, -1.8, look.z * DIE_KICK_SPEED);
+					entity.setDeltaMovement(look.x * DIE_KICK_SPEED, -3.5, look.z * DIE_KICK_SPEED);
 				}
 				entity.hasImpulse = true;
 
@@ -3758,11 +4504,11 @@ public class RotOnEntityTickUpdateProcedure {
 					entity.teleportTo(entity.getX(), groundY, entity.getZ());
 					entity.setDeltaMovement(0, -0.05, 0);
 
-					entity.getPersistentData().putDouble("sentinel_die_kick_phase", 0);
 					entity.getPersistentData().putDouble("sentinel_die_kick_ticks", 0);
 					entity.getPersistentData().putDouble("sentinel_landing_ticks", 20); // Freeze recovery on ground (1 second)
 
 					executeCrushLandingBlast(world, entity, combatTarget, true);
+					entity.getPersistentData().putDouble("sentinel_die_kick_phase", 0);
 				}
 			}
 			handlePassengerAndGrowth(entity);
@@ -3797,7 +4543,20 @@ public class RotOnEntityTickUpdateProcedure {
 		// Epic central impact blast particles
 		level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, targetX, targetY + 0.5, targetZ, totemActive ? 6 : 3, 0.5, 0.3, 0.5, 0.15);
 		level.sendParticles(ParticleTypes.CLOUD, targetX, targetY + 0.2, targetZ, totemActive ? 80 : 45, 1.5, 0.6, 1.5, 0.2);
-		level.sendParticles(new net.minecraft.core.particles.DustParticleOptions(new org.joml.Vector3f(1.0F, 0.35F, 0.05F), totemActive ? 3.0F : 2.5F), targetX, targetY + 0.2, targetZ, totemActive ? 90 : 55, 1.5, 0.6, 1.5, 0.25);
+
+		net.minecraft.world.level.block.state.BlockState floorState = level.getBlockState(net.minecraft.core.BlockPos.containing(targetX, targetY - 0.5, targetZ));
+		if (floorState.isAir()) {
+			floorState = level.getBlockState(net.minecraft.core.BlockPos.containing(targetX, targetY - 1.5, targetZ));
+		}
+		if (floorState.isAir()) {
+			floorState = net.minecraft.world.level.block.Blocks.DIRT.defaultBlockState();
+		}
+		net.minecraft.core.particles.BlockParticleOption dustPillarOptions = new net.minecraft.core.particles.BlockParticleOption(ParticleTypes.DUST_PILLAR, floorState);
+		net.minecraft.core.particles.ParticleType<?> _tsdType = BuiltInRegistries.PARTICLE_TYPE.get(ResourceLocation.parse("trial_spawner_detection"));
+		net.minecraft.core.particles.ParticleOptions trialSpawnerDetection = _tsdType instanceof net.minecraft.core.particles.ParticleOptions _tsdOpt ? _tsdOpt : net.minecraft.core.particles.ParticleTypes.EFFECT;
+
+		level.sendParticles(dustPillarOptions, targetX, targetY + 0.2, targetZ, totemActive ? 90 : 55, 1.5, 0.6, 1.5, 0.25);
+		level.sendParticles(trialSpawnerDetection, targetX, targetY + 0.2, targetZ, totemActive ? 90 : 55, 1.5, 0.6, 1.5, 0.25);
 
 		if (shakeCamera) {
 			// Citadel Camera Shake Delivery (Method 1)
@@ -3806,7 +4565,8 @@ public class RotOnEntityTickUpdateProcedure {
 
 		java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, self.getBoundingBox().inflate(blastRadius), e -> e != self && isValidTarget(e, self));
 		for (LivingEntity victim : targets) {
-			victim.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), blastDamage);
+			String dmgType = self.getPersistentData().getDouble("sentinel_die_kick_phase") > 0 ? "rot_die_rider_kick" : "rot_seismic_slam";
+			victim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:" + dmgType))), self), blastDamage);
 			Vec3 push = victim.position().subtract(self.position()).multiply(1.0, 0.0, 1.0).normalize();
 			double pushMult = totemActive ? 5.5 : 3.5;
 			double pushUp = totemActive ? 1.4 : 0.95;
@@ -3818,8 +4578,8 @@ public class RotOnEntityTickUpdateProcedure {
 		BlockPos pos = entity.blockPosition();
 		for (int i = 0; i < 64; i++) {
 			BlockPos belowPos = pos.below(i);
-			if (belowPos.getY() <= world.getMinBuildHeight()) {
-				return world.getMinBuildHeight();
+			if (belowPos.getY() < world.getMinBuildHeight()) {
+				return world.getMinBuildHeight() + 1.0;
 			}
 			BlockState state = world.getBlockState(belowPos);
 			if (state.isCollisionShapeFullBlock(world, belowPos) || !state.getFluidState().isEmpty()) {
@@ -3888,6 +4648,68 @@ public class RotOnEntityTickUpdateProcedure {
 		} catch (Exception e) {
 			// Other exceptions, safely ignore
 		}
+	}
+
+	private static boolean handleScanningState(Entity entity) {
+		double scanningTicks = entity.getPersistentData().getDouble("sentinel_scanning_ticks");
+		if (scanningTicks > 0) {
+			entity.getPersistentData().putDouble("sentinel_scanning_ticks", scanningTicks - 1.0);
+			entity.setDeltaMovement(0, entity.getDeltaMovement().y(), 0);
+			if (entity instanceof Mob mob) {
+				mob.getNavigation().stop();
+				
+				double baseYaw = entity.getPersistentData().getDouble("sentinel_scanning_base_yaw");
+				double maxTicks = entity.getPersistentData().getDouble("sentinel_scan_max_ticks");
+				if (maxTicks <= 0.1) maxTicks = 60.0;
+				double elapsed = maxTicks - scanningTicks;
+				double fraction = elapsed / maxTicks;
+
+				double targetOffset = 0;
+				double targetPitch = 0;
+				float lerpFactor = 0.18F;
+
+				if (entity.getPersistentData().getBoolean("sentinel_reacting_to_attacker")) {
+					targetOffset = 0;
+					targetPitch = entity.getPersistentData().getDouble("sentinel_scan_target_pitch");
+					lerpFactor = 0.35F;
+				} else {
+					if (fraction < 0.25) {
+						targetOffset = 0;
+						targetPitch = 2.0;
+					} else if (fraction < 0.55) {
+						targetOffset = -55.0;
+						targetPitch = -8.0;
+					} else if (fraction < 0.85) {
+						targetOffset = 55.0;
+						targetPitch = 12.0;
+					} else {
+						targetOffset = 0;
+						targetPitch = 0;
+					}
+				}
+
+				float currentY = mob.getYRot();
+				float targetY = (float) (baseYaw + targetOffset);
+				float lerpedY = Mth.rotLerp(lerpFactor, currentY, targetY);
+				
+				mob.setYRot(lerpedY);
+				mob.setYHeadRot(lerpedY);
+				mob.yBodyRot = lerpedY;
+
+				float currentX = mob.getXRot();
+				float targetX = (float) targetPitch;
+				float lerpedX = Mth.lerp(lerpFactor, currentX, targetX);
+				mob.setXRot(lerpedX);
+				
+				double lx = mob.getX() - Math.sin(Math.toRadians(lerpedY)) * 5.0;
+				double ly = mob.getEyeY() + Math.sin(Math.toRadians(-lerpedX)) * 5.0;
+				double lz = mob.getZ() + Math.cos(Math.toRadians(lerpedY)) * 5.0;
+				mob.getLookControl().setLookAt(lx, ly, lz, 45.0F, 45.0F);
+			}
+			return true;
+		}
+		entity.getPersistentData().putBoolean("sentinel_reacting_to_attacker", false);
+		return false;
 	}
 
 	private static boolean handleCustomCombos(LevelAccessor world, Entity entity, @Nullable Entity combatTarget) {
@@ -4011,7 +4833,7 @@ public class RotOnEntityTickUpdateProcedure {
 				double landingTicks = entity.getPersistentData().getDouble("sentinel_landing_ticks");
 				if (dieKickPhase == 0 && landingTicks == 0) {
 					// Completed Rider Kick completely! Put on cooldown
-					double cd = totemActive ? 400.0 : 800.0;
+					double cd = totemActive ? COMBO_TRIPLE_THREAT_CD_TOTEM : COMBO_TRIPLE_THREAT_CD;
 					entity.getPersistentData().putDouble("sentinel_cc1_cd", cd);
 					entity.getPersistentData().putDouble("sentinel_cc1_stage", 0);
 				}
@@ -4049,45 +4871,44 @@ public class RotOnEntityTickUpdateProcedure {
 					entity.teleportTo(combatTarget.getX(), combatTarget.getY() + 1.5, combatTarget.getZ());
 					entity.setDeltaMovement(0.0, -0.1, 0.0); // Orient slightly downward
 
-					// Slam the player down (Overhead Slam)
-					applyKnockbackAndSync(combatTarget, 0.0, -3.5, 0.0);
+					// Trigger the ACTUAL Overhead Slam move!
+					entity.getPersistentData().putDouble("rot_overhead_ticks", OVERHEAD_TOTAL_TICKS);
+					entity.getPersistentData().putString("overhead_target_uuid", combatTarget.getUUID().toString());
 
-					// Deal Overhead slam damage
-					combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) COMBO_OVERHEAD_SLAM_DMG);
-
-					if (world instanceof ServerLevel level) {
-						level.sendParticles(ParticleTypes.SONIC_BOOM, combatTarget.getX(), combatTarget.getY() + 0.5, combatTarget.getZ(), 2, 0.1, 0.1, 0.1, 0.0);
-						playHostileSound(level, combatTarget.getX(), combatTarget.getY(), combatTarget.getZ(), "entity.iron_golem.attack", 1.8F, 0.55F);
-						playHostileSound(level, combatTarget.getX(), combatTarget.getY(), combatTarget.getZ(), "entity.generic.explode", 1.5F, 0.5F);
-						sendCameraShake(0.5F, 15, 15.0F);
+					// Reset punch animations so overhead shows correctly
+					entity.getPersistentData().putBoolean("is_left_punching", false);
+					entity.getPersistentData().putBoolean("is_right_punching", false);
+					if (entity instanceof RotEntity rot) {
+						rot.getEntityData().set(RotEntity.DATA_is_left_punching, false);
+						rot.getEntityData().set(RotEntity.DATA_is_right_punching, false);
 					}
 
 					entity.getPersistentData().putDouble("sentinel_cc2_stage", 3);
 				}
 			} else if (cc2 == 3) {
-				// Wait for player to slam into the ground
-				if (combatTarget.onGround()) {
-					// Start the 1 second gap (landing ticks/freeze of 1s)
-					entity.getPersistentData().putDouble("sentinel_cc2_ticks", 20); // 1s gap
-					entity.getPersistentData().putDouble("sentinel_cc2_stage", 4);
-				}
-			} else if (cc2 == 4) {
-				// Wait until 1s gap is complete
-				if (cc2Ticks == 0) {
-					// Execute follow-up Ground Crush move as they are on the ground!
-					double px = combatTarget.getX();
-					double py = combatTarget.getY();
-					double pz = combatTarget.getZ();
+				// While rot_overhead_ticks > 0, we run the actual overhead move logic and let it execute
+				handleOverheadState(world, entity, combatTarget);
 
-					// Teleport to them or slam them from current position
-					entity.teleportTo(px, py, pz);
-					executeCrushLandingBlast(world, entity, combatTarget, true);
-					combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) COMBO_SEISMIC_SLAM_DMG);
+				double overheadTicks = entity.getPersistentData().getDouble("rot_overhead_ticks");
+				if (overheadTicks <= 0) {
+					// Wait for player to slam into the ground after the overhead slam
+					if (combatTarget.onGround() || combatTarget.getY() <= entity.getY() - 15) {
+						// Trigger the ACTUAL Crush Slam move starting from Phase 1 (with Leap)
+						entity.setDeltaMovement(0.0, 1.9, 0.0);
+						entity.hasImpulse = true;
+						if (world instanceof ServerLevel level) {
+							playHostileSound(level, entity.getX(), entity.getY(), entity.getZ(), "entity.iron_golem.attack", 1.5F, 0.8F);
+							level.sendParticles(ParticleTypes.CLOUD, entity.getX(), entity.getY() + 0.5, entity.getZ(), 10, 0.2, 0.2, 0.2, 0.05);
+						}
 
-					// Put on cooldown
-					double cd = totemActive ? 400.0 : 800.0;
-					entity.getPersistentData().putDouble("sentinel_cc2_cd", cd);
-					entity.getPersistentData().putDouble("sentinel_cc2_stage", 0);
+						entity.getPersistentData().putDouble("sentinel_slam_phase", 1);
+						entity.getPersistentData().putDouble("sentinel_slam_ticks", 22);
+
+						// Put on cooldown and exit combo state since the actual crush slam takes over!
+						double cd = totemActive ? COMBO_HIGH_SKY_SLAM_CD_TOTEM : COMBO_HIGH_SKY_SLAM_CD;
+						entity.getPersistentData().putDouble("sentinel_cc2_cd", cd);
+						entity.getPersistentData().putDouble("sentinel_cc2_stage", 0);
+					}
 				}
 			}
 			handlePassengerAndGrowth(entity);
@@ -4108,7 +4929,7 @@ public class RotOnEntityTickUpdateProcedure {
 				applyKnockbackAndSync(combatTarget, knockDir.x * 2.2, 0.35, knockDir.z * 2.2);
 
 				// Deal punch damage
-				combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) MELEE_PUNCH_DAMAGE);
+				if (world instanceof ServerLevel level) combatTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), entity), (float) MELEE_PUNCH_DAMAGE);
 
 				if (world instanceof ServerLevel level) {
 					level.sendParticles(ParticleTypes.CRIT, combatTarget.getX(), combatTarget.getY() + 0.8, combatTarget.getZ(), 15, 0.3, 0.3, 0.3, 0.2);
@@ -4133,7 +4954,7 @@ public class RotOnEntityTickUpdateProcedure {
 				double landingTicks = entity.getPersistentData().getDouble("sentinel_landing_ticks");
 				if (judgmentTicks == 0 && landingTicks == 0) {
 					// Completed combo!
-					double cd = totemActive ? 400.0 : 800.0;
+					double cd = totemActive ? COMBO_PUNCH_DROPKICK_CD_TOTEM : COMBO_PUNCH_DROPKICK_CD;
 					entity.getPersistentData().putDouble("sentinel_cc3_cd", cd);
 					entity.getPersistentData().putDouble("sentinel_cc3_stage", 0);
 				}
@@ -4157,7 +4978,7 @@ public class RotOnEntityTickUpdateProcedure {
 				applyKnockbackAndSync(combatTarget, knockDir.x * 2.2, 0.35, knockDir.z * 2.2);
 
 				// Deal punch damage
-				combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) MELEE_PUNCH_DAMAGE);
+				if (world instanceof ServerLevel level) combatTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), entity), (float) MELEE_PUNCH_DAMAGE);
 
 				if (world instanceof ServerLevel level) {
 					level.sendParticles(ParticleTypes.CRIT, combatTarget.getX(), combatTarget.getY() + 0.8, combatTarget.getZ(), 15, 0.3, 0.3, 0.3, 0.2);
@@ -4192,7 +5013,7 @@ public class RotOnEntityTickUpdateProcedure {
 				double landingTicks = entity.getPersistentData().getDouble("sentinel_landing_ticks");
 				if (dieKickPhase == 0 && landingTicks == 0) {
 					// Completed combo!
-					double cd = totemActive ? 400.0 : 800.0;
+					double cd = totemActive ? COMBO_PUNCH_RIDER_KICK_CD_TOTEM : COMBO_PUNCH_RIDER_KICK_CD;
 					entity.getPersistentData().putDouble("sentinel_cc4_cd", cd);
 					entity.getPersistentData().putDouble("sentinel_cc4_stage", 0);
 				}
