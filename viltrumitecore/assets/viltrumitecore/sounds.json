@@ -1,0 +1,30 @@
+{
+  "punch_impact": {
+    "category": "player",
+    "subtitle": "Viltrumite punch",
+    "sounds": [
+      "viltrumitecore:punch4"
+    ]
+  },
+  "dash": {
+    "category": "player",
+    "subtitle": "Viltrumite dash",
+    "sounds": [
+      "viltrumitecore:dash1"
+    ]
+  },
+  "takeoff": {
+    "category": "player",
+    "subtitle": "Viltrumite take-off",
+    "sounds": [
+      "viltrumitecore:takeoff1"
+    ]
+  },
+  "block": {
+    "category": "player",
+    "subtitle": "Viltrumite block",
+    "sounds": [
+      "viltrumitecore:block"
+    ]
+  }
+}
