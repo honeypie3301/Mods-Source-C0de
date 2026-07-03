@@ -1,0 +1,46 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.baranhan123.viltrumitecore.client.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "AbstractClientPlayerEntityMixin",
+    "AlwaysVisibleOffhandMixin",
+    "BlockModelMixin",
+    "CameraMixin",
+    "ChopHandTrackerMixin",
+    "ChopModelMixin",
+    "ChopModelMixin2",
+    "ChopRendererCoreMixin",
+    "ChopRendererCoreMixin2",
+    "ClientPlayerEntityMixin",
+    "DashModelMixin",
+    "DashRendererCoreMixin",
+    "EntityShadowMixin",
+    "FirstPersonBlockMixin",
+    "FirstPersonChop2Mixin",
+    "FirstPersonChopMixin",
+    "FirstPersonGrabMixin",
+    "FirstPersonPunchMixin",
+    "GameRendererDashMixin",
+    "GrabbedEntityRendererMixin",
+    "GrabbedEntityRendererMixin2",
+    "GrabModelMixin",
+    "HandPositionTrackerMixin",
+    "InGameHudMixin",
+    "MinecraftClientMixin",
+    "MouseMixin",
+    "PlayerEntityModelAccessor",
+    "PunchModelMixin",
+    "PunchRendererCoreMixin",
+    "SilhouetteRendererMixin",
+    "SuperSpeedModelMixin",
+    "ViltrumiteInGameHudMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
