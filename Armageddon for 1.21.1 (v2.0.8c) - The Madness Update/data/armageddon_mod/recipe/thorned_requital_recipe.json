@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "cba"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:vitalis_pearl"
+    },
+    "b": {
+      "item": "armageddon_mod:helionite_ingot"
+    },
+    "c": {
+      "item": "minecraft:rose_bush"
+    },
+    "d": {
+      "item": "armageddon_mod:rose_shield"
+    },
+    "e": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "f": {
+      "item": "armageddon_mod:anhk_aegis"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:thorned_requital",
+    "count": 1
+  }
+}

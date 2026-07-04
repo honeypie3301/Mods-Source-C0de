@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " ba",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:elvenite_ingot"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "armageddon_mod:elvenite_scythe",
+    "count": 1
+  }
+}

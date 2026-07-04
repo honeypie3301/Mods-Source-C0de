@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "minecraft:stick"
+  },
+  "result": {
+    "id": "armageddon_mod:sparkling_stick"
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "armageddon_mod:item/yugure"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-46.25, -90, 0],
+			"translation": [0.25, 11, 0.5],
+			"scale": [1.92, 1.92, 1.41]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-46.25, 90, 0],
+			"translation": [0.25, 11, 0.5],
+			"scale": [1.92, 1.92, 1.41]
+		},
+		"firstperson_righthand": {
+			"rotation": [-46.25, -90, 0],
+			"translation": [0.25, 11, 0.5],
+			"scale": [1.92, 1.92, 1.41]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-46.25, 90, 0],
+			"translation": [0.25, 11, 0.5],
+			"scale": [1.92, 1.92, 1.41]
+		},
+		"ground": {
+			"rotation": [9.55, -4.63, -51.85],
+			"translation": [0, 4.75, 0],
+			"scale": [1.5, 1.5, 0.8]
+		}
+	}
+}

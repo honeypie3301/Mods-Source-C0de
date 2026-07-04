@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "b": {
+      "item": "armageddon_mod:gilded_plate"
+    },
+    "c": {
+      "item": "armageddon_mod:ancient_blueprint"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:titan_insigna",
+    "count": 1
+  }
+}

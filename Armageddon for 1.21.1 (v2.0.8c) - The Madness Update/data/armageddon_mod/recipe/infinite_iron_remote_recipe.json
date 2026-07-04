@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:nether_star"
+    },
+    "b": {
+      "item": "minecraft:gold_block"
+    },
+    "c": {
+      "item": "armageddon_mod:iron_remote"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:infinite_iron_remote",
+    "count": 1
+  }
+}

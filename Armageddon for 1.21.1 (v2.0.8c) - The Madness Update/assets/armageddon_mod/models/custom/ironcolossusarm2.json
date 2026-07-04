@@ -1,0 +1,274 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "ironcolossusarm",
+  "texture_size": [
+    32,
+    32
+  ],
+  "elements": [
+    {
+      "name": "arm0",
+      "from": [
+        0,
+        9,
+        5
+      ],
+      "to": [
+        4,
+        11,
+        9
+      ],
+      "shade": false,
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0,
+          3,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            10,
+            4,
+            11
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            10,
+            2,
+            11
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            6,
+            10,
+            8,
+            11
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            4,
+            10,
+            6,
+            11
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            4,
+            10,
+            2,
+            8
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            6,
+            8,
+            4,
+            10
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "from": [
+        -1,
+        10,
+        4
+      ],
+      "to": [
+        5,
+        20,
+        10
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0,
+          34,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            3,
+            6,
+            8
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            3,
+            3,
+            8
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            9,
+            3,
+            12,
+            8
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            6,
+            3,
+            9,
+            8
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            6,
+            3,
+            3,
+            0
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            9,
+            0,
+            6,
+            3
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        6.5,
+        -3,
+        -2.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        -5.5,
+        -3,
+        -2.25
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        6.5,
+        -2.75,
+        -3.75
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        -1.75,
+        -1.5,
+        -3.75
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0.02,
+        0,
+        -52
+      ],
+      "translation": [
+        -1.25,
+        -8.25,
+        0.25
+      ]
+    },
+    "gui": {
+      "rotation": [
+        -30,
+        -180,
+        30
+      ],
+      "translation": [
+        -8,
+        -2.75,
+        0
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        -180,
+        0,
+        140
+      ],
+      "translation": [
+        0,
+        -12,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "arm0",
+      "origin": [
+        0,
+        34,
+        0
+      ],
+      "color": 0,
+      "nbt": "{}",
+      "shade": false,
+      "children": [
+        0,
+        1
+      ]
+    }
+  ]
+}

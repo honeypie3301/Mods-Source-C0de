@@ -1,0 +1,34 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "armageddon_mod:item/ultimate_biome_blade_schulk"
+  }
+,
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 13.25, 0.75],
+			"scale": [2.2, 2.2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 13.25, 0.75],
+			"scale": [2.2, 2.2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 13.25, 0.75],
+			"scale": [2.2, 2.2, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 13.25, 0.75],
+			"scale": [2.2, 2.2, 1]
+		},
+		"ground": {
+			"rotation": [0, 90, -45],
+			"translation": [0, -0.25, 0.75],
+			"scale": [1.5, 1.5, 1]
+		}
+	}
+}

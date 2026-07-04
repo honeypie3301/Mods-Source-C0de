@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:elvenite_bricks_slab"
+    },
+    "b": {
+      "item": "minecraft:vine"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:mossy_elvenite_bricks_slab",
+    "count": 1
+  }
+}

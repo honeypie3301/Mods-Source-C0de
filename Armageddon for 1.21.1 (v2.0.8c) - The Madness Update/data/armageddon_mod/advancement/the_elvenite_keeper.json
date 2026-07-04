@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:elvenite_paladin_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_elvenite_keeper.title"
+    },
+    "description": {
+      "translate": "advancements.the_elvenite_keeper.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_elvenite_keeper_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:titans_insigna_advancement"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "b": {
+      "item": "armageddon_mod:netherbound_shackles"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:seal_of_cataclysm",
+    "count": 1
+  }
+}

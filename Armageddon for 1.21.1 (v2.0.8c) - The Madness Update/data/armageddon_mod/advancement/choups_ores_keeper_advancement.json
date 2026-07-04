@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "armageddon_mod:textures/screens/redstone.png",
+    "icon": {
+      "id": "armageddon_mod:the_iron_colossus_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.choups_ores_keeper_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.choups_ores_keeper_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "choups_ores_keeper_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  }
+}

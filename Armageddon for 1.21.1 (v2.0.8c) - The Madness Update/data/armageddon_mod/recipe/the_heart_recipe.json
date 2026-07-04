@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:ghast_tear"
+    },
+    "b": {
+      "item": "armageddon_mod:bloody_ingot"
+    },
+    "c": {
+      "item": "armageddon_mod:hemalith_catalyst"
+    },
+    "d": {
+      "item": "armageddon_mod:arion_heart"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_heart",
+    "count": 1
+  }
+}

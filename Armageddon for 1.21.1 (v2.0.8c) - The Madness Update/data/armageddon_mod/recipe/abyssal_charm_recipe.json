@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "b": {
+      "item": "armageddon_mod:charm_of_the_sea"
+    },
+    "c": {
+      "item": "armageddon_mod:heart_of_the_abyss"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:abyssal_charm",
+    "count": 1
+  }
+}

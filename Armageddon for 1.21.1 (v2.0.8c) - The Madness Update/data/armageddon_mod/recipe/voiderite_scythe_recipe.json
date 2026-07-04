@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "ab ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:voiderite"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:voiderite_scythe",
+    "count": 1
+  }
+}

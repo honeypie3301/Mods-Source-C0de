@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:spiritof_chaos"
+    },
+    "b": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "c": {
+      "item": "minecraft:bell"
+    },
+    "d": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    },
+    "e": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "result": {
+    "item": "armageddon_mod:the_doomcaller_bell",
+    "count": 1
+  }
+}

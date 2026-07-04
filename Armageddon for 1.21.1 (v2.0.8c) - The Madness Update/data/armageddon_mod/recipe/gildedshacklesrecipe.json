@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:gilded_plate"
+    },
+    "b": {
+      "item": "armageddon_mod:gilded_nugget"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:gilded_shackles",
+    "count": 1
+  }
+}

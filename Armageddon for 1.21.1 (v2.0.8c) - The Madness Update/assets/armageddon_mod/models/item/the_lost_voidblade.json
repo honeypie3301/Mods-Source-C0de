@@ -1,0 +1,33 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "armageddon_mod:item/vaedric_lost_blade"
+  }
+,
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 8.25, 0.5],
+			"scale": [1.85, 1.85, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 8.25, 0.5],
+			"scale": [1.85, 1.85, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 8.25, 0.5],
+			"scale": [1.85, 1.85, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 8.25, 0.5],
+			"scale": [1.85, 1.85, 1]
+		},
+		"ground": {
+			"translation": [0, 6.25, 0],
+			"scale": [1.2, 1.2, 0.8]
+		}
+	}
+}

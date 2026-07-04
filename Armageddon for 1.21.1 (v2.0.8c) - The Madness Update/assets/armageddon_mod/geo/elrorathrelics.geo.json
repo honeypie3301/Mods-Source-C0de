@@ -1,0 +1,44 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.arionrelics",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "main",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-8, 0, -8], "size": [16, 2, 16], "uv": [0, 0]},
+						{"origin": [-6, 2, -6], "size": [12, 2, 12], "uv": [0, 18]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "main",
+					"pivot": [0, 11, 0],
+					"cubes": [
+						{"origin": [-4, 11, -4], "size": [8, 10, 8], "uv": [0, 45]},
+						{"origin": [-4, 11, -4], "size": [8, 10, 8], "inflate": 0.25, "uv": [32, 37]},
+						{"origin": [-4, 1.5, -4], "size": [8, 9, 2], "inflate": 0.25, "uv": [36, 18]},
+						{"origin": [-5, 19, -5], "size": [10, 3, 10], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "nose",
+					"parent": "head",
+					"pivot": [0, 5, 0],
+					"cubes": [
+						{"origin": [-1, 10, -6], "size": [2, 4, 2], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    " ba",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:doom_powder"
+    },
+    "b": {
+      "item": "armageddon_mod:lament_of_khyros"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:fork_of_lamentations",
+    "count": 1
+  }
+}

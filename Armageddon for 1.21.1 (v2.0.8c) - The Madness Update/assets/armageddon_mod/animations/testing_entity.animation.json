@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.testingentity.idle": {
+			"animation_length": 2.0417,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"vector": [0, 0, 95],
+						"easing": "linear"
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"vector": [0, 0, -95],
+						"easing": "linear"
+					}
+				}
+			}
+		}
+	}
+}

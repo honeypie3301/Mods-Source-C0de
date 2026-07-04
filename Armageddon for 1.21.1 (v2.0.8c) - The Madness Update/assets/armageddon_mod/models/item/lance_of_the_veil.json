@@ -1,0 +1,7 @@
+{
+  "parent": "armageddon_mod:custom/shadowedspearitem",
+  "textures": {
+    "0": "armageddon_mod:block/shadowedspeartexture",
+    "particle": "armageddon_mod:item/arrow"
+  }
+}

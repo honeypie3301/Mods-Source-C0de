@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " b ",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    "b": {
+      "item": "minecraft:snow_block"
+    },
+    "c": {
+      "item": "armageddon_mod:gemwoven_fragment"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:shivering_shard",
+    "count": 1
+  }
+}

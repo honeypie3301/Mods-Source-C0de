@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "armageddon_mod:elvenite_ore"
+  },
+  "result": {
+    "id": "armageddon_mod:elvenite_ingot"
+  }
+}

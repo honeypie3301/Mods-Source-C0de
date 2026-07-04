@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 160,
+  "ingredient": {
+    "item": "armageddon_mod:voiderite_ore"
+  },
+  "result": {
+    "id": "armageddon_mod:voiderite"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:bloody_hoe",
+    "armageddon_mod:voiderite_hoe",
+    "armageddon_mod:elvenite_hoe",
+    "armageddon_mod:prismatic_hoe",
+    "armageddon_mod:helionite_hoe",
+    "armageddon_mod:gilded_hoe"
+  ]
+}

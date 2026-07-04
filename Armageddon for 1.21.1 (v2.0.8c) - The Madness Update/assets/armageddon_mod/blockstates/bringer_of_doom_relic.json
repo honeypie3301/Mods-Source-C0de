@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "armageddon_mod:custom/bringer_of_doom_relic_particle"
+    },
+    "facing=east": {
+      "model": "armageddon_mod:custom/bringer_of_doom_relic_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "armageddon_mod:custom/bringer_of_doom_relic_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "armageddon_mod:custom/bringer_of_doom_relic_particle",
+      "y": 270
+    }
+  }
+}

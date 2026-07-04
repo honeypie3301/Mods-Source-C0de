@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    "aba",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:spiritof_dread"
+    },
+    "b": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "c": {
+      "item": "armageddon_mod:rustyswordofthelegendaryhero"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_sword_of_the_starved",
+    "count": 1
+  }
+}

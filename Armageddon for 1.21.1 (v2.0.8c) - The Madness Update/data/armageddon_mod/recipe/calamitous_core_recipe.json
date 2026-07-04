@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "armageddon_mod:souls"
+    },
+    "b": {
+      "item": "armageddon_mod:doom_powder"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:calamitous_core",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bc ",
+    "ad "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "b": {
+      "item": "armageddon_mod:the_chaos_saber"
+    },
+    "c": {
+      "item": "armageddon_mod:spiritof_chaos"
+    },
+    "d": {
+      "item": "armageddon_mod:the_voidfang_saber"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_annihilation",
+    "count": 1
+  }
+}

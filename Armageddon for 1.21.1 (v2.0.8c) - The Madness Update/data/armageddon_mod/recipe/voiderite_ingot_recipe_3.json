@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "armageddon_mod:voiderite_block"
+    }
+  ],
+  "result": {
+    "id": "armageddon_mod:voiderite",
+    "count": 9
+  }
+}

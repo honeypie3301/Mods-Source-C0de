@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "armageddon_mod:tinkerers_accesory_template"
+  },
+  "base": {
+    "item": "armageddon_mod:blindfold"
+  },
+  "addition": {
+    "item": "armageddon_mod:sculk_eye_gem"
+  },
+  "result": {
+    "id": "armageddon_mod:eye_of_darkness"
+  }
+}

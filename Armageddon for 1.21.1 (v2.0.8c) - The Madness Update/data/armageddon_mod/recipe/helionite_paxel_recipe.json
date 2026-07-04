@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    " d ",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:helionite_axe"
+    },
+    "b": {
+      "item": "armageddon_mod:helionite_shovel"
+    },
+    "c": {
+      "item": "armageddon_mod:helionite_pickaxe"
+    },
+    "d": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:helionite_paxel",
+    "count": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:zoranth_relic"
+    },
+    "title": {
+      "translate": "advancements.zoranth_relic_advancment.title"
+    },
+    "description": {
+      "translate": "advancements.zoranth_relic_advancment.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "zoranth_relic_advancment_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armageddon_mod:zoranth_relic"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "armageddon_mod:armageddon_mod_relics"
+}

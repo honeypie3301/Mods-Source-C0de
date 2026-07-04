@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:ancient_prism"
+    },
+    "b": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "c": {
+      "item": "armageddon_mod:prismatic_sword"
+    },
+    "d": {
+      "item": "armageddon_mod:rustyswordofthelegendaryhero"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_prismatic_blade",
+    "count": 1
+  }
+}

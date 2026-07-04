@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:doom_powder"
+    },
+    "b": {
+      "item": "armageddon_mod:vitalis_pearl"
+    },
+    "c": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "d": {
+      "item": "armageddon_mod:swordofthe_elements"
+    },
+    "e": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "f": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:ultimate_sword_of_the_elements",
+    "count": 1
+  }
+}

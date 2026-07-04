@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:elvenite_armor_leggings",
+    "armageddon_mod:elvenite_armor_chestplate",
+    "armageddon_mod:elvenite_armor_boots",
+    "armageddon_mod:elvenite_armor_helmet"
+  ]
+}

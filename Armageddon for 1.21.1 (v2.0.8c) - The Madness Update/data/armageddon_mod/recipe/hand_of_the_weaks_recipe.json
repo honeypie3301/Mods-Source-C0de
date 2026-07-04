@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "b": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "c": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    },
+    "d": {
+      "item": "minecraft:iron_block"
+    },
+    "e": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:hand_of_the_weaks",
+    "count": 1
+  }
+}

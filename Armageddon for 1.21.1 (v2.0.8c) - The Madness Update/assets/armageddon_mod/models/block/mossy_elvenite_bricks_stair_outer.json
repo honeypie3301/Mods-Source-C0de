@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "armageddon_mod:block/mossy_elvenite_bricks",
+    "bottom": "armageddon_mod:block/mossy_elvenite_bricks",
+    "top": "armageddon_mod:block/mossy_elvenite_bricks",
+    "side": "armageddon_mod:block/mossy_elvenite_bricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:eclipsium_alloy"
+    },
+    "b": {
+      "item": "armageddon_mod:hemalith_catalyst"
+    },
+    "c": {
+      "item": "armageddon_mod:dying_star"
+    },
+    "d": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "e": {
+      "item": "armageddon_mod:umbral_sun"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:cosmos_shard",
+    "count": 1
+  }
+}

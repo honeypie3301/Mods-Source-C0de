@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "armageddon_mod:block/cracked_elvenite_bricks",
+    "up": "armageddon_mod:block/cracked_elvenite_bricks",
+    "north": "armageddon_mod:block/cracked_elvenite_bricks",
+    "east": "armageddon_mod:block/cracked_elvenite_bricks",
+    "south": "armageddon_mod:block/cracked_elvenite_bricks",
+    "west": "armageddon_mod:block/cracked_elvenite_bricks",
+    "particle": "armageddon_mod:block/cracked_elvenite_bricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:polished_blackstone"
+    },
+    "b": {
+      "item": "armageddon_mod:helionite_block"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:solar_obelisk",
+    "count": 1
+  }
+}

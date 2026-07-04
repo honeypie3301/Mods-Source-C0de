@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "armageddon_mod:helionite_smithing_template"
+  },
+  "base": {
+    "item": "armageddon_mod:the_world_breaker_axe"
+  },
+  "addition": {
+    "item": "armageddon_mod:helionite_ingot"
+  },
+  "result": {
+    "id": "armageddon_mod:the_world_flare_axe"
+  }
+}

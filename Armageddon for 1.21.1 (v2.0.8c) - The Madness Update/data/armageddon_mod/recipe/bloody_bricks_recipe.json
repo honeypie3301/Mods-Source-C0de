@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone_bricks"
+    },
+    "b": {
+      "item": "armageddon_mod:bloody_ingot"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:bloody_bricks",
+    "count": 16
+  }
+}

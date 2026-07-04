@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "armageddon_mod:item/eye_of_the_darkness3"
+  }
+}

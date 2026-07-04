@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "armageddon_mod:tinkerers_accesory_template"
+  },
+  "base": {
+    "item": "armageddon_mod:wither_spine"
+  },
+  "addition": {
+    "item": "armageddon_mod:bee_stinger"
+  },
+  "result": {
+    "id": "armageddon_mod:necrotoxic_shell"
+  }
+}

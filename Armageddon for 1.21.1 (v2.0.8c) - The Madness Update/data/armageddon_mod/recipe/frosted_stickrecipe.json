@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:snowball"
+    },
+    "b": {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    "c": {
+      "item": "minecraft:ice"
+    },
+    "d": {
+      "item": "armageddon_mod:sparkling_stick"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:frosted_stick",
+    "count": 1
+  }
+}

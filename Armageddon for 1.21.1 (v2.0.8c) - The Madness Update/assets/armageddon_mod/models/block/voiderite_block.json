@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "armageddon_mod:block/voiderite_block",
+    "up": "armageddon_mod:block/voiderite_block",
+    "north": "armageddon_mod:block/voiderite_block",
+    "east": "armageddon_mod:block/voiderite_block",
+    "south": "armageddon_mod:block/voiderite_block",
+    "west": "armageddon_mod:block/voiderite_block",
+    "particle": "armageddon_mod:block/voiderite_block"
+  },
+  "render_type": "solid"
+}

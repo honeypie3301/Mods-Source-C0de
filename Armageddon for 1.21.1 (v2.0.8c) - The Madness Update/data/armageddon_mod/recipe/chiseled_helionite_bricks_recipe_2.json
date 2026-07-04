@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "armageddon_mod:helionite_bricks"
+  },
+  "result": {
+    "id": "armageddon_mod:chiseled_helionite_bricks",
+    "count": 1
+  }
+}

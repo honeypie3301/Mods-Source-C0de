@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "aca",
+    "da "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "b": {
+      "item": "armageddon_mod:doom_powder"
+    },
+    "c": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    },
+    "d": {
+      "item": "armageddon_mod:the_emerald_wrath"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_chaosphere_blade",
+    "count": 1
+  }
+}

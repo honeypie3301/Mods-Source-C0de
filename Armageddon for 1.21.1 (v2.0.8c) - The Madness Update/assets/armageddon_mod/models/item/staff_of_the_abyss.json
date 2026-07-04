@@ -1,0 +1,33 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "armageddon_mod:item/staff_of_the_abyss"
+  }
+,
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 10.75, -0.5],
+			"scale": [2, 2, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 10.75, -0.5],
+			"scale": [2, 2, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 10.75, -0.5],
+			"scale": [2, 2, 0.85]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 10.75, -0.5],
+			"scale": [2, 2, 0.85]
+		},
+		"ground": {
+			"translation": [0, 10, 0],
+			"scale": [1.5, 1.5, 1]
+		}
+	}
+}

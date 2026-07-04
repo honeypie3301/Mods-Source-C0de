@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "b": {
+      "tag": "minecraft:small_flowers"
+    },
+    "c": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "d": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:idol_of_the_poisonous_vine",
+    "count": 1
+  }
+}

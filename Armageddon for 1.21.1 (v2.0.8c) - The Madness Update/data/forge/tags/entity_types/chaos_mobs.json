@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "illusioner",
+    "zombie",
+    "evoker",
+    "pillager",
+    "vex",
+    "magma_cube",
+    "blaze",
+    "ravager"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:voiderite"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:voiderite_armor_helmet",
+    "count": 1
+  }
+}

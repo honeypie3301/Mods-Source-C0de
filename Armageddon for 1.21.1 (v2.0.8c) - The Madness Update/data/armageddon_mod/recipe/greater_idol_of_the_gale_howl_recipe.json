@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "dbd"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "b": {
+      "item": "armageddon_mod:elvenite_ingot"
+    },
+    "c": {
+      "item": "armageddon_mod:idol_of_the_gale_howl"
+    },
+    "d": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:greater_idol_of_the_gale_howl",
+    "count": 1
+  }
+}

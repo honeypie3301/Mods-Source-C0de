@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:deepslate"
+    },
+    "b": {
+      "item": "minecraft:string"
+    },
+    "c": {
+      "item": "armageddon_mod:pocket_compass"
+    },
+    "d": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "e": {
+      "item": "armageddon_mod:fossilized_claw"
+    },
+    "f": {
+      "item": "armageddon_mod:ancient_builders_charm"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:spelunker_talisman",
+    "count": 1
+  }
+}

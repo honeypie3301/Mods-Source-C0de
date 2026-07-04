@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:elvenite_bricks_wall",
+    "armageddon_mod:elvenite_block",
+    "armageddon_mod:mossy_elvenite_bricks_slab",
+    "armageddon_mod:elvenite_ore",
+    "armageddon_mod:cracked_elvenite_bricks",
+    "armageddon_mod:elvenite_bricks_slab",
+    "armageddon_mod:mossy_elvenite_bricks_wall",
+    "armageddon_mod:elvenite_bricks_stairs",
+    "armageddon_mod:elvenite_bricks",
+    "armageddon_mod:mossy_elvenite_bricks",
+    "armageddon_mod:chiseled_elvenite_bricks",
+    "armageddon_mod:mossy_elvenite_bricks_stair"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "armageddon_mod:block/voiderite_bricks",
+    "particle": "armageddon_mod:block/voiderite_bricks"
+  },
+  "render_type": "solid"
+}

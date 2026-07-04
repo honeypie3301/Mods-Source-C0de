@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:iron_colossus_relic"
+    },
+    "title": {
+      "translate": "advancements.iron_colossus_relic_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.iron_colossus_relic_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iron_colossus_relic_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armageddon_mod:iron_colossus_relic"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "armageddon_mod:armageddon_mod_relics"
+}

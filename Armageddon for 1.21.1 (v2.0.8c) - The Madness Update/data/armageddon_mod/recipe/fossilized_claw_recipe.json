@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "b a",
+    "cb "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:splintered_bone"
+    },
+    "b": {
+      "item": "minecraft:bone"
+    },
+    "c": {
+      "item": "minecraft:bone_meal"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:fossilized_claw",
+    "count": 1
+  }
+}

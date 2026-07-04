@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:doom_powder"
+    },
+    "b": {
+      "item": "armageddon_mod:protectors_core"
+    },
+    "c": {
+      "item": "armageddon_mod:vagabonds_hood"
+    },
+    "d": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "e": {
+      "item": "armageddon_mod:necrotoxic_shell"
+    },
+    "f": {
+      "item": "armageddon_mod:eye_of_darkness"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:ankh_tablet",
+    "count": 1
+  }
+}

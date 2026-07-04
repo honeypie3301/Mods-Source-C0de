@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "armageddon_mod:chiseled_bloody_bricks"
+  },
+  "result": {
+    "id": "armageddon_mod:bloody_bricks",
+    "count": 1
+  }
+}

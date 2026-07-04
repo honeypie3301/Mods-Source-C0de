@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:bloody_armor_helmet",
+    "armageddon_mod:bloody_armor_chestplate",
+    "armageddon_mod:bloody_armor_leggings",
+    "armageddon_mod:bloody_armor_boots"
+  ]
+}

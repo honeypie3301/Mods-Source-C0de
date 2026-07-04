@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:shadow_fragment"
+    },
+    "b": {
+      "item": "armageddon_mod:umbral_sun"
+    },
+    "c": {
+      "item": "armageddon_mod:true_helionite_sword"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_duskfire_blade",
+    "count": 1
+  }
+}

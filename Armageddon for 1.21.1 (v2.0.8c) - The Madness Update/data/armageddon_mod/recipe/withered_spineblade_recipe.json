@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "ab ",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:withered_splintered_bone"
+    },
+    "b": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:withered_spineblade",
+    "count": 1
+  }
+}

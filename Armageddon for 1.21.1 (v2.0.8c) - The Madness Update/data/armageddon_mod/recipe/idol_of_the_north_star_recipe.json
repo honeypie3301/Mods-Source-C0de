@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:packed_ice"
+    },
+    "b": {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    "c": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "d": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:idolofthe_north_star",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:helionite_bricks",
+    "armageddon_mod:mossy_helionite_wall_bricks",
+    "armageddon_mod:helionite_bricks_slab",
+    "armageddon_mod:chiseled_helionite_bricks",
+    "armageddon_mod:helionite_bricks_stairs",
+    "armageddon_mod:helionite_bricks_wall",
+    "armageddon_mod:mossy_helionite_stairs",
+    "armageddon_mod:cracked_helionite_bricks",
+    "armageddon_mod:helionite_block",
+    "armageddon_mod:mossy_helionite_bricks",
+    "armageddon_mod:mossy_helionite_bricks_slab"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:eldoraththe_ancient_builder_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_diamond_keeper.title"
+    },
+    "description": {
+      "translate": "advancements.the_diamond_keeper.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_diamond_keeper_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:builder_stone_advancement"
+}

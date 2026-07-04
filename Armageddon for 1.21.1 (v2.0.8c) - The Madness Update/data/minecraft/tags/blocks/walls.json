@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:mossy_bloody_wall_bricks",
+    "armageddon_mod:elvenite_bricks_wall",
+    "armageddon_mod:mossy_helionite_wall_bricks",
+    "armageddon_mod:mossy_elvenite_bricks_wall",
+    "armageddon_mod:helionite_bricks_wall",
+    "armageddon_mod:voiderite_bricks_wall",
+    "armageddon_mod:mossy_voiderite_wall_bricks",
+    "armageddon_mod:bloody_bricks_wall"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "armageddon_mod:block/cracked_voiderite_bricks",
+    "up": "armageddon_mod:block/cracked_voiderite_bricks",
+    "north": "armageddon_mod:block/cracked_voiderite_bricks",
+    "east": "armageddon_mod:block/cracked_voiderite_bricks",
+    "south": "armageddon_mod:block/cracked_voiderite_bricks",
+    "west": "armageddon_mod:block/cracked_voiderite_bricks",
+    "particle": "armageddon_mod:block/cracked_voiderite_bricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherrack"
+    },
+    "b": {
+      "item": "armageddon_mod:elvenite_ingot"
+    },
+    "c": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "d": {
+      "tag": "armageddon_mod:souls"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:calamitous_smithing_template",
+    "count": 1
+  }
+}

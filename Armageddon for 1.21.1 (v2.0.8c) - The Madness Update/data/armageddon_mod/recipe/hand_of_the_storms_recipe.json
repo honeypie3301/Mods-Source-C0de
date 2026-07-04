@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "b": {
+      "item": "minecraft:lightning_rod"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "d": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "e": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:hand_of_the_storms",
+    "count": 1
+  }
+}

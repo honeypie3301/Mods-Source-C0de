@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sunbeam.spawn": {
+			"animation_length": 1.5,
+			"bones": {
+				"main": {
+					"scale": {
+						"0.0": {
+							"vector": [0.2, 1, 0.2],
+							"easing": "linear"
+						},
+						"0.75": {
+							"vector": [1, 1, 1],
+							"easing": "easeInOutBack",
+							"easingArgs": []
+						}
+					}
+				}
+			}
+		},
+		"animation.sunbeam.idle": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

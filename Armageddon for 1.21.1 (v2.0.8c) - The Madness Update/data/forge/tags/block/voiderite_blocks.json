@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:mossy_voiderite_stairs",
+    "armageddon_mod:voiderite_bricks_stairs",
+    "armageddon_mod:cracked_voiderite_bricks",
+    "armageddon_mod:mossy_voiderite_bricks",
+    "armageddon_mod:mossy_voiderite_bricks_slab",
+    "armageddon_mod:voiderite_bricks",
+    "armageddon_mod:voiderite_bricks_wall",
+    "armageddon_mod:voiderite_block",
+    "armageddon_mod:mossy_voiderite_wall_bricks",
+    "armageddon_mod:voiderite_ore",
+    "armageddon_mod:chiseled_voiderite_bricks",
+    "armageddon_mod:voiderite_bricks_slab"
+  ]
+}

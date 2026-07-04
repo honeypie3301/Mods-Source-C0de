@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "armageddon_mod:the_calamities_relic_1"
+    },
+    "title": {
+      "translate": "advancements.the_calamities_relic_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.the_calamities_relic_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_calamities_relic_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armageddon_mod:the_calamities_relic_1"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "armageddon_mod:armageddon_mod_relics"
+}

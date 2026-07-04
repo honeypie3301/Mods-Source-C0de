@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "the_end",
+  "features": "armageddon_mod:voiderite_ore",
+  "step": "underground_ores"
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:iron_ore",
+    "minecraft:damaged_anvil",
+    "minecraft:iron_trapdoor",
+    "minecraft:raw_iron_block",
+    "minecraft:iron_door",
+    "minecraft:iron_block",
+    "minecraft:deepslate_iron_ore",
+    "minecraft:iron_bars"
+  ]
+}

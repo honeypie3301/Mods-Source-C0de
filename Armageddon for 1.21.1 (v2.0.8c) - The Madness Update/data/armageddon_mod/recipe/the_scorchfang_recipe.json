@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bc ",
+    "db "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:coal_block"
+    },
+    "c": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "d": {
+      "item": "armageddon_mod:gemwoven_fragment"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_scorchfang",
+    "count": 1
+  }
+}

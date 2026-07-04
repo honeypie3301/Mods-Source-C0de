@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:goblin_lord_relic"
+    },
+    "title": {
+      "translate": "advancements.the_goblin_lord_relic.title"
+    },
+    "description": {
+      "translate": "advancements.the_goblin_lord_relic.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_goblin_lord_relic_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armageddon_mod:goblin_lord_relic"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "armageddon_mod:armageddon_mod_relics"
+}

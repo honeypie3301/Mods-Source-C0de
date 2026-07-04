@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:helionite_nugget"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:helionite_ingot",
+    "count": 1
+  }
+}

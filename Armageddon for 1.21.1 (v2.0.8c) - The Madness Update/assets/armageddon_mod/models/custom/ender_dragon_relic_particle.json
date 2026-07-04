@@ -1,0 +1,6 @@
+{
+  "parent": "armageddon_mod:displaysettings/enderdragonrelic.item",
+  "textures": {
+    "particle": "armageddon_mod:block/enderdragonrelic"
+  }
+}

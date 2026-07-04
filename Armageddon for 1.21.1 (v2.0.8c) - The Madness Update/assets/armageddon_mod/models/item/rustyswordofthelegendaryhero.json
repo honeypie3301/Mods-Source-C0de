@@ -1,0 +1,33 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "armageddon_mod:item/rusty_sword_of_the_legendary_hero_2"
+  }
+,
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, 90, 0],
+			"translation": [0, 12.25, 1.25],
+			"scale": [1.5, 1.5, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-45, 90, 0],
+			"translation": [0, 12.25, 1.25],
+			"scale": [1.5, 1.5, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [45, 90, 0],
+			"translation": [0, 12.25, 1.25],
+			"scale": [1.5, 1.5, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-45, 90, 0],
+			"translation": [0, 12.25, 1.25],
+			"scale": [1.5, 1.5, 1]
+		},
+		"ground": {
+			"translation": [0, 9.5, 0],
+			"scale": [1, 1, 0.6]
+		}
+	}
+}

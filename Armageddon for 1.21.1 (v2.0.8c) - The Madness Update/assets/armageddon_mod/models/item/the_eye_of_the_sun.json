@@ -1,0 +1,31 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "armageddon_mod:custom/theeyeofthesun",
+    "textures": {
+      "0": "armageddon_mod:block/eyeofthesuntexture",
+      "particle": "armageddon_mod:item/arrow"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "armageddon_mod:item/theyeofthesun2d"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "armageddon_mod:item/theyeofthesun2d"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "armageddon_mod:item/theyeofthesun2d"
+      }
+    }
+  }
+}

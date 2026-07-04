@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:doom_powder"
+    },
+    "b": {
+      "item": "armageddon_mod:spiritof_chaos"
+    },
+    "c": {
+      "item": "armageddon_mod:the_titans_oath"
+    },
+    "d": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "armageddon_mod:the_oath_breaker_of_chaos",
+    "count": 1
+  }
+}

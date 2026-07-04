@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "armageddon_mod:item/bruh_sword2"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 12.5, 1.5],
+			"scale": [2, 2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 12.5, 1.5],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 12.5, 1.5],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 12.5, 1.5],
+			"scale": [2, 2, 1]
+		},
+		"ground": {
+			"translation": [-2, 7.75, 0],
+			"scale": [1.2, 1.2, 1]
+		},
+		"gui": {
+			"translation": [0.75, 0.75, 0],
+			"scale": [1.1, 1.1, 1]
+		}
+	}
+}

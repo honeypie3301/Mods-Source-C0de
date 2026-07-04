@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:bringer_of_doom_relic"
+    },
+    "title": {
+      "translate": "advancements.bringer_of_doom_relic_advcancement.title"
+    },
+    "description": {
+      "translate": "advancements.bringer_of_doom_relic_advcancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bringer_of_doom_relic_advcancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armageddon_mod:bringer_of_doom_relic"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "armageddon_mod:armageddon_mod_relics"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "armageddon_mod:blocks/mossy_elvenite_bricks_wall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "armageddon_mod:mossy_elvenite_bricks_wall"
+        }
+      ]
+    }
+  ]
+}

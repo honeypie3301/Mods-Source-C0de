@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "ab ",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:spirit_of_despair"
+    },
+    "b": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "c": {
+      "item": "armageddon_mod:echo_of_discord"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_teleportation_dagger",
+    "count": 1
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "armageddon_mod:item/hellforged_bident"
+  }
+,
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 11.5, -0.5],
+			"scale": [2, 2, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 11.5, -0.5],
+			"scale": [2, 2, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 2, -0.5],
+			"scale": [2, 2, 0.85]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 2, -0.5],
+			"scale": [2, 2, 0.85]
+		},
+		"ground": {
+			"translation": [0, 11.5, 0],
+			"scale": [1.5, 1.5, 1]
+		}
+	}
+}

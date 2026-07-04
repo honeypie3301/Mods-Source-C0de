@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "armageddon_mod:block/helionite_brick_slab"
+    },
+    "type=top": {
+      "model": "armageddon_mod:block/helionite_brick_slab_top"
+    },
+    "type=double": {
+      "model": "armageddon_mod:block/helionite_brick_slab_full"
+    }
+  }
+}

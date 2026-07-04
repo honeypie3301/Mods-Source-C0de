@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "armageddon_mod:tinkerers_accesory_template"
+  },
+  "base": {
+    "item": "armageddon_mod:iron_ring"
+  },
+  "addition": {
+    "item": "armageddon_mod:guardians_crystal"
+  },
+  "result": {
+    "id": "armageddon_mod:protectors_core"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:vitalis_pearl"
+    },
+    "b": {
+      "item": "armageddon_mod:elvenite_ingot"
+    },
+    "c": {
+      "item": "armageddon_mod:broken_sword_ofthe_elements"
+    },
+    "d": {
+      "item": "armageddon_mod:rustyswordofthelegendaryhero"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:swordofthe_elements",
+    "count": 1
+  }
+}

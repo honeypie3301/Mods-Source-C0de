@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond_shovel",
+    "armageddon_mod:prismatic_axe",
+    "armageddon_mod:broken_sword_of_the_elements_ice",
+    "armageddon_mod:broken_sword_of_the_elements_lightning",
+    "armageddon_mod:aqua_tide",
+    "armageddon_mod:prismatic_pickaxe",
+    "minecraft:diamond_hoe",
+    "armageddon_mod:broken_sword_of_the_elements_fire",
+    "armageddon_mod:prismatic_shovel",
+    "minecraft:diamond_sword",
+    "armageddon_mod:prismatic_hoe",
+    "minecraft:diamond_axe",
+    "armageddon_mod:diamond_throwing_dagger",
+    "minecraft:diamond_pickaxe",
+    "armageddon_mod:the_worldshaper_axe",
+    "armageddon_mod:prismatic_sword",
+    "armageddon_mod:broken_sword_ofthe_elements",
+    "armageddon_mod:broken_sword_of_the_elements_grass"
+  ]
+}

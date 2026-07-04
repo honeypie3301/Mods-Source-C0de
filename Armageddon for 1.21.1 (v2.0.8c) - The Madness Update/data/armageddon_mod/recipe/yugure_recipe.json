@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "ba ",
+    "cb "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:dying_star"
+    },
+    "b": {
+      "item": "armageddon_mod:voiderite_nugget"
+    },
+    "c": {
+      "item": "armageddon_mod:voiderite"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:yugure",
+    "count": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "fgh"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:water_bucket"
+    },
+    "b": {
+      "tag": "minecraft:saplings"
+    },
+    "c": {
+      "item": "minecraft:lava_bucket"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "e": {
+      "item": "minecraft:diamond_sword"
+    },
+    "f": {
+      "tag": "minecraft:sand"
+    },
+    "g": {
+      "item": "minecraft:gravel"
+    },
+    "h": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:broken_sword_ofthe_elements",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bc ",
+    "db "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blaze_powder"
+    },
+    "b": {
+      "item": "minecraft:blaze_rod"
+    },
+    "c": {
+      "item": "armageddon_mod:raw_elvenite"
+    },
+    "d": {
+      "item": "armageddon_mod:rustyswordofthelegendaryhero"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:incendarius",
+    "count": 1
+  }
+}

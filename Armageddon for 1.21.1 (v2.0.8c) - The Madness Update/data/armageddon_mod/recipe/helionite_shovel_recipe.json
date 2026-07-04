@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "armageddon_mod:helionite_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:netherite_shovel"
+  },
+  "addition": {
+    "item": "armageddon_mod:helionite_ingot"
+  },
+  "result": {
+    "id": "armageddon_mod:helionite_shovel"
+  }
+}

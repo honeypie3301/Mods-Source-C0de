@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "cda",
+    "ec "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:spiritof_dread"
+    },
+    "b": {
+      "item": "armageddon_mod:hemalith_catalyst"
+    },
+    "c": {
+      "item": "armageddon_mod:spirit_of_despair"
+    },
+    "d": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "e": {
+      "item": "armageddon_mod:bloody_sword"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_vampiric_blade",
+    "count": 1
+  }
+}

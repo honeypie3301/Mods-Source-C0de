@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bc ",
+    "db "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "minecraft:gold_nugget"
+    },
+    "c": {
+      "item": "minecraft:raw_gold_block"
+    },
+    "d": {
+      "item": "armageddon_mod:gemwoven_fragment"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:radiant_sanctifier",
+    "count": 1
+  }
+}

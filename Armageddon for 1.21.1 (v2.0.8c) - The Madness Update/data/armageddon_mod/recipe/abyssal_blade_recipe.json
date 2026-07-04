@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "ba ",
+    "cb "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:heart_of_the_abyss"
+    },
+    "b": {
+      "item": "armageddon_mod:spiritof_dread"
+    },
+    "c": {
+      "item": "armageddon_mod:the_prismatic_blade"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:thalassar",
+    "count": 1
+  }
+}

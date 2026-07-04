@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:helionite_bricks_wall"
+    },
+    "b": {
+      "item": "minecraft:vine"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:mossy_helionite_wall_bricks",
+    "count": 1
+  }
+}

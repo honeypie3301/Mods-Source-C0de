@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:withered_splintered_bone"
+    },
+    "b": {
+      "item": "armageddon_mod:bone_effigy"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:withered_bone_effigy",
+    "count": 1
+  }
+}

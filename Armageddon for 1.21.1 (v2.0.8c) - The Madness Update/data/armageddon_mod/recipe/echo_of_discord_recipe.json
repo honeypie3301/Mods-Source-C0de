@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    " ca",
+    "d  "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:spiritof_dread"
+    },
+    "b": {
+      "item": "armageddon_mod:spirit_of_despair"
+    },
+    "c": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "d": {
+      "item": "armageddon_mod:iron_throwing_dagger"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:echo_of_discord",
+    "count": 1
+  }
+}

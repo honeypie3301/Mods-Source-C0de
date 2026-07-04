@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bc ",
+    "db "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:feather"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "d": {
+      "item": "armageddon_mod:gemwoven_fragment"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_gale_piercer",
+    "count": 1
+  }
+}

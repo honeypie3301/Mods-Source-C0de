@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "armageddon_mod:block/bloody_stone_bricks",
+    "up": "armageddon_mod:block/bloody_stone_bricks",
+    "north": "armageddon_mod:block/bloody_stone_bricks",
+    "east": "armageddon_mod:block/bloody_stone_bricks",
+    "south": "armageddon_mod:block/bloody_stone_bricks",
+    "west": "armageddon_mod:block/bloody_stone_bricks",
+    "particle": "armageddon_mod:block/bloody_stone_bricks"
+  },
+  "render_type": "solid"
+}

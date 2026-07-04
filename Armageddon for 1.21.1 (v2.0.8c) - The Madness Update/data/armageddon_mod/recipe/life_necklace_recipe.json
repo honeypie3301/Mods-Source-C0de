@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa ",
+    "a b",
+    " bc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "armageddon_mod:bloody_ingot"
+    },
+    "c": {
+      "item": "armageddon_mod:hemalith_catalyst"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:life_necklace",
+    "count": 1
+  }
+}

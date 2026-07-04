@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:elvenite_ingot"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:elvenite_armor_helmet",
+    "count": 1
+  }
+}

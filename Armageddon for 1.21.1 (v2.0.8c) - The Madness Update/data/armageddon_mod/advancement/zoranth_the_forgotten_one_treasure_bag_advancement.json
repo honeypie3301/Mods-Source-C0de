@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:zoranth_treasure_bag"
+    },
+    "title": {
+      "translate": "advancements.zoranth_the_forgotten_one_treasure_bag_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.zoranth_the_forgotten_one_treasure_bag_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "zoranth_the_forgotten_one_treasure_bag_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armageddon_mod:zoranth_treasure_bag"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "armageddon_mod:the_netherite_keeper"
+}

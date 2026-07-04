@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:the_gobelin_lord_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_gold_keeper.title"
+    },
+    "description": {
+      "translate": "advancements.the_gold_keeper.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_gold_keeper_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:gilded_coin_advancement"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "armageddon_mod:custom/othbreakerofchaos",
+  "textures": {
+    "0": "armageddon_mod:block/oathbreakerofchaostexture",
+    "particle": "armageddon_mod:item/soul_crusher"
+  }
+}

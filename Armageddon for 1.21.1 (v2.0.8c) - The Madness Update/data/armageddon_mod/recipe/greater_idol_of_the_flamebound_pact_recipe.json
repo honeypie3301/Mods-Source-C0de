@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "dbd"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "b": {
+      "item": "armageddon_mod:elvenite_ingot"
+    },
+    "c": {
+      "item": "armageddon_mod:idol_of_the_flmaboundpact"
+    },
+    "d": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:greater_idol_of_the_flamebound_pact",
+    "count": 1
+  }
+}

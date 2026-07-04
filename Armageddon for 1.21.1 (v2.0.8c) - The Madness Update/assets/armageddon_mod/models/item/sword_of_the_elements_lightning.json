@@ -1,0 +1,33 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "armageddon_mod:item/sword_of_the_elements_lightning"
+  }
+,
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-45, -90, 0],
+			"translation": [0.25, 11.75, 1.25],
+			"scale": [2, 2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [45, -90, 0],
+			"translation": [0.25, 11.75, 1.25],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [-45, -90, 0],
+			"translation": [0.25, 11.75, 1.25],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [45, -90, 0],
+			"translation": [0.25, 11.75, 1.25],
+			"scale": [2, 2, 1]
+		},
+		"ground": {
+			"translation": [0, 6, 0],
+			"scale": [1, 1, 0.5]
+		}
+	}
+}

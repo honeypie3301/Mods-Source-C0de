@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " b ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:spirit_of_despair"
+    },
+    "b": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "c": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:hollow_pickaxe",
+    "count": 1
+  }
+}

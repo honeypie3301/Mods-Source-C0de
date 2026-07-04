@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:eclipsium_alloy"
+    },
+    "b": {
+      "item": "armageddon_mod:antique_pendant"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:pendant_of_convergence",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:spiritof_chaos"
+    },
+    "b": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "c": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:unstable_pickaxe",
+    "count": 1
+  }
+}

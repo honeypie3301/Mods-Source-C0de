@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:chiseled_elvenite_bricks"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:elvenite_bricks",
+    "count": 4
+  }
+}

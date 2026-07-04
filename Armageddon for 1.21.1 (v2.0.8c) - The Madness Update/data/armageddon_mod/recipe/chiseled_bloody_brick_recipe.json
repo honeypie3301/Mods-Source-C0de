@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:bloody_bricks_slab"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:chiseled_bloody_bricks",
+    "count": 1
+  }
+}

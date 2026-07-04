@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "armageddon_mod:tinkerers_accesory_template"
+  },
+  "base": {
+    "item": "armageddon_mod:hunter_cloak"
+  },
+  "addition": {
+    "item": "armageddon_mod:fisher_hat"
+  },
+  "result": {
+    "id": "armageddon_mod:vagabonds_hood"
+  }
+}

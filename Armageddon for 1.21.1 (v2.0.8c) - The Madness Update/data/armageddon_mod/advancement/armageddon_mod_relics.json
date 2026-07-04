@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "armageddon_mod:textures/screens/goldenstone.png",
+    "icon": {
+      "id": "armageddon_mod:iron_colossus_relic"
+    },
+    "title": {
+      "translate": "advancements.armageddon_mod_relics.title"
+    },
+    "description": {
+      "translate": "advancements.armageddon_mod_relics.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "armageddon_mod_relics_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  }
+}

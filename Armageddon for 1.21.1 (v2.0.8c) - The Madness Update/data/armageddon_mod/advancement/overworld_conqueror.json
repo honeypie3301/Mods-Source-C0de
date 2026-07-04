@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:grass_block"
+    },
+    "title": {
+      "translate": "advancements.overworld_conqueror.title"
+    },
+    "description": {
+      "translate": "advancements.overworld_conqueror.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "overworld_conqueror_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:choups_ores_keeper_advancement"
+}

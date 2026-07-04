@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "armageddon_mod:elvenite_ore",
+  "step": "underground_ores"
+}

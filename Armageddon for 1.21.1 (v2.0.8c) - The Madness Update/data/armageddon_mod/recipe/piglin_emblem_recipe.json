@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:gilded_plate"
+    },
+    "b": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "c": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:piglins_emblem",
+    "count": 1
+  }
+}

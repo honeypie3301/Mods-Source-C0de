@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "armageddon_mod:item/prism_of_realms"
+  }
+}

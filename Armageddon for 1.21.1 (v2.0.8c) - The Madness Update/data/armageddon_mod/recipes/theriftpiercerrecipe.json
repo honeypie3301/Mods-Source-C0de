@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "ba ",
+    "cb "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:spiritof_dread"
+    },
+    "b": {
+      "item": "minecraft:emerald"
+    },
+    "c": {
+      "item": "armageddon_mod:calamitous_core"
+    }
+  },
+  "result": {
+    "item": "armageddon_mod:the_riftpiercer",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:helionite_ingot"
+    },
+    "b": {
+      "item": "minecraft:coal"
+    },
+    "c": {
+      "item": "armageddon_mod:khyros_tear"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_corrupted_tear",
+    "count": 1
+  }
+}

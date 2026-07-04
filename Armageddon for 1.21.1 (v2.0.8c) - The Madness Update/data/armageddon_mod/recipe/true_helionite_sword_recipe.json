@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:helionite_ingot"
+    },
+    "b": {
+      "item": "minecraft:sunflower"
+    },
+    "c": {
+      "item": "armageddon_mod:helionite_sword"
+    },
+    "d": {
+      "item": "armageddon_mod:rustyswordofthelegendaryhero"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:true_helionite_sword",
+    "count": 1
+  }
+}

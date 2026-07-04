@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "armageddon_mod:block/blooderite_ore",
+    "up": "armageddon_mod:block/blooderite_ore",
+    "north": "armageddon_mod:block/blooderite_ore",
+    "east": "armageddon_mod:block/blooderite_ore",
+    "south": "armageddon_mod:block/blooderite_ore",
+    "west": "armageddon_mod:block/blooderite_ore",
+    "particle": "armageddon_mod:block/blooderite_ore"
+  },
+  "render_type": "solid"
+}

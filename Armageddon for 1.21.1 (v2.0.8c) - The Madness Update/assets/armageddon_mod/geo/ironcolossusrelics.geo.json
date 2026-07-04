@@ -1,0 +1,40 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ironcolossusrelics",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "main",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-8, 0, -8], "size": [16, 2, 16], "uv": [0, 0]},
+						{"origin": [-6, 2, -6], "size": [12, 2, 12], "uv": [0, 18]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "main",
+					"pivot": [0.02444, 12.8401, -2.57707],
+					"cubes": [
+						{"origin": [-4, 5, -4], "size": [8, 10, 8], "uv": [0, 32]},
+						{"origin": [-0.8, 5, -5.90846], "size": [2, 4, 2], "pivot": [0.2, 8, -4.90846], "rotation": [0, 0, 22.5], "uv": [0, 0]},
+						{"origin": [-13.7, 15, 1.2], "size": [9, 8, 0], "pivot": [-6.2, 21, -10.8], "rotation": [0, 45, 0], "uv": [36, 18]},
+						{"origin": [-4.7, 14.64466, -0.51472], "size": [9, 8, 0], "pivot": [-1.2, 18.64466, 0.48528], "rotation": [0, -45, 0], "uv": [24, 32]},
+						{"origin": [-2, 10, -5], "size": [1, 4, 2], "uv": [6, 4]},
+						{"origin": [1, 10, -5], "size": [1, 4, 2], "uv": [0, 6]},
+						{"origin": [-1, 13, -5], "size": [2, 1, 2], "uv": [4, 10]},
+						{"origin": [-1, 10, -5], "size": [2, 1, 2], "uv": [8, 0]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "armageddon_mod:novice_builder_armor_leggings"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:apprentice_builder_armor_leggings",
+    "count": 1
+  }
+}

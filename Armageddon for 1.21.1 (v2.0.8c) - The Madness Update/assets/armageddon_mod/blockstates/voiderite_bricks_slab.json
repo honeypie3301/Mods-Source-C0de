@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "armageddon_mod:block/voiderite_bricks_slab"
+    },
+    "type=top": {
+      "model": "armageddon_mod:block/voiderite_bricks_slab_top"
+    },
+    "type=double": {
+      "model": "armageddon_mod:block/voiderite_bricks_slab_full"
+    }
+  }
+}

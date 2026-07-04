@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:nyxaris_the_veil_of_oblivion_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_shadow_keeper.title"
+    },
+    "description": {
+      "translate": "advancements.the_shadow_keeper.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_shadow_keeper_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:the_corrupted_tear_advancement"
+}

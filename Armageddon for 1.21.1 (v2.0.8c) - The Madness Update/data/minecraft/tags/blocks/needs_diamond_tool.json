@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:elvenite_ore",
+    "armageddon_mod:bloody_ore",
+    "armageddon_mod:voiderite_ore"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:elvenite_ingot"
+    },
+    "b": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "c": {
+      "item": "armageddon_mod:voidcall_ward"
+    },
+    "d": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "e": {
+      "item": "armageddon_mod:ankh_tablet"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:anhk_aegis",
+    "count": 1
+  }
+}

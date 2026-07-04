@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:voiderite_shovel",
+    "armageddon_mod:elvenite_shovel",
+    "armageddon_mod:gilded_shovel",
+    "armageddon_mod:prismatic_shovel",
+    "armageddon_mod:the_hungery_shovel",
+    "armageddon_mod:unstable_shovel",
+    "armageddon_mod:bloody_shovel",
+    "armageddon_mod:hollow_shovel",
+    "armageddon_mod:helionite_shovel"
+  ]
+}

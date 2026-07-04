@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ebe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "b": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "c": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "d": {
+      "item": "minecraft:clock"
+    },
+    "e": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:moon_charm",
+    "count": 1
+  }
+}

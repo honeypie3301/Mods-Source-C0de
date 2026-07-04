@@ -1,0 +1,563 @@
+{
+  "ironcolossus_living": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:audiomass-output_1",
+        "stream": false
+      }
+    ]
+  },
+  "goblinlordhurt": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:gblinhurt",
+        "stream": false
+      }
+    ]
+  },
+  "goblinliving": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:goblin_noise",
+        "stream": false
+      }
+    ]
+  },
+  "goblindeath": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:goblindeath",
+        "stream": false
+      }
+    ]
+  },
+  "goblinsouffle": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:aferaefrt",
+        "stream": false
+      }
+    ]
+  },
+  "goblin_yell": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:goblinrage",
+        "stream": false
+      }
+    ]
+  },
+  "eternalsteelhammerhittingsound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:audiomass-outputhammer",
+        "stream": false
+      }
+    ]
+  },
+  "ironcolossus.living.sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:golem",
+        "stream": false
+      }
+    ]
+  },
+  "arion_sword_swing": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:sword-sound-2-36274",
+        "stream": false
+      }
+    ]
+  },
+  "eldorath.idle": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:eldorathidle",
+        "stream": false
+      }
+    ]
+  },
+  "eldorath.death": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:eldorathdeath",
+        "stream": false
+      }
+    ]
+  },
+  "eldorath.hurt": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:eldorathhurt",
+        "stream": false
+      }
+    ]
+  },
+  "eldorath.axe.swing": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:audiomass-output-_2__1",
+        "stream": false
+      }
+    ]
+  },
+  "staff_use": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:item_43-_2_",
+        "stream": false
+      }
+    ]
+  },
+  "zoranth.step.sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:zoranth_step1",
+        "stream": false
+      }
+    ]
+  },
+  "zoranth.living.sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:zoranth_livng_sound",
+        "stream": false
+      }
+    ]
+  },
+  "zoranth.attack.scythe": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:zorant_scythe_swoosh",
+        "stream": false
+      }
+    ]
+  },
+  "zoranth.attack.swoosh2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:sword-slash-and-swing-185432",
+        "stream": false
+      }
+    ]
+  },
+  "arion.step.sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:arionstepsound",
+        "stream": false
+      }
+    ]
+  },
+  "armaggedon_main_theme": {
+    "subtitle": "subtitles.armaggedon_main_theme",
+    "sounds": [
+      {
+        "name": "armageddon_mod:untitled",
+        "stream": true
+      }
+    ]
+  },
+  "soul_crusher_sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:dingdongsound",
+        "stream": false
+      }
+    ]
+  },
+  "elvenitepaladinswing": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:sword-swing-whoosh-sound-effect-1-full-pack-on-gamesfxpackscom-241824",
+        "stream": false
+      }
+    ]
+  },
+  "elvenitepaladinhit": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:swing-whoosh-metal-hit-16-234632",
+        "stream": false
+      }
+    ]
+  },
+  "elvenitepaladinstep": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:elvenitepaldinstep",
+        "stream": false
+      }
+    ]
+  },
+  "elvenitepaladinstep2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:elvenitepaladinstep2",
+        "stream": false
+      }
+    ]
+  },
+  "vaedric.hurt": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedrichit",
+        "stream": false
+      }
+    ]
+  },
+  "vaedric.living": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedricstep",
+        "stream": false
+      }
+    ]
+  },
+  "vaedric.idle1": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedricsound1",
+        "stream": false
+      }
+    ]
+  },
+  "vaedric.step1": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedricstep1e",
+        "stream": false
+      }
+    ]
+  },
+  "vaedric.hit2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedrichit2",
+        "stream": false
+      }
+    ]
+  },
+  "vaedric.step3": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedricstep4",
+        "stream": false
+      }
+    ]
+  },
+  "vaedric.scream": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedricscream",
+        "stream": false
+      }
+    ]
+  },
+  "vaedric.sword.sound1": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedricswordsound",
+        "stream": false
+      }
+    ]
+  },
+  "vaedric.sword.sound2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedricswordsound2",
+        "stream": false
+      }
+    ]
+  },
+  "vaedricidle2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedricidle2",
+        "stream": false
+      }
+    ]
+  },
+  "vaedricswordnewsound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:vaedricnewswordsound",
+        "stream": false
+      }
+    ]
+  },
+  "thefamiinelivingsound1": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:faminelivingsound1",
+        "stream": false
+      }
+    ]
+  },
+  "the_famine_growl": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:thefaminegrowll",
+        "stream": false
+      }
+    ]
+  },
+  "thechaoslivingsound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:thechaoslivingsound",
+        "stream": false
+      }
+    ]
+  },
+  "thechaosflying": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:thechaosfly",
+        "stream": false
+      }
+    ]
+  },
+  "thediscord.walk": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:discordwalk",
+        "stream": false
+      }
+    ]
+  },
+  "thediscordwalk2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:thediscordwalk2",
+        "stream": false
+      }
+    ]
+  },
+  "discordillusionlivingsound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:discordillusionlivingsound",
+        "stream": false
+      }
+    ]
+  },
+  "thediscordlivingsound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:thediscordlivingsound1",
+        "stream": false
+      }
+    ]
+  },
+  "thediscordgrowl": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:thediscordgrowl",
+        "stream": false
+      }
+    ]
+  },
+  "bod-hurt": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:bod-hurt2",
+        "stream": false
+      }
+    ]
+  },
+  "bod-death": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:bod-death",
+        "stream": false
+      }
+    ]
+  },
+  "bod-laugh2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:bod-laugh2",
+        "stream": false
+      }
+    ]
+  },
+  "zoranthzenith.idle": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:zoranthzenith_idle",
+        "stream": false
+      }
+    ]
+  },
+  "zoranthzenith.step": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:zoranthzenith_step1",
+        "stream": false
+      }
+    ]
+  },
+  "zoranthzenith.hurt": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:zoranthzenith_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "nyxaris.idle1": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:nyxarissoundidle",
+        "stream": false
+      }
+    ]
+  },
+  "nyxaris.step": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:nyxaris_step1",
+        "stream": false
+      }
+    ]
+  },
+  "nyxaris.hit": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:nyxarishit",
+        "stream": false
+      }
+    ]
+  },
+  "nyxaris.swing": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:swing-whoosh-weapon-1-189819",
+        "stream": false
+      }
+    ]
+  },
+  "nyxaris.amaterasu": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:brimstonegigablastimpact",
+        "stream": false
+      }
+    ]
+  },
+  "holy_sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:holy_sound",
+        "stream": false
+      }
+    ]
+  },
+  "holy_sound2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:holy_sound2",
+        "stream": false
+      }
+    ]
+  },
+  "frostbite_sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:shattering-icefrost-armor-hit-_terraria-sound_-sound-effect-for-editing",
+        "stream": false
+      }
+    ]
+  },
+  "howlingtempest.sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:windburst",
+        "stream": false
+      }
+    ]
+  },
+  "yugure_slash": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:sword_slash_sound",
+        "stream": false
+      }
+    ]
+  },
+  "spear_launch": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:spear_thrust-4-382401",
+        "stream": false
+      }
+    ]
+  },
+  "launch_sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:terraria-cloud-in-a-bottle-sound",
+        "stream": false
+      }
+    ]
+  },
+  "launch_sound_2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:terraria-cloud-in-a-bottle-sound_1",
+        "stream": false
+      }
+    ]
+  },
+  "star_sound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:terraria-mana-star-sound",
+        "stream": false
+      }
+    ]
+  },
+  "earthquacksound": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:earthquack",
+        "stream": false
+      }
+    ]
+  },
+  "bloodorb_ambient": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:river",
+        "stream": false
+      }
+    ]
+  },
+  "bloodorb_ambient2": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:river2",
+        "stream": false
+      }
+    ]
+  },
+  "sanghor_hit": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:sanghor_hit",
+        "stream": false
+      }
+    ]
+  },
+  "heartbeat": {
+    "sounds": [
+      {
+        "name": "armageddon_mod:heartbeat",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "armageddon_mod:custom/ironcolossushammer2",
+  "textures": {
+    "1": "armageddon_mod:block/ironhammertexture",
+    "particle": "armageddon_mod:item/ironcolossustexture"
+  }
+}

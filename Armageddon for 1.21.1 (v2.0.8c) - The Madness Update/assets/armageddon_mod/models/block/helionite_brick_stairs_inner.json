@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "armageddon_mod:block/helionite_bricks",
+    "bottom": "armageddon_mod:block/helionite_bricks",
+    "top": "armageddon_mod:block/helionite_bricks",
+    "side": "armageddon_mod:block/helionite_bricks"
+  },
+  "render_type": "solid"
+}

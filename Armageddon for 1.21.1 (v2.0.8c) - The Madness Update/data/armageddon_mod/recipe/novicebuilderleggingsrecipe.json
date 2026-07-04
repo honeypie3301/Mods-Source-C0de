@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:novice_builder_armor_leggings",
+    "count": 1
+  }
+}

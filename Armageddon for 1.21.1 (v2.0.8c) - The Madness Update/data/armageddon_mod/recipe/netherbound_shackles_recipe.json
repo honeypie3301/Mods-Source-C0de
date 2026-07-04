@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "b": {
+      "item": "armageddon_mod:gilded_shackles"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:netherbound_shackles",
+    "count": 1
+  }
+}

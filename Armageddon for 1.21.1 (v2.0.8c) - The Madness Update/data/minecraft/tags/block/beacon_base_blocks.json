@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:elvenite_block",
+    "armageddon_mod:bloody_block",
+    "armageddon_mod:voiderite_block",
+    "armageddon_mod:helionite_block"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:vaedricthe_fallen_wanderer_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_voiderite_keeper.title"
+    },
+    "description": {
+      "translate": "advancements.the_voiderite_keeper.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_voiderite_keeper_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:choups_ores_keeper_advancement"
+}

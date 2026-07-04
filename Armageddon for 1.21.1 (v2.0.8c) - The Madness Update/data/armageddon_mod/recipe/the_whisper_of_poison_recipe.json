@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "ba ",
+    "cb "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "b": {
+      "item": "armageddon_mod:gilded_plate"
+    },
+    "c": {
+      "item": "armageddon_mod:gemwoven_fragment"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_whisper_of_poison",
+    "count": 1
+  }
+}

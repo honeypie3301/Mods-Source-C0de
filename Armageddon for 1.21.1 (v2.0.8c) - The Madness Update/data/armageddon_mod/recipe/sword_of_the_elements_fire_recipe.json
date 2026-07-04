@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "armageddon_mod:sword_of_the_elements_fire"
+    },
+    {
+      "item": "armageddon_mod:elvenite_ingot"
+    }
+  ],
+  "result": {
+    "id": "armageddon_mod:swordofthe_elements",
+    "count": 1
+  }
+}

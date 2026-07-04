@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:helionite_bricks"
+    },
+    "b": {
+      "item": "minecraft:moss_block"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:mossy_helionite_bricks",
+    "count": 1
+  }
+}

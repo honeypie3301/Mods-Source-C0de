@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:bloody_bricks"
+    }
+  },
+  "result": {
+    "item": "armageddon_mod:bloody_bricks_slab",
+    "count": 6
+  }
+}

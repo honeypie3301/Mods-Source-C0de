@@ -1,0 +1,46 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.goblinlordrelics",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "main",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-8, 0, -8], "size": [16, 2, 16], "uv": [0, 0]},
+						{"origin": [-6, 2, -6], "size": [12, 2, 12], "uv": [0, 18]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "main",
+					"pivot": [0, 8.5, 1],
+					"cubes": [
+						{"origin": [-3.5, 8.5, -3], "size": [7, 8, 8], "uv": [0, 32]},
+						{"origin": [-2, 9.5, -5], "size": [4, 5, 2], "uv": [0, 0]},
+						{"origin": [3, 9.5, 1], "size": [6, 6, 0], "uv": [0, 18]},
+						{"origin": [-9, 9.5, 1], "size": [6, 6, 0], "uv": [0, 7]},
+						{"origin": [-3, 14.5, -4], "size": [6, 2, 1], "uv": [0, 13]},
+						{"origin": [-4, 5.5, 1], "size": [8, 3, 4], "uv": [36, 18]}
+					]
+				},
+				{
+					"name": "jaw",
+					"parent": "head",
+					"pivot": [0, 7.5, 4],
+					"cubes": [
+						{"origin": [-4, 5.5, -4], "size": [8, 3, 5], "pivot": [0, 7.5, 0], "rotation": [-5, 0, 0], "uv": [22, 32]}
+					]
+				}
+			]
+		}
+	]
+}

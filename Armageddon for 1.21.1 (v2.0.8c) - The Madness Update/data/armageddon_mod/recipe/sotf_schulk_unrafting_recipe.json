@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "armageddon_mod:sword_of_the_element_schulk"
+    },
+    {
+      "item": "armageddon_mod:raw_elvenite"
+    }
+  ],
+  "result": {
+    "id": "armageddon_mod:swordofthe_elements",
+    "count": 1
+  }
+}

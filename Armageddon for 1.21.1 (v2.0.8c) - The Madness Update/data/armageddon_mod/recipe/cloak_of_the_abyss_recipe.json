@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:ancient_prism"
+    },
+    "b": {
+      "item": "armageddon_mod:heart_of_the_abyss"
+    },
+    "c": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "d": {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:cloak_of_the_abyss",
+    "count": 1
+  }
+}

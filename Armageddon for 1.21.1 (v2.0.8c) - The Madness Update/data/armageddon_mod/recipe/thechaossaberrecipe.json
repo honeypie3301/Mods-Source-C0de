@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bc ",
+    "db "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:bloody_ingot"
+    },
+    "b": {
+      "item": "armageddon_mod:spiritof_chaos"
+    },
+    "c": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "d": {
+      "item": "armageddon_mod:rustyswordofthelegendaryhero"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_chaos_saber",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:end_stone"
+    },
+    "b": {
+      "item": "minecraft:ender_pearl"
+    },
+    "c": {
+      "item": "armageddon_mod:elvenite_ingot"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:wanderers_fallen_shard",
+    "count": 1
+  }
+}

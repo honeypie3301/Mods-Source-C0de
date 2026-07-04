@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "phantom",
+    "cave_spider",
+    "skeleton",
+    "skeleton_horse",
+    "piglin_brute",
+    "wither_skeleton",
+    "enderman",
+    "spider"
+  ]
+}

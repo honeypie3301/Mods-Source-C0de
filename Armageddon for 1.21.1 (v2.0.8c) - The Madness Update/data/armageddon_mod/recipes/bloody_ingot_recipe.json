@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "armageddon_mod:bloody_scrap"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "armageddon_mod:bloody_scrap"
+    }
+  ],
+  "result": {
+    "item": "armageddon_mod:bloody_ingot",
+    "count": 1
+  }
+}

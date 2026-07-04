@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:bloody_bricks_stairs"
+    },
+    "b": {
+      "item": "minecraft:moss_block"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:mossy_bloody_stairs",
+    "count": 1
+  }
+}

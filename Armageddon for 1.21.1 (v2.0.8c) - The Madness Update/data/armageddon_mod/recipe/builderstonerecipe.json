@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "b": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    },
+    "d": {
+      "item": "minecraft:emerald"
+    },
+    "e": {
+      "item": "minecraft:redstone"
+    },
+    "f": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:builder_stone",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:golden_axe",
+    "minecraft:golden_hoe",
+    "armageddon_mod:gilded_shovel",
+    "armageddon_mod:gilded_sword",
+    "armageddon_mod:gilded_pickaxe",
+    "armageddon_mod:gilded_hoe",
+    "armageddon_mod:gilded_axe",
+    "minecraft:golden_sword",
+    "minecraft:golden_shovel",
+    "minecraft:golden_pickaxe",
+    "armageddon_mod:golden_throwing_dagger"
+  ]
+}

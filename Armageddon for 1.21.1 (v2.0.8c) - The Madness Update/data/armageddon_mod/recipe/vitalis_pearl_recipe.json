@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:air"
+    },
+    "b": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "c": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "d": {
+      "item": "minecraft:blaze_powder"
+    },
+    "e": {
+      "item": "minecraft:prismarine_crystals"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:vitalis_pearl",
+    "count": 1
+  }
+}

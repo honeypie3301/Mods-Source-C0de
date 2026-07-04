@@ -1,0 +1,294 @@
+{
+  "format_version": "1.9.0",
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    32,
+    32
+  ],
+  "elements": [
+    {
+      "from": [
+        6,
+        0,
+        9
+      ],
+      "to": [
+        8,
+        7,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          6,
+          0,
+          9
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            7,
+            5,
+            10.5
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            5,
+            7,
+            6,
+            10.5
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            6,
+            7,
+            7,
+            10.5
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            7,
+            7,
+            8,
+            10.5
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            9,
+            5,
+            8,
+            4
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            9,
+            5,
+            8,
+            6
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "from": [
+        5,
+        7,
+        9
+      ],
+      "to": [
+        9,
+        21,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          6,
+          7,
+          9
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            7
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            7,
+            1,
+            14
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            2,
+            0,
+            4,
+            7
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            1,
+            7,
+            2,
+            14
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            10,
+            1,
+            8,
+            0
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            10,
+            1,
+            8,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "cube inverted",
+      "from": [
+        9.2,
+        21.2,
+        11.2
+      ],
+      "to": [
+        4.8,
+        6.8,
+        8.8
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          6,
+          7,
+          9
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            6,
+            7
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            2,
+            7,
+            3,
+            14
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            8,
+            7
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            3,
+            7,
+            4,
+            14
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            10,
+            3,
+            8,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            10,
+            3,
+            8,
+            4
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        -63.72,
+        -83.79,
+        -69.03
+      ],
+      "translation": [
+        2.75,
+        2.5,
+        2
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -63.72,
+        -83.79,
+        -69.03
+      ],
+      "translation": [
+        2.75,
+        2.5,
+        2
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "sword",
+      "origin": [
+        6,
+        7,
+        9
+      ],
+      "color": 0,
+      "children": [
+        0,
+        1,
+        {
+          "name": "invertedblade",
+          "origin": [
+            6,
+            7,
+            9
+          ],
+          "color": 0,
+          "children": []
+        },
+        2
+      ]
+    }
+  ]
+}

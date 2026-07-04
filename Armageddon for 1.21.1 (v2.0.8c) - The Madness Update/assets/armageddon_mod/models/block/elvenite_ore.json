@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "armageddon_mod:block/elvenite_deepslate_ore",
+    "up": "armageddon_mod:block/elvenite_deepslate_ore",
+    "north": "armageddon_mod:block/elvenite_deepslate_ore",
+    "east": "armageddon_mod:block/elvenite_deepslate_ore",
+    "south": "armageddon_mod:block/elvenite_deepslate_ore",
+    "west": "armageddon_mod:block/elvenite_deepslate_ore",
+    "particle": "armageddon_mod:block/elvenite_deepslate_ore"
+  },
+  "render_type": "solid"
+}

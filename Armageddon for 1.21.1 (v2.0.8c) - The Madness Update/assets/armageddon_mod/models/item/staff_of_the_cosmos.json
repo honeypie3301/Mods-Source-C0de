@@ -1,0 +1,37 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"1": "armageddon_mod:item/staff_of_the_cosmos",
+		"layer0": "armageddon_mod:item/staff_of_the_cosmos2",
+		"particle": "armageddon_mod:item/staff_of_the_cosmos"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 9, 1.25],
+			"scale": [2.25, 2.25, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 9, 1.25],
+			"scale": [2.25, 2.25, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, -0.25, -0.75],
+			"scale": [2.25, 2.25, 0.85]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, -0.25, -0.75],
+			"scale": [2.25, 2.25, 0.85]
+		},
+		"ground": {
+			"rotation": [7.84, -21.4, -72.5],
+			"translation": [0, 13, 0],
+			"scale": [1.75, 1.75, 1]
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "armageddon_mod:custom/elvenite_hammer3",
+  "textures": {
+    "0": "armageddon_mod:block/elvenitepaladinhammertexture2",
+    "particle": "armageddon_mod:item/soul_crusher"
+  }
+}

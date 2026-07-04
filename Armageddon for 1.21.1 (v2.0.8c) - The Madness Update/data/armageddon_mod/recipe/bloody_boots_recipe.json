@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:bloody_ingot"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:bloody_armor_boots",
+    "count": 1
+  }
+}

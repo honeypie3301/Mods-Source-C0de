@@ -1,0 +1,6 @@
+{
+  "parent": "armageddon_mod:displaysettings/ironcolossusrelics.item",
+  "textures": {
+    "particle": "armageddon_mod:block/wardenrelictexture"
+  }
+}

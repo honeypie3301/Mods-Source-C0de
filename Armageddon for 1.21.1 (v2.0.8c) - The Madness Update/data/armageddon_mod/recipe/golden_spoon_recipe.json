@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bc ",
+    "db "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "b": {
+      "item": "minecraft:gold_nugget"
+    },
+    "c": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "d": {
+      "item": "armageddon_mod:gilded_plate"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:golden_spoon",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "the_voiderite_keeper_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:voiderite_fragment_advancement"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " ba",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:bloody_ingot"
+    },
+    "b": {
+      "item": "armageddon_mod:fork_of_lamentations"
+    },
+    "c": {
+      "item": "armageddon_mod:calamitous_core"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:spear_of_longinus",
+    "count": 1
+  }
+}

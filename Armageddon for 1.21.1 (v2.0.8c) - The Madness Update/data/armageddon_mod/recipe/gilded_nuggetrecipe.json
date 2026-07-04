@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:gilded_plate"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:gilded_nugget",
+    "count": 4
+  }
+}

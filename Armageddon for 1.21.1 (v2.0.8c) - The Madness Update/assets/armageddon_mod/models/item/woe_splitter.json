@@ -1,0 +1,33 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "armageddon_mod:item/woe_splitter"
+  }
+,
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0.25, 14.25, -1.25],
+			"scale": [2, 2, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0.25, 14.25, -1.25],
+			"scale": [2, 2, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0.25, 14.25, -1.25],
+			"scale": [2, 2, 0.85]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0.25, 14.25, -1.25],
+			"scale": [2, 2, 0.85]
+		},
+		"ground": {
+			"translation": [0, 8.5, 0]
+		}
+	}
+}
+}

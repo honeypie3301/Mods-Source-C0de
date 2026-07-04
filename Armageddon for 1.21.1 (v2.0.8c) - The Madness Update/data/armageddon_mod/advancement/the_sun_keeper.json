@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:zoranth_newborn_of_the_zenith_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_sun_keeper.title"
+    },
+    "description": {
+      "translate": "advancements.the_sun_keeper.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_sun_keeper_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:the_sun_emblem_advancement"
+}

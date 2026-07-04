@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:elvenite_nugget"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:elvenite_ingot",
+    "count": 1
+  }
+}

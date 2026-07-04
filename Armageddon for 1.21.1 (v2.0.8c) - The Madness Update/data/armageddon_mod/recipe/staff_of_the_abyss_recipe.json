@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    " ca",
+    "d  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "b": {
+      "item": "armageddon_mod:heart_of_the_abyss"
+    },
+    "c": {
+      "item": "armageddon_mod:ender_dragon_bone"
+    },
+    "d": {
+      "tag": "c:sandstone/blocks"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:staff_of_the_abyss",
+    "count": 1
+  }
+}

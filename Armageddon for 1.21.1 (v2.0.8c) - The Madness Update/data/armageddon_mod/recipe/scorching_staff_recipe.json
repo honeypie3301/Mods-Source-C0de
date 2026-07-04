@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    " ca",
+    "d  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:blaze_rod"
+    },
+    "b": {
+      "item": "minecraft:fire_charge"
+    },
+    "c": {
+      "item": "armageddon_mod:ender_dragon_bone"
+    },
+    "d": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:scorching_staff",
+    "count": 1
+  }
+}

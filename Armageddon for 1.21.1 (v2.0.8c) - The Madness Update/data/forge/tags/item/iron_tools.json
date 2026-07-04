@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_shovel",
+    "armageddon_mod:iron_throwing_dagger",
+    "minecraft:iron_axe",
+    "minecraft:iron_hoe",
+    "minecraft:iron_sword",
+    "minecraft:iron_pickaxe"
+  ]
+}

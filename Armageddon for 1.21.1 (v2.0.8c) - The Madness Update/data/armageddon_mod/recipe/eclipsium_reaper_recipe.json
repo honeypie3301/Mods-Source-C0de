@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " ba",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:eclipsium_alloy"
+    },
+    "b": {
+      "item": "armageddon_mod:ender_dragon_bone"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:eclipsium_reaper",
+    "count": 1
+  }
+}

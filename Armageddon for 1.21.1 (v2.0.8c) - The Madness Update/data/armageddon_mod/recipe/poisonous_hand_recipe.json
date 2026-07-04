@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "b": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "c": {
+      "item": "minecraft:spider_eye"
+    },
+    "d": {
+      "item": "armageddon_mod:bee_stinger"
+    },
+    "e": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:poisonous_hand",
+    "count": 1
+  }
+}

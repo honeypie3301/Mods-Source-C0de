@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "ab ",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:voiderite"
+    },
+    "b": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "c": {
+      "item": "armageddon_mod:rustyswordofthelegendaryhero"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_voidfang_saber",
+    "count": 1
+  }
+}

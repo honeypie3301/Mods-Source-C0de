@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    " ba",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:khyros_tear"
+    },
+    "b": {
+      "item": "armageddon_mod:ender_dragon_bone"
+    },
+    "c": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:lament_of_khyros",
+    "count": 1
+  }
+}

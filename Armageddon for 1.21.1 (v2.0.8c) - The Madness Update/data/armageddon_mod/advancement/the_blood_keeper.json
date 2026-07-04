@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:sanghor_lord_of_blood_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_blood_keeper.title"
+    },
+    "description": {
+      "translate": "advancements.the_blood_keeper.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_blood_keeper_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:cocoon_of_blood_advancement"
+}

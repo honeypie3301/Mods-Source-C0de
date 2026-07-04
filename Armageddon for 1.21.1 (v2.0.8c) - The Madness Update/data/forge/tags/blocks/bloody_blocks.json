@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:mossy_bloody_stairs",
+    "armageddon_mod:mossy_bloody_wall_bricks",
+    "armageddon_mod:bloody_block",
+    "armageddon_mod:mossy_bloody_bricks",
+    "armageddon_mod:chiseled_bloody_bricks",
+    "armageddon_mod:bloody_bricks",
+    "armageddon_mod:cracked_bloody_bricks",
+    "armageddon_mod:mossy_bloody_bricks_slab",
+    "armageddon_mod:bloody_bricks_slab",
+    "armageddon_mod:bloody_bricks_wall",
+    "armageddon_mod:bloody_ore",
+    "armageddon_mod:bloody_bricks_stairs"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:splintered_bone"
+    },
+    "b": {
+      "item": "armageddon_mod:vitalis_pearl"
+    },
+    "c": {
+      "item": "armageddon_mod:eclipsium_alloy"
+    },
+    "d": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:prism_of_realms",
+    "count": 1
+  }
+}

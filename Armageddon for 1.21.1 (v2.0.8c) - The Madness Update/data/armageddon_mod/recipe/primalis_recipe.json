@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "ab ",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:vitalis_pearl"
+    },
+    "b": {
+      "item": "armageddon_mod:ender_dragon_bone"
+    },
+    "c": {
+      "item": "armageddon_mod:rustyswordofthelegendaryhero"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:primalis",
+    "count": 1
+  }
+}

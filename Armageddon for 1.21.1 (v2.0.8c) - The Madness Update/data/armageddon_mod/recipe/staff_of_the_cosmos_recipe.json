@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "cda",
+    "d  "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:cosmos_shard"
+    },
+    "b": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "c": {
+      "item": "minecraft:red_wool"
+    },
+    "d": {
+      "item": "armageddon_mod:ender_dragon_bone"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:staff_of_the_cosmos",
+    "count": 1
+  }
+}

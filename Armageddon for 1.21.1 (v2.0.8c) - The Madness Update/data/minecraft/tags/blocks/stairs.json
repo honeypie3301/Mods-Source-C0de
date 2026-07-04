@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:mossy_bloody_stairs",
+    "armageddon_mod:mossy_voiderite_stairs",
+    "armageddon_mod:voiderite_bricks_stairs",
+    "armageddon_mod:elvenite_bricks_stairs",
+    "armageddon_mod:helionite_bricks_stairs",
+    "armageddon_mod:mossy_helionite_stairs",
+    "armageddon_mod:bloody_bricks_stairs",
+    "armageddon_mod:mossy_elvenite_bricks_stair"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:sigil_of_calamity"
+    },
+    "title": {
+      "translate": "advancements.sigil_of_calamity_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.sigil_of_calamity_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sigil_of_calamity_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armageddon_mod:sigil_of_calamity"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "armageddon_mod:choups_ores_keeper_advancement"
+}

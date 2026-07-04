@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:bloody_ingot"
+    },
+    "b": {
+      "item": "armageddon_mod:hemalith_catalyst"
+    },
+    "c": {
+      "item": "armageddon_mod:bloody_scythe"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_scarlet_guillotine",
+    "count": 1
+  }
+}

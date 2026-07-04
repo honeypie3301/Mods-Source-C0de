@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "armageddon_mod:bloody_ingot"
+    }
+  ],
+  "result": {
+    "id": "armageddon_mod:bloody_nugget",
+    "count": 9
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:voiderite"
+    },
+    "b": {
+      "item": "armageddon_mod:colossal_ward"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:voidcall_ward",
+    "count": 1
+  }
+}

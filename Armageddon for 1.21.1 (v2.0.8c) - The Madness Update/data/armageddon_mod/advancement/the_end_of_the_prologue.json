@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:zoranths_hand"
+    },
+    "title": {
+      "translate": "advancements.the_end_of_the_prologue.title"
+    },
+    "description": {
+      "translate": "advancements.the_end_of_the_prologue.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_end_of_the_prologue_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:overworld_conqueror"
+}

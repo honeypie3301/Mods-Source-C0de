@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " b ",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:hemalith_catalyst"
+    },
+    "b": {
+      "item": "armageddon_mod:hellforged_bident"
+    },
+    "c": {
+      "item": "armageddon_mod:bloody_ingot"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:sanguir",
+    "count": 1
+  }
+}

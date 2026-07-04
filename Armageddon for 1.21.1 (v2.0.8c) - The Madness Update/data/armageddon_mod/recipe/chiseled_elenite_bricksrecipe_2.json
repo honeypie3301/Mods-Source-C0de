@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "armageddon_mod:elvenite_bricks"
+  },
+  "result": {
+    "id": "armageddon_mod:chiseled_elvenite_bricks",
+    "count": 1
+  }
+}

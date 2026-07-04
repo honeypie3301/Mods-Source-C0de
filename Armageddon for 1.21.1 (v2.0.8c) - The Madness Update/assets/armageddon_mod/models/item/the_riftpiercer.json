@@ -1,0 +1,34 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "armageddon_mod:item/the_riftpiercer"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 8.5, 0.75],
+			"scale": [1.5, 1.5, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 8.5, 0.75],
+			"scale": [1.5, 1.5, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 8.5, 0.75],
+			"scale": [1.5, 1.5, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 8.5, 0.75],
+			"scale": [1.5, 1.5, 0.8]
+		},
+		"ground": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 0.75, 0.75],
+			"scale": [1.5, 1.5, 0.8]
+		}
+	}
+}

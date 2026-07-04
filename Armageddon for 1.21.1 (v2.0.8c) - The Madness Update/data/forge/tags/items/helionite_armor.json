@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "armageddon_mod:helionite_armor_boots",
+    "armageddon_mod:helionite_armor_helmet",
+    "armageddon_mod:helionite_armor_chestplate",
+    "armageddon_mod:helionite_armor_leggings"
+  ]
+}

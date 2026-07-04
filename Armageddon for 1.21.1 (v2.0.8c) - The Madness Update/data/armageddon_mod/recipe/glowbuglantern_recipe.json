@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:moss_block"
+    },
+    "b": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:lantern"
+    },
+    "d": {
+      "item": "minecraft:glow_berries"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:glowbug_lantern",
+    "count": 1
+  }
+}

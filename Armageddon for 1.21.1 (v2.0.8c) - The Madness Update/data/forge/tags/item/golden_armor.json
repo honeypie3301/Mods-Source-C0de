@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:golden_helmet",
+    "minecraft:golden_leggings",
+    "armageddon_mod:gilded_armor_helmet",
+    "armageddon_mod:gilded_armor_chestplate",
+    "minecraft:golden_chestplate",
+    "armageddon_mod:gilded_armor_leggings",
+    "minecraft:golden_boots",
+    "armageddon_mod:gilded_armor_boots"
+  ]
+}

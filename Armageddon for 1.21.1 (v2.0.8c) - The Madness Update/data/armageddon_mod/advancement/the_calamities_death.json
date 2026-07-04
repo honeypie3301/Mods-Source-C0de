@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:the_famine_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_calamities_death.title"
+    },
+    "description": {
+      "translate": "advancements.the_calamities_death.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_calamities_death_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "armageddon_mod:sigil_of_calamity_advancement"
+}

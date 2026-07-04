@@ -1,0 +1,90 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "armageddon_mod:block/mossy_voiderite_wall_bricks_post"
+      }
+    },
+    {
+      "when": {
+        "north": "low"
+      },
+      "apply": {
+        "model": "armageddon_mod:block/mossy_voiderite_wall_bricks",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "low"
+      },
+      "apply": {
+        "model": "armageddon_mod:block/mossy_voiderite_wall_bricks",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "low"
+      },
+      "apply": {
+        "model": "armageddon_mod:block/mossy_voiderite_wall_bricks",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "low"
+      },
+      "apply": {
+        "model": "armageddon_mod:block/mossy_voiderite_wall_bricks",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "north": "tall"
+      },
+      "apply": {
+        "model": "armageddon_mod:block/mossy_voiderite_wall_bricks_side_tall",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "tall"
+      },
+      "apply": {
+        "model": "armageddon_mod:block/mossy_voiderite_wall_bricks_side_tall",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "tall"
+      },
+      "apply": {
+        "model": "armageddon_mod:block/mossy_voiderite_wall_bricks_side_tall",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "tall"
+      },
+      "apply": {
+        "model": "armageddon_mod:block/mossy_voiderite_wall_bricks_side_tall",
+        "y": 270,
+        "uvlock": true
+      }
+    }
+  ]
+}

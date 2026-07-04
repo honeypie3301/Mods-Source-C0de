@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:arion_tyrantofthe_emerald_wrath_ravager_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_emerald_keeper.title"
+    },
+    "description": {
+      "translate": "advancements.the_emerald_keeper.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_emerald_keeper_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:emerald_totem_avancement"
+}

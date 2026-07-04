@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "aca",
+    "da "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:cosmos_shard"
+    },
+    "b": {
+      "item": "minecraft:end_crystal"
+    },
+    "c": {
+      "item": "armageddon_mod:calamitous_core"
+    },
+    "d": {
+      "item": "armageddon_mod:ender_dragon_bone"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:indomita_furia",
+    "count": 1
+  }
+}

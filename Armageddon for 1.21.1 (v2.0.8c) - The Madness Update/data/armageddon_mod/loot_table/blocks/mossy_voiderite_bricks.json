@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "armageddon_mod:blocks/mossy_voiderite_bricks",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "armageddon_mod:mossy_voiderite_bricks"
+        }
+      ]
+    }
+  ]
+}

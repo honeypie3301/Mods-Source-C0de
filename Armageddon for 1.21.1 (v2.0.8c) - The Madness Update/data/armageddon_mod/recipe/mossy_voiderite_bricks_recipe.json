@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:voiderite_bricks"
+    },
+    "b": {
+      "item": "minecraft:vine"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:mossy_voiderite_bricks",
+    "count": 1
+  }
+}

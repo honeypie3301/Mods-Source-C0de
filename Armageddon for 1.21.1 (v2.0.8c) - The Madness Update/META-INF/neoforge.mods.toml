@@ -1,0 +1,69 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="armageddon_mod"
+version="2.0.8"
+displayName="Armageddon"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/armageddon"
+logoFile="logo.png"
+credits="Created by choupiclou using mod maker MCreator - https://mcreator.net/about "
+authors="choup, MCreator"
+description="This mod Overhaul the Minecraft way of progressing by adding new bosses to the game  and much much more such as new items, accesories, mechanics, multiplayer compatibility and so on!"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.armageddon_mod]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.176,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.armageddon_mod]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.armageddon_mod]]
+    modId="attributefix"
+    type="required"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.armageddon_mod]]
+    modId="geckolib"
+    type="required"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.armageddon_mod]]
+    modId="curios_api"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.armageddon_mod]]
+    modId="geckolib"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.armageddon_mod]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[mixins]]
+    config="mixins.armageddon_mod.json"
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

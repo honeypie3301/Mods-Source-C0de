@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "armageddon_mod:helionite_ingot"
+    }
+  ],
+  "result": {
+    "id": "armageddon_mod:helionite_nugget",
+    "count": 9
+  }
+}

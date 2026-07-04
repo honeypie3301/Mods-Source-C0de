@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "armageddon_mod:bringer_of_doom_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.bringer_of_doom_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.bringer_of_doom_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bringer_of_doom_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "armageddon_mod:the_key_of_doom_advancement"
+}

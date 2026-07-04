@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    " d ",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "armageddon_mod:bloody_axe"
+    },
+    "b": {
+      "item": "armageddon_mod:bloody_shovel"
+    },
+    "c": {
+      "item": "armageddon_mod:bloody_pickaxe"
+    },
+    "d": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:bloody_paxel",
+    "count": 1
+  }
+}
