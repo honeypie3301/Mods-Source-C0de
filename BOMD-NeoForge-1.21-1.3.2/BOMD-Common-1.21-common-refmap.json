@@ -1,0 +1,50 @@
+{
+  "mappings": {
+    "com/cerbon/bosses_of_mass_destruction/mixin/BossHealthOverlayMixin": {
+      "drawBar(Lnet/minecraft/client/gui/GuiGraphics;IILnet/minecraft/world/BossEvent;)V": "Lnet/minecraft/class_337;method_1799(Lnet/minecraft/class_332;IILnet/minecraft/class_1259;)V"
+    },
+    "com/cerbon/bosses_of_mass_destruction/mixin/EnderEyeUseMixin": {
+      "useOn": "Lnet/minecraft/class_1777;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;"
+    },
+    "com/cerbon/bosses_of_mass_destruction/mixin/ExplosionMixin": {
+      "explode": "Lnet/minecraft/class_3218;method_8454(Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lnet/minecraft/class_5362;DDDFZLnet/minecraft/class_1937$class_7867;Lnet/minecraft/class_2394;Lnet/minecraft/class_2394;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1927;"
+    },
+    "com/cerbon/bosses_of_mass_destruction/mixin/IceBlockMixin": {
+      "playerDestroy": "Lnet/minecraft/class_2386;method_9556(Lnet/minecraft/class_1937;Lnet/minecraft/class_1657;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2586;Lnet/minecraft/class_1799;)V"
+    },
+    "com/cerbon/bosses_of_mass_destruction/mixin/LivingEntityMixin": {
+      "isDamageSourceBlocked": "Lnet/minecraft/class_1309;method_6061(Lnet/minecraft/class_1282;)Z"
+    },
+    "com/cerbon/bosses_of_mass_destruction/mixin/NaturalSpawnerMixin": {
+      "isValidSpawnPostitionForType": "Lnet/minecraft/class_1948;method_24934(Lnet/minecraft/class_3218;Lnet/minecraft/class_1311;Lnet/minecraft/class_5138;Lnet/minecraft/class_2794;Lnet/minecraft/class_5483$class_1964;Lnet/minecraft/class_2338$class_2339;D)Z"
+    },
+    "com/cerbon/bosses_of_mass_destruction/mixin/test/TestMixin": {
+      "<init>": "Lnet/minecraft/class_310;<init>(Lnet/minecraft/class_542;)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/cerbon/bosses_of_mass_destruction/mixin/BossHealthOverlayMixin": {
+        "drawBar(Lnet/minecraft/client/gui/GuiGraphics;IILnet/minecraft/world/BossEvent;)V": "Lnet/minecraft/class_337;method_1799(Lnet/minecraft/class_332;IILnet/minecraft/class_1259;)V"
+      },
+      "com/cerbon/bosses_of_mass_destruction/mixin/EnderEyeUseMixin": {
+        "useOn": "Lnet/minecraft/class_1777;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;"
+      },
+      "com/cerbon/bosses_of_mass_destruction/mixin/ExplosionMixin": {
+        "explode": "Lnet/minecraft/class_3218;method_8454(Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lnet/minecraft/class_5362;DDDFZLnet/minecraft/class_1937$class_7867;Lnet/minecraft/class_2394;Lnet/minecraft/class_2394;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1927;"
+      },
+      "com/cerbon/bosses_of_mass_destruction/mixin/IceBlockMixin": {
+        "playerDestroy": "Lnet/minecraft/class_2386;method_9556(Lnet/minecraft/class_1937;Lnet/minecraft/class_1657;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2586;Lnet/minecraft/class_1799;)V"
+      },
+      "com/cerbon/bosses_of_mass_destruction/mixin/LivingEntityMixin": {
+        "isDamageSourceBlocked": "Lnet/minecraft/class_1309;method_6061(Lnet/minecraft/class_1282;)Z"
+      },
+      "com/cerbon/bosses_of_mass_destruction/mixin/NaturalSpawnerMixin": {
+        "isValidSpawnPostitionForType": "Lnet/minecraft/class_1948;method_24934(Lnet/minecraft/class_3218;Lnet/minecraft/class_1311;Lnet/minecraft/class_5138;Lnet/minecraft/class_2794;Lnet/minecraft/class_5483$class_1964;Lnet/minecraft/class_2338$class_2339;D)Z"
+      },
+      "com/cerbon/bosses_of_mass_destruction/mixin/test/TestMixin": {
+        "<init>": "Lnet/minecraft/class_310;<init>(Lnet/minecraft/class_542;)V"
+      }
+    }
+  }
+}

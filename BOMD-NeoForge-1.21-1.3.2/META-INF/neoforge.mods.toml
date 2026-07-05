@@ -1,0 +1,55 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="GNU LGPL 3.0"
+issueTrackerURL="https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/issues"
+
+[[mods]]
+   modId="bosses_of_mass_destruction"
+   version="1.3.2"
+   displayName="Bosses of Mass Destruction"
+   displayURL="https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge"
+   logoFile="logo.png"
+   #credits="Thanks for this example mod goes to Java"
+   authors="CerbonXD"
+   description='''Adds high threat mobs for players to take on.'''
+
+[[mixins]]
+   config="bosses_of_mass_destruction.mixins.json"
+
+[[mixins]]
+   config="bosses_of_mass_destruction-common.mixins.json"
+
+[[dependencies.bosses_of_mass_destruction]]
+   modId="neoforge"
+   type="required"
+   versionRange="[21.0,)"
+   ordering="NONE"
+   side="BOTH"
+
+[[dependencies.bosses_of_mass_destruction]]
+   modId="minecraft"
+   type="required"
+   versionRange="[1.21,1.22)"
+   ordering="NONE"
+   side="BOTH"
+
+[[dependencies.bosses_of_mass_destruction]]
+   modId="cerbons_api"
+   type="required"
+   versionRange="[1.2.0,)"
+   ordering="NONE"
+   side="BOTH"
+
+[[dependencies.bosses_of_mass_destruction]]
+   modId="cloth_config"
+   type="required"
+   versionRange="[15.0.140,)"
+   ordering="NONE"
+   side="BOTH"
+
+[[dependencies.bosses_of_mass_destruction]]
+   modId="geckolib"
+   type="required"
+   versionRange="[4.5.8,)"
+   ordering="NONE"
+   side="BOTH"
