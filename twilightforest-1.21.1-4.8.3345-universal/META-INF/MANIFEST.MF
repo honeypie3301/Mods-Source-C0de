@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: twilightforest
+Specification-Vendor: TeamTwilight
+Specification-Version: 1
+Implementation-Title: s
+Implementation-Version: 4.8.3345
+Implementation-Vendor: TeamTwilight
+Implementation-Timestamp: 2026-03-22T22:54:04+0000
+

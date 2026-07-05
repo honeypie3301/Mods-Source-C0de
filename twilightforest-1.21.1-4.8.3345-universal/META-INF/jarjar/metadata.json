@@ -1,0 +1,16 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "s",
+        "artifact": "tf-asm"
+      },
+      "version": {
+        "range": "[4.8.3345,)",
+        "artifactVersion": "4.8.3345"
+      },
+      "path": "META-INF/jarjar/s.tf-asm-4.8.3345.jar",
+      "isObfuscated": false
+    }
+  ]
+}
