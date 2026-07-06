@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "burnt:block/firestarter"
+    },
+    "blockstate=1": {
+      "model": "burnt:block/firestarter_blockstates_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "burnt:block/firestarter_blockstates_blockstate_1"
+    },
+    "blockstate=3": {
+      "model": "burnt:block/firestarter_blockstates_blockstate_2"
+    },
+    "blockstate=4": {
+      "model": "burnt:block/firestarter_blockstates_blockstate_3"
+    },
+    "blockstate=5": {
+      "model": "burnt:block/firestarter_blockstates_blockstate_4"
+    },
+    "blockstate=6": {
+      "model": "burnt:block/firestarter_blockstates_blockstate_5"
+    }
+  }
+}

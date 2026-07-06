@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate_wall",
+  "textures": {
+    "particle": "burnt:block/sooty_dark_oak_planks",
+    "texture": "burnt:block/sooty_dark_oak_planks"
+  },
+  "render_type": "solid"
+}

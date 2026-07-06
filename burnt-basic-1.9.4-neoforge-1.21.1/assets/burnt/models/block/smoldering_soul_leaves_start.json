@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/soul_leavesstartburning",
+    "up": "burnt:block/soul_leavesstartburning",
+    "north": "burnt:block/soul_leavesstartburning",
+    "east": "burnt:block/soul_leavesstartburning",
+    "south": "burnt:block/soul_leavesstartburning",
+    "west": "burnt:block/soul_leavesstartburning",
+    "particle": "burnt:block/soul_leavesstartburning"
+  },
+  "render_type": "cutout_mipped"
+}

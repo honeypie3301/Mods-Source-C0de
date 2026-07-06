@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "burnt:block/smoldering_planks_3",
+    "bottom": "burnt:block/smoldering_planks_3",
+    "top": "burnt:block/smoldering_planks_3",
+    "side": "burnt:block/smoldering_planks_3"
+  },
+  "render_type": "solid"
+}

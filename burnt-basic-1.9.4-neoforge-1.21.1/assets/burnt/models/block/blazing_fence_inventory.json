@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "burnt:block/blazing_planks",
+    "particle": "burnt:block/blazing_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "swamp",
+    "jungle",
+    "sparse_jungle",
+    "beach",
+    "bamboo_jungle",
+    "lush_caves",
+    "mangrove_swamp",
+    "#c:is_wet/overworld"
+  ]
+}

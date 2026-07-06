@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate_open",
+  "textures": {
+    "particle": "burnt:block/sooty_jungle_planks",
+    "texture": "burnt:block/sooty_jungle_planks"
+  },
+  "render_type": "solid"
+}

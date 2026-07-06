@@ -1,0 +1,73 @@
+{
+  "burnt_ambient": {
+    "subtitle": "subtitles.burnt_ambient",
+    "sounds": [
+      {
+        "name": "burnt:burnt_forest_ambient",
+        "stream": false
+      }
+    ]
+  },
+  "wisp_treasure": {
+    "sounds": [
+      {
+        "name": "burnt:wisp_treasure",
+        "stream": false
+      }
+    ]
+  },
+  "wisp_quick": {
+    "sounds": [
+      {
+        "name": "burnt:wisp_quick",
+        "stream": false
+      }
+    ]
+  },
+  "wisp_slow": {
+    "sounds": [
+      {
+        "name": "burnt:wisp_slow",
+        "stream": false
+      }
+    ]
+  },
+  "burnt_eerie": {
+    "sounds": [
+      {
+        "name": "burnt:burnt_forest_eerie",
+        "stream": false
+      }
+    ]
+  },
+  "burnt": {
+    "sounds": [
+      {
+        "name": "burnt:thermal_tick",
+        "stream": false
+      },
+      {
+        "name": "burnt:thermal",
+        "stream": false
+      }
+    ]
+  },
+  "thermal": {
+    "subtitle": "subtitles.thermal",
+    "sounds": [
+      {
+        "name": "burnt:thermal",
+        "stream": false
+      }
+    ]
+  },
+  "thermal_tick": {
+    "subtitle": "subtitles.thermal_tick",
+    "sounds": [
+      {
+        "name": "burnt:thermal_tick",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/blank",
+    "up": "burnt:block/blank",
+    "north": "burnt:block/blank",
+    "east": "burnt:block/blank",
+    "south": "burnt:block/blank",
+    "west": "burnt:block/blank",
+    "particle": "burnt:block/blank"
+  },
+  "render_type": "translucent"
+}

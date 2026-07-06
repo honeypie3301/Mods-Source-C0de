@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "burnt:block/sooty_andesite",
+    "particle": "burnt:block/sooty_andesite"
+  },
+  "render_type": "solid"
+}

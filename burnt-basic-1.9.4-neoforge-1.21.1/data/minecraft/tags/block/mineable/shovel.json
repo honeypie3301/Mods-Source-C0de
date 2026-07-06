@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:charred_mycelium",
+    "burnt:burnt_grassy_sandy_d_irt",
+    "burnt:burnt_grassy_earthen_clay",
+    "burnt:semi_burnt_dirt",
+    "burnt:smoldering_grass_start",
+    "burnt:recovering_grass",
+    "burnt:burnt_farmland_moist",
+    "burnt:burnt_farmland",
+    "burnt:burnt_path",
+    "burnt:smoldering_grass",
+    "burnt:burnt_dirt",
+    "burnt:burnt_grass"
+  ]
+}

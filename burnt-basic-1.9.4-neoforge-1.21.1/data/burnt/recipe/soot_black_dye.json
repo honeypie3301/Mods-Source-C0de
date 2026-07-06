@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "burnt",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "burnt:soot"
+    }
+  },
+  "result": {
+    "id": "minecraft:black_dye",
+    "count": 1
+  }
+}

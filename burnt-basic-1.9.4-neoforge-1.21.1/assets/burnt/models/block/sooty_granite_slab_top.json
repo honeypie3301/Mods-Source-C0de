@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "burnt:block/sooty_granite",
+    "bottom": "burnt:block/sooty_granite",
+    "top": "burnt:block/sooty_granite",
+    "side": "burnt:block/sooty_granite"
+  },
+  "render_type": "solid"
+}

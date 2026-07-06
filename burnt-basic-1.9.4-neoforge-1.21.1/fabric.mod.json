@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "burnt",
+  "version": "1.8.0",
+  "name": "Burnt 1.8",
+  "authors": [
+    "chriswalker, MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "Academic Free License v3.0",
+  "accessWidener": "burnt.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.pixelbank.burnt.BurntMod"
+    ],
+    "client": [
+      "net.pixelbank.burnt.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  },
+  "mixins": [
+    "burnt.mixins.json"
+  ]
+}

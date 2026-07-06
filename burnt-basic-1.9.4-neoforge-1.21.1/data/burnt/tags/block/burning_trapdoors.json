@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_trapdoor",
+    "burnt:smoldering_oak_trapdoor",
+    "burnt:smoldering_dark_oak_trapdoor",
+    "burnt:smoldering_spruce_trapdoor",
+    "burnt:smoldering_birch_trapdoor",
+    "burnt:smoldering_jungle_trapdoor",
+    "burnt:smoldering_mangrove_trapdoor",
+    "burnt:smoldering_cherry_trapdoor",
+    "burnt:smoldering_acacia_trapdoor",
+    "burnt:smoldering_bamboo_trapdoor"
+  ]
+}

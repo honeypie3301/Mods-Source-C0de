@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "burnt:block/burnt_hay",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "burnt:block/burnt_hay"
+    },
+    "axis=z": {
+      "model": "burnt:block/burnt_hay",
+      "x": 90
+    }
+  }
+}

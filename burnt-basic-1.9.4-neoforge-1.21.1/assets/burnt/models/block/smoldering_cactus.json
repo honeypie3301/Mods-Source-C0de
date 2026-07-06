@@ -1,0 +1,9 @@
+{
+  "parent": "burnt:custom/smoldering_cactus",
+  "textures": {
+    "all": "burnt:block/smoldering_cactus",
+    "particle": "burnt:block/smoldering_cactus",
+    "smoldering_cactus.png": "burnt:block/smoldering_cactus"
+  },
+  "render_type": "cutout"
+}

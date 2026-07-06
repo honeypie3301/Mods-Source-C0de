@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/burnt_scaffolding",
+  "textures": {
+    "all": "burnt:block/burnt_scaffolding_top",
+    "particle": "burnt:block/burnt_scaffolding_top",
+    "side": "burnt:block/burnt_scaffolding_side",
+    "top": "burnt:block/burnt_scaffolding_top",
+    "bottom": "burnt:block/burnt_scaffolding_bottom"
+  },
+  "render_type": "cutout"
+}

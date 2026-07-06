@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/smoldering_hay_top",
+    "up": "burnt:block/smoldering_hay_top",
+    "north": "burnt:block/smoldering_hay_side",
+    "east": "burnt:block/smoldering_hay_side",
+    "south": "burnt:block/smoldering_hay_side",
+    "west": "burnt:block/smoldering_hay_side",
+    "particle": "burnt:block/smoldering_hay_top"
+  },
+  "render_type": "solid"
+}

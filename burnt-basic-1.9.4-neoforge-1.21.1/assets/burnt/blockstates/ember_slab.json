@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "burnt:block/ember_slab"
+    },
+    "type=top": {
+      "model": "burnt:block/ember_slab_top"
+    },
+    "type=double": {
+      "model": "burnt:block/ember_slab_full"
+    }
+  }
+}

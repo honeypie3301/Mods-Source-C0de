@@ -1,0 +1,320 @@
+{
+  "credit": "Made with Blockbench",
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        9,
+        16,
+        7
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            16,
+            16
+          ],
+          "texture": "#burnt_wood.png"
+        },
+        "east": {
+          "uv": [
+            9,
+            0,
+            16,
+            16
+          ],
+          "texture": "#burnt_wood_inner.png"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            9,
+            16
+          ],
+          "texture": "#burnt_wood_inner.png"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            7,
+            16
+          ],
+          "texture": "#burnt_wood.png"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            9,
+            7
+          ],
+          "texture": "#burnt_bark_top.png"
+        },
+        "down": {
+          "uv": [
+            0,
+            9,
+            9,
+            16
+          ],
+          "texture": "#burnt_bark_top.png"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        7
+      ],
+      "to": [
+        7,
+        16,
+        9
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0,
+          0,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            16,
+            16
+          ],
+          "texture": "#burnt_wood.png"
+        },
+        "east": {
+          "uv": [
+            9,
+            0,
+            16,
+            16
+          ],
+          "texture": "#burnt_wood_inner.png"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            7,
+            16
+          ],
+          "texture": "#burnt_wood_inner.png"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            9,
+            16
+          ],
+          "texture": "#burnt_wood.png"
+        },
+        "up": {
+          "uv": [
+            0,
+            7,
+            7,
+            9
+          ],
+          "texture": "#burnt_bark_top.png"
+        },
+        "down": {
+          "uv": [
+            0,
+            7,
+            7,
+            9
+          ],
+          "texture": "#burnt_bark_top.png"
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        0,
+        7
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          16,
+          0,
+          16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            9,
+            16
+          ],
+          "texture": "#burnt_wood_inner.png"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            9,
+            16
+          ],
+          "texture": "#burnt_wood.png"
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            16,
+            16
+          ],
+          "texture": "#burnt_wood.png"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            16,
+            16
+          ],
+          "texture": "#burnt_wood_inner.png"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            9,
+            9
+          ],
+          "rotation": 180,
+          "texture": "#burnt_bark_top.png"
+        },
+        "down": {
+          "uv": [
+            0,
+            7,
+            9,
+            16
+          ],
+          "rotation": 180,
+          "texture": "#burnt_bark_top.png"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        225,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "fixed": {
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  }
+}

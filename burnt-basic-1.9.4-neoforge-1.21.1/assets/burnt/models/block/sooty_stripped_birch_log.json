@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/stripped_sooty_birch_top",
+    "up": "burnt:block/stripped_sooty_birch_top",
+    "north": "burnt:block/stripped_sooty_birch",
+    "east": "burnt:block/stripped_sooty_birch",
+    "south": "burnt:block/stripped_sooty_birch",
+    "west": "burnt:block/stripped_sooty_birch",
+    "particle": "burnt:block/stripped_sooty_birch_top"
+  },
+  "render_type": "solid"
+}

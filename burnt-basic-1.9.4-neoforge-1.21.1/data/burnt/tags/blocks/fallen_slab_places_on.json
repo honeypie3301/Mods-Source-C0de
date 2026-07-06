@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:burnt_farmland",
+    "burnt:burnt_farmland_moist",
+    "minecraft:farmland",
+    "burnt:burnt_path",
+    "minecraft:dirt_path",
+    "#minecraft:stairs"
+  ]
+}

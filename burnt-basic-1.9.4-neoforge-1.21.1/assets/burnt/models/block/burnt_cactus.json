@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/burntcactus",
+  "textures": {
+    "all": "burnt:block/burnt_cactus_side",
+    "particle": "burnt:block/burnt_cactus_side",
+    "side": "burnt:block/burnt_cactus_side",
+    "top": "burnt:block/burnt_cactus_top",
+    "bottom": "burnt:block/burnt_cactus_bottom"
+  },
+  "render_type": "cutout"
+}

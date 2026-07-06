@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "burnt:block/smoldering_bamboo_planks",
+    "bottom": "burnt:block/smoldering_bamboo_planks",
+    "top": "burnt:block/smoldering_bamboo_planks",
+    "side": "burnt:block/smoldering_bamboo_planks"
+  },
+  "render_type": "solid"
+}

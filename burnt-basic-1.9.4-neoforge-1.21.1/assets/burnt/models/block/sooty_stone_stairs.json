@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "burnt:block/sooty_stone",
+    "bottom": "burnt:block/sooty_stone",
+    "top": "burnt:block/sooty_stone",
+    "side": "burnt:block/sooty_stone"
+  },
+  "render_type": "solid"
+}

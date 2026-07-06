@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "bamboo_jungle",
+    "mushroom_fields",
+    "mangrove_swamp",
+    "plains",
+    "frozen_peaks",
+    "jagged_peaks",
+    "swamp",
+    "jungle"
+  ]
+}

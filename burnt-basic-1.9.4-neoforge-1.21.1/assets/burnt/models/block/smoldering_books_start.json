@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/smolderingplanksstartanim",
+    "up": "burnt:block/smolderingplanksstartanim",
+    "north": "burnt:block/booksstart",
+    "east": "burnt:block/booksstart",
+    "south": "burnt:block/booksstart",
+    "west": "burnt:block/booksstart",
+    "particle": "burnt:block/burntbookshelf"
+  },
+  "render_type": "solid"
+}

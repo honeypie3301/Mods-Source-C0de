@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/smoldering_moss",
+    "up": "burnt:block/smoldering_moss",
+    "north": "burnt:block/smoldering_moss",
+    "east": "burnt:block/smoldering_moss",
+    "south": "burnt:block/smoldering_moss",
+    "west": "burnt:block/smoldering_moss",
+    "particle": "burnt:block/smoldering_moss"
+  },
+  "render_type": "solid"
+}

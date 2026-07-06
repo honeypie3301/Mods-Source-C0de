@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "group": "burnt",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "minecraft:planks"
+  },
+  "result": {
+    "id": "burnt:burnt_planks"
+  }
+}

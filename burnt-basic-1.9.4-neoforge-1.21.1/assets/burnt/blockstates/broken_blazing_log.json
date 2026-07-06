@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "axis=x,blockstate=0": {
+      "model": "burnt:block/broken_blazing_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,blockstate=0": {
+      "model": "burnt:block/broken_blazing_log"
+    },
+    "axis=z,blockstate=0": {
+      "model": "burnt:block/broken_blazing_log",
+      "x": 90
+    },
+    "axis=x,blockstate=1": {
+      "model": "burnt:block/broken_blazing_log_blockstates_blockstate_0",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,blockstate=1": {
+      "model": "burnt:block/broken_blazing_log_blockstates_blockstate_0"
+    },
+    "axis=z,blockstate=1": {
+      "model": "burnt:block/broken_blazing_log_blockstates_blockstate_0",
+      "x": 90
+    }
+  }
+}

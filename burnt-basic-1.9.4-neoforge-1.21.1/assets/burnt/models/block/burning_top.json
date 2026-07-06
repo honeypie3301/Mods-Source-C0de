@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/topfire",
+  "textures": {
+    "all": "burnt:block/burningparticles",
+    "particle": "burnt:block/burningparticles",
+    "0": "burnt:block/smolderingparticles",
+    "1": "burnt:block/burninggrassfire",
+    "missing": "burnt:block/burninggrassfire"
+  },
+  "render_type": "translucent"
+}

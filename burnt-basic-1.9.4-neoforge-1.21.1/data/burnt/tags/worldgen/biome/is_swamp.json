@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mangrove_swamp",
+    "swamp",
+    "plains",
+    "#c:is_swamp"
+  ]
+}

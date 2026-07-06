@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/ember_campfire"
+    },
+    "facing=east": {
+      "model": "burnt:block/ember_campfire",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/ember_campfire",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/ember_campfire",
+      "y": 270
+    }
+  }
+}

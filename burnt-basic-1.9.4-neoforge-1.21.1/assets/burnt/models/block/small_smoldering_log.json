@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/small_smoldering_log",
+  "textures": {
+    "all": "burnt:block/smoldering_log_top",
+    "particle": "burnt:block/smoldering_log_top",
+    "barksmoldertop.png": "burnt:block/smoldering_log_top",
+    "smoldering_log_side_1.png": "burnt:block/smoldering_log_side_1"
+  },
+  "render_type": "cutout"
+}

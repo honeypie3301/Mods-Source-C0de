@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:broken_burnt_log",
+    "burnt:stripped_broken_burnt_log",
+    "burnt:broken_blazing_log",
+    "burnt:broken_blazing_log_2",
+    "burnt:stripped_broken_burnt_log_2"
+  ]
+}

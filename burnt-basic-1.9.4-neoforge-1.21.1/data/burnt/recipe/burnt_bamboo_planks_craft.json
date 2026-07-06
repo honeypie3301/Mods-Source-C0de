@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "burnt",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "burnt:burnt_bamboo_block"
+    }
+  ],
+  "result": {
+    "id": "burnt:burnt_bamboo_planks",
+    "count": 2
+  }
+}

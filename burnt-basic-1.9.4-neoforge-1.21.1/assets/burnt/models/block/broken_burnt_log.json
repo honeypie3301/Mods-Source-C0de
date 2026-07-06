@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/broken_burnt_log_1",
+  "textures": {
+    "all": "burnt:block/burnt_log_top",
+    "particle": "burnt:block/burnt_log_inner",
+    "burnt_log_top.png": "burnt:block/burnt_log_top",
+    "burnt_log_inner.png": "burnt:block/burnt_log_inner",
+    "burnt_log.png": "burnt:block/burnt_log"
+  },
+  "render_type": "cutout"
+}

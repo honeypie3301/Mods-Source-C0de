@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "burnt:block/sooty_diorite",
+    "bottom": "burnt:block/sooty_diorite",
+    "top": "burnt:block/sooty_diorite",
+    "side": "burnt:block/sooty_diorite"
+  },
+  "render_type": "solid"
+}

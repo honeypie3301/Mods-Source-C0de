@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "burnt:block/smoldering_cobweb",
+    "particle": "burnt:block/smoldering_cobweb"
+  },
+  "render_type": "cutout_mipped"
+}

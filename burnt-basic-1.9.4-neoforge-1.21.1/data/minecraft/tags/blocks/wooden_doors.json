@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:burnt_door",
+    "burnt:burnt_acacia_door",
+    "burnt:burnt_bamboo_door",
+    "burnt:burnt_birch_door",
+    "burnt:burnt_cherry_door",
+    "burnt:burnt_dark_oak_door",
+    "burnt:burnt_jungle_door",
+    "burnt:burnt_mangrove_door",
+    "burnt:burnt_oak_door",
+    "burnt:burnt_spruce_door"
+  ]
+}

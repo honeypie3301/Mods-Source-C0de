@@ -1,0 +1,55 @@
+{
+  "values": {
+    "burnt:ember_berries": {
+      "chance": 0.3
+    },
+    "burnt:baked_apple": {
+      "chance": 0.65
+    },
+    "burnt:burnt_azalea": {
+      "chance": 0.5
+    },
+    "burnt:burnt_vine": {
+      "chance": 0.5
+    },
+    "burnt:soot": {
+      "chance": 0.25
+    },
+    "burnt:burnt_cactus": {
+      "chance": 0.5
+    },
+    "burnt:burnt_moss": {
+      "chance": 0.65
+    },
+    "burnt:burnt_moss_carpet": {
+      "chance": 0.3
+    },
+    "burnt:burnt_leaves": {
+      "chance": 0.5
+    },
+    "burnt:burnt_mangrove_roots": {
+      "chance": 0.3
+    },
+    "burnt:burnt_sugar_cane": {
+      "chance": 0.5
+    },
+    "burnt:burnt_melon": {
+      "chance": 0.85
+    },
+    "burnt:burnt_pumpkin": {
+      "chance": 0.85
+    },
+    "burnt:burnt_carved_pumpkin": {
+      "chance": 0.85
+    },
+    "burnt:tall_grass_burnt": {
+      "chance": 0.2
+    },
+    "burnt:burnt_hay": {
+      "chance": 0.85
+    },
+    "burnt:burnt_bamboo_stalk": {
+      "chance": 0.3
+    }
+  }
+}

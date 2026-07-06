@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "burnt:block/smoldering_acacia_leaves",
+    "particle": "burnt:block/smoldering_acacia_leaves"
+  }
+}

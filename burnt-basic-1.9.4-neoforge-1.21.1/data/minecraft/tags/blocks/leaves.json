@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_leaves_5",
+    "burnt:smoldering_leaves_4",
+    "burnt:smoldering_leaves_3",
+    "burnt:smoldering_leaves_2",
+    "minecraft:oak_leaves",
+    "minecraft:spruce_leaves",
+    "minecraft:birch_leaves",
+    "minecraft:jungle_leaves",
+    "minecraft:acacia_leaves",
+    "minecraft:dark_oak_leaves",
+    "minecraft:mangrove_leaves",
+    "minecraft:azalea_leaves",
+    "minecraft:flowering_azalea_leaves",
+    "minecraft:cherry_leaves",
+    "burnt:burnt_leaves",
+    "burnt:smoldering_leaves",
+    "burnt:smoldering_oak_leaves",
+    "burnt:smoldering_dark_oak_leaves",
+    "burnt:smoldering_spruce_leaves",
+    "burnt:smoldering_birch_leaves",
+    "burnt:smoldering_jungle_leaves",
+    "burnt:smoldering_mangrove_leaves",
+    "burnt:smoldering_cherry_leaves",
+    "burnt:smoldering_acacia_leaves",
+    "burnt:blast_leaves"
+  ]
+}

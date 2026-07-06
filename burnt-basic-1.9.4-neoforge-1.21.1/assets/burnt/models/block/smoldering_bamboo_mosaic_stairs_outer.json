@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "burnt:block/smoldering_bamboo_mosaic",
+    "bottom": "burnt:block/smoldering_bamboo_mosaic",
+    "top": "burnt:block/smoldering_bamboo_mosaic",
+    "side": "burnt:block/smoldering_bamboo_mosaic"
+  },
+  "render_type": "solid"
+}

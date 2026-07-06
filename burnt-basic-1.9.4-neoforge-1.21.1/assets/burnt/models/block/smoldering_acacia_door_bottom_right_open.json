@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_right_open",
+  "textures": {
+    "particle": "burnt:block/smoldering_acacia_door_bottom",
+    "bottom": "burnt:block/smoldering_acacia_door_bottom",
+    "top": "burnt:block/smoldering_acacia_door_top"
+  },
+  "render_type": "cutout_mipped"
+}

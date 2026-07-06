@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/double_fallen_burnt_slab"
+    },
+    "facing=east": {
+      "model": "burnt:block/double_fallen_burnt_slab",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/double_fallen_burnt_slab",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/double_fallen_burnt_slab",
+      "y": 270
+    }
+  }
+}

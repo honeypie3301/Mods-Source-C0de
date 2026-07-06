@@ -1,0 +1,15 @@
+{
+  "parent": "burnt:custom/extinguisher_idle",
+  "textures": {
+    "0": "burnt:block/extinguisher",
+    "particle": "burnt:item/extinguisher_item"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "burnt:extinguisher_extinguishing": 1
+      },
+      "model": "burnt:item/extinguisher_0"
+    }
+  ]
+}

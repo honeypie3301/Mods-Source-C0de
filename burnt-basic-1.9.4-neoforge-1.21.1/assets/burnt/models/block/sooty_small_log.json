@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/sooty_small_log",
+  "textures": {
+    "all": "burnt:block/sooty_oak_top",
+    "particle": "burnt:block/sooty_oak_top",
+    "sooty_oak.png": "burnt:block/sooty_oak",
+    "sooty_oak_top.png": "burnt:block/sooty_oak_top"
+  },
+  "render_type": "cutout"
+}

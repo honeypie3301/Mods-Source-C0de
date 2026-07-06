@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/hightopfire",
+  "textures": {
+    "all": "burnt:block/burningparticles",
+    "particle": "burnt:block/burningparticles",
+    "0": "burnt:block/burningparticles",
+    "1": "burnt:block/fire_1",
+    "missing": "burnt:block/fire_1"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/stairs_fire_2",
+  "textures": {
+    "all": "burnt:block/flames_0",
+    "particle": "burnt:block/blank",
+    "flames_8.png": "burnt:block/flames_8",
+    "flames_2.png": "burnt:block/flames_2"
+  },
+  "render_type": "cutout_mipped"
+}

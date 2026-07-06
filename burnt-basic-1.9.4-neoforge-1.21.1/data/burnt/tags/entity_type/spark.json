@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:spark",
+    "blaze",
+    "fireball",
+    "lightning_bolt",
+    "small_fireball"
+  ]
+}

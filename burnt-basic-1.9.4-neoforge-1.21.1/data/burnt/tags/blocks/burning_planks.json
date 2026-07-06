@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_planks",
+    "burnt:ember_planks",
+    "burnt:blazing_planks",
+    "burnt:smoldering_planks_2",
+    "burnt:smoldering_planks_3",
+    "burnt:smoldering_planks_4"
+  ]
+}

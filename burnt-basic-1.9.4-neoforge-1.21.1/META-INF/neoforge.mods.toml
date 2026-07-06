@@ -1,0 +1,43 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="burnt"
+version="1.9.4"
+displayName="Burnt Basic 1.9.4 Neoforge 1.21.1"
+updateJSONURL="https://github.com/pxlbnk/burnt-1.8.0/blob/8a532a9be3385ab08c74f55f21cd8f25f5a2f031/burnt_update.json"
+displayURL="https://discord.com/invite/NUqTwsfTzn"
+logoFile="logo.png"
+credits="By Pixelbank with MCreator"
+authors="Pixelbank, MCreator"
+description="A Vanilla fire enhancing mod"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.burnt]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.65,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.burnt]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.burnt]]
+    modId="geckolib"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

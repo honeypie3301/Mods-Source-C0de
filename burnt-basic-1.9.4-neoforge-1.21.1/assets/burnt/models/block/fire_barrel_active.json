@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/fire_barrel_bottom_active",
+    "up": "burnt:block/fire_barrel_top_active",
+    "north": "burnt:block/fire_barrel_side_active",
+    "east": "burnt:block/fire_barrel_side_active",
+    "south": "burnt:block/fire_barrel_side_active",
+    "west": "burnt:block/fire_barrel_side_active",
+    "particle": "burnt:block/fire_barrel_bottom_active"
+  },
+  "render_type": "solid"
+}

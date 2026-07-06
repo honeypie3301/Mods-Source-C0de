@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/ember_campfire",
+  "textures": {
+    "all": "burnt:block/ember_log",
+    "particle": "burnt:block/ember_log",
+    "burnt_log_top.png": "burnt:block/burnt_log_top",
+    "ember_log.png": "burnt:block/ember_log"
+  },
+  "render_type": "solid"
+}

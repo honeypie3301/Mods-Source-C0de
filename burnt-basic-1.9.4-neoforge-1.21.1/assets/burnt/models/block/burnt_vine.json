@@ -1,0 +1,9 @@
+{
+  "parent": "burnt:custom/burntvine",
+  "textures": {
+    "all": "burnt:block/burnt_vines",
+    "particle": "burnt:block/burnt_vines",
+    "vine": "burnt:block/burnt_vines"
+  },
+  "render_type": "cutout_mipped"
+}

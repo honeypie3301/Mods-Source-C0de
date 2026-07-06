@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:sooty_oak_log",
+    "burnt:sooty_dark_oak_log",
+    "burnt:sooty_spruce_log",
+    "burnt:sooty_jungle_log",
+    "burnt:sooty_birch_log",
+    "burnt:sooty_mangrove_log",
+    "burnt:sooty_acacia_log",
+    "burnt:sooty_cherry_log",
+    "minecraft:oak_log",
+    "minecraft:spruce_log",
+    "minecraft:birch_log",
+    "minecraft:jungle_log",
+    "minecraft:acacia_log",
+    "minecraft:dark_oak_log",
+    "minecraft:mangrove_log",
+    "minecraft:cherry_log"
+  ]
+}

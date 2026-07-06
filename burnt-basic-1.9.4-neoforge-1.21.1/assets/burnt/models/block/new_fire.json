@@ -1,0 +1,9 @@
+{
+  "parent": "burnt:custom/newfire",
+  "textures": {
+    "all": "burnt:block/newfireanimation",
+    "particle": "burnt:block/newfireanimation",
+    "0": "burnt:block/newfireanimation"
+  },
+  "render_type": "cutout"
+}

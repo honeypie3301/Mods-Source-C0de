@@ -1,0 +1,9 @@
+{
+  "parent": "burnt:custom/smoldering_carpet",
+  "textures": {
+    "all": "burnt:block/smoldering_wool",
+    "particle": "burnt:block/smoldering_wool",
+    "smoldering_wool.png": "burnt:block/smoldering_wool"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/burntpath",
+  "textures": {
+    "all": "burnt:block/burnt_path_top",
+    "particle": "burnt:block/burnt_path_top",
+    "burnt_path_side.png": "burnt:block/burnt_path_side",
+    "burnt_dirt.png": "burnt:block/burnt_dirt",
+    "burnt_path_top.png": "burnt:block/burnt_path_top"
+  },
+  "render_type": "cutout_mipped"
+}

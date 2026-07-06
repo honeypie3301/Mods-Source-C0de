@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_left",
+  "textures": {
+    "particle": "burnt:block/burnt_mangrove_door_bottom",
+    "bottom": "burnt:block/burnt_mangrove_door_bottom",
+    "top": "burnt:block/burnt_mangrove_door_top"
+  },
+  "render_type": "cutout_mipped"
+}

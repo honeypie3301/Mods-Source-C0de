@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "burnt:block/sooty_mangrove_planks",
+    "particle": "burnt:block/sooty_mangrove_planks"
+  },
+  "render_type": "solid"
+}

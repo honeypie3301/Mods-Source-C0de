@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/recovering_grass_bottom",
+    "up": "burnt:block/recovering_grass_top",
+    "north": "burnt:block/recovering_grass_side",
+    "east": "burnt:block/recovering_grass_side",
+    "south": "burnt:block/recovering_grass_side",
+    "west": "burnt:block/recovering_grass_side",
+    "particle": "burnt:block/recovering_grass_bottom"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "burnt:block/smoldering_planks",
+    "bottom": "burnt:block/smolderingplanksstartanim",
+    "top": "burnt:block/smolderingplanksstartanim",
+    "side": "burnt:block/smolderingplanksstartanim"
+  },
+  "render_type": "solid"
+}

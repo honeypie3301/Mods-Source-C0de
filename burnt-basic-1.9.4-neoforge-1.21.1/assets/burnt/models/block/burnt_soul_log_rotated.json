@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/soullogtop",
+    "up": "burnt:block/soullogtop",
+    "north": "burnt:block/soul_burnt_log_blank",
+    "east": "burnt:block/soul_burntlog",
+    "south": "burnt:block/soul_burnt_log_blank",
+    "west": "burnt:block/burntsoullog2",
+    "particle": "burnt:block/soullogtop"
+  },
+  "render_type": "solid"
+}

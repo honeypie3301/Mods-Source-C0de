@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_fencegate",
+    "burnt:blazing_fence_gate",
+    "burnt:ember_fence_gate"
+  ]
+}

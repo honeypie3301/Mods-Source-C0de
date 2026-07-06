@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/broken_blazing_log_2",
+  "textures": {
+    "all": "burnt:block/blazing_log_top",
+    "particle": "burnt:block/blazing_log_top",
+    "blazing_log.png": "burnt:block/blazing_log",
+    "blazing_log_top.png": "burnt:block/blazing_log_top",
+    "smoldering_log_side_4.png": "burnt:block/smoldering_log_side_4"
+  },
+  "render_type": "cutout"
+}

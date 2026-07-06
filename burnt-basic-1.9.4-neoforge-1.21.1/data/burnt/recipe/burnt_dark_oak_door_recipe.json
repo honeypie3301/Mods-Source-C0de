@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "group": "burnt",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "minecraft:dark_oak_door"
+  },
+  "result": {
+    "id": "burnt:burnt_dark_oak_door"
+  }
+}

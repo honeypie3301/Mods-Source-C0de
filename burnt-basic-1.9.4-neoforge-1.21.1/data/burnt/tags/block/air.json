@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:air",
+    "minecraft:void_air",
+    "minecraft:cave_air",
+    "burnt:wood_fire",
+    "burnt:wood_fire_2",
+    "burnt:wood_fire_3",
+    "burnt:stairs_fire",
+    "burnt:stairs_fire_2",
+    "burnt:stairs_fire_3",
+    "burnt:wood_fire_4",
+    "burnt:wood_fire_5",
+    "burnt:wood_fire_6",
+    "burnt:wood_fire_7",
+    "burnt:wood_fire_8",
+    "burnt:wood_fire_9",
+    "burnt:fire_set_block",
+    "burnt:firestarter"
+  ]
+}

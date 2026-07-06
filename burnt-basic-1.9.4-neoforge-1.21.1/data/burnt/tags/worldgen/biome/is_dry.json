@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "desert",
+    "badlands",
+    "wooded_badlands",
+    "windswept_savanna",
+    "eroded_badlands",
+    "#c:is_dry/overworld",
+    "#c:is_dry/end",
+    "#c:is_dry/nether"
+  ]
+}

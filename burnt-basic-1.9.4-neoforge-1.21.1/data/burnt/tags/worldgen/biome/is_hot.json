@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "desert",
+    "jungle",
+    "sparse_jungle",
+    "savanna",
+    "savanna_plateau",
+    "plains",
+    "windswept_savanna",
+    "stony_peaks",
+    "warm_ocean",
+    "eroded_badlands",
+    "bamboo_jungle",
+    "mangrove_swamp",
+    "nether_wastes",
+    "soul_sand_valley",
+    "crimson_forest",
+    "warped_forest",
+    "basalt_deltas",
+    "#c:is_hot/nether",
+    "#c:is_hot/overworld"
+  ]
+}

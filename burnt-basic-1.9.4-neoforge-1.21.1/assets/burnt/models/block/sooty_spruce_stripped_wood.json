@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "burnt:block/stripped_sooty_spruce",
+    "particle": "burnt:block/stripped_sooty_spruce"
+  },
+  "render_type": "solid"
+}

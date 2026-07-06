@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_wood",
+    "burnt:blazing_wood",
+    "burnt:ember_wood"
+  ]
+}

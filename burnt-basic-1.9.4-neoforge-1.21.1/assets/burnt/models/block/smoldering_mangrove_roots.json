@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/burningmangroveroots",
+  "textures": {
+    "all": "burnt:block/smoldering_mangrove_roots",
+    "particle": "burnt:block/smoldering_mangrove_roots",
+    "missing": "burnt:block/smoldering_mangrove_roots",
+    "burning_mangrove_roots.png": "burnt:block/smoldering_mangrove_roots",
+    "burning_mangrove_roots_top.png": "burnt:block/smoldering_mangrove_roots_top"
+  },
+  "render_type": "cutout_mipped"
+}

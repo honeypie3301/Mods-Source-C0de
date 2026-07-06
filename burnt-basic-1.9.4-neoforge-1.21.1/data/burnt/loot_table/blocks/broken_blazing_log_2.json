@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "burnt:blocks/broken_blazing_log_2",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "burnt:broken_burnt_log"
+        }
+      ]
+    }
+  ]
+}

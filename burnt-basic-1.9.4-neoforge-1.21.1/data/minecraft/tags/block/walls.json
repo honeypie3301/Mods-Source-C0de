@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:sooty_mud_brick_wall",
+    "burnt:sooty_granite_wall",
+    "burnt:sooty_andesite_wall",
+    "burnt:sooty_diorite_wall",
+    "burnt:sooty_mossy_stone_brick_wall",
+    "burnt:sooty_mossy_cobblestone_wall",
+    "burnt:sooty_stone_brick_wall",
+    "burnt:sooty_brick_wall",
+    "burnt:sooty_cobblestone_wall"
+  ]
+}

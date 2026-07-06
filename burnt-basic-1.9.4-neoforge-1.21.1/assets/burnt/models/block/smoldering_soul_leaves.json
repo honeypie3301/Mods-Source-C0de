@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/soul_smolderingleavesanim",
+    "up": "burnt:block/soul_smolderingleavesanim",
+    "north": "burnt:block/soul_smolderingleavesanim",
+    "east": "burnt:block/soul_smolderingleavesanim",
+    "south": "burnt:block/soul_smolderingleavesanim",
+    "west": "burnt:block/soul_smolderingleavesanim",
+    "particle": "burnt:block/soul_smolderingleavesanim"
+  },
+  "render_type": "cutout_mipped"
+}

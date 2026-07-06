@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/smoldering_campfire",
+  "textures": {
+    "all": "burnt:block/blazing_log",
+    "particle": "burnt:block/blazing_log",
+    "smoldering_log_top.png": "burnt:block/smoldering_log_top",
+    "smoldering_log_side_0.png": "burnt:block/smoldering_log_side_0"
+  },
+  "render_type": "solid"
+}

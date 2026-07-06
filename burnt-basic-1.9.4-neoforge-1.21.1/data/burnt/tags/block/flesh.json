@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "the_flesh_that_hates:flesh_coublestone",
+    "the_flesh_that_hates:flesh_block",
+    "the_flesh_that_hates:flesh_sand",
+    "the_flesh_that_hates:flesh_tree",
+    "the_flesh_that_hates:flesh_bricks",
+    "the_flesh_that_hates:flesh_pile",
+    "the_flesh_that_hates:tumor",
+    "the_flesh_that_hates:purulent_tumor",
+    "the_flesh_that_hates:purulent",
+    "the_flesh_that_hates:flesh_foliage",
+    "the_flesh_that_hates:flesh_terns",
+    "the_flesh_that_hates:flesh_spike_grass",
+    "the_flesh_that_hates:flesh_grass",
+    "the_flesh_that_hates:flesh_small_grass"
+  ]
+}
