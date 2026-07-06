@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:double_fallen_burnt_slab",
+    "burnt:fallen_burnt_slab",
+    "burnt:smoldering_coal"
+  ]
+}

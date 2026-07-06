@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "a a",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "burnt:burnt_planks"
+    },
+    "b": {
+      "item": "burnt:burnt_slab"
+    }
+  },
+  "result": {
+    "id": "burnt:burnt_barrel",
+    "count": 1
+  }
+}

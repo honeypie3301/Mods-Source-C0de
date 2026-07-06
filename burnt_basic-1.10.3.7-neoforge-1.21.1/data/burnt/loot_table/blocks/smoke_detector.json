@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "burnt:blocks/smoke_detector",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "burnt:smoke_detector"
+        }
+      ]
+    }
+  ]
+}

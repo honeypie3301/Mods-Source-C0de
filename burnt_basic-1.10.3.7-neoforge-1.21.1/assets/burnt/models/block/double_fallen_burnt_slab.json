@@ -1,0 +1,9 @@
+{
+  "parent": "burnt:custom/double_fallen_burnt_planks",
+  "textures": {
+    "all": "burnt:block/burnt_planks",
+    "particle": "burnt:block/burnt_planks",
+    "0": "burnt:block/burnt_planks"
+  },
+  "render_type": "solid"
+}

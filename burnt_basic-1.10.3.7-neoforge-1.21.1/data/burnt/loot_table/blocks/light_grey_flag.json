@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "burnt:blocks/light_grey_flag",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "burnt:light_grey_flag"
+        }
+      ]
+    }
+  ]
+}

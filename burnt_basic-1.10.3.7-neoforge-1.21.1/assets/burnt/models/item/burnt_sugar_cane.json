@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "burnt:item/burnt_sugar_cane_item"
+  },
+  "render_type": "translucent"
+}

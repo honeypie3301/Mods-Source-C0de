@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/geyserblock",
+  "textures": {
+    "all": "burnt:block/bubbletop",
+    "particle": "burnt:block/bubbletop",
+    "1": "burnt:block/bubbletop",
+    "3": "burnt:block/bubbleflow"
+  },
+  "render_type": "translucent"
+}

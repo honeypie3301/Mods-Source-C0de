@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "abb",
+    "a  "
+  ],
+  "key": {
+    "a": { "item": "minecraft:stick" },
+    "b": { "item": "minecraft:light_blue_wool" },
+    "c": { "item": "minecraft:wind_charge" }
+  },
+  "result": {
+    "id": "burnt:wind_flag",
+    "count": 1
+  }
+}

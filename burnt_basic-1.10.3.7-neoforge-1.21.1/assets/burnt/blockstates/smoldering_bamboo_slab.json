@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "burnt:block/smoldering_bamboo_slab"
+    },
+    "type=top": {
+      "model": "burnt:block/smoldering_bamboo_slab_top"
+    },
+    "type=double": {
+      "model": "burnt:block/smoldering_bamboo_slab_full"
+    }
+  }
+}

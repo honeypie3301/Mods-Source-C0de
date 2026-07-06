@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:burnt_fence",
+    "burnt:smoldering_fence",
+    "burnt:ember_fence",
+    "burnt:blazing_fence",
+    "burnt:sooty_acacia_fence",
+    "burnt:sooty_birch_fence",
+    "burnt:sooty_cherry_fence",
+    "burnt:sooty_dark_oak_fence",
+    "burnt:sooty_jungle_fence",
+    "burnt:sooty_mangrove_fence",
+    "burnt:sooty_oak_fence",
+    "burnt:sooty_spruce_fence",
+    "burnt:burnt_bamboo_fence",
+    "burnt:smoldering_bamboo_fence"
+  ]
+}

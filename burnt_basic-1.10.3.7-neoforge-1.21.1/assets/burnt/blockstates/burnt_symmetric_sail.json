@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": {"model": "burnt:block/burnt_symmetric_sail", "x": 90, "y": 90},
+    "axis=y": {"model": "burnt:block/burnt_symmetric_sail"},
+    "axis=z": {"model": "burnt:block/burnt_symmetric_sail", "x": 90, "y": 180}
+  }
+}

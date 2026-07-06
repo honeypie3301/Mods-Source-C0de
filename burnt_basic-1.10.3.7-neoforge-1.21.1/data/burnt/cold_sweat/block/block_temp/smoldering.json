@@ -1,0 +1,30 @@
+{
+  "required_mods": ["cold_sweat"],
+  "block": {
+    "blocks": [
+      "#burnt:smoldering_logs",
+      "#burnt:smoldering_planks",
+      "#burnt:smoldering_leaves",
+      "burnt:smoldering_stripped_log",
+      "burnt:small_smoldering_log",
+      "burnt:smoldering_wood",
+      "burnt:smoldering_stripped_wood",
+      "burnt:smoldering_bamboo_block",
+      "burnt:smoldering_bamboo_planks",
+      "burnt:smoldering_bamboo_stalk",
+      "burnt:smoldering_stairs",
+      "burnt:smoldering_slab",
+      "burnt:smoldering_fence",
+      "burnt:smoldering_fencegate",
+      "burnt:smoldering_wool",
+      "burnt:smoldering_carpet",
+      "burnt:smoldering_hay",
+      "burnt:smoldering_campfire"
+    ]
+  },
+  "temperature": 15,
+  "units": "f",
+  "range": 7,
+  "fade": true,
+  "max_effect": 90
+}

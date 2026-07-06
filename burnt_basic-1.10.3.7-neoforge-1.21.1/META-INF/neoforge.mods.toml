@@ -1,0 +1,46 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All Rights Reserved"
+issueTrackerURL = "https://discord.com/invite/NUqTwsfTzn"
+
+[[mods]]
+    modId = "burnt"
+    version = "1.10.3.7"
+    displayName = "Burnt Basic"
+    description = "A Vanilla fire enhancing mod"
+    authors = "Pixelbank"
+    logoFile = "assets/burnt/logo.png"
+
+[[dependencies.burnt]]
+    modId = "neoforge"
+    type = "required"
+    versionRange = "[21.1,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.burnt]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[1.21.1,1.22)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.burnt]]
+    modId = "cloth_config"
+    type = "required"
+    versionRange = "*"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.burnt]]
+    modId = "weather2"
+    type = "optional"
+    versionRange = "*"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[mixins]]
+    config = "burnt.mixins.json"
+
+[[mixins]]
+    config = "burnt.compat.mixins.json"

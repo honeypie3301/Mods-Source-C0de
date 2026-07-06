@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "abb",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "result": {
+    "id": "burnt:red_flag",
+    "count": 1
+  }
+}

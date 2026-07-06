@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/soot_adjacent",
+  "textures": {
+    "all": "burnt:block/soot",
+    "particle": "burnt:block/soot_item",
+    "0": "burnt:block/soot",
+    "1": "burnt:block/blank",
+    "missing": "burnt:block/blank"
+  },
+  "render_type": "translucent"
+}

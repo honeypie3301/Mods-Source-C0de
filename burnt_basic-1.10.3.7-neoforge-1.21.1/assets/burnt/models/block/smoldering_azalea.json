@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/smoldering_azalea",
+  "textures": {
+    "all": "burnt:block/smoldering_azalea",
+    "particle": "burnt:block/smoldering_azalea",
+    "smoldering_azalea_inner.png": "burnt:block/smoldering_azalea_inner",
+    "smoldering_azalea_top.png": "burnt:block/smoldering_azalea_top",
+    "smoldering_azalea_side.png": "burnt:block/smoldering_azalea_side"
+  },
+  "render_type": "cutout"
+}

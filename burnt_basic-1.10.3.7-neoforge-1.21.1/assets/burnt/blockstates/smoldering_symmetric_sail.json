@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=x,hot=false": {"model": "burnt:block/smoldering_symmetric_sail", "x": 90, "y": 90},
+    "axis=x,hot=true":  {"model": "burnt:block/smoldering_symmetric_sail", "x": 90, "y": 90},
+    "axis=y,hot=false": {"model": "burnt:block/smoldering_symmetric_sail"},
+    "axis=y,hot=true":  {"model": "burnt:block/smoldering_symmetric_sail"},
+    "axis=z,hot=false": {"model": "burnt:block/smoldering_symmetric_sail", "x": 90, "y": 180},
+    "axis=z,hot=true":  {"model": "burnt:block/smoldering_symmetric_sail", "x": 90, "y": 180}
+  }
+}

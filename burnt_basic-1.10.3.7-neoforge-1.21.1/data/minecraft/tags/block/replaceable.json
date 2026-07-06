@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:double_tall_grass_fire",
+    "burnt:tall_flames",
+    "burnt:fire_barrel_blast_block",
+    "burnt:stairs_fire_5",
+    "burnt:burnt_high_grass",
+    "burnt:stairs_fire_3",
+    "burnt:stairs_fire_4",
+    "burnt:stairs_fire_2",
+    "burnt:tall_grass_fire",
+    "burnt:tall_grass_burnt",
+    "burnt:grass_flames",
+    "burnt:burnt_vine",
+    "burnt:stairs_fire",
+    "burnt:firestarter",
+    "burnt:wood_fire",
+    "burnt:fire_set_block",
+    "burnt:wood_fire_3",
+    "burnt:wood_fire_2",
+    "burnt:splash",
+    "burnt:wood_fire_9",
+    "burnt:soot_block",
+    "burnt:wood_fire_8",
+    "burnt:wood_fire_5",
+    "burnt:smoldering_high_grass",
+    "burnt:smoldering_wood",
+    "burnt:wood_fire_4",
+    "burnt:wood_fire_7",
+    "burnt:wood_fire_6"
+  ]
+}

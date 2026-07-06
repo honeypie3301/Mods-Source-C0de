@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "immersive_weathering:rooted_grass_block",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:is_sparse_vegetation",
+      "required": false
+    },
+    "snowy_plains",
+    "ice_spikes",
+    "windswept_hills",
+    {
+      "id": "#c:is_mountain",
+      "required": false
+    },
+    "snowy_slopes",
+    "cold_ocean",
+    "jagged_peaks",
+    "windswept_forest",
+    {
+      "id": "#c:is_windswept",
+      "required": false
+    },
+    "stony_peaks",
+    "plains",
+    "frozen_peaks",
+    "windswept_savanna",
+    "windswept_gravelly_hills"
+  ]
+}

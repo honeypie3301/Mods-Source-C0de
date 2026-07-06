@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:podzol",
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "burnt:semi_burnt_dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:mycelium",
+    "minecraft:rooted_dirt",
+    "minecraft:suspicious_sand",
+    "burnt:burnt_sugar_cane",
+    "burnt:burnt_grass",
+    "minecraft:mud",
+    "burnt:burnt_dirt",
+    "burnt:recovering_grass",
+    "burnt:smoldering_grass",
+    "minecraft:moss_block",
+    "minecraft:sugar_cane",
+    "minecraft:sand",
+    "minecraft:red_sand"
+  ]
+}

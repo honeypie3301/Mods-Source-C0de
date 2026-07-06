@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:burnt_moss",
+    "burnt:smoldering_grass_start",
+    "burnt:smoldering_cave_vines",
+    "burnt:smoldering_cave_vines_plant",
+    "burnt:burnt_dirt",
+    "burnt:burnt_cave_vines",
+    "burnt:recovering_grass",
+    "burnt:smoldering_grass",
+    "burnt:smoldering_moss",
+    "burnt:burnt_grass",
+    "burnt:burnt_cave_vines_plant"
+  ]
+}

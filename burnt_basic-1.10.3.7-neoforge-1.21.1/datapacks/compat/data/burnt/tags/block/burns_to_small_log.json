@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "regions_unexplored:small_oak_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_small_oak_log",
+      "required": false
+    }
+  ]
+}

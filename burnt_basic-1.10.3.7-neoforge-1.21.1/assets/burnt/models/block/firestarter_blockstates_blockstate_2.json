@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/firestarter_east",
+  "textures": {
+    "all": "burnt:block/firestarter_falling",
+    "particle": "burnt:block/blank",
+    "0": "burnt:block/flames_1",
+    "missing": "burnt:block/flames_1"
+  },
+  "render_type": "cutout_mipped"
+}

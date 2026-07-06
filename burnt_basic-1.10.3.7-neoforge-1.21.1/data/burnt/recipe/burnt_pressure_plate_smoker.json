@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:smoking",
+  "group": "burnt",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": [
+    {"item": "minecraft:oak_pressure_plate"},
+    {"item": "minecraft:spruce_pressure_plate"},
+    {"item": "minecraft:birch_pressure_plate"},
+    {"item": "minecraft:jungle_pressure_plate"},
+    {"item": "minecraft:acacia_pressure_plate"},
+    {"item": "minecraft:dark_oak_pressure_plate"},
+    {"item": "minecraft:mangrove_pressure_plate"},
+    {"item": "minecraft:cherry_pressure_plate"},
+    {"item": "minecraft:bamboo_pressure_plate"}
+  ],
+  "result": {"id": "burnt:burnt_pressure_plate"}
+}

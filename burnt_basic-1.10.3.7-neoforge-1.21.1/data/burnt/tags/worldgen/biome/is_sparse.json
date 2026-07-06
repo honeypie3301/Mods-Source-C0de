@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "plains",
+    "dripstone_caves",
+    "eroded_badlands",
+    "snowy_slopes",
+    "jagged_peaks",
+    "windswept_forest",
+    {
+      "id": "#c:is_sparse_vegetation/overworld",
+      "required": false
+    },
+    "savanna",
+    "windswept_savanna",
+    "wooded_badlands",
+    "frozen_peaks",
+    "windswept_gravelly_hills",
+    "savanna_plateau"
+  ]
+}

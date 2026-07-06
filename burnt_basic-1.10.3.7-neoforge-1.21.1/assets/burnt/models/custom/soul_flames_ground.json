@@ -1,0 +1,654 @@
+{
+  "credit": "Made with Blockbench",
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        6,
+        0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            4,
+            16,
+            10
+          ],
+          "texture": "#soul_flames_7.png"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "south": {
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ],
+          "texture": "#soul_flames_7.png"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "texture": "#missing"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "texture": "#missing"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        6,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          0,
+          0,
+          16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "east": {
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ],
+          "texture": "#soul_flames_7.png"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "west": {
+          "uv": [
+            0,
+            6,
+            16,
+            12
+          ],
+          "texture": "#soul_flames_7.png"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 270,
+          "texture": "#missing"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 90,
+          "texture": "#missing"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        16
+      ],
+      "to": [
+        16,
+        6,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          16,
+          0,
+          16
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ],
+          "texture": "#soul_flames_7.png"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "south": {
+          "uv": [
+            0,
+            5,
+            16,
+            9
+          ],
+          "texture": "#soul_flames_7.png"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 180,
+          "texture": "#missing"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 180,
+          "texture": "#missing"
+        }
+      }
+    },
+    {
+      "from": [
+        16,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        6,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          16,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "east": {
+          "uv": [
+            0,
+            6,
+            16,
+            12
+          ],
+          "texture": "#soul_flames_7.png"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "west": {
+          "uv": [
+            0,
+            12,
+            16,
+            16
+          ],
+          "texture": "#soul_flames_7.png"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 90,
+          "texture": "#missing"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 270,
+          "texture": "#missing"
+        }
+      }
+    },
+    {
+      "from": [
+        8,
+        -0.5,
+        2
+      ],
+      "to": [
+        8,
+        9.5,
+        16
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "z",
+        "origin": [
+          8,
+          4.5,
+          9
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            15,
+            11
+          ],
+          "texture": "#soul_flames_1.png"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "texture": "#soul_flames_1.png"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 90,
+          "texture": "#missing"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 270,
+          "texture": "#missing"
+        }
+      }
+    },
+    {
+      "from": [
+        8,
+        -0.5,
+        2
+      ],
+      "to": [
+        8,
+        9.5,
+        16
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "z",
+        "origin": [
+          8,
+          4.5,
+          9
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "texture": "#soul_flames_1.png"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            15,
+            11
+          ],
+          "texture": "#soul_flames_1.png"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 90,
+          "texture": "#missing"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "rotation": 270,
+          "texture": "#missing"
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        -1.5,
+        9
+      ],
+      "to": [
+        14,
+        8.5,
+        9
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "x",
+        "origin": [
+          9,
+          3.5,
+          9
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            15,
+            11
+          ],
+          "texture": "#soul_flames_1.png"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "texture": "#soul_flames_1.png"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "texture": "#missing"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "texture": "#missing"
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        -1.5,
+        9
+      ],
+      "to": [
+        14,
+        8.5,
+        9
+      ],
+      "rotation": {
+        "angle": -45,
+        "axis": "x",
+        "origin": [
+          9,
+          3.5,
+          9
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "texture": "#soul_flames_1.png"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            15,
+            11
+          ],
+          "texture": "#soul_flames_1.png"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0,
+            8
+          ],
+          "texture": "#missing"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "texture": "#missing"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ],
+          "texture": "#missing"
+        }
+      }
+    }
+  ],
+  "groups": [
+    0,
+    1,
+    2,
+    3,
+    {
+      "name": "group",
+      "origin": [
+        32,
+        5,
+        9
+      ],
+      "color": 0,
+      "children": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "group",
+      "origin": [
+        32,
+        5,
+        9
+      ],
+      "color": 0,
+      "children": [
+        6,
+        7
+      ]
+    }
+  ]
+}

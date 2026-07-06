@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Specification-Title: burnt
+Specification-Vendor: Pixelbank
+Specification-Version: 1
+Implementation-Title: burnt
+Implementation-Version: 1.10.3.7
+Implementation-Vendor: Pixelbank
+

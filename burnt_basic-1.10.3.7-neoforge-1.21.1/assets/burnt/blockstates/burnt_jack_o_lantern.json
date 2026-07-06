@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/burnt_jack_o_lantern"
+    },
+    "facing=east": {
+      "model": "burnt:block/burnt_jack_o_lantern",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/burnt_jack_o_lantern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/burnt_jack_o_lantern",
+      "y": 270
+    }
+  }
+}

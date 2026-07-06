@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:podzol",
+    "minecraft:dirt",
+    "burnt:semi_burnt_dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:rooted_dirt",
+    "burnt:burnt_dirt"
+  ]
+}

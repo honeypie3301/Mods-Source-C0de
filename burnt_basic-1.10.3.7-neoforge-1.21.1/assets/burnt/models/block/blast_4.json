@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "burnt:block/fireexplosion",
+    "particle": "burnt:block/fireexplosion"
+  },
+  "render_type": "cutout_mipped"
+}

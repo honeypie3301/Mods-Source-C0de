@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "burnt:blocks/fallen_burnt_slab",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "burnt:fallen_burnt_slab"
+        }
+      ]
+    }
+  ]
+}

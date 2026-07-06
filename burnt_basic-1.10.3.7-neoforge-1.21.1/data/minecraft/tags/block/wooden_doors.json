@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_mangrove_door",
+    "burnt:burnt_spruce_door",
+    "burnt:smoldering_door",
+    "burnt:smoldering_bamboo_door",
+    "burnt:burnt_cherry_door",
+    "burnt:smoldering_dark_oak_door",
+    "burnt:burnt_bamboo_door",
+    "burnt:burnt_acacia_door",
+    "burnt:burnt_birch_door",
+    "burnt:burnt_dark_oak_door",
+    "burnt:smoldering_spruce_door",
+    "burnt:smoldering_acacia_door",
+    "burnt:burnt_door",
+    "burnt:burnt_mangrove_door",
+    "burnt:smoldering_birch_door",
+    "burnt:smoldering_jungle_door",
+    "burnt:burnt_oak_door",
+    "burnt:smoldering_oak_door",
+    "burnt:burnt_jungle_door",
+    "burnt:smoldering_cherry_door"
+  ]
+}

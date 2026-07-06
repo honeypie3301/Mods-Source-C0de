@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/burnt_ivy"
+    },
+    "facing=east": {
+      "model": "burnt:block/burnt_ivy",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/burnt_ivy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/burnt_ivy",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "burnt:block/burnt_ivy",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "burnt:block/burnt_ivy",
+      "x": 90
+    }
+  }
+}

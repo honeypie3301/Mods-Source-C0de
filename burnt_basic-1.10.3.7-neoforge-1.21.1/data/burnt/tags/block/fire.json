@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_wheat",
+    "burnt:tall_flames",
+    "burnt:double_tall_grass_fire",
+    "burnt:smoldering_cave_vines",
+    "burnt:stairs_fire_5",
+    "burnt:smoldering_crops",
+    "burnt:smoldering_carrots",
+    "burnt:stairs_fire_3",
+    "burnt:stairs_fire_4",
+    "burnt:stairs_fire_2",
+    "burnt:smoldering_cave_vines_plant",
+    "burnt:smoldering_beetroot",
+    "burnt:tall_grass_fire",
+    "burnt:grass_flames",
+    "burnt:stairs_fire",
+    "burnt:smoldering_potatoes",
+    "burnt:wood_fire",
+    "burnt:firestarter",
+    "minecraft:fire",
+    "burnt:wood_fire_3",
+    "burnt:wood_fire_2",
+    "burnt:wood_fire_9",
+    "burnt:wood_fire_8",
+    "burnt:wood_fire_5",
+    "burnt:wood_fire_4",
+    "burnt:wood_fire_7",
+    "burnt:wood_fire_6"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/woodburn",
+  "textures": {
+    "all": "burnt:block/fire_0",
+    "particle": "burnt:block/fire_0",
+    "1": "burnt:block/fire_0",
+    "missing": "burnt:block/fire_0"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "burnt:block/sooty_cobblestone",
+    "particle": "burnt:block/sooty_cobblestone"
+  },
+  "render_type": "solid"
+}

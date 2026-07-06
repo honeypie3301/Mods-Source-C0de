@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/sooty_cherry_top",
+    "up": "burnt:block/sooty_cherry_top",
+    "north": "burnt:block/sooty_cherry",
+    "east": "burnt:block/sooty_cherry",
+    "south": "burnt:block/sooty_cherry",
+    "west": "burnt:block/sooty_cherry",
+    "particle": "burnt:block/sooty_cherry_top"
+  },
+  "render_type": "solid"
+}

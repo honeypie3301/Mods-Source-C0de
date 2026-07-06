@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "group": "burnt",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {"item": "minecraft:moss_carpet"},
+  "result": {"id": "burnt:burnt_moss_carpet"}
+}

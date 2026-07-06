@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "warm_ocean",
+    "dripstone_caves",
+    "lush_caves",
+    "mangrove_swamp",
+    "swamp",
+    "cherry_grove",
+    "grove",
+    {
+      "id": "#c:is_floral",
+      "required": false
+    },
+    {
+      "id": "#c:is_jungle",
+      "required": false
+    },
+    "dark_forest",
+    "jungle",
+    "plains",
+    "flower_forest"
+  ]
+}

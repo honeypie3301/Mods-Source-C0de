@@ -1,0 +1,117 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biomeswevegone:baobab_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:flowering_baobab_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ripe_baobab_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:palm_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:rainbow_eucalyptus_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:sakura_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:white_sakura_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:yellow_sakura_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:white_mangrove_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:yucca_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:flowering_yucca_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ripe_yucca_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:palm_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:mahogany_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:empyreal_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:snowblossom_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:coconut_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:dwarf_blossoms",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:ruby_blossoms",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:baobab_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:joshua_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:magnolia_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:blue_magnolia_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:pink_magnolia_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:white_magnolia_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:palm_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:socotra_leaves",
+      "required": false
+    },
+    {
+      "id": "nomansland:pale_cherry_leaves",
+      "required": false
+    }
+  ]
+}

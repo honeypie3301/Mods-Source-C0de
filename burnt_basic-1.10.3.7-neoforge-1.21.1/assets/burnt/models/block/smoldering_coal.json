@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/burning_coal",
+    "up": "burnt:block/burning_coal",
+    "north": "burnt:block/burning_coal",
+    "east": "burnt:block/burning_coal",
+    "south": "burnt:block/burning_coal",
+    "west": "burnt:block/burning_coal",
+    "particle": "burnt:block/burning_coal"
+  },
+  "render_type": "solid"
+}

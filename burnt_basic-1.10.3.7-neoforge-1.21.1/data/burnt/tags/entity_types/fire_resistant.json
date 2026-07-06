@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "iron_golem",
+    "blaze",
+    "ender_dragon",
+    "end_crystal",
+    "ender_pearl",
+    "eye_of_ender",
+    "falling_block",
+    "fireball",
+    "ghast",
+    "lightning_bolt",
+    "magma_cube",
+    "minecart",
+    "chest_minecart",
+    "command_block_minecart",
+    "furnace_minecart",
+    "hopper_minecart",
+    "spawner_minecart",
+    "tnt_minecart",
+    "small_fireball",
+    "snowball",
+    "turtle",
+    "zombie",
+    "burnt:fireball",
+    "burnt:spark",
+    "burnt:spray"
+  ]
+}

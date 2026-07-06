@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "burnt:block/burnt_pressure_plate"
+    },
+    "powered=true": {
+      "model": "burnt:block/burnt_pressure_plate_down"
+    }
+  }
+}

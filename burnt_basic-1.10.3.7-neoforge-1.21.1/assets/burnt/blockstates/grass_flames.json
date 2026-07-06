@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/grass_flames"
+    },
+    "facing=east": {
+      "model": "burnt:block/grass_flames",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/grass_flames",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/grass_flames",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/burnt_envelope",
+    "up": "burnt:block/burnt_envelope",
+    "north": "burnt:block/burnt_envelope",
+    "east": "burnt:block/burnt_envelope",
+    "south": "burnt:block/burnt_envelope",
+    "west": "burnt:block/burnt_envelope",
+    "particle": "burnt:block/burnt_envelope"
+  },
+  "render_type": "solid"
+}

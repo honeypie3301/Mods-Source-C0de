@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down": {"model": "burnt:block/burnt_sail", "x": 180},
+    "facing=east": {"model": "burnt:block/burnt_sail", "x": 90, "y": 90},
+    "facing=north": {"model": "burnt:block/burnt_sail", "x": 90},
+    "facing=south": {"model": "burnt:block/burnt_sail", "x": 90, "y": 180},
+    "facing=up": {"model": "burnt:block/burnt_sail"},
+    "facing=west": {"model": "burnt:block/burnt_sail", "x": 90, "y": 270}
+  }
+}

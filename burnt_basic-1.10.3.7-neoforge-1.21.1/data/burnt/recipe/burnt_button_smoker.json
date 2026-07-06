@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:smoking",
+  "group": "burnt",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": [
+    {"item": "minecraft:oak_button"},
+    {"item": "minecraft:spruce_button"},
+    {"item": "minecraft:birch_button"},
+    {"item": "minecraft:jungle_button"},
+    {"item": "minecraft:acacia_button"},
+    {"item": "minecraft:dark_oak_button"},
+    {"item": "minecraft:mangrove_button"},
+    {"item": "minecraft:cherry_button"},
+    {"item": "minecraft:bamboo_button"}
+  ],
+  "result": {"id": "burnt:burnt_button"}
+}

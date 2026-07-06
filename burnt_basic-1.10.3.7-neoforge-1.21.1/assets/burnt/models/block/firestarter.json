@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/firestarter",
+  "textures": {
+    "all": "burnt:block/flames_0",
+    "particle": "burnt:block/blank",
+    "flames_3.png": "burnt:block/flames_3",
+    "flames_4.png": "burnt:block/flames_4",
+    "flames_2.png": "burnt:block/flames_2"
+  },
+  "render_type": "cutout_mipped"
+}

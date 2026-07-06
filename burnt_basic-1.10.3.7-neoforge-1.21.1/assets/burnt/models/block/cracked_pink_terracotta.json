@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/cracked_pink_terracotta_01",
+    "up": "burnt:block/cracked_pink_terracotta_02",
+    "north": "burnt:block/cracked_pink_terracotta_02",
+    "east": "burnt:block/cracked_pink_terracotta_01",
+    "south": "burnt:block/cracked_pink_terracotta_04",
+    "west": "burnt:block/cracked_pink_terracotta_03",
+    "particle": "burnt:block/cracked_pink_terracotta_01"
+  },
+  "render_type": "solid"
+}

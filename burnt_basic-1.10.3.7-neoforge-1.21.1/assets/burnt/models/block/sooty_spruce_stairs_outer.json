@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "burnt:block/sooty_spruce_planks",
+    "bottom": "burnt:block/sooty_spruce_planks",
+    "top": "burnt:block/sooty_spruce_planks",
+    "side": "burnt:block/sooty_spruce_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/sooty_mangrove_top",
+    "up": "burnt:block/sooty_mangrove_top",
+    "north": "burnt:block/sooty_mangrove",
+    "east": "burnt:block/sooty_mangrove",
+    "south": "burnt:block/sooty_mangrove",
+    "west": "burnt:block/sooty_mangrove",
+    "particle": "burnt:block/sooty_mangrove_top"
+  },
+  "render_type": "solid"
+}

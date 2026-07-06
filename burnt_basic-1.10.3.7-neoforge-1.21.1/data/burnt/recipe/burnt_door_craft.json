@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "burnt",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "burnt:burnt_planks"
+    }
+  },
+  "result": {
+    "id": "burnt:burnt_door",
+    "count": 3
+  }
+}

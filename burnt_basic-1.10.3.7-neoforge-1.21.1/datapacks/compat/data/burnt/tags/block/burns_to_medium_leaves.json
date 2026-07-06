@@ -1,0 +1,417 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biomeswevegone:aspen_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:blue_enchanted_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cika_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cypress_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ebony_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:florus_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:green_enchanted_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:holly_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ironwood_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:jacaranda_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:mahogany_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:maple_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:orange_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:red_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:yellow_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:redwood_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:skyris_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:spirit_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:witch_hazel_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:zelkova_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:blooming_witch_hazel_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:brown_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:brown_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:brown_zelkova_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:firecracker_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:flowering_indigo_jacaranda_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:flowering_ironwood_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:flowering_jacaranda_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:flowering_orchard_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:flowering_skyris_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:flowering_spirit_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:green_apple_skyris_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:holly_berry_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:indigo_jacaranda_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:orange_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:orange_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:orchard_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:red_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:red_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ripe_orchard_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:silver_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:witch_hazel_blossom",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:yellow_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:origin_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:flowering_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:maple_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:redwood_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:jacaranda_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:magic_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:umbran_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:null_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:yellow_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:dead_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:bramble_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:red_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:orange_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:rainbow_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:mahogany_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:aspen_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:yellow_aspen_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:saxaul_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:cypress_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:ghaf_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:olive_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:palo_verde_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:maple_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:red_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:orange_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:yellow_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:wisteria_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:pink_wisteria_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:blue_wisteria_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:purple_wisteria_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:white_wisteria_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:part_pink_wisteria_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:part_blue_wisteria_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:part_purple_wisteria_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:part_white_wisteria_leaves",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:joshua_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:alpha_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:ashen_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:blackwood_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:enchanted_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:eucalyptus_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:flowering_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:kapok_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:maple_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:orange_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:red_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:mauve_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:silver_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:small_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:apple_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:bamboo_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:bamboo_log_leaves",
+      "required": false
+    },
+    {
+      "id": "nomansland:yellow_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "nomansland:autumnal_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "nomansland:maple_leaves",
+      "required": false
+    },
+    {
+      "id": "nomansland:red_maple_leaves",
+      "required": false
+    },
+    {
+      "id": "nomansland:walnut_leaves",
+      "required": false
+    },
+    {
+      "id": "nomansland:apple_fruit_leaves",
+      "required": false
+    },
+    {
+      "id": "nomansland:pear_fruit_leaves",
+      "required": false
+    }
+  ]
+}

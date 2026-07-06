@@ -1,0 +1,161 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biomeswevegone:aspen_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:baobab_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:blue_enchanted_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cika_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cypress_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ebony_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:fir_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:florus_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:green_enchanted_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:holly_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ironwood_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:jacaranda_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:mahogany_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:maple_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:palm_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:palo_verde_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:pine_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:rainbow_eucalyptus_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:redwood_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:sakura_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:skyris_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:spirit_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:white_mangrove_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:willow_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:witch_hazel_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:zelkova_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:origin_oak_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:fir_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:pine_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:maple_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:redwood_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:mahogany_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:jacaranda_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:palm_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:willow_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:dead_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:magic_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:umbran_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:empyreal_trapdoor",
+      "required": false
+    }
+  ]
+}

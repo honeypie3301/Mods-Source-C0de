@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_cave_vines",
+    "burnt:smoldering_cave_vines_plant",
+    "burnt:burning_cave_vines_plant",
+    "burnt:burnt_cave_vines",
+    "burnt:burnt_cave_vines_plant"
+  ]
+}

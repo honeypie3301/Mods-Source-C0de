@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/small_burnt_log",
+  "textures": {
+    "all": "burnt:block/burntsoullogtop",
+    "particle": "burnt:block/burntsoullogtop",
+    "0": "burnt:block/burnt_log_top",
+    "1": "burnt:block/burnt_log"
+  },
+  "render_type": "solid"
+}

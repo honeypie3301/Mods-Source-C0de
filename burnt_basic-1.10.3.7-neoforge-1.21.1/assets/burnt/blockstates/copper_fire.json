@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "burnt:block/copper_fire" },
+    "facing=east":  { "model": "burnt:block/copper_fire", "y": 90 },
+    "facing=south": { "model": "burnt:block/copper_fire", "y": 180 },
+    "facing=west":  { "model": "burnt:block/copper_fire", "y": 270 }
+  }
+}

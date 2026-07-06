@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_moss_carpet",
+    "burnt:smoldering_moss",
+    "burnt:burnt_moss_carpet",
+    "burnt:burnt_moss",
+    "burnt:burnt_hay",
+    "burnt:smoldering_hay",
+    "burnt:burnt_leaves",
+    "burnt:smoldering_leaves"
+  ]
+}

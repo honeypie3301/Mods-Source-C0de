@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/burnt_carved_pumpkin"
+    },
+    "facing=east": {
+      "model": "burnt:block/burnt_carved_pumpkin",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/burnt_carved_pumpkin",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/burnt_carved_pumpkin",
+      "y": 270
+    }
+  }
+}

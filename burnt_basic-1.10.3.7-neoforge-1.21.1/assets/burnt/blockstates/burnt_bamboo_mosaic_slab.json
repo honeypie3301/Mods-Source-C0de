@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "burnt:block/burnt_bamboo_mosaic_slab"
+    },
+    "type=top": {
+      "model": "burnt:block/burnt_bamboo_mosaic_slab_top"
+    },
+    "type=double": {
+      "model": "burnt:block/burnt_bamboo_mosaic_slab_full"
+    }
+  }
+}

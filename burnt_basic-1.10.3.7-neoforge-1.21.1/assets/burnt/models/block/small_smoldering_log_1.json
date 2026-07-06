@@ -1,0 +1,12 @@
+{
+  "parent": "burnt:custom/small_smoldering_log_1",
+  "textures": {
+    "all": "burnt:block/smolderinglogtop",
+    "particle": "burnt:block/smoldering_log",
+    "0": "burnt:block/smolderinglogtop",
+    "1": "burnt:block/burntlog",
+    "2": "burnt:block/openlogburn_1",
+    "3": "burnt:block/openlogburn_2"
+  },
+  "render_type": "solid"
+}

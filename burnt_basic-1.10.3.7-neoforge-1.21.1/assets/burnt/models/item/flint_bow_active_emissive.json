@@ -1,0 +1,10 @@
+{
+  "parent": "burnt:custom/flint_bow_active",
+  "textures": {
+    "flint_bow.png": "burnt:block/blank",
+    "arrow.png":     "burnt:block/blank",
+    "flames.png":    "burnt:block/flames_e",
+    "missing":       "burnt:block/blank",
+    "particle":      "burnt:block/flames_e"
+  }
+}

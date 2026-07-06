@@ -1,0 +1,9 @@
+{
+  "parent": "burnt:custom/woodfire_2",
+  "textures": {
+    "all": "burnt:block/flames_0",
+    "particle": "burnt:block/blank",
+    "woodflamesanim2.png": "burnt:block/flames_2"
+  },
+  "render_type": "cutout_mipped"
+}

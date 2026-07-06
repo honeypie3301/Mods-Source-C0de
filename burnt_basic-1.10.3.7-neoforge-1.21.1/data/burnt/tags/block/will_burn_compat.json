@@ -1,0 +1,129 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#burnt:burns_to_smoldering_log",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_log_slow",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_grass",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_burnt_dirt",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_planks",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_slabs",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_stairs",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_fences",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_fence_gates",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_burnt_farmland",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_crops",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_fern",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_tall_grass",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_wood",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_stripped_log",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_stripped_wood",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_large_leaves",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_medium_leaves",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_fine_leaves",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_moss",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_moss_carpet",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_wool",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_envelope",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_sail",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_sail_frame",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_symmetric_sail",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_carpet",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_button",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_door",
+      "required": false
+    },
+    {
+      "id": "#burnt:burns_to_smoldering_trapdoor",
+      "required": false
+    }
+  ]
+}

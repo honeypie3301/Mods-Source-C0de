@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/smoldering_bamboo_block_top",
+    "up": "burnt:block/smoldering_bamboo_block_top",
+    "north": "burnt:block/smoldering_bamboo_block",
+    "east": "burnt:block/smoldering_bamboo_block",
+    "south": "burnt:block/smoldering_bamboo_block",
+    "west": "burnt:block/smoldering_bamboo_block",
+    "particle": "burnt:block/smoldering_bamboo_block_top"
+  },
+  "render_type": "solid"
+}

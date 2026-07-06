@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:burnt_bamboo_trapdoor",
+    "burnt:smoldering_cherry_trapdoor",
+    "burnt:smoldering_birch_trapdoor",
+    "burnt:burnt_jungle_trapdoor",
+    "burnt:burnt_birch_trapdoor",
+    "burnt:smoldering_dark_oak_trapdoor",
+    "burnt:smoldering_mangrove_trapdoor",
+    "burnt:smoldering_spruce_trapdoor",
+    "burnt:smoldering_trapdoor",
+    "burnt:smoldering_bamboo_trapdoor",
+    "burnt:burnt_mangrove_trapdoor",
+    "burnt:smoldering_jungle_trapdoor",
+    "burnt:smoldering_oak_trapdoor",
+    "burnt:burnt_cherry_trapdoor",
+    "burnt:burnt_trapdoor",
+    "burnt:burnt_dark_oak_trapdoor",
+    "burnt:smoldering_acacia_trapdoor",
+    "burnt:burnt_oak_trapdoor",
+    "burnt:burnt_acacia_trapdoor",
+    "burnt:burnt_spruce_trapdoor"
+  ]
+}

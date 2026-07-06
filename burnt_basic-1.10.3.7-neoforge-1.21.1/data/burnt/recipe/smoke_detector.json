@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "burnt",
+  "category": "misc",
+  "pattern": [
+    " t ",
+    "tSt",
+    "sss"
+  ],
+  "key": {
+    "t": { "item": "minecraft:redstone_torch" },
+    "S": { "item": "minecraft:sculk_sensor" },
+    "s": { "item": "minecraft:stone" }
+  },
+  "result": {
+    "id": "burnt:smoke_detector",
+    "count": 1
+  }
+}

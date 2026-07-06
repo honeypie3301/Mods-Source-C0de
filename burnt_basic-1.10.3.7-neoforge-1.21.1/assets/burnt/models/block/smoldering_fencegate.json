@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "burnt:block/smoldering_planks_1",
+    "particle": "burnt:block/smoldering_planks_1"
+  },
+  "render_type": "solid"
+}

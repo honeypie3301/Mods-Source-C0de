@@ -1,0 +1,11 @@
+{
+  "parent": "burnt:custom/stripped_broken_burnt_log_2",
+  "textures": {
+    "all": "burnt:block/stripped_burnt_log_top",
+    "particle": "burnt:block/stripped_burnt_log_inner",
+    "stripped_burnt_log_inner.png": "burnt:block/stripped_burnt_log_inner",
+    "stripped_burnt_log.png": "burnt:block/stripped_burnt_log",
+    "stripped_burnt_log_top.png": "burnt:block/stripped_burnt_log_top"
+  },
+  "render_type": "cutout_mipped"
+}

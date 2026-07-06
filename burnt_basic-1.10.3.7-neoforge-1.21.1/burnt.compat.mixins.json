@@ -1,0 +1,16 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "net.pixelbank.burnt.mixins.compat",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "burnt-refmap.json",
+  "mixins": [
+    "Weather2TornadoHelperMixin"
+  ],
+  "client": [
+    "Weather2WindManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

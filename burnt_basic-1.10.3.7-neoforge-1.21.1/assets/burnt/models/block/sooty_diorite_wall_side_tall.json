@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "burnt:block/sooty_diorite",
+    "particle": "burnt:block/sooty_diorite"
+  },
+  "render_type": "solid"
+}

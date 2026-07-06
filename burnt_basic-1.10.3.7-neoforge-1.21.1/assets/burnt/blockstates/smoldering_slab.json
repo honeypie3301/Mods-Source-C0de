@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "burnt:block/smoldering_slab"
+    },
+    "type=top": {
+      "model": "burnt:block/smoldering_slab_top"
+    },
+    "type=double": {
+      "model": "burnt:block/smoldering_slab_full"
+    }
+  }
+}

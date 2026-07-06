@@ -1,0 +1,9 @@
+{
+  "parent": "burnt:custom/burnt_carpet",
+  "textures": {
+    "all": "burnt:block/burnt_wool",
+    "particle": "burnt:block/burnt_wool",
+    "burnt_wool.png": "burnt:block/burnt_wool"
+  },
+  "render_type": "solid"
+}

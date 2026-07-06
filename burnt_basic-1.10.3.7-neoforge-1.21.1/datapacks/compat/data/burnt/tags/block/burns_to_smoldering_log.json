@@ -1,0 +1,113 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biomeswevegone:aspen_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cika_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cypress_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:fir_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:holly_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:jacaranda_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:mahogany_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:maple_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:palm_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:pine_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:rainbow_eucalyptus_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:sakura_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:skyris_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:spirit_log",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:zelkova_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:origin_oak_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:fir_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:pine_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:maple_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:redwood_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:mahogany_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:jacaranda_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:palm_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:willow_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:dead_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:magic_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:empyreal_log",
+      "required": false
+    }
+  ]
+}

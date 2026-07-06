@@ -1,0 +1,94 @@
+{
+  "credit": "Made with Blockbench",
+  "ambientocclusion": false,
+  "elements": [
+    {
+      "from": [
+        2,
+        7,
+        15.5
+      ],
+      "to": [
+        16,
+        14,
+        15.5
+      ],
+      "shade": false,
+      "rotation": {
+        "angle": 0,
+        "axis": "x",
+        "origin": [
+          2,
+          7,
+          14
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            15,
+            6,
+            1,
+            12
+          ],
+          "texture": "#soul_flames_7.png",
+          "tintindex": 0
+        },
+        "south": {
+          "uv": [
+            1,
+            6,
+            15,
+            12
+          ],
+          "texture": "#soul_flames_7.png",
+          "tintindex": 0
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        -1,
+        15.5
+      ],
+      "to": [
+        12,
+        3,
+        15.5
+      ],
+      "shade": false,
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          0,
+          -1,
+          14
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            14,
+            0,
+            2,
+            4
+          ],
+          "texture": "#soul_flames_7.png",
+          "tintindex": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            4
+          ],
+          "texture": "#soul_flames_7.png",
+          "tintindex": 0
+        }
+      }
+    }
+  ]
+}

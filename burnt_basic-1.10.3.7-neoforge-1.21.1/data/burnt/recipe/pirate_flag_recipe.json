@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "adc",
+    "a  "
+  ],
+  "key": {
+    "a": { "item": "minecraft:stick" },
+    "b": { "item": "minecraft:skeleton_skull" },
+    "c": { "item": "minecraft:black_wool" },
+    "d": { "item": "minecraft:bone" }
+  },
+  "result": {
+    "id": "burnt:pirate_flag",
+    "count": 1
+  }
+}

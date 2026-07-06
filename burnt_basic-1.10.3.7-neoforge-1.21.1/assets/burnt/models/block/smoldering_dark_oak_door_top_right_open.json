@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_right_open",
+  "textures": {
+    "particle": "burnt:block/smoldering_dark_oak_door_bottom",
+    "bottom": "burnt:block/smoldering_dark_oak_door_bottom",
+    "top": "burnt:block/smoldering_dark_oak_door_top"
+  },
+  "render_type": "cutout_mipped"
+}

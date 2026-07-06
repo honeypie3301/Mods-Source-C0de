@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "simulated:white_symmetric_sail", "required": false},
+    {"id": "simulated:orange_symmetric_sail", "required": false},
+    {"id": "simulated:magenta_symmetric_sail", "required": false},
+    {"id": "simulated:light_blue_symmetric_sail", "required": false},
+    {"id": "simulated:yellow_symmetric_sail", "required": false},
+    {"id": "simulated:lime_symmetric_sail", "required": false},
+    {"id": "simulated:pink_symmetric_sail", "required": false},
+    {"id": "simulated:gray_symmetric_sail", "required": false},
+    {"id": "simulated:light_gray_symmetric_sail", "required": false},
+    {"id": "simulated:cyan_symmetric_sail", "required": false},
+    {"id": "simulated:purple_symmetric_sail", "required": false},
+    {"id": "simulated:blue_symmetric_sail", "required": false},
+    {"id": "simulated:brown_symmetric_sail", "required": false},
+    {"id": "simulated:green_symmetric_sail", "required": false},
+    {"id": "simulated:red_symmetric_sail", "required": false},
+    {"id": "simulated:black_symmetric_sail", "required": false}
+  ]
+}

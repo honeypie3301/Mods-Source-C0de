@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "burnt",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "minecraft:water_bucket"
+    },
+    "c": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "id": "burnt:extinguisher",
+    "count": 1
+  }
+}

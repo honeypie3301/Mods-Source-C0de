@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "zombie",
+    "allay",
+    "bee",
+    "camel",
+    "cat",
+    "chicken",
+    "cow",
+    "evoker",
+    "fox",
+    "frog",
+    "goat",
+    "mooshroom",
+    "mule",
+    "ocelot",
+    "panda",
+    "parrot",
+    "pig",
+    "piglin",
+    "piglin_brute",
+    "pillager",
+    "polar_bear",
+    "sheep",
+    "sniffer",
+    "snow_golem",
+    "trader_llama",
+    "villager",
+    "wandering_trader",
+    "wolf"
+  ]
+}

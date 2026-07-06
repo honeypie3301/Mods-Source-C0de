@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "burnt:block/blazing_planks",
+    "bottom": "burnt:block/blazing_planks",
+    "top": "burnt:block/blazing_planks",
+    "side": "burnt:block/blazing_planks"
+  },
+  "render_type": "solid"
+}

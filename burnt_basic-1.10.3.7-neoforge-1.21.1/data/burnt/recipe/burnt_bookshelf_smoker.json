@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "group": "burnt",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {"item": "minecraft:bookshelf"},
+  "result": {"id": "burnt:burnt_bookshelf"}
+}

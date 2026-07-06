@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:recovering_grass",
+    "burnt:smoldering_grass_start",
+    "burnt:smoldering_grass",
+    "burnt:burnt_dirt",
+    "burnt:semi_burnt_dirt",
+    "burnt:burnt_grass"
+  ]
+}

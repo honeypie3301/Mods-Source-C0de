@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "simulated:rope_connector",
+      "required": false
+    }
+  ]
+}

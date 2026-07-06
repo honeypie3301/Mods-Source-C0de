@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/burnt_melon"
+    },
+    "facing=east": {
+      "model": "burnt:block/burnt_melon",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/burnt_melon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/burnt_melon",
+      "y": 270
+    }
+  }
+}

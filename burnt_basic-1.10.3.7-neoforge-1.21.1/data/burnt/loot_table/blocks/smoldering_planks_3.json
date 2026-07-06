@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "burnt:blocks/smoldering_planks_3",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "burnt:burnt_planks"
+        }
+      ]
+    }
+  ]
+}

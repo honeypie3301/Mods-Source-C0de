@@ -1,0 +1,21 @@
+{
+  "required_mods": ["cold_sweat"],
+  "block": {
+    "blocks": [
+      "burnt:blazing_log",
+      "burnt:broken_blazing_log",
+      "burnt:broken_blazing_log_2",
+      "burnt:blazing_wood",
+      "burnt:blazing_planks",
+      "burnt:blazing_stairs",
+      "burnt:blazing_slab",
+      "burnt:blazing_fence",
+      "burnt:blazing_fence_gate"
+    ]
+  },
+  "temperature": 22,
+  "units": "f",
+  "range": 7,
+  "fade": true,
+  "max_effect": 52
+}

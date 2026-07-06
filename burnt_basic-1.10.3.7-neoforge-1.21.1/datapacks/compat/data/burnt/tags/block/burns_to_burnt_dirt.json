@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biomeswevegone:lush_dirt",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:peat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:peat_dirt",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:peat_coarse_dirt",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:silt_dirt",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:silt_coarse_dirt",
+      "required": false
+    },
+    {
+      "id": "nomansland:coarse_silt",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:silt",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:loam",
+      "required": false
+    }
+  ]
+}

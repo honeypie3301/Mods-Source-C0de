@@ -1,0 +1,481 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biomesoplenty:hellbark_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_wood",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:stripped_hellbark_log",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:stripped_hellbark_wood",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_planks",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_slab",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_stairs",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_fence",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_fence_gate",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_trapdoor",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_button",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_leaves",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_sign",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_wall_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_log_magma",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_wood",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_brimwood_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_brimwood_wood",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_planks",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_slab",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_stairs",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_fence",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_fence_gate",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_door",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_trapdoor",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_button",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_wall_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:brimwood_wall_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_wood",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_cobalt_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_cobalt_wood",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_planks",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_slab",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_stairs",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_fence",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_fence_gate",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_door",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_trapdoor",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_button",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_wall_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cobalt_wall_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_wood",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_dead_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_dead_wood",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_planks",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_slab",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_stairs",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_fence",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_fence_gate",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_door",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_trapdoor",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_button",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_wall_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_wall_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_branch",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:ashen_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:ashen_wood",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_stem",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_hyphae",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_yellow_bioshroom_stem",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_yellow_bioshroom_hyphae",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_planks",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_slab",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_stairs",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_fence",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_fence_gate",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_door",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_trapdoor",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_button",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_wall_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_wall_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:yellow_bioshroom_block",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:glowing_yellow_bioshroom_block",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:overgrown_bone_block",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:volcanic_ash",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:ashen_dirt",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:charred_log",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:charred_planks",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:charred_slab",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:charred_stairs",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:charred_fence",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:charred_fence_gate",
+      "required": false
+    },
+    {
+      "id": "nomansland:trimmed_crimson_planks",
+      "required": false
+    },
+    {
+      "id": "nomansland:trimmed_warped_planks",
+      "required": false
+    },
+    {
+      "id": "nomansland:crimson_bookshelf",
+      "required": false
+    },
+    {
+      "id": "nomansland:warped_bookshelf",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:sandy_dirt",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:pale_mud",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:podzol_dacite",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:white_podzol_dacite",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:sandy_soil",
+      "required": false
+    },
+    {
+      "id": "nomansland:pebbles",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:brown_mushroom_stem",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:white_mushroom_stem",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:imbued_blue_enchanted_wood",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:imbued_green_enchanted_wood",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:joshua_log",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:stripped_joshua_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:alpha_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:bamboo_log",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:bamboo_log_leaves",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:stripped_bamboo_log",
+      "required": false
+    }
+  ]
+}

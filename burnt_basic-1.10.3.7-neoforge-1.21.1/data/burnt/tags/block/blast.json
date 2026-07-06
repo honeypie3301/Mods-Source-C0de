@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:soul_fire",
+    "minecraft:magma_block",
+    "burnt:fire_barrel_blast_block",
+    "minecraft:soul_campfire",
+    "minecraft:campfire",
+    "minecraft:fire",
+    "minecraft:lava",
+    "burnt:fire_set_block"
+  ]
+}

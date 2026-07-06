@@ -1,0 +1,161 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biomeswevegone:aspen_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:baobab_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:blue_enchanted_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cika_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cypress_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ebony_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:fir_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:florus_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:green_enchanted_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:holly_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ironwood_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:jacaranda_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:mahogany_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:maple_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:palm_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:palo_verde_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:pine_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:rainbow_eucalyptus_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:redwood_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:sakura_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:skyris_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:spirit_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:white_mangrove_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:willow_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:witch_hazel_door",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:zelkova_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:origin_oak_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:fir_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:pine_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:maple_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:redwood_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:mahogany_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:jacaranda_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:palm_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:willow_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:dead_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:magic_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:umbran_door",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:empyreal_door",
+      "required": false
+    }
+  ]
+}

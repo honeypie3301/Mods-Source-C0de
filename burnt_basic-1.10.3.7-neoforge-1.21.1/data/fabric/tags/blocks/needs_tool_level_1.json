@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_leaves",
+    "burnt:burnt_leaves",
+    "burnt:burnt_log",
+    "burnt:smoldering_log",
+    "burnt:burnt_log_smooth",
+    "burnt:burnt_log_broken",
+    "burnt:small_smoldering_log",
+    "burnt:burning_grass",
+    "burnt:burnt_grass",
+    "burnt:burnt_dirt",
+    "burnt:small_burnt_log"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ade",
+    "afg"
+  ],
+  "key": {
+    "a": { "item": "minecraft:stick" },
+    "b": { "item": "minecraft:red_wool" },
+    "c": { "item": "minecraft:orange_wool" },
+    "d": { "item": "minecraft:yellow_wool" },
+    "e": { "item": "minecraft:lime_wool" },
+    "f": { "item": "minecraft:blue_wool" },
+    "g": { "item": "minecraft:purple_wool" }
+  },
+  "result": {
+    "id": "burnt:rainbow_flag",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:black_flag",
+    "burnt:purple_flag",
+    "burnt:magenta_flag",
+    "burnt:pink_flag",
+    "burnt:blue_flag",
+    "burnt:green_flag",
+    "burnt:grey_flag",
+    "burnt:light_blue_flag",
+    "burnt:light_grey_flag",
+    "burnt:cyan_flag",
+    "burnt:lime_flag",
+    "burnt:orange_flag",
+    "burnt:yellow_flag",
+    "burnt:brown_flag",
+    "burnt:white_flag",
+    "burnt:red_flag",
+    "burnt:wind_flag",
+    "burnt:rainbow_flag",
+    "burnt:pirate_flag"
+  ]
+}

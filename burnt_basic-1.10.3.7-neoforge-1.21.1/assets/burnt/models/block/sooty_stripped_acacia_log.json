@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/stripped_sooty_acacia_top",
+    "up": "burnt:block/stripped_sooty_acacia_top",
+    "north": "burnt:block/stripped_sooty_acacia",
+    "east": "burnt:block/stripped_sooty_acacia",
+    "south": "burnt:block/stripped_sooty_acacia",
+    "west": "burnt:block/stripped_sooty_acacia",
+    "particle": "burnt:block/stripped_sooty_acacia_top"
+  },
+  "render_type": "solid"
+}

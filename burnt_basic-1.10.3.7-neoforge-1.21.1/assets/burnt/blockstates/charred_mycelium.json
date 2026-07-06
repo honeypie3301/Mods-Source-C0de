@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/charred_mycelium"
+    },
+    "facing=east": {
+      "model": "burnt:block/charred_mycelium",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/charred_mycelium",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/charred_mycelium",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "burnt:block/recovering_grass" },
+      { "model": "burnt:block/recovering_grass", "y": 90 },
+      { "model": "burnt:block/recovering_grass", "y": 180 },
+      { "model": "burnt:block/recovering_grass", "y": 270 }
+    ]
+  }
+}

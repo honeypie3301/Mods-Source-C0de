@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/stripped_burnt_log_top",
+    "up": "burnt:block/stripped_burnt_log_top",
+    "north": "burnt:block/stripped_burnt_log",
+    "east": "burnt:block/stripped_burnt_log",
+    "south": "burnt:block/stripped_burnt_log",
+    "west": "burnt:block/stripped_burnt_log",
+    "particle": "burnt:block/stripped_burnt_log_top"
+  },
+  "render_type": "solid"
+}

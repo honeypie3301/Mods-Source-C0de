@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "old_growth_birch_forest",
+    "old_growth_pine_taiga",
+    {
+      "id": "#c:is_dry/overworld",
+      "required": false
+    },
+    "eroded_badlands",
+    {
+      "id": "#c:is_dry/end",
+      "required": false
+    },
+    "badlands",
+    "savanna",
+    "old_growth_spruce_taiga",
+    "wooded_badlands",
+    "windswept_savanna",
+    "desert",
+    {
+      "id": "#c:is_dry/nether",
+      "required": false
+    },
+    "savanna_plateau"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "_comment": [
+    "Burnt burn_mappings format — copy this file into your own datapack under",
+    "data/<your_namespace>/burn_mappings/<any_name>.json",
+    "",
+    "Each entry maps a source block to its Burnt destination block.",
+    "The destination can be any Burnt block: smoldering logs, sooty logs,",
+    "burnt planks, smoldering wood, etc.",
+    "",
+    "Block state properties (axis, waterlogged, facing, etc.) are copied",
+    "automatically from the source block where the destination supports them.",
+    "",
+    "Available Burnt destination blocks (non-exhaustive):",
+    "  burnt:smoldering_log         — generic smoldering log (standard speed)",
+    "  burnt:smoldering_log_2       — generic smoldering log variant 2",
+    "  burnt:smoldering_log_3       — generic smoldering log variant 3",
+    "  burnt:smoldering_dark_oak_log — slow-burning smoldering log",
+    "  burnt:smoldering_wood        — smoldering wood (horizontal log)",
+    "  burnt:smoldering_stripped_log — smoldering stripped log",
+    "  burnt:smoldering_planks      — smoldering planks",
+    "  burnt:smoldering_stairs      — smoldering stairs",
+    "  burnt:smoldering_slab        — smoldering slab",
+    "  burnt:smoldering_fence       — smoldering fence",
+    "  burnt:smoldering_fencegate   — smoldering fence gate",
+    "  burnt:burnt_dirt             — burnt dirt",
+    "",
+    "Tip: for large mods with many wood types, the tag approach is less",
+    "verbose — add blocks to burnt:burns_to_smoldering_log or",
+    "burnt:burns_to_smoldering_log_slow in your own datapack instead."
+  ],
+  "mappings": [
+    { "from": "examplemod:example_log",  "to": "burnt:smoldering_log"   },
+    { "from": "examplemod:example_wood", "to": "burnt:smoldering_wood"  }
+  ]
+}

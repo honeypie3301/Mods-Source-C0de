@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "burnt:block/sooty_mossy_cobblestone",
+    "bottom": "burnt:block/sooty_mossy_cobblestone",
+    "top": "burnt:block/sooty_mossy_cobblestone",
+    "side": "burnt:block/sooty_mossy_cobblestone"
+  },
+  "render_type": "solid"
+}

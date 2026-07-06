@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/cracked_yellow_terracotta"
+    },
+    "facing=east": {
+      "model": "burnt:block/cracked_yellow_terracotta",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/cracked_yellow_terracotta",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/cracked_yellow_terracotta",
+      "y": 270
+    }
+  }
+}

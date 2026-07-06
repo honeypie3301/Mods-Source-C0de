@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "frozen_ocean",
+    "frozen_river",
+    "snowy_plains",
+    "ice_spikes",
+    "taiga",
+    "end_midlands",
+    "cold_ocean",
+    "the_end",
+    "jagged_peaks",
+    "deep_frozen_ocean",
+    "snowy_taiga",
+    "deep_cold_ocean",
+    {
+      "id": "#c:is_cold/overworld",
+      "required": false
+    },
+    {
+      "id": "#c:is_cold/end",
+      "required": false
+    },
+    "grove",
+    "small_end_islands",
+    "snowy_beach",
+    "frozen_peaks",
+    "end_highlands",
+    "end_barrens"
+  ]
+}

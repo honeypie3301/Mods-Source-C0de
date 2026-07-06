@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/recovering_dirt_top",
+    "up": "burnt:block/charred_mycelium_top",
+    "north": "burnt:block/charred_mycelium_side",
+    "east": "burnt:block/charred_mycelium_side",
+    "south": "burnt:block/charred_mycelium_side",
+    "west": "burnt:block/charred_mycelium_side",
+    "particle": "burnt:block/recovering_dirt_top"
+  },
+  "render_type": "solid"
+}

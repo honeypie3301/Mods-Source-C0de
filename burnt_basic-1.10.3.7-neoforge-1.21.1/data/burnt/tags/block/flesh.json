@@ -1,0 +1,61 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "the_flesh_that_hates:flesh_sand",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_foliage",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:purulent_tumor",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_block",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_grass",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_bricks",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_terns",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_spike_grass",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_coublestone",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:tumor",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_pile",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:purulent",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_small_grass",
+      "required": false
+    },
+    {
+      "id": "the_flesh_that_hates:flesh_tree",
+      "required": false
+    }
+  ]
+}

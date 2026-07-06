@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=down,hot=false": {"model": "burnt:block/smoldering_sail_frame", "x": 180},
+    "facing=down,hot=true":  {"model": "burnt:block/smoldering_sail_frame", "x": 180},
+    "facing=east,hot=false": {"model": "burnt:block/smoldering_sail_frame", "x": 90, "y": 90},
+    "facing=east,hot=true":  {"model": "burnt:block/smoldering_sail_frame", "x": 90, "y": 90},
+    "facing=north,hot=false": {"model": "burnt:block/smoldering_sail_frame", "x": 90},
+    "facing=north,hot=true":  {"model": "burnt:block/smoldering_sail_frame", "x": 90},
+    "facing=south,hot=false": {"model": "burnt:block/smoldering_sail_frame", "x": 90, "y": 180},
+    "facing=south,hot=true":  {"model": "burnt:block/smoldering_sail_frame", "x": 90, "y": 180},
+    "facing=up,hot=false": {"model": "burnt:block/smoldering_sail_frame"},
+    "facing=up,hot=true":  {"model": "burnt:block/smoldering_sail_frame"},
+    "facing=west,hot=false": {"model": "burnt:block/smoldering_sail_frame", "x": 90, "y": 270},
+    "facing=west,hot=true":  {"model": "burnt:block/smoldering_sail_frame", "x": 90, "y": 270}
+  }
+}

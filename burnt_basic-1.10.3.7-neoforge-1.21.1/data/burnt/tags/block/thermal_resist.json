@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:air",
+    "minecraft:cave_air",
+    "minecraft:command_block",
+    "minecraft:chain_command_block",
+    "minecraft:structure_void",
+    "minecraft:bedrock",
+    "minecraft:structure_block",
+    "minecraft:void_air",
+    "minecraft:repeating_command_block",
+    "minecraft:jigsaw"
+  ]
+}

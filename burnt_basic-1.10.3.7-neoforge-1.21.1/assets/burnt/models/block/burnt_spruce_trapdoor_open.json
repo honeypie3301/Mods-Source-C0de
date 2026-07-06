@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "burnt:block/burnt_spruce_trapdoor",
+    "particle": "burnt:block/burnt_spruce_trapdoor"
+  },
+  "render_type": "cutout_mipped"
+}

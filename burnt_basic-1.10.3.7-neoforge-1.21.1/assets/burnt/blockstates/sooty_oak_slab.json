@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "burnt:block/sooty_oak_slab"
+    },
+    "type=top": {
+      "model": "burnt:block/sooty_oak_slab_top"
+    },
+    "type=double": {
+      "model": "burnt:block/sooty_oak_slab_full"
+    }
+  }
+}

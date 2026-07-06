@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "biomeswevegone:oddion_crop",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:blueberry_bush",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:desert_turnip_stem",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:duskmelon",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:salmonberry_bush",
+      "required": false
+    },
+    {
+      "id": "nomansland:apple",
+      "required": false
+    },
+    {
+      "id": "nomansland:pear",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:weeds",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:barley",
+      "required": false
+    }
+  ]
+}

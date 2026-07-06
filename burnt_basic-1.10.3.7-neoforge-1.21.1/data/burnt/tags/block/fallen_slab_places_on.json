@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:farmland",
+    "burnt:burnt_farmland_moist",
+    "minecraft:dirt_path",
+    "burnt:burnt_farmland",
+    "burnt:burnt_path",
+    {
+      "id": "#minecraft:stairs",
+      "required": false
+    }
+  ]
+}

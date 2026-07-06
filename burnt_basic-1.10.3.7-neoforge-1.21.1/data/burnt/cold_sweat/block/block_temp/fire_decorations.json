@@ -1,0 +1,14 @@
+{
+  "required_mods": ["cold_sweat"],
+  "block": {
+    "blocks": [
+      "#burnt:wood_fire",
+      "#burnt:stairs_fire"
+    ]
+  },
+  "temperature": 15,
+  "units": "f",
+  "range": 7,
+  "fade": true,
+  "max_effect": 45
+}

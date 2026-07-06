@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "face=floor,facing=east,powered=false":    { "model": "burnt:block/smoke_detector" },
+    "face=floor,facing=north,powered=false":   { "model": "burnt:block/smoke_detector" },
+    "face=floor,facing=south,powered=false":   { "model": "burnt:block/smoke_detector" },
+    "face=floor,facing=west,powered=false":    { "model": "burnt:block/smoke_detector" },
+    "face=floor,facing=east,powered=true":     { "model": "burnt:block/smoke_detector_on" },
+    "face=floor,facing=north,powered=true":    { "model": "burnt:block/smoke_detector_on" },
+    "face=floor,facing=south,powered=true":    { "model": "burnt:block/smoke_detector_on" },
+    "face=floor,facing=west,powered=true":     { "model": "burnt:block/smoke_detector_on" },
+
+    "face=ceiling,facing=east,powered=false":  { "model": "burnt:block/smoke_detector",    "x": 180 },
+    "face=ceiling,facing=north,powered=false": { "model": "burnt:block/smoke_detector",    "x": 180 },
+    "face=ceiling,facing=south,powered=false": { "model": "burnt:block/smoke_detector",    "x": 180 },
+    "face=ceiling,facing=west,powered=false":  { "model": "burnt:block/smoke_detector",    "x": 180 },
+    "face=ceiling,facing=east,powered=true":   { "model": "burnt:block/smoke_detector_on", "x": 180 },
+    "face=ceiling,facing=north,powered=true":  { "model": "burnt:block/smoke_detector_on", "x": 180 },
+    "face=ceiling,facing=south,powered=true":  { "model": "burnt:block/smoke_detector_on", "x": 180 },
+    "face=ceiling,facing=west,powered=true":   { "model": "burnt:block/smoke_detector_on", "x": 180 },
+
+    "face=wall,facing=north,powered=false":    { "model": "burnt:block/smoke_detector_wall",    "y":   0 },
+    "face=wall,facing=south,powered=false":    { "model": "burnt:block/smoke_detector_wall",    "y": 180 },
+    "face=wall,facing=east,powered=false":     { "model": "burnt:block/smoke_detector_wall",    "y":  90 },
+    "face=wall,facing=west,powered=false":     { "model": "burnt:block/smoke_detector_wall",    "y": 270 },
+    "face=wall,facing=north,powered=true":     { "model": "burnt:block/smoke_detector_wall_on", "y":   0 },
+    "face=wall,facing=south,powered=true":     { "model": "burnt:block/smoke_detector_wall_on", "y": 180 },
+    "face=wall,facing=east,powered=true":      { "model": "burnt:block/smoke_detector_wall_on", "y":  90 },
+    "face=wall,facing=west,powered=true":      { "model": "burnt:block/smoke_detector_wall_on", "y": 270 }
+  }
+}

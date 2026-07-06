@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "plains",
+    {
+      "id": "#c:is_swamp",
+      "required": false
+    },
+    "mangrove_swamp",
+    "swamp"
+  ]
+}

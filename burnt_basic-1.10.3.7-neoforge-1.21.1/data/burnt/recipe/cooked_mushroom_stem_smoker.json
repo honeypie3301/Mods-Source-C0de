@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "group": "burnt",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {"item": "minecraft:mushroom_stem"},
+  "result": {"id": "burnt:cooked_mushroom_stem"}
+}

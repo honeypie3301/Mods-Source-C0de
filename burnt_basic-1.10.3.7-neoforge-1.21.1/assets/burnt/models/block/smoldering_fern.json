@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "burnt:block/smoldering_fern",
+    "particle": "burnt:block/smoldering_fern"
+  },
+  "render_type": "cutout"
+}

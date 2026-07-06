@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:sooty_mud_brick_slab",
+    "burnt:sooty_granite_slab",
+    "burnt:sooty_andesite_slab",
+    "burnt:sooty_diorite_slab",
+    "burnt:sooty_stone_slab",
+    "burnt:sooty_brick_slab",
+    "burnt:sooty_mossy_stone_brick_slab",
+    "burnt:sooty_stone_brick_slab",
+    "burnt:sooty_mossy_cobblestone_slab",
+    "burnt:sooty_cobblestone_slab",
+    "burnt:falling_burnt_slab",
+    "burnt:smoldering_bamboo_slab",
+    "burnt:smoldering_bamboo_mosaic_slab",
+    "burnt:burnt_slab",
+    "burnt:smoldering_slab",
+    "burnt:sooty_oak_slab",
+    "burnt:sooty_spruce_slab",
+    "burnt:sooty_birch_slab",
+    "burnt:sooty_jungle_slab",
+    "burnt:sooty_mangrove_slab",
+    "burnt:sooty_dark_oak_slab",
+    "burnt:sooty_cherry_slab",
+    "burnt:sooty_acacia_slab",
+    "burnt:ember_slab",
+    "burnt:blazing_slab",
+    "burnt:burnt_bamboo_slab",
+    "burnt:burnt_bamboo_mosaic_slab"
+  ]
+}

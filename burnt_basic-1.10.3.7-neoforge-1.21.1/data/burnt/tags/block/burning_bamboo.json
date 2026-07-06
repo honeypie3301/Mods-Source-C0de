@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:smoldering_bamboo_mosaic_stairs",
+    "burnt:smoldering_bamboo_block",
+    "burnt:smoldering_bamboo_slab",
+    "burnt:smoldering_bamboo_fence",
+    "burnt:smoldering_bamboo_stairs",
+    "burnt:smoldering_bamboo_stalk",
+    "burnt:smoldering_bamboo_mosaic_planks",
+    "burnt:smoldering_bamboo_fencegate",
+    "burnt:smoldering_bamboo_planks",
+    "burnt:smoldering_bamboo_mosaic_slab"
+  ]
+}

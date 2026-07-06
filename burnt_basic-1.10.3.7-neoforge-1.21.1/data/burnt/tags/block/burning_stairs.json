@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:blazing_stairs",
+    "burnt:smoldering_stairs",
+    "burnt:ember_stairs"
+  ]
+}

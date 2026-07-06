@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#minecraft:logs",
+      "required": false
+    },
+    {
+      "id": "#burnt:burnt_logs",
+      "required": false
+    },
+    {
+      "id": "#burnt:burning_logs",
+      "required": false
+    },
+    {
+      "id": "#burnt:burning_stripped_logs",
+      "required": false
+    },
+    {
+      "id": "#burnt:smoldering_logs",
+      "required": false
+    },
+    {
+      "id": "#burnt:sooty_logs",
+      "required": false
+    },
+    {
+      "id": "#burnt:stripped_logs",
+      "required": false
+    }
+  ]
+}

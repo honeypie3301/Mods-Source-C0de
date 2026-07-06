@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "burnt:block/sooty_mangrove_planks",
+    "bottom": "burnt:block/sooty_mangrove_planks",
+    "top": "burnt:block/sooty_mangrove_planks",
+    "side": "burnt:block/sooty_mangrove_planks"
+  },
+  "render_type": "solid"
+}

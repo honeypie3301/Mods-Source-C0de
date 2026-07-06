@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/burnt_leaves_new",
+    "up": "burnt:block/burnt_leaves_new",
+    "north": "burnt:block/burnt_leaves_new",
+    "east": "burnt:block/burnt_leaves_new",
+    "south": "burnt:block/burnt_leaves_new",
+    "west": "burnt:block/burnt_leaves_new",
+    "particle": "burnt:block/burnt_leaves_new"
+  },
+  "render_type": "cutout_mipped"
+}

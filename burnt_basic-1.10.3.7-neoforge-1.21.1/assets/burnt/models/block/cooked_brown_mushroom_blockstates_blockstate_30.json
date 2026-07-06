@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/cooked_brown_mushroom_block",
+    "up": "burnt:block/cooked_mushroom_block_inside",
+    "north": "burnt:block/cooked_brown_mushroom_block",
+    "east": "burnt:block/cooked_mushroom_block_inside",
+    "south": "burnt:block/cooked_mushroom_block_inside",
+    "west": "burnt:block/cooked_mushroom_block_inside",
+    "particle": "burnt:block/cooked_brown_mushroom_block"
+  },
+  "render_type": "solid"
+}

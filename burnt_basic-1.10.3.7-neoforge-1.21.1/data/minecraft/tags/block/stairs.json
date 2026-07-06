@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "burnt:blazing_stairs",
+    "burnt:sooty_oak_stairs",
+    "burnt:ember_stairs",
+    "burnt:sooty_brick_stairs",
+    "burnt:sooty_mud_brick_stairs",
+    "burnt:sooty_mossy_cobblestone_stairs",
+    "burnt:burnt_bamboo_stairs",
+    "burnt:sooty_mangrove_stairs",
+    "burnt:smoldering_bamboo_mosaic_stairs",
+    "burnt:sooty_diorite_stairs",
+    "burnt:sooty_andesite_stairs",
+    "burnt:sooty_cherry_stairs",
+    "burnt:sooty_granite_stairs",
+    "burnt:sooty_cobblestone_stairs",
+    "burnt:sooty_dark_oak_stairs",
+    "burnt:sooty_spruce_stairs",
+    "burnt:burnt_bamboo_mosaic_stairs",
+    "burnt:smoldering_stairs",
+    "burnt:smoldering_bamboo_stairs",
+    "burnt:sooty_stone_stairs",
+    "burnt:burnt_stairs",
+    "burnt:sooty_birch_stairs",
+    "burnt:sooty_acacia_stairs",
+    "burnt:sooty_jungle_stairs",
+    "burnt:sooty_mossy_stone_brick_stairs",
+    "burnt:sooty_stone_brick_stairs"
+  ]
+}

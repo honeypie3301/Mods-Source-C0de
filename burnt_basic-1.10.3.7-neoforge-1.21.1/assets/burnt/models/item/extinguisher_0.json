@@ -1,0 +1,7 @@
+{
+  "parent": "burnt:custom/extinguisher_active",
+  "textures": {
+    "0": "burnt:block/extinguisher",
+    "particle": "burnt:item/extinguisher_item"
+  }
+}

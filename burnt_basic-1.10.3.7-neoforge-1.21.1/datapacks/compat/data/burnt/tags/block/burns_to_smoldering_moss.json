@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "immersive_weathering:mulch_block",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:nulch_block",
+      "required": false
+    },
+    {
+      "id": "immersive_weathering:moss",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:glowing_moss_block",
+      "required": false
+    },
+    {
+      "id": "natures_spirit:red_moss_block",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:prismoss",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:mycotoxic_moss",
+      "required": false
+    },
+    {
+      "id": "nomansland:beard_moss",
+      "required": false
+    }
+  ]
+}

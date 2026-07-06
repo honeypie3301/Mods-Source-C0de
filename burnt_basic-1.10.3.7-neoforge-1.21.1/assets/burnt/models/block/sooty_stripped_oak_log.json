@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/stripped_sooty_oak_top",
+    "up": "burnt:block/stripped_sooty_oak_top",
+    "north": "burnt:block/stripped_sooty_oak",
+    "east": "burnt:block/stripped_sooty_oak",
+    "south": "burnt:block/stripped_sooty_oak",
+    "west": "burnt:block/stripped_sooty_oak",
+    "particle": "burnt:block/stripped_sooty_oak_top"
+  },
+  "render_type": "solid"
+}

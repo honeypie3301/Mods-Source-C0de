@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "burnt:block/smoldering_wool",
+    "up": "burnt:block/smoldering_wool",
+    "north": "burnt:block/smoldering_wool",
+    "east": "burnt:block/smoldering_wool",
+    "south": "burnt:block/smoldering_wool",
+    "west": "burnt:block/smoldering_wool",
+    "particle": "burnt:block/smoldering_wool"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "burnt:block/tall_flames"
+    },
+    "facing=east": {
+      "model": "burnt:block/tall_flames",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "burnt:block/tall_flames",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "burnt:block/tall_flames",
+      "y": 270
+    }
+  }
+}

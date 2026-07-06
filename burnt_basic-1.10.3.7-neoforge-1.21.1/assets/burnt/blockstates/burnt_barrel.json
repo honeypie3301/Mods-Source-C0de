@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "facing=north,blockstate=0": {
+      "model": "burnt:block/burnt_barrel"
+    },
+    "facing=east,blockstate=0": {
+      "model": "burnt:block/burnt_barrel",
+      "y": 90
+    },
+    "facing=south,blockstate=0": {
+      "model": "burnt:block/burnt_barrel",
+      "y": 180
+    },
+    "facing=west,blockstate=0": {
+      "model": "burnt:block/burnt_barrel",
+      "y": 270
+    },
+    "facing=up,blockstate=0": {
+      "model": "burnt:block/burnt_barrel",
+      "x": 270
+    },
+    "facing=down,blockstate=0": {
+      "model": "burnt:block/burnt_barrel",
+      "x": 90
+    },
+    "facing=north,blockstate=1": {
+      "model": "burnt:block/burnt_barrel_blockstates_blockstate_0"
+    },
+    "facing=east,blockstate=1": {
+      "model": "burnt:block/burnt_barrel_blockstates_blockstate_0",
+      "y": 90
+    },
+    "facing=south,blockstate=1": {
+      "model": "burnt:block/burnt_barrel_blockstates_blockstate_0",
+      "y": 180
+    },
+    "facing=west,blockstate=1": {
+      "model": "burnt:block/burnt_barrel_blockstates_blockstate_0",
+      "y": 270
+    },
+    "facing=up,blockstate=1": {
+      "model": "burnt:block/burnt_barrel_blockstates_blockstate_0",
+      "x": 270
+    },
+    "facing=down,blockstate=1": {
+      "model": "burnt:block/burnt_barrel_blockstates_blockstate_0",
+      "x": 90
+    }
+  }
+}

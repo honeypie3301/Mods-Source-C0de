@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "group": "burnt",
+  "category": "food",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "minecraft:apple"
+  },
+  "result": {
+    "id": "burnt:baked_apple"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "burnt:custom/flag_pole",
+  "textures": {
+    "all": "minecraft:block/stripped_spruce_log",
+    "particle": "minecraft:block/stripped_spruce_log",
+    "1": "burnt:block/flag_pole"
+  },
+  "render_type": "solid"
+}

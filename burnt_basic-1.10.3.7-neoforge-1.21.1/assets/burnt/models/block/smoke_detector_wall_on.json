@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "burnt:block/smoke_detector_side",
+    "side":     "burnt:block/smoke_detector_side",
+    "top":      "burnt:block/smoke_detector_on"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 8],
+      "to":   [16, 16, 16],
+      "faces": {
+        "north": { "texture": "#top" },
+        "south": { "texture": "#top", "cullface": "south" },
+        "up":    { "texture": "#side" },
+        "down":  { "texture": "#side" },
+        "east":  { "texture": "#side" },
+        "west":  { "texture": "#side" }
+      }
+    }
+  ]
+}

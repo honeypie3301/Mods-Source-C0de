@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "burnt:block/sooty_birch_planks",
+    "bottom": "burnt:block/sooty_birch_planks",
+    "top": "burnt:block/sooty_birch_planks",
+    "side": "burnt:block/sooty_birch_planks"
+  },
+  "render_type": "solid"
+}

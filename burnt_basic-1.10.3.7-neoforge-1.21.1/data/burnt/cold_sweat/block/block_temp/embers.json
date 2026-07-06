@@ -1,0 +1,22 @@
+{
+  "required_mods": ["cold_sweat"],
+  "block": {
+    "blocks": [
+      "burnt:ember_log",
+      "burnt:stripped_ember_log",
+      "burnt:ember_wood",
+      "burnt:ember_planks",
+      "burnt:ember_stairs",
+      "burnt:ember_slab",
+      "burnt:ember_fence",
+      "burnt:ember_fence_gate",
+      "burnt:ember_campfire",
+      "burnt:smoldering_coal"
+    ]
+  },
+  "temperature": 10,
+  "units": "f",
+  "range": 5,
+  "fade": true,
+  "max_effect": 25
+}
