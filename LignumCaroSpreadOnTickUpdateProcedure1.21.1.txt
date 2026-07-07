@@ -1,0 +1,480 @@
+package net.mcreator.thebackwoods.procedures;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+
+import net.mcreator.thebackwoods.init.TheBackwoodsModBlocks;
+
+import java.util.List;
+import java.util.ArrayList;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.core.Direction;
+
+public class LignumCaroSpreadOnTickUpdateProcedure {
+	// ---------- CONFIGURABLE SPREAD & DEFENSE SETTINGS ----------
+	// Spread/infection speed chance (0.0 to 1.0) on random ticks. Lower = slower spread.
+	private static final double SPREAD_CHANCE = 0.35;
+
+	// Spread delay in ticks for scheduled chain-reaction ticks. Lower = faster propagation.
+	private static final int SPREAD_DELAY_TICKS = 7;
+
+	// Minimum world age/time in game ticks (1200 ticks = 60 seconds = 1 minute) before infection begins.
+	private static final long INFECTION_START_DELAY_TICKS = 1200L;
+
+	// Sneeze range (radius in blocks) to detect Spore entities
+	private static final double SNEEZE_RANGE = 4.0;
+
+	// Sneeze activation chance per random tick (0.0 to 1.0)
+	private static final double SNEEZE_CHANCE = 0.40;
+
+	// Sneeze damage configuration
+	private static final float SNEEZE_MIN_DAMAGE = 1.0F;
+	private static final float SNEEZE_MAX_DAMAGE = 2.0F;
+
+	// Cleansing chance: when uninfected block is next to an infected one, chance to cleanse it per tick
+	private static final double CLEANSING_CHANCE = 0.25;
+	// -------------------------------------------------------------
+
+	// ---------- LIGNUM CARO COLONY GROWTH SETTINGS ----------
+	// Base chance for a healthy colony block to attempt spreading on a tick
+	private static final double COLONY_SPREAD_BASE_CHANCE = 0.15;
+	// --------------------------------------------------------
+
+	// ---------- BURNT COMPATIBILITY SETTINGS ----------
+	// Speed of the regeneration wave (scheduled delay in ticks for restored blocks)
+	private static final int REGEN_WAVE_DELAY_MIN = 2;
+	private static final int REGEN_WAVE_DELAY_MAX = 4;
+	// --------------------------------------------------
+
+	public static void execute(LevelAccessor world, double x, double y, double z) {
+		if (!(world instanceof Level level)) {
+			return;
+		}
+
+		if (level.getGameTime() < INFECTION_START_DELAY_TICKS) {
+			return;
+		}
+
+		BlockPos sourcePos = BlockPos.containing(x, y, z);
+		BlockState sourceState = world.getBlockState(sourcePos);
+		if (sourceState.isAir()) {
+			return;
+		}
+
+		RandomSource random = world.getRandom();
+		int sx = sourcePos.getX();
+		int sy = sourcePos.getY();
+		int sz = sourcePos.getZ();
+
+		Block customBlock = TheBackwoodsModBlocks.LIGNUM_CARO.get();
+		BlockState defaultSpreadState = customBlock.defaultBlockState();
+
+		// Safely try to find and apply the "infected" state property if it's set up in MCreator
+		Property<?> infectedProp = sourceState.getBlock().getStateDefinition().getProperty("infected");
+		boolean isInfected = false;
+		BooleanProperty boolProp = null;
+
+		if (infectedProp instanceof BooleanProperty bProp) {
+			boolProp = bProp;
+			isInfected = sourceState.getValue(bProp);
+		}
+
+		if (isInfected) {
+			// ==========================================
+			// COMPROMISED / INFECTED SPREADING LOGIC
+			// ==========================================
+			BlockState infectedSpreadState = defaultSpreadState;
+			if (boolProp != null) {
+				infectedSpreadState = defaultSpreadState.setValue(boolProp, true);
+			}
+
+			// Scan adjacent blocks to spread the spore corruption
+			for (int dx = -1; dx <= 1; dx++) {
+				for (int dy = -1; dy <= 1; dy++) {
+					for (int dz = -1; dz <= 1; dz++) {
+						if (dx == 0 && dy == 0 && dz == 0) {
+							continue;
+						}
+
+						BlockPos targetPos = new BlockPos(sx + dx, sy + dy, sz + dz);
+						if (world.isOutsideBuildHeight(targetPos)) {
+							continue;
+						}
+
+						BlockState targetState = world.getBlockState(targetPos);
+						if (targetState.isAir()) {
+							continue;
+						}
+
+						ResourceLocation reg = BuiltInRegistries.BLOCK.getKey(targetState.getBlock());
+						if (reg != null && reg.getNamespace().equals("spore")) {
+							// Apply configurable spread probability per neighbor block
+							if (random.nextDouble() <= SPREAD_CHANCE) {
+								world.setBlock(targetPos, infectedSpreadState, 3);
+								world.scheduleTick(targetPos, customBlock, SPREAD_DELAY_TICKS);
+							}
+						}
+					}
+				}
+			}
+		} else {
+			// ==========================================
+			// PRISTINE WOOD / ACTIVE IMMUNE DEFENDER
+			// ==========================================
+
+			// 1. ENTITY DEFENSE: SNEEZE BURST against nearby Spore Entities
+			if (random.nextDouble() <= SNEEZE_CHANCE) {
+				double range = SNEEZE_RANGE;
+				AABB scanArea = new AABB(
+					x - range, y - range, z - range,
+					x + range, y + range, z + range
+				);
+				List<LivingEntity> nearbySporeEntities = level.getEntitiesOfClass(LivingEntity.class, scanArea, entity -> {
+					ResourceLocation rl = BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType());
+					return rl != null && rl.getNamespace().equals("spore");
+				});
+
+				if (!nearbySporeEntities.isEmpty()) {
+					boolean sneezed = false;
+					for (LivingEntity target : nearbySporeEntities) {
+						if (target.isAlive()) {
+							sneezed = true;
+							// Apply rejection damage (random configurable range of magic damage)
+							float damage = SNEEZE_MIN_DAMAGE + random.nextFloat() * (SNEEZE_MAX_DAMAGE - SNEEZE_MIN_DAMAGE);
+							target.hurt(level.damageSources().magic(), damage);
+
+							// Apply knockback (pushing away from the block center)
+							Vec3 blockCenter = new Vec3(x + 0.5, y + 0.5, z + 0.5);
+							Vec3 pushVec = target.position().subtract(blockCenter).normalize();
+							target.setDeltaMovement(target.getDeltaMovement().add(pushVec.x * 0.4, 0.25, pushVec.z * 0.4));
+							target.hurtMarked = true;
+
+							// Inflict Poison status effect to the spore entities (6 seconds of Poison I)
+							target.addEffect(new MobEffectInstance(MobEffects.POISON, 120, 0, false, false));
+
+							// Spawn defensive sneeze particles blowing towards target
+							if (level instanceof ServerLevel serverLevel) {
+								serverLevel.sendParticles(ParticleTypes.SNEEZE, target.getX(), target.getY() + 1.0, target.getZ(), 8, 0.2, 0.2, 0.2, 0.05);
+							}
+						}
+					}
+
+					if (sneezed) {
+						// Play an organic, wooden "sneeze" sound
+						level.playSound(null, sourcePos, SoundEvents.LLAMA_SPIT, SoundSource.BLOCKS, 1.0F, 0.8F + random.nextFloat() * 0.4F);
+						level.playSound(null, sourcePos, SoundEvents.BAMBOO_WOOD_BREAK, SoundSource.BLOCKS, 0.6F, 1.2F + random.nextFloat() * 0.4F);
+						
+						if (level instanceof ServerLevel serverLevel) {
+							serverLevel.sendParticles(ParticleTypes.HAPPY_VILLAGER, x + 0.5, y + 1.0, z + 0.5, 12, 0.5, 0.5, 0.5, 0.1);
+						}
+					}
+				}
+			}
+
+			// 2. BLOCK DEFENSE: STRUCTURAL RUPTURES & CLEANSING TUG-OF-WAR
+			for (int dx = -1; dx <= 1; dx++) {
+				for (int dy = -1; dy <= 1; dy++) {
+					for (int dz = -1; dz <= 1; dz++) {
+						if (dx == 0 && dy == 0 && dz == 0) {
+							continue;
+						}
+
+						BlockPos targetPos = new BlockPos(sx + dx, sy + dy, sz + dz);
+						if (world.isOutsideBuildHeight(targetPos)) {
+							continue;
+						}
+
+						BlockState targetState = world.getBlockState(targetPos);
+						if (targetState.isAir()) {
+							continue;
+						}
+
+						// A: Convert adjacent Spore blocks into pristine Lignum Caro!
+						ResourceLocation reg = BuiltInRegistries.BLOCK.getKey(targetState.getBlock());
+						if (reg != null && reg.getNamespace().equals("spore")) {
+							if (random.nextDouble() <= SPREAD_CHANCE) {
+								BlockState pristineSpreadState = defaultSpreadState;
+								if (boolProp != null) {
+									pristineSpreadState = defaultSpreadState.setValue(boolProp, false);
+								}
+								world.setBlock(targetPos, pristineSpreadState, 3);
+								world.scheduleTick(targetPos, customBlock, SPREAD_DELAY_TICKS);
+								level.playSound(null, targetPos, SoundEvents.BAMBOO_WOOD_PLACE, SoundSource.BLOCKS, 0.8F, 1.0F + random.nextFloat() * 0.2F);
+								
+								if (level instanceof ServerLevel serverLevel) {
+									serverLevel.sendParticles(ParticleTypes.HAPPY_VILLAGER, targetPos.getX() + 0.5, targetPos.getY() + 0.5, targetPos.getZ() + 0.5, 6, 0.2, 0.2, 0.2, 0.05);
+								}
+							}
+						}
+						// B: Reclaim / cleanse compromised Lignum Caro blocks
+						else if (targetState.is(customBlock) && boolProp != null) {
+							boolean targetInfected = targetState.getValue(boolProp);
+							if (targetInfected && random.nextDouble() <= CLEANSING_CHANCE) {
+								// Cleanse it back to pure wood
+								BlockState cleansedState = defaultSpreadState.setValue(boolProp, false);
+								world.setBlock(targetPos, cleansedState, 3);
+								level.playSound(null, targetPos, SoundEvents.CHERRY_WOOD_BREAK, SoundSource.BLOCKS, 0.8F, 1.1F + random.nextFloat() * 0.2F);
+								
+								if (level instanceof ServerLevel serverLevel) {
+									serverLevel.sendParticles(ParticleTypes.HAPPY_VILLAGER, targetPos.getX() + 0.5, targetPos.getY() + 0.5, targetPos.getZ() + 0.5, 5, 0.3, 0.3, 0.3, 0.02);
+								} // 1.21.1
+							}
+						}
+					}
+				}
+			}
+
+			// 3. LIVING COLONY ORGANIC GROWTH
+			performColonyGrowth(world, sourcePos, random);
+
+			// 4. ACTIVE IMMUNE RESPONSE / BURNT COMPATIBILITY
+			performBurntCompatibility(world, sourcePos, random);
+		}
+	}
+
+	// ==========================================
+	// LIVING COLONY ORGANIC GROWTH SYSTEM
+	// ==========================================
+	private static void performColonyGrowth(LevelAccessor world, BlockPos currentPos, RandomSource random) {
+		if (random.nextDouble() > COLONY_SPREAD_BASE_CHANCE) {
+			return;
+		}
+
+		// Randomly select 1 or 2 directions to check (prevents flood-fill / perfect geometric shapes)
+		Direction[] directions = Direction.values();
+		List<Direction> dirList = new ArrayList<>();
+		for (Direction d : directions) {
+			dirList.add(d);
+		}
+		java.util.Collections.shuffle(dirList);
+		int dirsToTry = 1 + random.nextInt(2); // 1 or 2 directions
+
+		Block customBlock = TheBackwoodsModBlocks.LIGNUM_CARO.get();
+
+		for (int i = 0; i < dirsToTry && i < dirList.size(); i++) {
+			Direction dir = dirList.get(i);
+			BlockPos targetPos = currentPos.relative(dir);
+
+			if (world.isOutsideBuildHeight(targetPos)) {
+				continue;
+			}
+
+			BlockState targetState = world.getBlockState(targetPos);
+			if (isReplaceableForGrowth(targetState)) {
+				// Count healthy Lignum Caro neighbors in the 3x3x3 area around targetPos
+				int neighbors = countHealthyNeighbors(world, targetPos, customBlock);
+
+				// Determine organic probability based on neighbor density
+				double growthChance = 0.0;
+				if (neighbors == 1) {
+					growthChance = 0.02; // Very isolated: hard to grow straight out
+				} else if (neighbors == 2) {
+					growthChance = 0.08; // Budding tip
+				} else if (neighbors == 3) {
+					growthChance = 0.25; // Healthy branching
+				} else if (neighbors == 4) {
+					growthChance = 0.55; // Filling a nice pocket
+				} else if (neighbors >= 5) {
+					growthChance = 0.85; // Solid interior gap filling
+				}
+
+				if (random.nextDouble() <= growthChance) {
+					world.setBlock(targetPos, customBlock.defaultBlockState(), 3);
+
+					// Schedule propagation with an organic staggered delay
+					int delay = 12 + random.nextInt(9); // 12-20 ticks
+					world.scheduleTick(targetPos, customBlock, delay);
+
+					// Play quiet organic growth sounds
+					if (world instanceof Level level) {
+						level.playSound(null, targetPos, SoundEvents.CHERRY_WOOD_PLACE, SoundSource.BLOCKS, 0.4F, 0.7F + random.nextFloat() * 0.3F);
+					}
+
+					// Spawn beautiful life particles on server
+					if (world instanceof ServerLevel serverLevel) {
+						serverLevel.sendParticles(ParticleTypes.HAPPY_VILLAGER, targetPos.getX() + 0.5, targetPos.getY() + 0.5, targetPos.getZ() + 0.5, 3, 0.2, 0.2, 0.2, 0.02);
+					}
+				}
+			}
+		}
+	}
+
+	private static boolean isReplaceableForGrowth(BlockState state) {
+		if (state == null) {
+			return true;
+		}
+		return state.isAir()
+			|| state.is(Blocks.VINE)
+			|| state.is(Blocks.OAK_LEAVES)
+			|| state.is(Blocks.CHERRY_LEAVES)
+			|| state.is(Blocks.SPRUCE_LEAVES)
+			|| state.is(Blocks.BIRCH_LEAVES)
+			|| state.is(Blocks.JUNGLE_LEAVES)
+			|| state.is(Blocks.ACACIA_LEAVES)
+			|| state.is(Blocks.DARK_OAK_LEAVES)
+			|| state.is(Blocks.MANGROVE_LEAVES)
+			|| state.is(Blocks.GLOW_LICHEN)
+			|| state.is(Blocks.SHORT_GRASS)
+			|| state.is(Blocks.TALL_GRASS)
+			|| state.is(Blocks.FERN)
+			|| state.is(Blocks.LARGE_FERN);
+	}
+
+	private static int countHealthyNeighbors(LevelAccessor world, BlockPos pos, Block customBlock) {
+		int count = 0;
+		int px = pos.getX();
+		int py = pos.getY();
+		int pz = pos.getZ();
+
+		for (int dx = -1; dx <= 1; dx++) {
+			for (int dy = -1; dy <= 1; dy++) {
+				for (int dz = -1; dz <= 1; dz++) {
+					if (dx == 0 && dy == 0 && dz == 0) {
+						continue;
+					}
+					BlockPos checkPos = new BlockPos(px + dx, py + dy, pz + dz);
+					if (!world.isOutsideBuildHeight(checkPos)) {
+						BlockState state = world.getBlockState(checkPos);
+						if (state.is(customBlock)) {
+							// Ensure it is a healthy block (not infected)
+							Property<?> infectedProp = state.getBlock().getStateDefinition().getProperty("infected");
+							boolean isInfected = false;
+							if (infectedProp instanceof BooleanProperty boolProp) {
+								isInfected = state.getValue(boolProp);
+							}
+							if (!isInfected) {
+								count++;
+							}
+						}
+					}
+				}
+			}
+		}
+		return count;
+	}
+
+	// ==========================================
+	// ACTIVE IMMUNE DEFENSE: BURNT COMPATIBILITY
+	// ==========================================
+	private static void performBurntCompatibility(LevelAccessor world, BlockPos currentPos, RandomSource random) {
+		for (Direction dir : Direction.values()) {
+			BlockPos targetPos = currentPos.relative(dir);
+
+			if (world.isOutsideBuildHeight(targetPos)) {
+				continue;
+			}
+
+			BlockState targetState = world.getBlockState(targetPos);
+			if (isBurntBlock(targetState)) {
+				// Reclaim and restore to healthy equivalent
+				BlockState restoredState = getHealthyEquivalent(targetState);
+				world.setBlock(targetPos, restoredState, 3);
+
+				// Immediately schedule a short delayed tick (2-4 ticks) on the restored block to propagate the wave
+				int delay = REGEN_WAVE_DELAY_MIN + random.nextInt(REGEN_WAVE_DELAY_MAX - REGEN_WAVE_DELAY_MIN + 1);
+				world.scheduleTick(targetPos, restoredState.getBlock(), delay);
+
+				// Visual and sound effects representing a fast biological immune wave
+				if (world instanceof Level level) {
+					level.playSound(null, targetPos, SoundEvents.CHERRY_WOOD_BREAK, SoundSource.BLOCKS, 0.7F, 1.1F + random.nextFloat() * 0.2F);
+					level.playSound(null, targetPos, SoundEvents.BAMBOO_WOOD_PLACE, SoundSource.BLOCKS, 0.5F, 1.3F + random.nextFloat() * 0.2F);
+				}
+
+				if (world instanceof ServerLevel serverLevel) {
+					serverLevel.sendParticles(ParticleTypes.HAPPY_VILLAGER, targetPos.getX() + 0.5, targetPos.getY() + 0.5, targetPos.getZ() + 0.5, 6, 0.2, 0.2, 0.2, 0.05);
+				}
+			}
+		}
+	}
+
+	private static boolean isBurntBlock(BlockState state) {
+		if (state == null || state.isAir()) {
+			return false;
+		}
+		Block block = state.getBlock();
+		ResourceLocation reg = BuiltInRegistries.BLOCK.getKey(block);
+		if (reg != null) {
+			String namespace = reg.getNamespace();
+			if (namespace.equals("burnt") || namespace.equals("burnt_basic")) {
+				return true;
+			}
+			String path = reg.getPath();
+			if (path.contains("burnt") || path.contains("smoldering") || path.contains("sooty") || path.contains("charred")) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private static BlockState getHealthyEquivalent(BlockState burntState) {
+		if (burntState == null) {
+			return TheBackwoodsModBlocks.LIGNUM_CARO.get().defaultBlockState();
+		}
+		Block block = burntState.getBlock();
+		ResourceLocation reg = BuiltInRegistries.BLOCK.getKey(block);
+		if (reg != null) {
+			String path = reg.getPath().toLowerCase();
+
+			Block healthyBlock = null;
+			boolean isLog = path.contains("log");
+			boolean isPlanks = path.contains("plank");
+
+			if (path.contains("spruce")) {
+				healthyBlock = isLog ? Blocks.SPRUCE_LOG : (isPlanks ? Blocks.SPRUCE_PLANKS : Blocks.SPRUCE_WOOD);
+			} else if (path.contains("birch")) {
+				healthyBlock = isLog ? Blocks.BIRCH_LOG : (isPlanks ? Blocks.BIRCH_PLANKS : Blocks.BIRCH_WOOD);
+			} else if (path.contains("jungle")) {
+				healthyBlock = isLog ? Blocks.JUNGLE_LOG : (isPlanks ? Blocks.JUNGLE_PLANKS : Blocks.JUNGLE_WOOD);
+			} else if (path.contains("acacia")) {
+				healthyBlock = isLog ? Blocks.ACACIA_LOG : (isPlanks ? Blocks.ACACIA_PLANKS : Blocks.ACACIA_WOOD);
+			} else if (path.contains("dark_oak")) {
+				healthyBlock = isLog ? Blocks.DARK_OAK_LOG : (isPlanks ? Blocks.DARK_OAK_PLANKS : Blocks.DARK_OAK_WOOD);
+			} else if (path.contains("mangrove")) {
+				healthyBlock = isLog ? Blocks.MANGROVE_LOG : (isPlanks ? Blocks.MANGROVE_PLANKS : Blocks.MANGROVE_WOOD);
+			} else if (path.contains("cherry")) {
+				healthyBlock = isLog ? Blocks.CHERRY_LOG : (isPlanks ? Blocks.CHERRY_PLANKS : Blocks.CHERRY_WOOD);
+			} else if (path.contains("oak")) {
+				healthyBlock = isLog ? Blocks.OAK_LOG : (isPlanks ? Blocks.OAK_PLANKS : Blocks.OAK_WOOD);
+			}
+
+			if (healthyBlock != null) {
+				BlockState healthyState = healthyBlock.defaultBlockState();
+				return copyBlockStateProperties(burntState, healthyState);
+			}
+		}
+		BlockState defaultState = TheBackwoodsModBlocks.LIGNUM_CARO.get().defaultBlockState();
+		return copyBlockStateProperties(burntState, defaultState);
+	}
+
+	private static BlockState copyBlockStateProperties(BlockState from, BlockState to) {
+		BlockState result = to;
+		for (Property<?> property : from.getProperties()) {
+			if (result.hasProperty(property)) {
+				result = copyPropertyHelper(from, result, property);
+			}
+		}
+		return result;
+	}
+
+	@SuppressWarnings("unchecked")
+	private static <T extends Comparable<T>> BlockState copyPropertyHelper(BlockState from, BlockState to, Property<T> property) {
+		return to.setValue(property, from.getValue(property));
+	}
+}
