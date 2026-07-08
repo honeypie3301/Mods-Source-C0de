@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "custom"
+issueTrackerURL = "https://github.com/BobMowzie/MowziesMobs/issues"
+
+[[mods]]
+modId = "mowziesmobs"
+version = "1.8.2"
+displayName = "Mowzie's Mobs"
+authors = "BobMowzie, Wadoo, Vakypanda, Noonyez, pau101"
+description = '''Mowzie's Mobs adds a variety of high-quality fantasy creatures to your Minecraft world.'''
+
+[[dependencies.mowziesmobs]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.1,21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mowziesmobs]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21, 1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mowziesmobs]]
+modId = "geckolib"
+mandatory = true
+versionRange = "[4.8.3,)"
+ordering = "BEFORE"
+side = "BOTH"
+
+[[mixins]]
+config = "mowziesmobs.mixins.json"
