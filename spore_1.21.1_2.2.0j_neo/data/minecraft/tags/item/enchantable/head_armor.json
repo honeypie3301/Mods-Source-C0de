@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "spore:inf_up_helmet",
+    "spore:living_helmet",
+    "spore:plated_helmet",
+    "spore:inf_helmet"
+  ]
+}

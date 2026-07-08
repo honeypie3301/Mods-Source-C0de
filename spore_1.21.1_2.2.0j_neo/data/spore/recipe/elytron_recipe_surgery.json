@@ -1,0 +1,18 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 0, "item": { "item": "spore:r_wing" } },
+    { "slot": 1, "item": { "item": "spore:alveolic_sack" } },
+    { "slot": 2, "item": { "item": "spore:tendons" } },
+    { "slot": 4, "item": { "item": "spore:living_core" } },
+    { "slot": 5, "item": { "item": "spore:armor_plate" } },
+    { "slot": 6, "item": { "item": "spore:alveolic_sack" } },
+    { "slot": 8, "item": { "item": "spore:living_core" } },
+    { "slot": 9, "item": { "item": "spore:armor_plate" } },
+    { "slot": 10, "item": { "item": "spore:alveolic_sack" } },
+    { "slot": 12, "item": { "item": "spore:r_wing" } },
+    { "slot": 13, "item": { "item": "spore:alveolic_sack" } },
+    { "slot": 14, "item": { "item": "spore:tendons" } }
+  ],
+  "result": { "id": "spore:r_elytron" }
+}

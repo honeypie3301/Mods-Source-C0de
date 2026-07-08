@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "spore:block/body_bag",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "spore:block/body_bag",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "spore:block/body_bag"
+    },
+    "facing=west": {
+      "model": "spore:block/body_bag",
+      "y": 90
+    }
+  }
+}

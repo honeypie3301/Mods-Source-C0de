@@ -1,0 +1,8 @@
+{
+  "sound_event": "spore:corrupted_record",
+  "description": {
+    "translate": "item.spore.corrupted_record.desc"
+  },
+  "length_in_seconds": 84,
+  "comparator_output": 1
+}

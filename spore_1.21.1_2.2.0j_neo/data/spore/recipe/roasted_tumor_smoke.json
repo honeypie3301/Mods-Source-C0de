@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "spore:tumor"
+  },
+  "result":{
+    "id" : "spore:roasted_tumor"
+  }}

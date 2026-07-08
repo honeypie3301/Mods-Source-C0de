@@ -1,0 +1,9 @@
+{
+  "type": "spore:grafting",
+  "ingredients": [
+    { "slot": 21, "item": { "item": "spore:inf_boots" } },
+    { "slot": 22, "item": { "item": "spore:reforged_biomass_w" } },
+    { "slot": 23, "item": { "item": "spore:fins" } }
+  ],
+  "result": { "id": "spore:inf_up_boots" }
+}

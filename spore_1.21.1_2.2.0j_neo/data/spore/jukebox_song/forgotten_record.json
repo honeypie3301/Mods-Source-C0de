@@ -1,0 +1,8 @@
+{
+  "sound_event": "spore:forgotten_patient",
+  "description": {
+    "translate": "item.spore.forgotten_record.desc"
+  },
+  "length_in_seconds": 55,
+  "comparator_output": 1
+}

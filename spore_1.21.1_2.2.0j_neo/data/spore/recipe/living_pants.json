@@ -1,0 +1,9 @@
+{
+  "type": "spore:grafting",
+  "ingredients": [
+    { "slot": 21, "item": { "item": "spore:plated_pants" } },
+    { "slot": 22, "item": { "item": "spore:integrating_agent" } },
+    { "slot": 23, "item": { "item": "spore:living_pants" } }
+  ],
+  "result": { "id": "spore:inf_pants" }
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "spore:infected_bow",
+    "spore:saber",
+    "spore:greatsword",
+    "spore:armads",
+    "spore:maul",
+    "spore:scythe",
+    "spore:combat_shovel",
+    "spore:infected_spear",
+    "spore:mace",
+    "spore:sickle",
+    "spore:knife",
+    "spore:rapier",
+    "spore:combat_pickaxe",
+    "spore:cleaver",
+    "spore:halberd",
+    "spore:boomerang"
+  ]
+}

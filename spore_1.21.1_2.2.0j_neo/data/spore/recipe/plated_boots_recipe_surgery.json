@@ -1,0 +1,14 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 3, "item": { "item": "spore:armor_plate" } },
+    { "slot": 5, "item": { "item": "spore:armor_plate" } },
+    { "slot": 6, "item": { "item": "spore:armor_fragment" } },
+    { "slot": 7, "item": { "item": "spore:armor_plate" } },
+    { "slot": 9, "item": { "item": "spore:armor_plate" } },
+    { "slot": 10, "item": { "item": "spore:armor_fragment" } },
+    { "slot": 11, "item": { "item": "spore:armor_plate" } },
+    { "slot": 15, "item": { "item": "spore:armor_plate" } }
+  ],
+  "result": { "id": "spore:plated_boots" }
+}

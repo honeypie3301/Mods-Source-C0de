@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RRR",
+    "RCR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "spore:tumor"
+    },
+    "C": {
+      "item": "spore:bucket_of_bile"
+    }
+  },
+  "result": {
+    "count": 8,
+    "id": "spore:bile_tumor"
+  }
+}

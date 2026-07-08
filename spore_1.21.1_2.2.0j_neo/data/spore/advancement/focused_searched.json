@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "spore:zoaholic"
+    },
+    "title":{"translate": "advancement.spore.zoaholic.title"},
+    "description":{"translate": "advancement.spore.zoaholic.description"}
+  },
+
+  "parent": "spore:lost_technology",
+  "criteria": {
+    "pick_up_zoaholic": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "spore:zoaholic"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

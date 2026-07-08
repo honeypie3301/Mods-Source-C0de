@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.spore.voracious_maw"
+  },
+  "supported_items": "#spore:enchantable_items",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": []
+}

@@ -1,0 +1,16 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 1, "item": { "item": "spore:fleshy_claw" } },
+    { "slot": 2, "item": { "item": "spore:fleshy_claw" } },
+    { "slot": 4, "item": { "item": "spore:fleshy_claw" } },
+    { "slot": 5, "item": { "item": "spore:living_core" } },
+    { "slot": 6, "item": { "item": "spore:hardened_bind" } },
+    { "slot": 9, "item": { "item": "spore:hardened_bind" } },
+    { "slot": 10, "item": { "item": "spore:hardened_bind" } },
+    { "slot": 11, "item": { "item": "spore:fleshy_claw" } },
+    { "slot": 13, "item": { "item": "spore:fleshy_claw" } },
+    { "slot": 14, "item": { "item": "spore:fleshy_claw" } }
+  ],
+  "result": { "id": "spore:boomerang" }
+}

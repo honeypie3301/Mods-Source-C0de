@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "spore:inf_up_pants",
+    "spore:living_pants",
+    "spore:plated_pants",
+    "spore:inf_pants"
+  ]
+}

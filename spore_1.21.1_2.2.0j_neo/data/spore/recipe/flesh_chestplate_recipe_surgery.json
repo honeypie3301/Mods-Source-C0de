@@ -1,0 +1,20 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 0, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 1, "item": { "item": "spore:alveolic_sack" } },
+    { "slot": 2, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 3, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 5, "item": { "item": "spore:altered_spleen" } },
+    { "slot": 6, "item": { "item": "spore:innards" } },
+    { "slot": 7, "item": { "item": "spore:tendons" } },
+    { "slot": 9, "item": { "item": "spore:living_core" } },
+    { "slot": 10, "item": { "item": "spore:innards" } },
+    { "slot": 11, "item": { "item": "spore:tendons" } },
+    { "slot": 12, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 13, "item": { "item": "spore:alveolic_sack" } },
+    { "slot": 14, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 15, "item": { "item": "spore:plated_muscle" } }
+  ],
+  "result": { "id": "spore:living_chest" }
+}

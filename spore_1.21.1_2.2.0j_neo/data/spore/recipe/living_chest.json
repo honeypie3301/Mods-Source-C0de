@@ -1,0 +1,9 @@
+{
+  "type": "spore:grafting",
+  "ingredients": [
+    { "slot": 21, "item": { "item": "spore:plated_chest" } },
+    { "slot": 22, "item": { "item": "spore:integrating_agent" } },
+    { "slot": 23, "item": { "item": "spore:living_chest" } }
+  ],
+  "result": { "id": "spore:inf_chest" }
+}

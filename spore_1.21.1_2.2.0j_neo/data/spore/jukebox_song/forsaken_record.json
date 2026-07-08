@@ -1,0 +1,8 @@
+{
+  "sound_event": "spore:forsaken_future",
+  "description": {
+    "translate": "item.spore.forsaken_record.desc"
+  },
+  "length_in_seconds": 60,
+  "comparator_output": 1
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "spore:compound"
+    }
+  ],
+  "results": [
+    {
+      "id": "spore:compound_plate"
+    }
+  ]
+}

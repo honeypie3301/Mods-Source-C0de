@@ -1,0 +1,16 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 0, "item": { "item": "spore:armor_fragment" } },
+    { "slot": 1, "item": { "item": "spore:armor_plate" } },
+    { "slot": 2, "item": { "item": "spore:armor_fragment" } },
+    { "slot": 4, "item": { "item": "spore:armor_plate" } },
+    { "slot": 7, "item": { "item": "spore:spine_fragment" } },
+    { "slot": 8, "item": { "item": "spore:armor_plate" } },
+    { "slot": 11, "item": { "item": "spore:spine_fragment" } },
+    { "slot": 12, "item": { "item": "spore:armor_fragment" } },
+    { "slot": 13, "item": { "item": "spore:armor_plate" } },
+    { "slot": 14, "item": { "item": "spore:armor_fragment" } }
+  ],
+  "result": { "id": "spore:plated_helmet" }
+}

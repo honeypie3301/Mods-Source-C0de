@@ -1,0 +1,17 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 2, "item": { "item": "spore:skull_soup" } },
+    { "slot": 3, "item": { "item": "spore:voracious_reagent" } },
+    { "slot": 5, "item": { "item": "spore:spine" } },
+    { "slot": 6, "item": { "item": "spore:acidic_gland" } },
+    { "slot": 7, "item": { "item": "spore:reforged_biomass_t" } },
+    { "slot": 8, "item": { "item": "spore:spine" } },
+    { "slot": 9, "item": { "item": "spore:corrosive_reagent" } },
+    { "slot": 10, "item": { "item": "spore:reforged_biomass_w" } },
+    { "slot": 12, "item": { "item": "spore:innards" } },
+    { "slot": 13, "item": { "item": "spore:reforged_biomass_a" } },
+    { "slot": 14, "item": { "item": "spore:skull_soup" } }
+  ],
+  "result": { "id": "spore:acidic_assassin" }
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "spore:corrosive_potency",
+    "spore:cryogenic_aspect",
+    "spore:gastric_spewage",
+    "spore:mutagenic_reactant",
+    "spore:serrated_thorns",
+    "spore:symbiotic_reconstitution",
+    "spore:unwavering_nature",
+    "spore:voracious_maw"
+  ]
+}

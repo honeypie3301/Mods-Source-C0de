@@ -1,0 +1,16 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 0, "item": { "item": "spore:tendons" } },
+    { "slot": 1, "item": { "item": "spore:spine" } },
+    { "slot": 2, "item": { "item": "spore:armor_fragment" } },
+    { "slot": 4, "item": { "item": "spore:armor_fragment" } },
+    { "slot": 5, "item": { "item": "spore:wing_membrane" } },
+    { "slot": 6, "item": { "item": "spore:wing_membrane" } },
+    { "slot": 7, "item": { "item": "spore:wing_membrane" } },
+    { "slot": 8, "item": { "item": "spore:wing_membrane" } },
+    { "slot": 9, "item": { "item": "spore:wing_membrane" } },
+    { "slot": 10, "item": { "item": "spore:wing_membrane" } }
+  ],
+  "result": { "id": "spore:r_wing" }
+}

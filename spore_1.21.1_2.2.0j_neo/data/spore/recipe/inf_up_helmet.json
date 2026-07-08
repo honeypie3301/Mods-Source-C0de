@@ -1,0 +1,9 @@
+{
+  "type": "spore:grafting",
+  "ingredients": [
+    { "slot": 21, "item": { "item": "spore:inf_helmet" } },
+    { "slot": 22, "item": { "item": "spore:brain_remnants" } },
+    { "slot": 23, "item": { "item": "spore:respirator" } }
+  ],
+  "result": { "id": "spore:inf_up_helmet" }
+}

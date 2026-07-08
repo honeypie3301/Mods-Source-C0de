@@ -1,0 +1,16 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 2, "item": { "item": "spore:armor_plate" } },
+    { "slot": 4, "item": { "item": "spore:armor_plate" } },
+    { "slot": 5, "item": { "item": "spore:shield_fragment" } },
+    { "slot": 6, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 7, "item": { "item": "spore:armor_plate" } },
+    { "slot": 8, "item": { "item": "spore:shield_fragment" } },
+    { "slot": 9, "item": { "item": "spore:living_core" } },
+    { "slot": 10, "item": { "item": "spore:shield_fragment" } },
+    { "slot": 13, "item": { "item": "spore:shield_fragment" } },
+    { "slot": 14, "item": { "item": "spore:armor_plate" } }
+  ],
+  "result": { "id": "spore:shield" }
+}

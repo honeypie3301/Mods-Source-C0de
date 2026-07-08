@@ -1,0 +1,16 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 0, "item": { "item": "spore:armor_fragment" } },
+    { "slot": 1, "item": { "item": "spore:armor_plate" } },
+    { "slot": 5, "item": { "item": "spore:spine" } },
+    { "slot": 6, "item": { "item": "spore:armor_plate" } },
+    { "slot": 7, "item": { "item": "spore:armor_plate" } },
+    { "slot": 9, "item": { "item": "spore:spine" } },
+    { "slot": 10, "item": { "item": "spore:armor_plate" } },
+    { "slot": 11, "item": { "item": "spore:armor_plate" } },
+    { "slot": 12, "item": { "item": "spore:armor_fragment" } },
+    { "slot": 13, "item": { "item": "spore:armor_plate" } }
+  ],
+  "result": { "id": "spore:plated_chest" }
+}

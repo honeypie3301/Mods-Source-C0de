@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "spore:garg_spawnegg"
+    },
+    "title":{"translate": "advancement.spore.gargoyle.title"},
+    "description":{"translate": "advancement.spore.gargoyle.description"},
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+
+  "parent": "spore:inf_player",
+  "criteria": {
+    "hurt_infected": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "spore:gargoyle"
+        }
+      }
+    },
+    "hurt_by_infected": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "spore:gargoyle"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hurt_infected",
+      "hurt_by_infected"
+    ]
+  ]
+}

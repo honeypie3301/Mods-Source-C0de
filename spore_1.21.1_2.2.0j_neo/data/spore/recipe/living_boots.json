@@ -1,0 +1,9 @@
+{
+  "type": "spore:grafting",
+  "ingredients": [
+    { "slot": 21, "item": { "item": "spore:plated_boots" } },
+    { "slot": 22, "item": { "item": "spore:integrating_agent" } },
+    { "slot": 23, "item": { "item": "spore:living_boots" } }
+  ],
+  "result": { "id": "spore:inf_boots" }
+}

@@ -1,0 +1,40 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/world/entity/MobCategory",
+      "name": "SPORE_INFECTED",
+      "constructor": "(Ljava/lang/String;IZZI)V",
+      "parameters": [
+        "spore:spore_infected",
+        40,
+        false,
+        false,
+        128
+      ]
+    },
+    {
+      "enum": "net/minecraft/world/entity/MobCategory",
+      "name": "SPORE_ORGANOIDS",
+      "constructor": "(Ljava/lang/String;IZZI)V",
+      "parameters": [
+        "spore:spore_organoids",
+        20,
+        false,
+        false,
+        64
+      ]
+    },
+    {
+      "enum": "net/minecraft/world/entity/MobCategory",
+      "name": "SPORE_EXPERIMENTS",
+      "constructor": "(Ljava/lang/String;IZZI)V",
+      "parameters": [
+        "spore:spore_experiments",
+        15,
+        false,
+        false,
+        32
+      ]
+    }
+  ]
+}

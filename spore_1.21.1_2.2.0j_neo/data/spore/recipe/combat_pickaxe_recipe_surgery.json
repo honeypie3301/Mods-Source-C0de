@@ -1,0 +1,16 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 1, "item": { "item": "spore:claw" } },
+    { "slot": 3, "item": { "item": "spore:fleshy_bone" } },
+    { "slot": 4, "item": { "item": "spore:fleshy_claw" } },
+    { "slot": 5, "item": { "item": "spore:hardened_bind" } },
+    { "slot": 6, "item": { "item": "spore:fleshy_bone" } },
+    { "slot": 8, "item": { "item": "spore:fleshy_claw" } },
+    { "slot": 9, "item": { "item": "spore:living_core" } },
+    { "slot": 12, "item": { "item": "spore:vigil_eye" } },
+    { "slot": 13, "item": { "item": "spore:hardened_bind" } },
+    { "slot": 14, "item": { "item": "spore:fleshy_claw" } }
+  ],
+  "result": { "id": "spore:combat_pickaxe" }
+}

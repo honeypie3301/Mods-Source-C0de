@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "spore:armads",
+    "spore:maul",
+    "spore:scythe",
+    "spore:combat_shovel",
+    "spore:combat_pickaxe"
+  ]
+}

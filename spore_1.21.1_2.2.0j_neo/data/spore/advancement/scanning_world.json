@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "spore:scanner"
+    },
+    "title":{"translate": "advancement.spore.scanner.title"},
+    "description":{"translate": "advancement.spore.scanner.description"}
+  },
+
+  "parent": "spore:spore",
+  "criteria": {
+    "pick_up_scanner": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "spore:scanner"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

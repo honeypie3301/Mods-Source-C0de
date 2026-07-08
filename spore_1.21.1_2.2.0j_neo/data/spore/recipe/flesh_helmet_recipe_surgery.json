@@ -1,0 +1,22 @@
+{
+  "type": "spore:surgery",
+  "ingredients": [
+    { "slot": 0, "item": { "item": "spore:mutated_fiber" } },
+    { "slot": 1, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 2, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 3, "item": { "item": "spore:mutated_fiber" } },
+    { "slot": 4, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 5, "item": { "item": "spore:cerebrum" } },
+    { "slot": 6, "item": { "item": "spore:nerves" } },
+    { "slot": 7, "item": { "item": "spore:nerves" } },
+    { "slot": 8, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 9, "item": { "item": "spore:cerebrum" } },
+    { "slot": 10, "item": { "item": "spore:nerves" } },
+    { "slot": 11, "item": { "item": "spore:nerves" } },
+    { "slot": 12, "item": { "item": "spore:mutated_fiber" } },
+    { "slot": 13, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 14, "item": { "item": "spore:plated_muscle" } },
+    { "slot": 15, "item": { "item": "spore:mutated_fiber" } }
+  ],
+  "result": { "id": "spore:living_helmet" }
+}
