@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:void_geode"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "arphex:chitin"
+    }
+  ],
+  "result": {
+    "id": "arphex:umbral_shard",
+    "count": 2
+  }
+}

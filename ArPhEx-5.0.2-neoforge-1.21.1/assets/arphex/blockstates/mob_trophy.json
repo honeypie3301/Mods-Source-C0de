@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "arphex:block/mob_trophy"
+    },
+    "facing=east": {
+      "model": "arphex:block/mob_trophy",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "arphex:block/mob_trophy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arphex:block/mob_trophy",
+      "y": 270
+    }
+  }
+}

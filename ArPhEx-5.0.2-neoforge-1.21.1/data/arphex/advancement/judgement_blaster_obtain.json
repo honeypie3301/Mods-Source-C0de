@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:judgement_blaster"
+    },
+    "title": {
+      "translate": "advancements.judgement_blaster_obtain.title"
+    },
+    "description": {
+      "translate": "advancements.judgement_blaster_obtain.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "judgement_blaster_obtain_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:hellblaster_obtain"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:bane_blossom"
+    },
+    "b": {
+      "item": "arphex:time_prism_shard"
+    },
+    "c": {
+      "item": "minecraft:suspicious_stew"
+    }
+  },
+  "result": {
+    "id": "arphex:time_syrup",
+    "count": 1
+  }
+}

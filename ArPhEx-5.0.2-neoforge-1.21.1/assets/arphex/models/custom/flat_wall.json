@@ -1,0 +1,184 @@
+{
+  "format_version": "1.9.0",
+  "texture_size": [
+    4,
+    4
+  ],
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        15
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15,
+          0,
+          15
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            1,
+            0,
+            0,
+            16
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            16,
+            0,
+            15,
+            16
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            16,
+            0,
+            0,
+            0
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            0,
+            15
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0.25,
+        1.75,
+        -4
+      ],
+      "scale": [
+        0.54102,
+        0.54102,
+        0.54102
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0.25,
+        1.75,
+        -4
+      ],
+      "scale": [
+        0.54102,
+        0.54102,
+        0.54102
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -33.75,
+        0,
+        0
+      ],
+      "translation": [
+        -0.75,
+        1.5,
+        0
+      ],
+      "scale": [
+        0.42773,
+        0.42773,
+        0.42773
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -33.75,
+        0,
+        0
+      ],
+      "translation": [
+        -0.75,
+        1.5,
+        0
+      ],
+      "scale": [
+        0.42773,
+        0.42773,
+        0.42773
+      ]
+    },
+    "ground": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        4.75,
+        0
+      ]
+    },
+    "gui": {
+      "scale": [
+        0.875,
+        0.875,
+        0.875
+      ]
+    },
+    "head": {
+      "rotation": [
+        88,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        14.25,
+        -1
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        0,
+        -6.5
+      ]
+    }
+  }
+}

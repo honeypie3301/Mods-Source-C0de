@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " a ",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:oversized_stinger"
+    }
+  },
+  "result": {
+    "id": "arphex:spear_of_paralysis",
+    "count": 1
+  }
+}

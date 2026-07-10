@@ -1,0 +1,14 @@
+{
+  "type": "arphex:cryptic_lamp",
+  "config": {
+    "structure": "arphex:cryptic_lamp",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:stone",
+    "offset": [
+      0,
+      -1,
+      0
+    ]
+  }
+}

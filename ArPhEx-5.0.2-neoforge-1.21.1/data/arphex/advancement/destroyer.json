@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:core_of_eternal_suffering"
+    },
+    "title": {
+      "translate": "advancements.destroyer.title"
+    },
+    "description": {
+      "translate": "advancements.destroyer.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "destroyer_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1000
+  },
+  "parent": "arphex:diabolos_killed"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/chitin_block",
+    "up": "arphex:block/chitin_block",
+    "north": "arphex:block/chitin_block",
+    "east": "arphex:block/chitin_block",
+    "south": "arphex:block/chitin_block",
+    "west": "arphex:block/chitin_block",
+    "particle": "arphex:block/chitin_block"
+  },
+  "render_type": "solid"
+}

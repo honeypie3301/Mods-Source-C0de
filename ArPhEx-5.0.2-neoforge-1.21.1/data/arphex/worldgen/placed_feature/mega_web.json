@@ -1,0 +1,39 @@
+{
+  "feature": "arphex:mega_web",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 5
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 8
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": {
+              "type": "minecraft:constant",
+              "value": {
+                "absolute": 61
+              }
+            },
+            "weight": 2
+          },
+          {
+            "data": {
+              "type": "minecraft:constant",
+              "value": {
+                "absolute": 121
+              }
+            },
+            "weight": 1
+          }
+        ]
+      }
+    }
+  ]
+}

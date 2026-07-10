@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:heavy_chitin"
+    },
+    "b": {
+      "item": "arphex:entropy_matrix_shard"
+    },
+    "c": {
+      "item": "minecraft:suspicious_stew"
+    }
+  },
+  "result": {
+    "id": "arphex:entropy_serum",
+    "count": 1
+  }
+}

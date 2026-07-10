@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:scorch_charge"
+    },
+    "b": {
+      "item": "arphex:abyssal_blade"
+    },
+    "c": {
+      "item": "arphex:abyssal_pickaxe"
+    },
+    "d": {
+      "item": "arphex:hedonic_gem"
+    },
+    "e": {
+      "item": "arphex:abyssal_axe"
+    },
+    "f": {
+      "item": "arphex:abyssal_dagger"
+    }
+  },
+  "result": {
+    "id": "arphex:abyss_atomiser",
+    "count": 1
+  }
+}

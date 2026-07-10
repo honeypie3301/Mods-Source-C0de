@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:snatcher_popup"
+    },
+    "title": {
+      "translate": "advancements.crawling_barrier_bypass.title"
+    },
+    "description": {
+      "translate": "advancements.crawling_barrier_bypass.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crawling_barrier_bypass_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:crawling_portal_activated"
+}

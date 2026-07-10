@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:time_prism"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "arphex:entropy_matrix"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "arphex:heavy_chitin"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "result": {
+    "id": "arphex:spacetime_shard",
+    "count": 2
+  }
+}

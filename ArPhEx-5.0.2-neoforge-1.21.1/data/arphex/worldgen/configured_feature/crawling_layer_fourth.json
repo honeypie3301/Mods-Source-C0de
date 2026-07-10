@@ -1,0 +1,7 @@
+{
+  "type": "arphex:structure_feature",
+  "config": {
+    "structure": "arphex:remove_plants_l4",
+    "ignored_blocks": "minecraft:air"
+  }
+}

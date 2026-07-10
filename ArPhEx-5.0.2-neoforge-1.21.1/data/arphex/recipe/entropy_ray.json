@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:vitality_viewfinder"
+    },
+    "b": {
+      "item": "arphex:hypnotic_hellblaster"
+    },
+    "c": {
+      "item": "arphex:entropy_matrix"
+    },
+    "d": {
+      "item": "arphex:infernal_ingot"
+    }
+  },
+  "result": {
+    "id": "arphex:oblivion_ray",
+    "count": 1
+  }
+}

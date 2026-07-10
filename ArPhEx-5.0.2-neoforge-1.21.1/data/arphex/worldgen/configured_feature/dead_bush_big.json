@@ -1,0 +1,9 @@
+{
+  "type": "arphex:structure_feature",
+  "config": {
+    "structure": "arphex:dead_bush_large",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

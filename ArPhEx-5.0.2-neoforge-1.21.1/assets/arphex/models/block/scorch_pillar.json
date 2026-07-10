@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/crawlingtransparent",
+    "up": "arphex:block/scorch_pillar",
+    "north": "arphex:block/crawlingtransparent",
+    "east": "arphex:block/crawlingtransparent",
+    "south": "arphex:block/crawlingtransparent",
+    "west": "arphex:block/crawlingtransparent",
+    "particle": "arphex:block/crawlingtransparent"
+  },
+  "render_type": "solid"
+}

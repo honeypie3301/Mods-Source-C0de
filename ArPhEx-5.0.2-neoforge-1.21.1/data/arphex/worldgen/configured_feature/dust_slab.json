@@ -1,0 +1,9 @@
+{
+  "type": "arphex:dust_slab",
+  "config": {
+    "structure": "arphex:dust_flatten",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

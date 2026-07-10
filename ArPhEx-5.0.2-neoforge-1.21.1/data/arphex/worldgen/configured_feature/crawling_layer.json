@@ -1,0 +1,7 @@
+{
+  "type": "arphex:structure_feature",
+  "config": {
+    "structure": "arphex:crawling_barrier_invisible",
+    "ignored_blocks": "minecraft:air"
+  }
+}

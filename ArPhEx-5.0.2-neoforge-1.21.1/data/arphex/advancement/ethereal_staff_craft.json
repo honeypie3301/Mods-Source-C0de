@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:ethereal_staff"
+    },
+    "title": {
+      "translate": "advancements.ethereal_staff_craft.title"
+    },
+    "description": {
+      "translate": "advancements.ethereal_staff_craft.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ethereal_staff_craft_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:scorpioid_killed"
+}

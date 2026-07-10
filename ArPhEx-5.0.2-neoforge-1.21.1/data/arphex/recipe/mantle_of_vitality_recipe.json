@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "arphex:necrotic_fang"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "arphex:necrotic_fang"
+    },
+    {
+      "item": "arphex:mangled_spider_flesh"
+    },
+    {
+      "item": "arphex:necrotic_fang"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "arphex:necrotic_fang"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    }
+  ],
+  "result": {
+    "id": "arphex:mantle_of_vitality",
+    "count": 1
+  }
+}

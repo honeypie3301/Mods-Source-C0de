@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/voidspear",
+  "textures": {
+    "1": "arphex:block/formicfireblaster",
+    "particle": "arphex:item/formicfireblaster"
+  }
+}

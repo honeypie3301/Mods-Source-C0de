@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/trophy",
+  "textures": {
+    "all": "arphex:block/trophy",
+    "particle": "arphex:block/trophy",
+    "0": "arphex:block/trophy"
+  },
+  "render_type": "translucent"
+}

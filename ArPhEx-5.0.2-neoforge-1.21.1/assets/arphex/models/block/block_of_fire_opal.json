@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/fireopalblock",
+    "up": "arphex:block/fireopalblock",
+    "north": "arphex:block/fireopalblock",
+    "east": "arphex:block/fireopalblock",
+    "south": "arphex:block/fireopalblock",
+    "west": "arphex:block/fireopalblock",
+    "particle": "arphex:block/fireopalblock"
+  },
+  "render_type": "solid"
+}

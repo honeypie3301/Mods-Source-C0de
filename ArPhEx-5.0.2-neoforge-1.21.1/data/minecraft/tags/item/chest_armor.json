@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "arphex:immortal_chestplate",
+    "arphex:spacetime_chestplate",
+    "arphex:juggernaut_chestplate",
+    "arphex:vitality_armour_chestplate",
+    "arphex:chitin_armour_tier_2_chestplate",
+    "arphex:chitin_armour_tier_3_chestplate",
+    "arphex:chitin_armour_chestplate",
+    "arphex:eternal_chestplate",
+    "arphex:spectral_chestplate",
+    "arphex:umbral_chestplate",
+    "arphex:infernal_chestplate"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:scorpioid_bloodluster_egg"
+    },
+    "title": {
+      "translate": "advancements.scorpioid_summon.title"
+    },
+    "description": {
+      "translate": "advancements.scorpioid_summon.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "scorpioid_summon_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "arphex:moth_ward"
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:spider_moth_summoner"
+    },
+    "title": {
+      "translate": "advancements.darkness_control.title"
+    },
+    "description": {
+      "translate": "advancements.darkness_control.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "darkness_control_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:crawling_barrier_bypass_2"
+}

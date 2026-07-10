@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:hedonic_gem"
+    },
+    "b": {
+      "item": "arphex:infernal_helmet"
+    },
+    "c": {
+      "item": "arphex:spectral_helmet"
+    },
+    "d": {
+      "item": "arphex:umbral_helmet"
+    }
+  },
+  "result": {
+    "id": "arphex:eternal_helmet",
+    "count": 1
+  }
+}

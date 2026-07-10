@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "minecraft:golden_helmet"
+  },
+  "addition": {
+    "item": "arphex:mantle_of_vitality"
+  },
+  "result": {
+    "id": "arphex:vitality_armour_helmet"
+  }
+}

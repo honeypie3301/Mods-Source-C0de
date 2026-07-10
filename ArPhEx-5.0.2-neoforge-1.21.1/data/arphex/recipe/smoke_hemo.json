@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "group": "spidermoth",
+  "category": "misc",
+  "experience": 5,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "arphex:raw_hemolymph"
+  },
+  "result": {
+    "id": "arphex:cooked_hemolymph"
+  }
+}

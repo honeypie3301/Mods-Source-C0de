@@ -1,0 +1,20 @@
+{
+  "feature": "arphex:large_dust_slab",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 62
+        },
+        "max_inclusive": {
+          "absolute": 118
+        }
+      }
+    }
+  ]
+}

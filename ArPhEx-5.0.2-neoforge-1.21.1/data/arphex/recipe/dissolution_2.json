@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:venomous_appendage"
+    },
+    "b": {
+      "item": "arphex:necrotic_fang"
+    },
+    "c": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "id": "arphex:dagger_of_dissolution",
+    "count": 1
+  }
+}

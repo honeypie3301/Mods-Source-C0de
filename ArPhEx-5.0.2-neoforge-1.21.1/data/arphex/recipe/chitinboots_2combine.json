@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "arphex:chitin_armour_boots"
+  },
+  "addition": {
+    "item": "arphex:chitin_armour_boots"
+  },
+  "result": {
+    "id": "arphex:chitin_armour_tier_2_boots"
+  }
+}

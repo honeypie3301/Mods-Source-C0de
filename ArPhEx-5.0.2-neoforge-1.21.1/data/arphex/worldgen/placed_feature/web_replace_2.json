@@ -1,0 +1,21 @@
+{
+  "feature": "arphex:web_replace_2",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 20
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 249
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/entropymatrix",
+    "up": "arphex:block/entropymatrix",
+    "north": "arphex:block/entropymatrix",
+    "east": "arphex:block/entropymatrix",
+    "south": "arphex:block/entropymatrix",
+    "west": "arphex:block/entropymatrix",
+    "particle": "arphex:block/entropymatrix"
+  },
+  "render_type": "solid"
+}

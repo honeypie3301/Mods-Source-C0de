@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/cobweb_special",
+  "textures": {
+    "all": "arphex:block/reaper_web",
+    "particle": "arphex:block/reaper_web",
+    "2": "arphex:block/reaper_web"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/trapdoor_dirt",
+    "up": "arphex:block/trapdoor_dirt",
+    "north": "arphex:block/trapdoor_dirt",
+    "east": "arphex:block/trapdoor_dirt",
+    "south": "arphex:block/trapdoor_dirt",
+    "west": "arphex:block/trapdoor_dirt",
+    "particle": "arphex:block/trapdoor_dirt"
+  },
+  "render_type": "translucent"
+}

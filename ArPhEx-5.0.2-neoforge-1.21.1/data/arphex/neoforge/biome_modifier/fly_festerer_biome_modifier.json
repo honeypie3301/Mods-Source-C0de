@@ -1,0 +1,34 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "bamboo_jungle",
+    "basalt_deltas",
+    "beach",
+    "birch_forest",
+    "crimson_forest",
+    "dark_forest",
+    "desert",
+    "dripstone_caves",
+    "jagged_peaks",
+    "jungle",
+    "lush_caves",
+    "mangrove_swamp",
+    "wooded_badlands",
+    "windswept_savanna",
+    "badlands",
+    "cherry_grove",
+    "flower_forest",
+    "forest",
+    "old_growth_birch_forest",
+    "windswept_forest",
+    "plains",
+    "savanna",
+    "savanna_plateau"
+  ],
+  "spawners": {
+    "type": "arphex:fly_festerer",
+    "weight": 48,
+    "minCount": 4,
+    "maxCount": 7
+  }
+}

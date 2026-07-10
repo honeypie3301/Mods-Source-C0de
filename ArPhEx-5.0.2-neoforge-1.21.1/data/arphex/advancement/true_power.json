@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:abyss_ascendant"
+    },
+    "title": {
+      "translate": "advancements.true_power.title"
+    },
+    "description": {
+      "translate": "advancements.true_power.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "true_power_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:ascendant_staff_craft"
+}

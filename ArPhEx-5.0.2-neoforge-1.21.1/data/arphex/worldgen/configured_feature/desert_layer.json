@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "target": {
+      "Name": "arphex:crawling_compost"
+    },
+    "state": {
+      "Name": "arphex:decadent_dust"
+    },
+    "radius": 12
+  }
+}

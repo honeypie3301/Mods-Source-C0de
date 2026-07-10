@@ -1,0 +1,12 @@
+{
+  "type": "arphex:hang_large_lush",
+  "config": {
+    "structure": "arphex:large_vine_plant",
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      0,
+      -3,
+      -4
+    ]
+  }
+}

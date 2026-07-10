@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "arphex:ant_hill",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 8,
+    "separation": 4,
+    "salt": 1609236202
+  }
+}

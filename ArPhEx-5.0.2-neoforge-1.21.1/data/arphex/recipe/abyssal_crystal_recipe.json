@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:abyssal_shard"
+    },
+    {
+      "item": "arphex:abyssal_shard"
+    },
+    {
+      "item": "arphex:abyssal_shard"
+    },
+    {
+      "item": "arphex:abyssal_shard"
+    }
+  ],
+  "result": {
+    "id": "arphex:abyssal_crystal",
+    "count": 1
+  }
+}

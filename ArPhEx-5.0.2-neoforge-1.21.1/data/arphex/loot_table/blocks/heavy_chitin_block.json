@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "arphex:blocks/heavy_chitin_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arphex:heavy_chitin_block"
+        }
+      ]
+    }
+  ]
+}

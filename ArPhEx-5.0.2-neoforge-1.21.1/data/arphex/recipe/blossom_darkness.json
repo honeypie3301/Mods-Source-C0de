@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:bane_blossom"
+    },
+    "b": {
+      "item": "minecraft:diamond_sword"
+    }
+  },
+  "result": {
+    "id": "arphex:bane_of_the_darkness",
+    "count": 1
+  }
+}

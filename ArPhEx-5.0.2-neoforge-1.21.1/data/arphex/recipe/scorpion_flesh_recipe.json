@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:venomous_appendage"
+    }
+  },
+  "result": {
+    "id": "arphex:mangled_scorpion_flesh",
+    "count": 1
+  }
+}

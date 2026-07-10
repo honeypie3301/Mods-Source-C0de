@@ -1,0 +1,24 @@
+{
+  "feature": "arphex:web_lines",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 90
+        },
+        "max_inclusive": {
+          "absolute": 200
+        }
+      }
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 5
+    }
+  ]
+}

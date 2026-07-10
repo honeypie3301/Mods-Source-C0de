@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:antenna"
+    },
+    "b": {
+      "item": "arphex:scorched_glass"
+    },
+    "c": {
+      "item": "minecraft:end_rod"
+    }
+  },
+  "result": {
+    "id": "arphex:warp_connector",
+    "count": 1
+  }
+}

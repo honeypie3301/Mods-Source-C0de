@@ -1,0 +1,24 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "desert",
+    "basalt_deltas",
+    "badlands",
+    "beach",
+    "river",
+    "dark_forest",
+    "deep_dark",
+    "dripstone_caves",
+    "wooded_badlands",
+    "swamp",
+    "soul_sand_valley",
+    "nether_wastes",
+    "crimson_forest"
+  ],
+  "spawners": {
+    "type": "arphex:scorpion_striker",
+    "weight": 16,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

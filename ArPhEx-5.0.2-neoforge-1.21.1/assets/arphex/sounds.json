@@ -1,0 +1,208 @@
+{
+  "mothscare": {
+    "subtitle": "subtitles.mothscare",
+    "sounds": [
+      {
+        "name": "arphex:mothscare",
+        "stream": false
+      }
+    ]
+  },
+  "mothchase": {
+    "subtitle": "subtitles.mothchase",
+    "sounds": [
+      {
+        "name": "arphex:mothchase",
+        "stream": false
+      }
+    ]
+  },
+  "mothchase2": {
+    "subtitle": "subtitles.mothchase2",
+    "sounds": [
+      {
+        "name": "arphex:mothchase2",
+        "stream": false
+      }
+    ]
+  },
+  "spidermothambient": {
+    "subtitle": "subtitles.spidermothambient",
+    "sounds": [
+      {
+        "name": "arphex:enemy-presence-stem3smallest",
+        "stream": false
+      }
+    ]
+  },
+  "heartbeats": {
+    "subtitle": "subtitles.heartbeats",
+    "sounds": [
+      {
+        "name": "arphex:heartbeatfinalaiff3",
+        "stream": false
+      }
+    ]
+  },
+  "teleportermoth": {
+    "subtitle": "subtitles.teleportermoth",
+    "sounds": [
+      {
+        "name": "arphex:teleportghost",
+        "stream": false
+      }
+    ]
+  },
+  "mothscream": {
+    "subtitle": "subtitles.mothscream",
+    "sounds": [
+      {
+        "name": "arphex:mothchaseshort",
+        "stream": false
+      }
+    ]
+  },
+  "mothscream2": {
+    "subtitle": "subtitles.mothscream2",
+    "sounds": [
+      {
+        "name": "arphex:mothchase2shorter",
+        "stream": false
+      }
+    ]
+  },
+  "horrorcrash": {
+    "subtitle": "subtitles.horrorcrash",
+    "sounds": [
+      {
+        "name": "arphex:horrorcrash",
+        "stream": false
+      }
+    ]
+  },
+  "creepy_arthropod_tiny": {
+    "subtitle": "subtitles.creepy_arthropod_tiny",
+    "sounds": [
+      {
+        "name": "arphex:creepy_arthropod_tiny",
+        "stream": false
+      }
+    ]
+  },
+  "creepy_arthropod": {
+    "subtitle": "subtitles.creepy_arthropod",
+    "sounds": [
+      {
+        "name": "arphex:creepy_arthropod",
+        "stream": false
+      }
+    ]
+  },
+  "creepy_arthropod_large": {
+    "subtitle": "subtitles.creepy_arthropod_large",
+    "sounds": [
+      {
+        "name": "arphex:creepy_arthropod_large",
+        "stream": false
+      }
+    ]
+  },
+  "rhinobeetlefly": {
+    "subtitle": "subtitles.rhinobeetlefly",
+    "sounds": [
+      {
+        "name": "arphex:rhinobeetlefly",
+        "stream": false
+      }
+    ]
+  },
+  "flyingmoth1": {
+    "subtitle": "subtitles.flyingmoth1",
+    "sounds": [
+      {
+        "name": "arphex:mothfly1",
+        "stream": false
+      }
+    ]
+  },
+  "flyingmoth2": {
+    "subtitle": "subtitles.flyingmoth2",
+    "sounds": [
+      {
+        "name": "arphex:mothfly2",
+        "stream": false
+      }
+    ]
+  },
+  "spidermothcroak": {
+    "subtitle": "subtitles.spidermothcroak",
+    "sounds": [
+      {
+        "name": "arphex:mothspidercroak",
+        "stream": false
+      }
+    ]
+  },
+  "hornetbuzzlong": {
+    "subtitle": "subtitles.hornetbuzzlong",
+    "sounds": [
+      {
+        "name": "arphex:hornetbuzzlong",
+        "stream": false
+      }
+    ]
+  },
+  "hornetbuzzshort": {
+    "subtitle": "subtitles.hornetbuzzshort",
+    "sounds": [
+      {
+        "name": "arphex:hornetbuzzshort",
+        "stream": false
+      }
+    ]
+  },
+  "spidermothcroak2": {
+    "subtitle": "subtitles.spidermothcroak2",
+    "sounds": [
+      {
+        "name": "arphex:mothspidercroak2",
+        "stream": false
+      }
+    ]
+  },
+  "spidermothcroak3": {
+    "subtitle": "subtitles.spidermothcroak3",
+    "sounds": [
+      {
+        "name": "arphex:mothspidercroak3",
+        "stream": false
+      }
+    ]
+  },
+  "spidermothcroak4": {
+    "subtitle": "subtitles.spidermothcroak4",
+    "sounds": [
+      {
+        "name": "arphex:mothspidercroak4",
+        "stream": false
+      }
+    ]
+  },
+  "silence": {
+    "sounds": [
+      {
+        "name": "arphex:short_silent_empty_audio",
+        "stream": false
+      }
+    ]
+  },
+  "genesis_shot": {
+    "subtitle": "subtitles.genesis_shot",
+    "sounds": [
+      {
+        "name": "arphex:genesis_shot",
+        "stream": false
+      }
+    ]
+  }
+}

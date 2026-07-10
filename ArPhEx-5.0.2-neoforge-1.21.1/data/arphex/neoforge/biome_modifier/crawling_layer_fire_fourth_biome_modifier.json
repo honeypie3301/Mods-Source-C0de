@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#arphex:crawling_biomes",
+  "features": "arphex:crawling_layer_fire_fourth",
+  "step": "surface_structures"
+}

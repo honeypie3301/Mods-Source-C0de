@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:mangled_spider_flesh"
+    },
+    {
+      "item": "arphex:necrotic_fang"
+    },
+    {
+      "item": "arphex:silk_slinger"
+    },
+    {
+      "item": "arphex:necrotic_fang"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "result": {
+    "id": "arphex:tarantula_tether",
+    "count": 1
+  }
+}

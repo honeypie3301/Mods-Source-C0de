@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arphex:block/invisible_detector_block"
+    }
+  }
+}

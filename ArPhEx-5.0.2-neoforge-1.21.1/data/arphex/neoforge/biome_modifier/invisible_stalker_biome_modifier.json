@@ -1,0 +1,28 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "badlands",
+    "bamboo_jungle",
+    "beach",
+    "birch_forest",
+    "cherry_grove",
+    "cold_ocean",
+    "dark_forest",
+    "deep_dark",
+    "deep_frozen_ocean",
+    "desert",
+    "dripstone_caves",
+    "forest",
+    "mangrove_swamp",
+    "mushroom_fields",
+    "savanna",
+    "plains",
+    "windswept_forest"
+  ],
+  "spawners": {
+    "type": "arphex:invisible_stalker",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

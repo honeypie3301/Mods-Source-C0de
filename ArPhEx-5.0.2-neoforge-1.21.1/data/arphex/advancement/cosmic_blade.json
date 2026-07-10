@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:scythe_display"
+    },
+    "title": {
+      "translate": "advancements.cosmic_blade.title"
+    },
+    "description": {
+      "translate": "advancements.cosmic_blade.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cosmic_blade_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arphex:singularity_scythe"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10000
+  },
+  "parent": "arphex:destroyer"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "arphex:decadent_desert",
+  "features": "arphex:dust_blob_thick",
+  "step": "raw_generation"
+}

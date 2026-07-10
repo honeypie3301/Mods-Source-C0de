@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/abyssalcrystal",
+    "up": "arphex:block/abyssalcrystal",
+    "north": "arphex:block/abyssalcrystal",
+    "east": "arphex:block/abyssalcrystal",
+    "south": "arphex:block/abyssalcrystal",
+    "west": "arphex:block/abyssalcrystal",
+    "particle": "arphex:block/abyssalcrystal"
+  },
+  "render_type": "solid"
+}

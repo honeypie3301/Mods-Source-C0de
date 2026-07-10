@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/spiderflesh",
+    "up": "arphex:block/spiderflesh",
+    "north": "arphex:block/spiderflesh",
+    "east": "arphex:block/spiderflesh",
+    "south": "arphex:block/spiderflesh",
+    "west": "arphex:block/spiderflesh",
+    "particle": "arphex:block/spiderflesh"
+  },
+  "render_type": "solid"
+}

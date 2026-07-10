@@ -1,0 +1,24 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "dripstone_caves",
+    "lush_caves",
+    "deep_dark",
+    "grove",
+    "jungle",
+    "stony_peaks",
+    "birch_forest",
+    "crimson_forest",
+    "beach",
+    "badlands",
+    "dark_forest",
+    "stony_shore",
+    "river"
+  ],
+  "spawners": {
+    "type": "arphex:roach_riverspawn",
+    "weight": 16,
+    "minCount": 1,
+    "maxCount": 10
+  }
+}

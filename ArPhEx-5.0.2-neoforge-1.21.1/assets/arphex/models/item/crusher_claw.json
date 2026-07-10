@@ -1,0 +1,21 @@
+{
+  "parent": "arphex:custom/crabclaw1",
+  "textures": {
+    "3": "arphex:block/crabclaw",
+    "particle": "arphex:item/constricted"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:crusher_claw_timeused": 1
+      },
+      "model": "arphex:item/crusher_claw_0"
+    },
+    {
+      "predicate": {
+        "arphex:crusher_claw_timeused": 50
+      },
+      "model": "arphex:item/crusher_claw_1"
+    }
+  ]
+}

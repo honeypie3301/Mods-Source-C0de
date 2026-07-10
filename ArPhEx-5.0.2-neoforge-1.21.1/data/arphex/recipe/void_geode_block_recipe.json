@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:void_geode"
+    }
+  },
+  "result": {
+    "id": "arphex:block_of_void_geode",
+    "count": 1
+  }
+}

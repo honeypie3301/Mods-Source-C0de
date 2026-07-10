@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bab",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:hypnotic_hellblaster"
+    },
+    "b": {
+      "item": "arphex:scorch_charge"
+    },
+    "c": {
+      "item": "arphex:infernal_ingot"
+    }
+  },
+  "result": {
+    "id": "arphex:judgement_blaster",
+    "count": 1
+  }
+}

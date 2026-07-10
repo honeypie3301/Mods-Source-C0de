@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:abyss_atomiser"
+    },
+    "title": {
+      "translate": "advancements.reduced_to_atoms.title"
+    },
+    "description": {
+      "translate": "advancements.reduced_to_atoms.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "reduced_to_atoms_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10000
+  },
+  "parent": "arphex:destroyer"
+}

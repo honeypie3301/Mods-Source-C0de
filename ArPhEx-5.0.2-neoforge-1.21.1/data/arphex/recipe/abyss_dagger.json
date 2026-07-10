@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:abyssal_crystal"
+    },
+    {
+      "item": "arphex:dagger_of_dissolution"
+    }
+  ],
+  "result": {
+    "id": "arphex:abyssal_dagger",
+    "count": 1
+  }
+}

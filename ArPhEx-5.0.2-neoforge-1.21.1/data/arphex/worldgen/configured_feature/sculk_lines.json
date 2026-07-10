@@ -1,0 +1,33 @@
+{
+  "type": "arphex:sculk_lines",
+  "config": {
+    "tries": 64,
+    "xz_spread": 8,
+    "y_spread": 8,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:sculk"
+            }
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "arphex:crawling_compost",
+              "minecraft:air"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

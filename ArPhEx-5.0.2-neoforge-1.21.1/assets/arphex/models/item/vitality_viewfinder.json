@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arphex:item/vitalityviewer"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:vitality_viewfinder_lensmode": 1
+      },
+      "model": "arphex:item/vitality_viewfinder_0"
+    }
+  ]
+}

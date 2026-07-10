@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "arphex:trapdoor_dirt",
+    "arphex:trapdoor_grass",
+    "arphex:scorch"
+  ]
+}

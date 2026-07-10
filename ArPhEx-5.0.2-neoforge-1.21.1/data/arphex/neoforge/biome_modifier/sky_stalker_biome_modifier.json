@@ -1,0 +1,22 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "plains",
+    "savanna",
+    "desert",
+    "beach",
+    "forest",
+    "jungle",
+    "mangrove_swamp",
+    "meadow",
+    "mushroom_fields",
+    "river",
+    "swamp"
+  ],
+  "spawners": {
+    "type": "arphex:sky_stalker",
+    "weight": 4,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

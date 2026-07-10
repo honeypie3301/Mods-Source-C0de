@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "arphex:cryptic_complex",
+    "arphex:crawling_canopy"
+  ],
+  "features": "arphex:plants_feature",
+  "step": "surface_structures"
+}

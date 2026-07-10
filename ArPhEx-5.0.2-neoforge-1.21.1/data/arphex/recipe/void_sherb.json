@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:chitin"
+    },
+    "b": {
+      "item": "arphex:void_geode_shard"
+    },
+    "c": {
+      "item": "minecraft:suspicious_stew"
+    }
+  },
+  "result": {
+    "id": "arphex:void_sherbet",
+    "count": 1
+  }
+}

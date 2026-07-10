@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:ectoplasm"
+    },
+    "b": {
+      "item": "arphex:chitin"
+    }
+  },
+  "result": {
+    "id": "arphex:scarab_seal",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arphex:item/tormentor_summoner"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:tormentor_summoner_empty": 1
+      },
+      "model": "arphex:item/tormentor_summoner_0"
+    }
+  ]
+}

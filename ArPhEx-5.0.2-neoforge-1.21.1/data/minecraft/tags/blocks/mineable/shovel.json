@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "arphex:spider_cocoon_villager",
+    "arphex:spider_cocoon_skeleton",
+    "arphex:spider_cocoon_creeper",
+    "arphex:spider_egg",
+    "arphex:silken_soil",
+    "arphex:scorched_sand",
+    "arphex:crawling_compost",
+    "arphex:decadent_dust",
+    "arphex:crawling_clay"
+  ]
+}

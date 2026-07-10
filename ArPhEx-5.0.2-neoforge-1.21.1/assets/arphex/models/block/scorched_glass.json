@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/scorched_glass",
+    "up": "arphex:block/scorched_glass",
+    "north": "arphex:block/scorched_glass",
+    "east": "arphex:block/scorched_glass",
+    "south": "arphex:block/scorched_glass",
+    "west": "arphex:block/scorched_glass",
+    "particle": "arphex:block/scorched_glass"
+  },
+  "render_type": "translucent"
+}

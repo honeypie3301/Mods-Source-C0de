@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/scorch",
+  "textures": {
+    "all": "arphex:block/scorch",
+    "particle": "arphex:block/blankparticle",
+    "missing": "arphex:block/scorch"
+  },
+  "render_type": "translucent"
+}

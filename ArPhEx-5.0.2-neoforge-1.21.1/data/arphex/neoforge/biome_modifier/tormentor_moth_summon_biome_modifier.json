@@ -1,0 +1,26 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "plains",
+    "desert",
+    "dripstone_caves",
+    "lush_caves",
+    "sunflower_plains",
+    "snowy_plains",
+    "meadow",
+    "snowy_taiga",
+    "taiga",
+    "jungle",
+    "grove",
+    "savanna",
+    "dark_forest",
+    "stony_peaks",
+    "sparse_jungle"
+  ],
+  "spawners": {
+    "type": "arphex:tormentor_moth_summon",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

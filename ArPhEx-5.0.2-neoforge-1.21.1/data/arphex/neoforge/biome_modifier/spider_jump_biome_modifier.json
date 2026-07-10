@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "bamboo_jungle",
+    "jungle",
+    "savanna",
+    "savanna_plateau",
+    "taiga",
+    "birch_forest"
+  ],
+  "spawners": {
+    "type": "arphex:spider_jump",
+    "weight": 8,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

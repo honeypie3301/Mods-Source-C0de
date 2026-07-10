@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:abyssal_shard"
+    },
+    "title": {
+      "translate": "advancements.moth_ward.title"
+    },
+    "description": {
+      "translate": "advancements.moth_ward.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "moth_ward_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "minecraft:adventure/kill_a_mob"
+}

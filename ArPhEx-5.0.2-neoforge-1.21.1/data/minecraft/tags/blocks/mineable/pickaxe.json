@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "arphex:silken_stone",
+    "arphex:block_of_entropy_matrix",
+    "arphex:block_of_time_prism",
+    "arphex:heavy_chitin_block",
+    "arphex:scorched_glass",
+    "arphex:chitin_block",
+    "arphex:exquisite_ore",
+    "arphex:crawling_barrier",
+    "arphex:block_of_void_geode",
+    "arphex:block_of_abyssal_crystal",
+    "arphex:block_of_fire_opal"
+  ]
+}

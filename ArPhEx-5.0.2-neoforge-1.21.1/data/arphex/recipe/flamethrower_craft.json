@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bab",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:scorch_charge"
+    },
+    "b": {
+      "item": "minecraft:blaze_rod"
+    },
+    "c": {
+      "item": "arphex:chitin"
+    },
+    "d": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "id": "arphex:formic_fireblaster",
+    "count": 1
+  }
+}

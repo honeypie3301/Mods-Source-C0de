@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:core_of_eternal_suffering"
+    }
+  ],
+  "result": {
+    "id": "arphex:hedonic_gem",
+    "count": 8
+  }
+}

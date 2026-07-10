@@ -1,0 +1,46 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "effects": {
+    "particle": {
+      "options": {
+        "type": "arphex:locust_swarm"
+      },
+      "probability": 0.00001
+    },
+    "foliage_color": -10395047,
+    "grass_color": -9737372,
+    "sky_color": -3547288,
+    "fog_color": -3547288,
+    "water_color": -14015998,
+    "water_fog_color": -14475506
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:patch_dead_bush_2"
+    ],
+    []
+  ]
+}

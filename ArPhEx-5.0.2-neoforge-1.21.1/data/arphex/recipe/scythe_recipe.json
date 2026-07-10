@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:mantis_machete"
+    },
+    "b": {
+      "item": "arphex:spacetime_ingot"
+    },
+    "c": {
+      "item": "arphex:hedonic_gem"
+    },
+    "d": {
+      "item": "arphex:oblivion_ray"
+    },
+    "e": {
+      "item": "arphex:visionary_spear"
+    }
+  },
+  "result": {
+    "id": "arphex:singularity_scythe",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/decadentdust",
+    "up": "arphex:block/decadentdust",
+    "north": "arphex:block/decadentdust",
+    "east": "arphex:block/decadentdust",
+    "south": "arphex:block/decadentdust",
+    "west": "arphex:block/decadentdust",
+    "particle": "arphex:block/decadentdust"
+  },
+  "render_type": "solid"
+}

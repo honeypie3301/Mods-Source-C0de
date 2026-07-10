@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:mantle_of_vitality"
+    },
+    "title": {
+      "translate": "advancements.super_immunity.title"
+    },
+    "description": {
+      "translate": "advancements.super_immunity.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "super_immunity_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "arphex:moth_ward"
+}

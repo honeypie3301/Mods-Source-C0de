@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "arphex:block/web_line"
+    },
+    "facing=east": {
+      "model": "arphex:block/web_line",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "arphex:block/web_line",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arphex:block/web_line",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "arphex:giant_lush_bush",
+  "config": {
+    "structure": "arphex:giant_lush_bush",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      0,
+      -3,
+      0
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cave_air",
+    "minecraft:mud",
+    "minecraft:polished_blackstone_stairs",
+    "minecraft:light_gray_concrete_powder",
+    "arphex:crawling_clay",
+    "minecraft:obsidian",
+    "minecraft:stone",
+    "minecraft:cobweb",
+    "minecraft:mycelium",
+    "minecraft:muddy_mangrove_roots"
+  ]
+}

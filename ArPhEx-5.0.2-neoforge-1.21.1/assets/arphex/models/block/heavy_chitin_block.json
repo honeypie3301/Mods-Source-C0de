@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/heavychitin",
+    "up": "arphex:block/heavychitin",
+    "north": "arphex:block/heavychitin",
+    "east": "arphex:block/heavychitin",
+    "south": "arphex:block/heavychitin",
+    "west": "arphex:block/heavychitin",
+    "particle": "arphex:block/heavychitin"
+  },
+  "render_type": "solid"
+}

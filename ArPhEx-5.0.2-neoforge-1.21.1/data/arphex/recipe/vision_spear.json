@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:time_prism"
+    },
+    "b": {
+      "item": "arphex:black_widow_bow"
+    },
+    "c": {
+      "item": "arphex:spear_of_paralysis"
+    }
+  },
+  "result": {
+    "id": "arphex:visionary_spear",
+    "count": 1
+  }
+}

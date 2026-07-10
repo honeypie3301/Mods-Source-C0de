@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:elytra"
+    },
+    "b": {
+      "item": "arphex:hedonic_gem"
+    },
+    "c": {
+      "item": "arphex:infernal_chestplate"
+    },
+    "d": {
+      "item": "arphex:spectral_chestplate"
+    },
+    "e": {
+      "item": "arphex:umbral_chestplate"
+    }
+  },
+  "result": {
+    "id": "arphex:eternal_chestplate",
+    "count": 1
+  }
+}

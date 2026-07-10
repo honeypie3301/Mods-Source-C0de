@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:scorch_charge"
+    },
+    "b": {
+      "item": "arphex:fire_opal_shard"
+    },
+    "c": {
+      "item": "minecraft:suspicious_stew"
+    }
+  },
+  "result": {
+    "id": "arphex:scorched_soup",
+    "count": 1
+  }
+}

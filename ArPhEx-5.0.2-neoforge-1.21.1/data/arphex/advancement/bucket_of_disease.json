@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:bucket_of_maggots"
+    },
+    "title": {
+      "translate": "advancements.bucket_of_disease.title"
+    },
+    "description": {
+      "translate": "advancements.bucket_of_disease.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bucket_of_disease_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "arphex:moth_ward"
+}

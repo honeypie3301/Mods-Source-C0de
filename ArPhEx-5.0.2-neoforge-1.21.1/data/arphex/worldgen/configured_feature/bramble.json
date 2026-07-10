@@ -1,0 +1,14 @@
+{
+  "type": "arphex:bramble",
+  "config": {
+    "structure": "arphex:bramble",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      0,
+      -1,
+      0
+    ]
+  }
+}

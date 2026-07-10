@@ -1,0 +1,9 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.spider_recluse.empty": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

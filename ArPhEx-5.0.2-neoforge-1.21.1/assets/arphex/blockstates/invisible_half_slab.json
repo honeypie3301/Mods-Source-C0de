@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "arphex:block/invisible_half_slab"
+    },
+    "type=top": {
+      "model": "arphex:block/invisible_half_slab_top"
+    },
+    "type=double": {
+      "model": "arphex:block/invisible_half_slab_full"
+    }
+  }
+}

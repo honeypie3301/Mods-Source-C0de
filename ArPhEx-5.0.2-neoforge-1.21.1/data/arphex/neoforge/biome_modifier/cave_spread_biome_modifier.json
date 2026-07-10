@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "arphex:tormented_tunnels",
+  "features": "arphex:cave_spread",
+  "step": "raw_generation"
+}

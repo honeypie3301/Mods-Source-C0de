@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "arphex:block/cobweb_temp",
+    "particle": "arphex:block/cobweb_temp"
+  },
+  "render_type": "cutout"
+}

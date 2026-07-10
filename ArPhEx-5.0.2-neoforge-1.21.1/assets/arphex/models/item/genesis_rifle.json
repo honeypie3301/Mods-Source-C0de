@@ -1,0 +1,15 @@
+{
+  "parent": "arphex:custom/genesisrifle",
+  "textures": {
+    "0": "arphex:block/genesisrifle",
+    "particle": "arphex:item/genesis_rifle"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:genesis_rifle_using_time": 1
+      },
+      "model": "arphex:item/genesis_rifle_0"
+    }
+  ]
+}

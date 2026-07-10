@@ -1,0 +1,15 @@
+{
+  "parent": "arphex:custom/abyssascendant.geo",
+  "textures": {
+    "1": "arphex:block/chitin_block",
+    "particle": "arphex:item/spearreverse"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:infinite_torment_random": 1
+      },
+      "model": "arphex:item/infinite_torment_0"
+    }
+  ]
+}

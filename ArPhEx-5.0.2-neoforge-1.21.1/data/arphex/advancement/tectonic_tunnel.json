@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:tectonic_tunneler"
+    },
+    "title": {
+      "translate": "advancements.tectonic_tunnel.title"
+    },
+    "description": {
+      "translate": "advancements.tectonic_tunnel.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tectonic_tunnel_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5000
+  },
+  "parent": "minecraft:adventure/kill_a_mob"
+}

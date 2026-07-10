@@ -1,0 +1,6 @@
+{
+  "parent": "arphex:displaysettings/scythe_display",
+  "textures": {
+    "layer0": "arphex:item/gold_scythe"
+  }
+}

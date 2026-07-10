@@ -1,0 +1,80 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.funnelweb.idle": {
+			"animation_length": 0.5,
+			"bones": {
+				"funnelspider": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 14, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"rlegs": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, -8, 0]
+						},
+						"0.25": {
+							"vector": [0, 15, 0]
+						},
+						"0.5": {
+							"vector": [0, -8, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [-0.3, 0, 0]
+						},
+						"0.25": {
+							"vector": [0.3, 0, 0]
+						},
+						"0.5": {
+							"vector": [-0.3, 0, 0]
+						}
+					}
+				},
+				"llegs": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, -7, 0]
+						},
+						"0.25": {
+							"vector": [0, 14, 0]
+						},
+						"0.5": {
+							"vector": [0, -7, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [-0.3, 0, 0]
+						},
+						"0.25": {
+							"vector": [0.3, 0, 0]
+						},
+						"0.5": {
+							"vector": [-0.3, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

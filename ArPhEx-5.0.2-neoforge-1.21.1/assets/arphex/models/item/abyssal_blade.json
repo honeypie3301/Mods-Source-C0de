@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/abyssalblade.geo",
+  "textures": {
+    "1": "arphex:block/abyssalpick",
+    "particle": "arphex:item/abyssal_detector"
+  }
+}

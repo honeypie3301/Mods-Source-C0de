@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bab",
+    "cac"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:honeycomb_block"
+    },
+    "b": {
+      "item": "arphex:necrotic_fang"
+    },
+    "c": {
+      "item": "arphex:scorch_charge"
+    }
+  },
+  "result": {
+    "id": "arphex:hornet_hailstorm",
+    "count": 1
+  }
+}

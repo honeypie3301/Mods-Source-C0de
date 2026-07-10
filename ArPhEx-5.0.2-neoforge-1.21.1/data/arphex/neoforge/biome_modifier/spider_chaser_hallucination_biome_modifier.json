@@ -1,0 +1,27 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "arphex:crawling_canopy",
+    "jungle",
+    "bamboo_jungle",
+    "beach",
+    "birch_forest",
+    "cherry_grove",
+    "cold_ocean",
+    "crimson_forest",
+    "frozen_peaks",
+    "dripstone_caves",
+    "lush_caves",
+    "swamp",
+    "soul_sand_valley",
+    "savanna",
+    "windswept_savanna",
+    "dark_forest"
+  ],
+  "spawners": {
+    "type": "arphex:spider_chaser_hallucination",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

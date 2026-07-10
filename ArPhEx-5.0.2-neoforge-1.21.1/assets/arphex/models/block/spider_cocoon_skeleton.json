@@ -1,0 +1,10 @@
+{
+  "parent": "arphex:custom/cocoon_skeleton",
+  "textures": {
+    "all": "arphex:block/spider_cocoon",
+    "particle": "arphex:block/spider_cocoon",
+    "0": "arphex:block/spider_cocoon",
+    "4": "arphex:block/skeleton_pale"
+  },
+  "render_type": "translucent"
+}

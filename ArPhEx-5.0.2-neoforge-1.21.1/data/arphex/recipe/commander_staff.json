@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:golden_apple"
+    },
+    "b": {
+      "item": "arphex:burning_glands"
+    },
+    "c": {
+      "item": "arphex:antenna"
+    },
+    "d": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "result": {
+    "id": "arphex:ant_commander",
+    "count": 1
+  }
+}

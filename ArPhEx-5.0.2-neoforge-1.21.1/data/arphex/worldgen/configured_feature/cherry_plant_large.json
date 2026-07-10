@@ -1,0 +1,14 @@
+{
+  "type": "arphex:cherry_plant_large",
+  "config": {
+    "structure": "arphex:cherry_plant_big",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      0,
+      -3,
+      0
+    ]
+  }
+}

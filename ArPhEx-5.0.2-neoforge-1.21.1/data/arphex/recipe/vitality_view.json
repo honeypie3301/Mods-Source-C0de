@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:antenna"
+    },
+    {
+      "item": "minecraft:lodestone"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    }
+  ],
+  "result": {
+    "id": "arphex:vitality_viewfinder",
+    "count": 1
+  }
+}

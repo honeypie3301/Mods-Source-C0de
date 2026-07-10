@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:hypnotic_hellblaster"
+    },
+    "title": {
+      "translate": "advancements.hellblaster_obtain.title"
+    },
+    "description": {
+      "translate": "advancements.hellblaster_obtain.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hellblaster_obtain_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:fireblaster_obtain"
+}

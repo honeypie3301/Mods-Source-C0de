@@ -1,0 +1,14 @@
+{
+  "type": "arphex:hang_egg",
+  "config": {
+    "structure": "arphex:hang_egg_web",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      0,
+      -7,
+      0
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:spider_flat_jar"
+    },
+    "title": {
+      "translate": "advancements.huntsman_jar.title"
+    },
+    "description": {
+      "translate": "advancements.huntsman_jar.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "huntsman_jar_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "arphex:moth_ward"
+}

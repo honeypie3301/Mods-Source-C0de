@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:entropy_matrix"
+    },
+    {
+      "item": "arphex:prowler_pack"
+    }
+  ],
+  "result": {
+    "id": "arphex:singularity_satchel",
+    "count": 1
+  }
+}

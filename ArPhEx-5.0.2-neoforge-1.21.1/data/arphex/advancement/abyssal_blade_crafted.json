@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:abyssal_blade"
+    },
+    "title": {
+      "translate": "advancements.abyssal_blade_crafted.title"
+    },
+    "description": {
+      "translate": "advancements.abyssal_blade_crafted.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "abyssal_blade_crafted_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:moth_kill"
+}

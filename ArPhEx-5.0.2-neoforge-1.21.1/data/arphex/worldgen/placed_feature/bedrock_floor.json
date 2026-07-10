@@ -1,0 +1,14 @@
+{
+  "feature": "arphex:bedrock_floor",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
+      }
+    }
+  ]
+}

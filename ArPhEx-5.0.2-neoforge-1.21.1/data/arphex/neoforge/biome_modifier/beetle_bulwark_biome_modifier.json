@@ -1,0 +1,18 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "dripstone_caves",
+    "lush_caves",
+    "deep_dark",
+    "grove",
+    "jungle",
+    "stony_peaks",
+    "birch_forest"
+  ],
+  "spawners": {
+    "type": "arphex:beetle_bulwark",
+    "weight": 128,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

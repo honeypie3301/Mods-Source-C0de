@@ -1,0 +1,9 @@
+{
+  "type": "arphex:ant_hill_crawling",
+  "config": {
+    "structure": "arphex:anthill_upside",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "feature": "arphex:crawling_layer_third",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 120
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/string_line",
+  "textures": {
+    "all": "arphex:block/web_line",
+    "particle": "arphex:block/web_line",
+    "0": "arphex:block/web_line"
+  },
+  "render_type": "translucent"
+}

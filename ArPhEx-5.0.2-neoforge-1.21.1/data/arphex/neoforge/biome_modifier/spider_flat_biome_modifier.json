@@ -1,0 +1,22 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "savanna",
+    "windswept_savanna",
+    "savanna_plateau",
+    "deep_dark",
+    "crimson_forest",
+    "dark_forest",
+    "mushroom_fields",
+    "desert",
+    "eroded_badlands",
+    "dripstone_caves",
+    "lush_caves"
+  ],
+  "spawners": {
+    "type": "arphex:spider_flat",
+    "weight": 8,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

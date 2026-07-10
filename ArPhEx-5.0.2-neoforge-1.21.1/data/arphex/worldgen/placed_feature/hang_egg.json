@@ -1,0 +1,28 @@
+{
+  "feature": "arphex:hang_egg",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 100
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 2
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 140
+        },
+        "max_inclusive": {
+          "absolute": 229
+        }
+      }
+    }
+  ]
+}

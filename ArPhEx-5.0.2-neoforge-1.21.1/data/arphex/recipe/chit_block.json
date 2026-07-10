@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:chitin"
+    }
+  },
+  "result": {
+    "id": "arphex:chitin_block",
+    "count": 1
+  }
+}

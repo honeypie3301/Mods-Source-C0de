@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "arphex:chitin_armour_tier_3_boots"
+  },
+  "addition": {
+    "item": "arphex:heavy_chitin"
+  },
+  "result": {
+    "id": "arphex:juggernaut_boots"
+  }
+}

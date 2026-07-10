@@ -1,0 +1,8 @@
+{
+  "type": "arphex:crawling_layer_fire",
+  "config": {
+    "state": {
+      "Name": "minecraft:mossy_cobblestone"
+    }
+  }
+}

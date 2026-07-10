@@ -1,0 +1,14 @@
+{
+  "type": "arphex:cryptic_six",
+  "config": {
+    "structure": "arphex:cryptic_building_6",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:stone",
+    "offset": [
+      0,
+      -1,
+      0
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arphex:item/miniboss_matriarch_egg"
+  }
+}

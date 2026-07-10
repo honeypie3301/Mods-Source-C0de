@@ -1,0 +1,42 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "badlands",
+    "bamboo_jungle",
+    "beach",
+    "birch_forest",
+    "cherry_grove",
+    "dark_forest",
+    "desert",
+    "dripstone_caves",
+    "eroded_badlands",
+    "flower_forest",
+    "forest",
+    "frozen_peaks",
+    "frozen_river",
+    "grove",
+    "jungle",
+    "lush_caves",
+    "mangrove_swamp",
+    "meadow",
+    "mushroom_fields",
+    "old_growth_birch_forest",
+    "old_growth_spruce_taiga",
+    "plains",
+    "savanna",
+    "snowy_taiga",
+    "sparse_jungle",
+    "stony_peaks",
+    "sunflower_plains",
+    "swamp",
+    "taiga",
+    "windswept_hills",
+    "wooded_badlands"
+  ],
+  "spawners": {
+    "type": "arphex:pure_stalking",
+    "weight": 4,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

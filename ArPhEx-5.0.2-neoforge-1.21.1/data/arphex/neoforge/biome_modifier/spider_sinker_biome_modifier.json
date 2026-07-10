@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "beach",
+    "birch_forest",
+    "dark_forest",
+    "flower_forest",
+    "forest",
+    "mangrove_swamp",
+    "river",
+    "swamp"
+  ],
+  "spawners": {
+    "type": "arphex:spider_sinker",
+    "weight": 24,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

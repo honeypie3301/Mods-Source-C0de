@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:cooked_hemolymph"
+    },
+    "b": {
+      "item": "arphex:abyssal_shard"
+    },
+    "c": {
+      "item": "minecraft:suspicious_stew"
+    }
+  },
+  "result": {
+    "id": "arphex:abyssal_stew",
+    "count": 1
+  }
+}

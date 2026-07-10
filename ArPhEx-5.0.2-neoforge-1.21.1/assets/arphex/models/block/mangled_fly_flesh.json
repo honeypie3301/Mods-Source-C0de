@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/flyflesh",
+    "up": "arphex:block/flyflesh",
+    "north": "arphex:block/flyflesh",
+    "east": "arphex:block/flyflesh",
+    "south": "arphex:block/flyflesh",
+    "west": "arphex:block/flyflesh",
+    "particle": "arphex:block/flyflesh"
+  },
+  "render_type": "solid"
+}

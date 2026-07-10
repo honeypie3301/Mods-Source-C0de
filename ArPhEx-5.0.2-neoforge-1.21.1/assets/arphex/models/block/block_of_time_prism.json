@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/timeprism",
+    "up": "arphex:block/timeprism",
+    "north": "arphex:block/timeprism",
+    "east": "arphex:block/timeprism",
+    "south": "arphex:block/timeprism",
+    "west": "arphex:block/timeprism",
+    "particle": "arphex:block/timeprism"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:core_of_eternal_suffering"
+    },
+    "title": {
+      "translate": "advancements.tormentor_summoned.title"
+    },
+    "description": {
+      "translate": "advancements.tormentor_summoned.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tormentor_summoned_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:darkness_control"
+}

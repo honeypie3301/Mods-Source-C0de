@@ -1,0 +1,24 @@
+{
+  "feature": "arphex:lush_bush",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 73
+        },
+        "max_inclusive": {
+          "absolute": 108
+        }
+      }
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 1
+    }
+  ]
+}

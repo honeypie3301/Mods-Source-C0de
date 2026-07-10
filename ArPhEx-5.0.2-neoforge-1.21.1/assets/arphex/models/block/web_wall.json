@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/flat_wall",
+  "textures": {
+    "all": "arphex:block/web_wall",
+    "particle": "arphex:block/web_wall",
+    "0": "arphex:block/web_wall"
+  },
+  "render_type": "translucent"
+}

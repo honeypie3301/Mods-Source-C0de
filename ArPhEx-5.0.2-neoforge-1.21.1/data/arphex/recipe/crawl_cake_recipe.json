@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:bloodworm_grub"
+    },
+    {
+      "item": "arphex:crawling_compost_chunk"
+    },
+    {
+      "item": "arphex:roach_nymph"
+    },
+    {
+      "item": "arphex:raw_hemolymph"
+    },
+    {
+      "item": "minecraft:cake"
+    },
+    {
+      "item": "arphex:raw_hemolymph"
+    },
+    {
+      "item": "arphex:maggot_grub"
+    },
+    {
+      "item": "arphex:crawling_compost_chunk"
+    },
+    {
+      "item": "arphex:locust_larvae"
+    }
+  ],
+  "result": {
+    "id": "arphex:crawling_cake",
+    "count": 1
+  }
+}

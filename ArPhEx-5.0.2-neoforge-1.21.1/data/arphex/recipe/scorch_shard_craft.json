@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:burning_glands"
+    },
+    "b": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "result": {
+    "id": "arphex:scorch_charge",
+    "count": 1
+  }
+}

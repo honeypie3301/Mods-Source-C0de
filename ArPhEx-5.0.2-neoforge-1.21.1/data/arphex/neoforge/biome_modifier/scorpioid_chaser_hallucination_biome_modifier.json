@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "nether_wastes",
+    "warped_forest",
+    "crimson_forest"
+  ],
+  "spawners": {
+    "type": "arphex:scorpioid_chaser_hallucination",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 6
+  }
+}

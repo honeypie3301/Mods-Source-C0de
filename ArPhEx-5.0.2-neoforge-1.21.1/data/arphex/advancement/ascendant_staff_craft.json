@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:ascendant_staff"
+    },
+    "title": {
+      "translate": "advancements.ascendant_staff_craft.title"
+    },
+    "description": {
+      "translate": "advancements.ascendant_staff_craft.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ascendant_staff_craft_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:scorpioid_killed"
+}

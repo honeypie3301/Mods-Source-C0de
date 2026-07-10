@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:entropy_matrix_shard"
+    },
+    {
+      "item": "arphex:entropy_matrix_shard"
+    },
+    {
+      "item": "arphex:entropy_matrix_shard"
+    },
+    {
+      "item": "arphex:entropy_matrix_shard"
+    }
+  ],
+  "result": {
+    "id": "arphex:entropy_matrix",
+    "count": 1
+  }
+}

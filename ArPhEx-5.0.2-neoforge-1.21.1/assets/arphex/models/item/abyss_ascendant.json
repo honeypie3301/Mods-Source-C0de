@@ -1,0 +1,27 @@
+{
+  "parent": "arphex:custom/abyssascendant.geo",
+  "textures": {
+    "1": "arphex:block/abyssalascendant",
+    "particle": "arphex:item/abyasctempl"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:abyss_ascendant_poweredup": 0
+      },
+      "model": "arphex:item/abyss_ascendant_0"
+    },
+    {
+      "predicate": {
+        "arphex:abyss_ascendant_anim": 1
+      },
+      "model": "arphex:item/abyss_ascendant_1"
+    },
+    {
+      "predicate": {
+        "arphex:abyss_ascendant_fullpower": 0
+      },
+      "model": "arphex:item/abyss_ascendant_2"
+    }
+  ]
+}

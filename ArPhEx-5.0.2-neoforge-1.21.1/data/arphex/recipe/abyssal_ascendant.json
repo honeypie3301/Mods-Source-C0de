@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:scorch_charge"
+    },
+    "b": {
+      "item": "arphex:ascendant_staff"
+    },
+    "c": {
+      "item": "arphex:abyssal_blade"
+    },
+    "d": {
+      "item": "arphex:umbral_ingot"
+    }
+  },
+  "result": {
+    "id": "arphex:abyss_ascendant",
+    "count": 1
+  }
+}

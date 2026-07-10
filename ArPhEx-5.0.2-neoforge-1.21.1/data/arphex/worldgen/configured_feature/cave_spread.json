@@ -1,0 +1,12 @@
+{
+  "type": "arphex:cave_spread",
+  "config": {
+    "target": {
+      "Name": "minecraft:air"
+    },
+    "state": {
+      "Name": "minecraft:deepslate"
+    },
+    "radius": 12
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "old_growth_spruce_taiga",
+    "taiga",
+    "savanna"
+  ],
+  "spawners": {
+    "type": "arphex:random_termite",
+    "weight": 8,
+    "minCount": 1,
+    "maxCount": 5
+  }
+}

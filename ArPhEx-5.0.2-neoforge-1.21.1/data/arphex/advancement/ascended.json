@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:ascended_cube"
+    },
+    "title": {
+      "translate": "advancements.ascended.title"
+    },
+    "description": {
+      "translate": "advancements.ascended.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ascended_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25000
+  },
+  "parent": "arphex:destroyer"
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "arphex:block/spider_cocoon_player"
+    },
+    "facing=east": {
+      "model": "arphex:block/spider_cocoon_player",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "arphex:block/spider_cocoon_player",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arphex:block/spider_cocoon_player",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "arphex:block/spider_cocoon_player",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "arphex:block/spider_cocoon_player",
+      "x": 90
+    }
+  }
+}

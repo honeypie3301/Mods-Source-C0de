@@ -1,0 +1,54 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.giantweb",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 8,
+				"visible_bounds_offset": [0, 3, 0]
+			},
+			"bones": [
+				{
+					"name": "shape",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [0.025, 0, -13.8],
+							"size": [0.275, 37, 27.3],
+							"uv": {
+								"north": {"uv": [30.75, 1.25], "uv_size": [-1.25, 29]},
+								"east": {"uv": [0, 0], "uv_size": [27.3, 32]},
+								"south": {"uv": [30.75, 0], "uv_size": [-2, 32]},
+								"west": {"uv": [27.3, 0], "uv_size": [-27.3, 32]},
+								"up": {"uv": [29.25, 2.25], "uv_size": [2, 27]},
+								"down": {"uv": [30.75, 32], "uv_size": [-1.5, -32]}
+							}
+						}
+					]
+				},
+				{
+					"name": "inner",
+					"parent": "shape",
+					"pivot": [-0.7, 0, -12.8],
+					"cubes": [
+						{
+							"origin": [0.025, 4.025, 13.1],
+							"size": [0.275, 25.675, 0.4],
+							"uv": {
+								"north": {"uv": [30.5, 0], "uv_size": [1.5, 32]},
+								"east": {"uv": [30.5, 0], "uv_size": [1.5, 32]},
+								"south": {"uv": [32, 0], "uv_size": [-1.5, 32]},
+								"west": {"uv": [32, 0], "uv_size": [-1.5, 32]},
+								"up": {"uv": [32, 0], "uv_size": [-1, 9]},
+								"down": {"uv": [32, 12.5], "uv_size": [-1, -12.5]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

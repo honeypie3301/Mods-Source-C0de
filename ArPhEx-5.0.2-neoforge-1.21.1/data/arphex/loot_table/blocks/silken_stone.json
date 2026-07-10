@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "arphex:blocks/silken_stone",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arphex:silken_stone"
+        }
+      ]
+    }
+  ]
+}

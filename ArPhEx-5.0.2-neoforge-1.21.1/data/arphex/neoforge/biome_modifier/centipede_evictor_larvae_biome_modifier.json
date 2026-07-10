@@ -1,0 +1,26 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "beach",
+    "birch_forest",
+    "crimson_forest",
+    "soul_sand_valley",
+    "nether_wastes",
+    "dark_forest",
+    "desert",
+    "deep_dark",
+    "dripstone_caves",
+    "eroded_badlands",
+    "jungle",
+    "lush_caves",
+    "mangrove_swamp",
+    "mushroom_fields",
+    "swamp"
+  ],
+  "spawners": {
+    "type": "arphex:centipede_evictor_larvae",
+    "weight": 32,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

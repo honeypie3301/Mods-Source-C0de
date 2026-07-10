@@ -1,0 +1,16 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "badlands",
+    "desert",
+    "eroded_badlands",
+    "savanna",
+    "savanna_plateau"
+  ],
+  "spawners": {
+    "type": "arphex:locust_landscourge",
+    "weight": 16,
+    "minCount": 5,
+    "maxCount": 40
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "badlands",
+    "bamboo_jungle",
+    "birch_forest",
+    "dark_forest",
+    "deep_dark",
+    "desert",
+    "dripstone_caves",
+    "lush_caves",
+    "mangrove_swamp",
+    "jungle",
+    "windswept_forest",
+    "sparse_jungle",
+    "old_growth_birch_forest",
+    "basalt_deltas"
+  ],
+  "spawners": {
+    "type": "arphex:millipede_marauder",
+    "weight": 32,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

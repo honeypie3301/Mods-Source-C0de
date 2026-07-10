@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "arphex:block/scorch_torch_wall"
+    },
+    "facing=east": {
+      "model": "arphex:block/scorch_torch_wall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "arphex:block/scorch_torch_wall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arphex:block/scorch_torch_wall",
+      "y": 270
+    }
+  }
+}

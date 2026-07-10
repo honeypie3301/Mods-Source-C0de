@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "arphex:tormented_tunnels",
+  "features": "arphex:cave_random",
+  "step": "top_layer_modification"
+}

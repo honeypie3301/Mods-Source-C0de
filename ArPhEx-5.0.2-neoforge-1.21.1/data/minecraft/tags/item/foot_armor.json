@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "arphex:immortal_boots",
+    "arphex:spacetime_boots",
+    "arphex:juggernaut_boots",
+    "arphex:vitality_armour_boots",
+    "arphex:chitin_armour_tier_2_boots",
+    "arphex:chitin_armour_tier_3_boots",
+    "arphex:chitin_armour_boots",
+    "arphex:eternal_boots",
+    "arphex:spectral_boots",
+    "arphex:umbral_boots",
+    "arphex:infernal_boots"
+  ]
+}

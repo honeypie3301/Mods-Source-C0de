@@ -1,0 +1,28 @@
+{
+  "feature": "arphex:medium_web",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 100
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 2
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 128
+        },
+        "max_inclusive": {
+          "absolute": 220
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:bane_of_the_darkness"
+    },
+    "title": {
+      "translate": "advancements.darkness_bane.title"
+    },
+    "description": {
+      "translate": "advancements.darkness_bane.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "darkness_bane_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "arphex:moth_ward"
+}

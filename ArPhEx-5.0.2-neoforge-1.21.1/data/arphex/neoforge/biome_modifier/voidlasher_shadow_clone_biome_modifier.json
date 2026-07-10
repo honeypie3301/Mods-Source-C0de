@@ -1,0 +1,16 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "end_barrens",
+    "end_highlands",
+    "end_midlands",
+    "small_end_islands",
+    "the_end"
+  ],
+  "spawners": {
+    "type": "arphex:voidlasher_shadow_clone",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

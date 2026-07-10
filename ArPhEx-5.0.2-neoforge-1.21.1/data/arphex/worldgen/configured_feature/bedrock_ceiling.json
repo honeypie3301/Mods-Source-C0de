@@ -1,0 +1,7 @@
+{
+  "type": "arphex:structure_feature",
+  "config": {
+    "structure": "arphex:bedrock_floor",
+    "ignored_blocks": "minecraft:air"
+  }
+}

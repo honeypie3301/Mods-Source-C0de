@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/darkness_bane_plant",
+  "textures": {
+    "all": "arphex:block/blueglowplant",
+    "particle": "arphex:block/blueglowplant",
+    "0": "arphex:block/blueglowplant"
+  },
+  "render_type": "cutout"
+}

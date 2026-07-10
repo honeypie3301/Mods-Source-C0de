@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/funnel_web",
+  "textures": {
+    "all": "arphex:block/funnel_web",
+    "particle": "arphex:block/funnel_web",
+    "0": "arphex:block/funnel_web"
+  },
+  "render_type": "cutout"
+}

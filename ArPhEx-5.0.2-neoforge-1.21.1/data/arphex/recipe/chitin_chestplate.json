@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bab",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:chitin"
+    },
+    "b": {
+      "item": "minecraft:string"
+    },
+    "c": {
+      "item": "arphex:burning_glands"
+    }
+  },
+  "result": {
+    "id": "arphex:chitin_armour_chestplate",
+    "count": 1
+  }
+}

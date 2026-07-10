@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "badlands",
+    "bamboo_jungle",
+    "beach",
+    "desert",
+    "dripstone_caves",
+    "lush_caves",
+    "mangrove_swamp",
+    "dark_forest",
+    "jagged_peaks",
+    "jungle",
+    "wooded_badlands",
+    "windswept_savanna"
+  ],
+  "spawners": {
+    "type": "arphex:hornet_harbinger_giant",
+    "weight": 16,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

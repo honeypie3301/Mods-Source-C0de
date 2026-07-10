@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/antnest",
+    "up": "arphex:block/antnest",
+    "north": "arphex:block/antnest",
+    "east": "arphex:block/antnest",
+    "south": "arphex:block/antnest",
+    "west": "arphex:block/antnest",
+    "particle": "arphex:block/antnest"
+  },
+  "render_type": "translucent"
+}

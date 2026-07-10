@@ -1,0 +1,104 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arphex:item/crawlingcompassbase"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 0
+      },
+      "model": "arphex:item/crawling_compass_0"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 1
+      },
+      "model": "arphex:item/crawling_compass_1"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 2
+      },
+      "model": "arphex:item/crawling_compass_2"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 3
+      },
+      "model": "arphex:item/crawling_compass_3"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 4
+      },
+      "model": "arphex:item/crawling_compass_4"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 5
+      },
+      "model": "arphex:item/crawling_compass_5"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 6
+      },
+      "model": "arphex:item/crawling_compass_6"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 7
+      },
+      "model": "arphex:item/crawling_compass_7"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 8
+      },
+      "model": "arphex:item/crawling_compass_8"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 9
+      },
+      "model": "arphex:item/crawling_compass_9"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 10
+      },
+      "model": "arphex:item/crawling_compass_10"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 11
+      },
+      "model": "arphex:item/crawling_compass_11"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 12
+      },
+      "model": "arphex:item/crawling_compass_12"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 13
+      },
+      "model": "arphex:item/crawling_compass_13"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 14
+      },
+      "model": "arphex:item/crawling_compass_14"
+    },
+    {
+      "predicate": {
+        "arphex:crawling_compass_compass1": 15
+      },
+      "model": "arphex:item/crawling_compass_15"
+    }
+  ]
+}

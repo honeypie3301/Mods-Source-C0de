@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "arphex:crawling_compost_chunk",
+    "arphex:bloodworm_grub",
+    "arphex:locust_larvae",
+    "arphex:roach_nymph",
+    "arphex:maggot_grub"
+  ]
+}

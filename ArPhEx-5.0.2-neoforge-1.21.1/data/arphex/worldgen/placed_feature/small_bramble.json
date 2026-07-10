@@ -1,0 +1,44 @@
+{
+  "feature": "arphex:small_bramble",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": {
+              "type": "minecraft:uniform",
+              "min_inclusive": {
+                "absolute": 122
+              },
+              "max_inclusive": {
+                "absolute": 210
+              }
+            },
+            "weight": 1
+          },
+          {
+            "data": {
+              "type": "minecraft:uniform",
+              "min_inclusive": {
+                "absolute": 235
+              },
+              "max_inclusive": {
+                "absolute": 245
+              }
+            },
+            "weight": 1
+          }
+        ]
+      }
+    }
+  ]
+}

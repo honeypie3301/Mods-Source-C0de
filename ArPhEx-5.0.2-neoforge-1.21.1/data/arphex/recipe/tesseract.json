@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:arthropod_antenna"
+    },
+    "b": {
+      "item": "arphex:warp_staff"
+    },
+    "c": {
+      "item": "arphex:entropy_matrix"
+    },
+    "d": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "result": {
+    "id": "arphex:tesseract_transporter",
+    "count": 2
+  }
+}

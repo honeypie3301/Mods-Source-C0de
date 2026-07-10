@@ -1,0 +1,31 @@
+{
+  "type": "arphex:mega_web",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "arphex:structure_feature",
+          "config": {
+            "structure": "arphex:mega_web",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "arphex:structure_feature",
+          "config": {
+            "structure": "arphex:mega_web_diagonal",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "arphex:block/blankparticle",
+    "particle": "arphex:block/blankparticle"
+  },
+  "render_type": "translucent"
+}

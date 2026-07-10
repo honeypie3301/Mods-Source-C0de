@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:chaos_gauntlet"
+    },
+    "title": {
+      "translate": "advancements.chaos_gauntlet_craft.title"
+    },
+    "description": {
+      "translate": "advancements.chaos_gauntlet_craft.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chaos_gauntlet_craft_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:voidlasher_killed"
+}

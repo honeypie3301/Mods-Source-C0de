@@ -1,0 +1,10 @@
+{
+  "parent": "arphex:custom/cocoon_creeper",
+  "textures": {
+    "all": "arphex:block/spider_cocoon",
+    "particle": "arphex:block/spider_cocoon",
+    "0": "arphex:block/spider_cocoon",
+    "3": "arphex:block/creeper_pale"
+  },
+  "render_type": "translucent"
+}

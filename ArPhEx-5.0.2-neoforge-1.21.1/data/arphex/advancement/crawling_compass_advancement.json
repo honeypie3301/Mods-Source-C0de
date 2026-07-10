@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:crawling_compass"
+    },
+    "title": {
+      "translate": "advancements.crawling_compass_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.crawling_compass_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crawling_compass_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:moth_kill"
+}

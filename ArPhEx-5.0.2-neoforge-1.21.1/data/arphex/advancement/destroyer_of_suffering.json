@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:scorch"
+    },
+    "title": {
+      "translate": "advancements.destroyer_of_suffering.title"
+    },
+    "description": {
+      "translate": "advancements.destroyer_of_suffering.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "destroyer_of_suffering_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "arphex:moth_kill"
+}

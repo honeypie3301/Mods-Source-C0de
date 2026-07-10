@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:fly_appendage"
+    },
+    {
+      "item": "arphex:fly_appendage"
+    },
+    {
+      "item": "arphex:fly_appendage"
+    },
+    {
+      "item": "arphex:fly_appendage"
+    },
+    {
+      "item": "arphex:fly_appendage"
+    },
+    {
+      "item": "arphex:fly_appendage"
+    },
+    {
+      "item": "arphex:fly_appendage"
+    },
+    {
+      "item": "arphex:fly_appendage"
+    },
+    {
+      "item": "arphex:fly_appendage"
+    }
+  ],
+  "result": {
+    "id": "arphex:mangled_fly_flesh",
+    "count": 1
+  }
+}

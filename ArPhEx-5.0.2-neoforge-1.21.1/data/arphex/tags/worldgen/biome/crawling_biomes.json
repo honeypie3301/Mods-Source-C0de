@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "arphex:crawling_canopy",
+    "arphex:cryptic_complex",
+    "arphex:decadent_desert",
+    "arphex:tormented_tunnels",
+    "arphex:webbed_wasteland"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "arphex:item/spearparalysis"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:spear_of_paralysis_usetime": 1
+      },
+      "model": "arphex:item/spear_of_paralysis_0"
+    }
+  ]
+}

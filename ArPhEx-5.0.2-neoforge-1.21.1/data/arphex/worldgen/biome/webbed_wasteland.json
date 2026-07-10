@@ -1,0 +1,47 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "effects": {
+    "particle": {
+      "options": {
+        "type": "arphex:thin_web"
+      },
+      "probability": 0.002
+    },
+    "foliage_color": -6638694,
+    "grass_color": -9605779,
+    "sky_color": -1,
+    "fog_color": -1,
+    "water_color": -16306863,
+    "water_fog_color": -16774878
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "arphex:webbed_wasteland_tree",
+      "minecraft:patch_grass_forest"
+    ],
+    []
+  ]
+}

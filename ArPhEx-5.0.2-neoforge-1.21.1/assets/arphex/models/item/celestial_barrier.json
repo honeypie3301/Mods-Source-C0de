@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "arphex:item/portal_ready"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:celestial_barrier_active": 2
+      },
+      "model": "arphex:item/celestial_barrier_0"
+    }
+  ]
+}

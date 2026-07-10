@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "arphex:block/crawling_portal_block",
+    "particle": "arphex:block/crawling_portal_block"
+  },
+  "render_type": "translucent"
+}

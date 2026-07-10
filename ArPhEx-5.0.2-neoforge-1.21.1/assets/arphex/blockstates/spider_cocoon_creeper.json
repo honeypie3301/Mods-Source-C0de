@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "arphex:block/spider_cocoon_creeper"
+    },
+    "facing=east": {
+      "model": "arphex:block/spider_cocoon_creeper",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "arphex:block/spider_cocoon_creeper",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arphex:block/spider_cocoon_creeper",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "arphex:block/spider_cocoon_creeper",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "arphex:block/spider_cocoon_creeper",
+      "x": 90
+    }
+  }
+}

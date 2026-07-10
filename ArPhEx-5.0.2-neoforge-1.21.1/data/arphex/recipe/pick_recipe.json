@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "arphex:abyssal_crystal"
+    },
+    {
+      "item": "arphex:mantle_of_vitality"
+    },
+    {
+      "item": "arphex:tectonic_tunneler"
+    },
+    {
+      "item": "arphex:bane_of_the_darkness"
+    }
+  ],
+  "result": {
+    "id": "arphex:abyssal_pickaxe",
+    "count": 1
+  }
+}

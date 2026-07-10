@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:bloodworm_grub"
+    }
+  ],
+  "result": {
+    "id": "minecraft:raw_copper",
+    "count": 1
+  }
+}

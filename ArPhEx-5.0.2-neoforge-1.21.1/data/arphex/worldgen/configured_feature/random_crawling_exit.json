@@ -1,0 +1,14 @@
+{
+  "type": "arphex:random_crawling_exit",
+  "config": {
+    "structure": "arphex:crawling_exit_portal_overworld",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_void",
+    "offset": [
+      0,
+      -1,
+      0
+    ]
+  }
+}

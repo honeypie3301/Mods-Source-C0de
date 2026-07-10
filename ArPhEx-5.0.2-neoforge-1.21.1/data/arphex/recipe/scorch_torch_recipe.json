@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:torch"
+    },
+    "b": {
+      "item": "arphex:scorch_charge"
+    }
+  },
+  "result": {
+    "id": "arphex:scorch_torch",
+    "count": 8
+  }
+}

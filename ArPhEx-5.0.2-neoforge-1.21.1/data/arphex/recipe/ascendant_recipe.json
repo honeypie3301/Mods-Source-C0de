@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:fire_opal"
+    },
+    "b": {
+      "item": "minecraft:end_rod"
+    }
+  },
+  "result": {
+    "id": "arphex:ascendant_staff",
+    "count": 1
+  }
+}

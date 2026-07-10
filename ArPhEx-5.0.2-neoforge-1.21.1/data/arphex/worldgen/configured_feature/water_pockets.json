@@ -1,0 +1,12 @@
+{
+  "type": "arphex:water_pockets",
+  "config": {
+    "structure": "arphex:tiny_fountain",
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      0,
+      -1,
+      0
+    ]
+  }
+}

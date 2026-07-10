@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:eternal_helmet"
+    },
+    "title": {
+      "translate": "advancements.eternals.title"
+    },
+    "description": {
+      "translate": "advancements.eternals.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eternals_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25000
+  },
+  "parent": "arphex:destroyer"
+}

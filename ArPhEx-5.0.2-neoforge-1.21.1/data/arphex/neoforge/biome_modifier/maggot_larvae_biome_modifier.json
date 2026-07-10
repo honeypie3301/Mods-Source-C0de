@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "deep_dark",
+    "jungle",
+    "sparse_jungle",
+    "lush_caves",
+    "swamp",
+    "old_growth_spruce_taiga",
+    "mangrove_swamp",
+    "nether_wastes"
+  ],
+  "spawners": {
+    "type": "arphex:maggot_larvae",
+    "weight": 16,
+    "minCount": 4,
+    "maxCount": 40
+  }
+}

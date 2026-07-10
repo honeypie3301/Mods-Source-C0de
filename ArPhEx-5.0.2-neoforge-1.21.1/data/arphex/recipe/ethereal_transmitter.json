@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:ender_pearl"
+    },
+    "b": {
+      "item": "arphex:warp_wayfinder"
+    },
+    "c": {
+      "item": "arphex:bane_blossom"
+    },
+    "d": {
+      "item": "arphex:ethereal_staff"
+    }
+  },
+  "result": {
+    "id": "arphex:warp_staff",
+    "count": 1
+  }
+}

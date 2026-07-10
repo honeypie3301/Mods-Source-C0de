@@ -1,0 +1,44 @@
+{
+  "feature": "arphex:cherry_plant_large",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 1
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": {
+              "type": "minecraft:uniform",
+              "min_inclusive": {
+                "absolute": 128
+              },
+              "max_inclusive": {
+                "absolute": 202
+              }
+            },
+            "weight": 1
+          },
+          {
+            "data": {
+              "type": "minecraft:uniform",
+              "min_inclusive": {
+                "absolute": 64
+              },
+              "max_inclusive": {
+                "absolute": 100
+              }
+            },
+            "weight": 1
+          }
+        ]
+      }
+    }
+  ]
+}

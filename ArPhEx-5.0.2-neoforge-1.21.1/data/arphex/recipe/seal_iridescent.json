@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:scarab_seal"
+    },
+    {
+      "item": "arphex:iridescent_scarab"
+    }
+  ],
+  "result": {
+    "id": "arphex:sealed_iridescent_scarab",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/funnel_web",
+    "up": "arphex:block/funnel_web",
+    "north": "arphex:block/funnel_web",
+    "east": "arphex:block/funnel_web",
+    "south": "arphex:block/funnel_web",
+    "west": "arphex:block/funnel_web",
+    "particle": "arphex:block/funnel_web"
+  },
+  "render_type": "translucent"
+}

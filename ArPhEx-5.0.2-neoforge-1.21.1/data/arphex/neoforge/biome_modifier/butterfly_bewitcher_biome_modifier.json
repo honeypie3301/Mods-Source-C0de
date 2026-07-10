@@ -1,0 +1,27 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "bamboo_jungle",
+    "birch_forest",
+    "dark_forest",
+    "deep_dark",
+    "dripstone_caves",
+    "lush_caves",
+    "end_barrens",
+    "mangrove_swamp",
+    "jungle",
+    "sparse_jungle",
+    "windswept_forest",
+    "old_growth_birch_forest",
+    "deep_lukewarm_ocean",
+    "warm_ocean",
+    "deep_ocean",
+    "beach"
+  ],
+  "spawners": {
+    "type": "arphex:butterfly_bewitcher",
+    "weight": 16,
+    "minCount": 1,
+    "maxCount": 10
+  }
+}

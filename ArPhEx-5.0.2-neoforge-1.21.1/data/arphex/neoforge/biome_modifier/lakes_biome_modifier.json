@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "arphex:crawling_canopy",
+    "arphex:tormented_tunnels"
+  ],
+  "features": "arphex:lakes",
+  "step": "raw_generation"
+}

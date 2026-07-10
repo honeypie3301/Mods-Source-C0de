@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "nether_wastes",
+    "warped_forest",
+    "soul_sand_valley",
+    "crimson_forest"
+  ],
+  "spawners": {
+    "type": "arphex:scorpioid_initial",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

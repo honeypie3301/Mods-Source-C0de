@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "arphex:chitin_armour_helmet"
+  },
+  "addition": {
+    "item": "arphex:chitin_armour_helmet"
+  },
+  "result": {
+    "id": "arphex:chitin_armour_tier_2_helmet"
+  }
+}

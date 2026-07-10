@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "arphex:crawling_castle",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 200,
+    "separation": 149,
+    "salt": 1875635337
+  }
+}

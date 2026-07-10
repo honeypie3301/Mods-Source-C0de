@@ -1,0 +1,140 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "tries": 64,
+            "xz_spread": 16,
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "arphex:crawling_compost"
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:air"
+                      },
+                      {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                              "arphex:crawling_compost",
+                              "arphex:crawling_barrier"
+                            ],
+                            "offset": [
+                              0,
+                              1,
+                              0
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                              "arphex:crawling_compost",
+                              "arphex:crawling_barrier"
+                            ],
+                            "offset": [
+                              0,
+                              -1,
+                              0
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "tries": 64,
+            "xz_spread": 4,
+            "y_spread": 16,
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "arphex:crawling_clay"
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:air"
+                      },
+                      {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                              "arphex:crawling_clay",
+                              "arphex:crawling_barrier"
+                            ],
+                            "offset": [
+                              0,
+                              1,
+                              0
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                              "arphex:crawling_clay",
+                              "arphex:crawling_barrier"
+                            ],
+                            "offset": [
+                              0,
+                              -1,
+                              0
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

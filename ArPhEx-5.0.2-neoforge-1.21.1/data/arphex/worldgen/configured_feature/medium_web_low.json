@@ -1,0 +1,9 @@
+{
+  "type": "arphex:medium_web_low",
+  "config": {
+    "structure": "arphex:medium_web",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "arphex:block/warp_manifold"
+    },
+    "type=top": {
+      "model": "arphex:block/warp_manifold_top"
+    },
+    "type=double": {
+      "model": "arphex:block/warp_manifold_full"
+    }
+  }
+}

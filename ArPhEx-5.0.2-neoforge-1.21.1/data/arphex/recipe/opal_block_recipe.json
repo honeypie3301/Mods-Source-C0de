@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "arphex:fire_opal"
+    }
+  ],
+  "result": {
+    "id": "arphex:block_of_fire_opal",
+    "count": 1
+  }
+}

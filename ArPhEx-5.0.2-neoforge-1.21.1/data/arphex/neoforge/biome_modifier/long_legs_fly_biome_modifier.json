@@ -1,0 +1,20 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "beach",
+    "birch_forest",
+    "crimson_forest",
+    "dark_forest",
+    "dripstone_caves",
+    "flower_forest",
+    "meadow",
+    "nether_wastes",
+    "sunflower_plains"
+  ],
+  "spawners": {
+    "type": "arphex:long_legs_fly",
+    "weight": 32,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "bdb",
+    "cba"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:ethereal_staff"
+    },
+    "b": {
+      "item": "arphex:scorch_charge"
+    },
+    "c": {
+      "item": "arphex:arthropod_antenna"
+    },
+    "d": {
+      "item": "arphex:block_of_abyssal_crystal"
+    }
+  },
+  "result": {
+    "id": "arphex:crawling_container",
+    "count": 1
+  }
+}

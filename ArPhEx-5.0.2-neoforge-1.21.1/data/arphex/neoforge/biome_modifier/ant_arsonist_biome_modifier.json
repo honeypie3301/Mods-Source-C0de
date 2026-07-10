@@ -1,0 +1,40 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "badlands",
+    "beach",
+    "bamboo_jungle",
+    "birch_forest",
+    "cherry_grove",
+    "dark_forest",
+    "deep_dark",
+    "desert",
+    "dripstone_caves",
+    "eroded_badlands",
+    "flower_forest",
+    "forest",
+    "grove",
+    "lush_caves",
+    "mangrove_swamp",
+    "jungle",
+    "meadow",
+    "mushroom_fields",
+    "old_growth_birch_forest",
+    "old_growth_spruce_taiga",
+    "plains",
+    "savanna",
+    "savanna_plateau",
+    "stony_peaks",
+    "swamp",
+    "taiga",
+    "windswept_forest",
+    "windswept_hills",
+    "wooded_badlands"
+  ],
+  "spawners": {
+    "type": "arphex:ant_arsonist",
+    "weight": 8,
+    "minCount": 2,
+    "maxCount": 25
+  }
+}

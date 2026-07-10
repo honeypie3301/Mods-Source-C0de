@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:scorch_charge"
+    },
+    "b": {
+      "item": "arphex:core_of_eternal_suffering"
+    },
+    "c": {
+      "item": "arphex:spacetime_helmet"
+    },
+    "d": {
+      "item": "arphex:eternal_helmet"
+    },
+    "e": {
+      "item": "arphex:juggernaut_helmet"
+    }
+  },
+  "result": {
+    "id": "arphex:immortal_helmet",
+    "count": 1
+  }
+}

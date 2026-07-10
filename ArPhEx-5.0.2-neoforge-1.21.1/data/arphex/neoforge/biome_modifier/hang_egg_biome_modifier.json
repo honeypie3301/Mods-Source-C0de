@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "arphex:webbed_wasteland",
+  "features": "arphex:hang_egg",
+  "step": "strongholds"
+}

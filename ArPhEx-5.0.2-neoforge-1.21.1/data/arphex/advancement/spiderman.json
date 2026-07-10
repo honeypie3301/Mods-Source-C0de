@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:silk_slinger"
+    },
+    "title": {
+      "translate": "advancements.spiderman.title"
+    },
+    "description": {
+      "translate": "advancements.spiderman.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spiderman_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "arphex:moth_ward"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "arphex:crawling_canopy",
+    "arphex:cryptic_complex",
+    "arphex:decadent_desert",
+    "arphex:tormented_tunnels",
+    "arphex:webbed_wasteland"
+  ],
+  "features": "arphex:crawling_layer_third",
+  "step": "raw_generation"
+}

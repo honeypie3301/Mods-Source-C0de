@@ -1,0 +1,9 @@
+{
+  "type": "arphex:huge_web",
+  "config": {
+    "structure": "arphex:enormous_web",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

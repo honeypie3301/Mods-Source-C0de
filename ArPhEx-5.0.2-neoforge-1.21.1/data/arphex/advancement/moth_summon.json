@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:spider_moth_egg"
+    },
+    "title": {
+      "translate": "advancements.moth_summon.title"
+    },
+    "description": {
+      "translate": "advancements.moth_summon.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "moth_summon_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "arphex:moth_ward"
+}

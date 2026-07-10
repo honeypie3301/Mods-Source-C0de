@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "arphex:webbed_wasteland",
+  "features": "arphex:web_lines",
+  "step": "underground_structures"
+}

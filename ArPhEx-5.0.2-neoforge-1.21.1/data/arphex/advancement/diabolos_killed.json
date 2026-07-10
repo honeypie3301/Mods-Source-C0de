@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:entropy_matrix"
+    },
+    "title": {
+      "translate": "advancements.diabolos_killed.title"
+    },
+    "description": {
+      "translate": "advancements.diabolos_killed.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "diabolos_killed_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arphex:entropy_matrix"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "arphex:arachnoid_killed"
+}

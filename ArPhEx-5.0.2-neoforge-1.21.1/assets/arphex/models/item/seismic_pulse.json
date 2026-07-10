@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "arphex:item/seismic_ready"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:seismic_pulse_active": 2
+      },
+      "model": "arphex:item/seismic_pulse_0"
+    }
+  ]
+}

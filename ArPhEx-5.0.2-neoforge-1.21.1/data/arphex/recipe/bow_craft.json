@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "arphex:necrotic_fang"
+    },
+    {
+      "item": "minecraft:bow"
+    },
+    {
+      "item": "arphex:giant_spinneret"
+    }
+  ],
+  "result": {
+    "id": "arphex:black_widow_bow",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/chronocannon2",
+  "textures": {
+    "5": "arphex:block/chronocannon",
+    "particle": "arphex:item/chronocannon"
+  }
+}

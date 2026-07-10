@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "b": {
+      "item": "arphex:decadent_dust"
+    },
+    "c": {
+      "item": "arphex:scorch_charge"
+    }
+  },
+  "result": {
+    "id": "arphex:scorched_sand",
+    "count": 8
+  }
+}

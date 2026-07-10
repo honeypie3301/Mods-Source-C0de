@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:time_prism_shard"
+    },
+    {
+      "item": "arphex:time_prism_shard"
+    },
+    {
+      "item": "arphex:time_prism_shard"
+    },
+    {
+      "item": "arphex:time_prism_shard"
+    }
+  ],
+  "result": {
+    "id": "arphex:time_prism",
+    "count": 1
+  }
+}

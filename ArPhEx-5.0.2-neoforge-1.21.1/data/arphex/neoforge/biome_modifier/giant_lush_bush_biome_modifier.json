@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "arphex:crawling_canopy",
+  "features": "arphex:giant_lush_bush",
+  "step": "raw_generation"
+}

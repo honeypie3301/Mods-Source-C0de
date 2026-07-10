@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "end_barrens",
+    "small_end_islands"
+  ],
+  "spawners": {
+    "type": "arphex:draconic_fly_stalk",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

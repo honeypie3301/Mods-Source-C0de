@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:time_prism"
+    },
+    "title": {
+      "translate": "advancements.arachnoid_killed.title"
+    },
+    "description": {
+      "translate": "advancements.arachnoid_killed.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "arachnoid_killed_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arphex:time_prism"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "arphex:destroyer_of_suffering"
+}

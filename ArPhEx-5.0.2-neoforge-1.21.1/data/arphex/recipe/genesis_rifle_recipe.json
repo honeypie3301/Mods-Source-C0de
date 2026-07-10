@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:judgement_blaster"
+    },
+    "b": {
+      "item": "arphex:scorch_charge"
+    },
+    "c": {
+      "item": "arphex:oblivion_ray"
+    },
+    "d": {
+      "item": "arphex:spacetime_ingot"
+    }
+  },
+  "result": {
+    "id": "arphex:genesis_rifle",
+    "count": 1
+  }
+}

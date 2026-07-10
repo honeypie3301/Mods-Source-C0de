@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:hornet_hailstorm"
+    },
+    "title": {
+      "translate": "advancements.hornet_gun.title"
+    },
+    "description": {
+      "translate": "advancements.hornet_gun.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hornet_gun_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arphex:hornet_hailstorm"
+            ],
+            "count": {
+              "min": 1,
+              "max": 99
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "arphex:moth_ward"
+}

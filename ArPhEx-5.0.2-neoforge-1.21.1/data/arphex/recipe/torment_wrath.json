@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cbc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:abyssal_annihilator"
+    },
+    "b": {
+      "item": "arphex:core_of_eternal_suffering"
+    },
+    "c": {
+      "item": "arphex:vengeful_voidseeker"
+    }
+  },
+  "result": {
+    "id": "arphex:tormented_wrath",
+    "count": 1
+  }
+}

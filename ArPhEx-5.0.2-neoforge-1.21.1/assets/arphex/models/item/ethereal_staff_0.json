@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/etherealstaff.geo",
+  "textures": {
+    "2": "arphex:block/etherealstaff",
+    "particle": "arphex:item/etherealstaff"
+  }
+}

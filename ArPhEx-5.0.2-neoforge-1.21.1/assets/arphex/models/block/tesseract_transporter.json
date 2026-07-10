@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/teleporter",
+  "textures": {
+    "all": "arphex:block/teleporter",
+    "particle": "arphex:block/teleporter",
+    "0": "arphex:block/teleporter"
+  },
+  "render_type": "translucent"
+}

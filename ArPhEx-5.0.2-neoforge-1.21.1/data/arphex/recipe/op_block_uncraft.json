@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:block_of_fire_opal"
+    }
+  ],
+  "result": {
+    "id": "arphex:fire_opal",
+    "count": 9
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:chitin"
+    },
+    "b": {
+      "item": "arphex:oversized_stinger"
+    },
+    "c": {
+      "item": "arphex:hornet_hailstorm"
+    },
+    "d": {
+      "item": "arphex:spectral_ingot"
+    }
+  },
+  "result": {
+    "id": "arphex:venom_typhoon",
+    "count": 1
+  }
+}

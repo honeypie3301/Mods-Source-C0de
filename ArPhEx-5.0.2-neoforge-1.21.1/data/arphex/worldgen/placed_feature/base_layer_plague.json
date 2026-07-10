@@ -1,0 +1,17 @@
+{
+  "feature": "arphex:base_layer_plague",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:biased_to_bottom",
+        "min_inclusive": {
+          "absolute": 16
+        },
+        "max_inclusive": {
+          "absolute": 48
+        }
+      }
+    }
+  ]
+}

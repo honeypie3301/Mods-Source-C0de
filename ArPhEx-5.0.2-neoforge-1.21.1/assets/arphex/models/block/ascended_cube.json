@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/ascendedblock",
+  "textures": {
+    "all": "arphex:block/ascendedblockanimation",
+    "particle": "arphex:block/ascendedblockanimation",
+    "0": "arphex:block/ascendedblockanimation"
+  },
+  "render_type": "cutout"
+}

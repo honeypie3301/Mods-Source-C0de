@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "arphex:decadent_desert",
+  "features": "arphex:offset_desert_layer",
+  "step": "raw_generation"
+}

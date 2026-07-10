@@ -1,0 +1,15 @@
+{
+  "parent": "arphex:custom/oblivionray",
+  "textures": {
+    "0": "arphex:block/oblivionray",
+    "particle": "arphex:item/oblivionray"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:oblivion_ray_mining_mode": 1
+      },
+      "model": "arphex:item/oblivion_ray_0"
+    }
+  ]
+}

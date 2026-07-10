@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/vortex",
+  "textures": {
+    "2": "arphex:block/vortex",
+    "particle": "arphex:item/vortexdevastation"
+  }
+}

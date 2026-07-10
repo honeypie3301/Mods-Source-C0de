@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:vengeful_voidseeker"
+    },
+    "title": {
+      "translate": "advancements.voidseeker_obtain.title"
+    },
+    "description": {
+      "translate": "advancements.voidseeker_obtain.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "voidseeker_obtain_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:fireblaster_obtain"
+}

@@ -1,0 +1,15 @@
+{
+  "parent": "arphex:custom/chronocannon",
+  "textures": {
+    "5": "arphex:block/chronocannon",
+    "particle": "arphex:item/chronocannon"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:chrono_cannon_chrono": 2
+      },
+      "model": "arphex:item/chrono_cannon_0"
+    }
+  ]
+}

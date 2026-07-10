@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "arphex:tormented_tunnels",
+  "features": "arphex:crawling_sediment",
+  "step": "underground_ores"
+}

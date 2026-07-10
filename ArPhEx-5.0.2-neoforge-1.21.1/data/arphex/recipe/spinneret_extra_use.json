@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:giant_spinneret"
+    },
+    {
+      "item": "arphex:giant_spinneret"
+    }
+  ],
+  "result": {
+    "id": "arphex:mangled_spider_flesh",
+    "count": 1
+  }
+}

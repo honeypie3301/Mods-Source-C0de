@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "group": "spidermoth",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 1200,
+  "ingredient": {
+    "item": "arphex:spectral_shard"
+  },
+  "result": {
+    "id": "arphex:spectral_ingot"
+  }
+}

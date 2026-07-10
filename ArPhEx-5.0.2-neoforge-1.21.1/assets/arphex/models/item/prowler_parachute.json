@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/parachute",
+  "textures": {
+    "0": "arphex:block/webchute",
+    "particle": "arphex:item/prowlparachute"
+  }
+}

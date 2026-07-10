@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arphex:item/spidermothsummoner"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:spider_moth_summoner_empty": 1
+      },
+      "model": "arphex:item/spider_moth_summoner_0"
+    }
+  ]
+}

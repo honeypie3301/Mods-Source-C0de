@@ -1,0 +1,20 @@
+{
+  "feature": "arphex:crawling_sediment",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 50
+        },
+        "max_inclusive": {
+          "below_top": 50
+        }
+      }
+    }
+  ]
+}

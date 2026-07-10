@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:fire_opal"
+    },
+    "title": {
+      "translate": "advancements.scorpioid_killed.title"
+    },
+    "description": {
+      "translate": "advancements.scorpioid_killed.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "scorpioid_killed_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:moth_ward"
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arphex:block/random_loot_choices"
+    }
+  }
+}

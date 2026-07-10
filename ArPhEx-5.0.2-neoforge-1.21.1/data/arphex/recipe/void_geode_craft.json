@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:void_geode_shard"
+    },
+    {
+      "item": "arphex:void_geode_shard"
+    },
+    {
+      "item": "arphex:void_geode_shard"
+    },
+    {
+      "item": "arphex:void_geode_shard"
+    }
+  ],
+  "result": {
+    "id": "arphex:void_geode",
+    "count": 1
+  }
+}

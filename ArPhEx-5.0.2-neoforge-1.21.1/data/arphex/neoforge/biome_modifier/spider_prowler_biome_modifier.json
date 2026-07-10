@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "jungle",
+    "bamboo_jungle",
+    "sparse_jungle",
+    "lush_caves"
+  ],
+  "spawners": {
+    "type": "arphex:spider_prowler",
+    "weight": 16,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

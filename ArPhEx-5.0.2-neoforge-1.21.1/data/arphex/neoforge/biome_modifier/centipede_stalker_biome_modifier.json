@@ -1,0 +1,26 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "badlands",
+    "bamboo_jungle",
+    "basalt_deltas",
+    "birch_forest",
+    "crimson_forest",
+    "dark_forest",
+    "deep_dark",
+    "desert",
+    "dripstone_caves",
+    "lush_caves",
+    "mangrove_swamp",
+    "jungle",
+    "windswept_forest",
+    "sparse_jungle",
+    "old_growth_birch_forest"
+  ],
+  "spawners": {
+    "type": "arphex:centipede_stalker",
+    "weight": 16,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

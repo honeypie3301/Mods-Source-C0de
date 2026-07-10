@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:force_gauntlet"
+    },
+    "b": {
+      "item": "arphex:spectral_ingot"
+    }
+  },
+  "result": {
+    "id": "arphex:vortex_devastator",
+    "count": 1
+  }
+}

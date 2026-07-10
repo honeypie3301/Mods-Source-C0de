@@ -1,0 +1,15 @@
+{
+  "parent": "arphex:custom/temporospatial",
+  "textures": {
+    "0": "arphex:block/temporospatial",
+    "particle": "arphex:item/temporo"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:temporospatial_transmitter_flatmode": 1
+      },
+      "model": "arphex:item/temporospatial_transmitter_0"
+    }
+  ]
+}

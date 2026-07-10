@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/barrier_gap",
+    "up": "arphex:block/barrier_gap",
+    "north": "arphex:block/barrier_gap",
+    "east": "arphex:block/barrier_gap",
+    "south": "arphex:block/barrier_gap",
+    "west": "arphex:block/barrier_gap",
+    "particle": "arphex:block/barrier_gap"
+  },
+  "render_type": "translucent"
+}

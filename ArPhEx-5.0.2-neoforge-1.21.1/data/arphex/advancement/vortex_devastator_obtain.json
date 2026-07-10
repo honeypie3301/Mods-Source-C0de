@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:vortex_devastator"
+    },
+    "title": {
+      "translate": "advancements.vortex_devastator_obtain.title"
+    },
+    "description": {
+      "translate": "advancements.vortex_devastator_obtain.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "vortex_devastator_obtain_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:force_gauntlet_craft"
+}

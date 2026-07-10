@@ -1,0 +1,20 @@
+{
+  "type": "arphex:flatter_desert",
+  "config": {
+    "tries": 6,
+    "xz_spread": 0,
+    "y_spread": 2,
+    "feature": {
+      "feature": {
+        "type": "arphex:structure_feature",
+        "config": {
+          "structure": "arphex:flatten_further_dust",
+          "random_rotation": true,
+          "random_mirror": true,
+          "ignored_blocks": "minecraft:air"
+        }
+      },
+      "placement": []
+    }
+  }
+}

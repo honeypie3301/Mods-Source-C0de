@@ -1,0 +1,18 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "badlands",
+    "basalt_deltas",
+    "desert",
+    "eroded_badlands",
+    "nether_wastes",
+    "savanna",
+    "savanna_plateau"
+  ],
+  "spawners": {
+    "type": "arphex:spider_wander",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 40
+  }
+}

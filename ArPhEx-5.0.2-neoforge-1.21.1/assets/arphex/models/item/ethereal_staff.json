@@ -1,0 +1,15 @@
+{
+  "parent": "arphex:custom/etherealstaff.geo",
+  "textures": {
+    "2": "arphex:block/etherealstaff",
+    "particle": "arphex:item/etherealstaff"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "arphex:item/ethereal_staff_0"
+    }
+  ]
+}

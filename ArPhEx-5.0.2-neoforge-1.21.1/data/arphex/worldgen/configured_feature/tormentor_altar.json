@@ -1,0 +1,7 @@
+{
+  "type": "arphex:structure_feature",
+  "config": {
+    "structure": "arphex:tormentor_altar",
+    "ignored_blocks": "arphex:mangled_spider_flesh"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "desert",
+    "badlands"
+  ],
+  "spawners": {
+    "type": "arphex:solifuge_skulker",
+    "weight": 32,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

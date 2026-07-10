@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:fire_opal"
+    },
+    {
+      "item": "arphex:formic_fireblaster"
+    }
+  ],
+  "result": {
+    "id": "arphex:hypnotic_hellblaster",
+    "count": 1
+  }
+}

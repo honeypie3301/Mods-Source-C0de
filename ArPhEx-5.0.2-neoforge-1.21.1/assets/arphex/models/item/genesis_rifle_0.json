@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/genesisrifle_using",
+  "textures": {
+    "0": "arphex:block/genesisrifle",
+    "particle": "arphex:item/entropymatrix"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/blankparticle",
+    "up": "arphex:block/blankparticle",
+    "north": "arphex:block/blankparticle",
+    "east": "arphex:block/blankparticle",
+    "south": "arphex:block/blankparticle",
+    "west": "arphex:block/blankparticle",
+    "particle": "arphex:block/blankparticle"
+  },
+  "render_type": "cutout"
+}

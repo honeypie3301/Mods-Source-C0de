@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "arphex:blocks/random_loot_choices",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arphex:random_loot_choices"
+        }
+      ]
+    }
+  ]
+}

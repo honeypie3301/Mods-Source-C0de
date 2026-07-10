@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:abyssal_crystal"
+    },
+    "b": {
+      "item": "arphex:mantle_of_vitality"
+    },
+    "c": {
+      "item": "minecraft:netherite_sword"
+    },
+    "d": {
+      "item": "arphex:bane_of_the_darkness"
+    }
+  },
+  "result": {
+    "id": "arphex:abyssal_blade",
+    "count": 1
+  }
+}

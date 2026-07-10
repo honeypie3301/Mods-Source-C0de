@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "arphex:block/decadentdust",
+    "particle": "arphex:block/decadentdust"
+  },
+  "render_type": "solid"
+}

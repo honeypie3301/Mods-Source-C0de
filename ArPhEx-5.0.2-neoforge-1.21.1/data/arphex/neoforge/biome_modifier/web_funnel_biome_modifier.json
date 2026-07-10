@@ -1,0 +1,25 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "bamboo_jungle",
+    "birch_forest",
+    "cherry_grove",
+    "dark_forest",
+    "flower_forest",
+    "forest",
+    "jungle",
+    "mangrove_swamp",
+    "old_growth_birch_forest",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "sunflower_plains",
+    "windswept_forest",
+    "plains"
+  ],
+  "spawners": {
+    "type": "arphex:web_funnel",
+    "weight": 30,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/termitemound",
+    "up": "arphex:block/termitemound",
+    "north": "arphex:block/termitemound",
+    "east": "arphex:block/termitemound",
+    "south": "arphex:block/termitemound",
+    "west": "arphex:block/termitemound",
+    "particle": "arphex:block/termitemound"
+  },
+  "render_type": "solid"
+}

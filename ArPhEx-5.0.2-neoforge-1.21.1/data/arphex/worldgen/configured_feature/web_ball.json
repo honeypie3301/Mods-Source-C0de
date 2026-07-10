@@ -1,0 +1,9 @@
+{
+  "type": "arphex:web_ball",
+  "config": {
+    "structure": "arphex:web_ball",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

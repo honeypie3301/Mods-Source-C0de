@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "badlands",
+    "bamboo_jungle",
+    "basalt_deltas",
+    "beach",
+    "dark_forest",
+    "desert",
+    "dripstone_caves",
+    "forest",
+    "lush_caves",
+    "mangrove_swamp",
+    "soul_sand_valley",
+    "swamp"
+  ],
+  "spawners": {
+    "type": "arphex:mosquito_morbidity",
+    "weight": 32,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:immortal_helmet"
+    },
+    "title": {
+      "translate": "advancements.immortal_god.title"
+    },
+    "description": {
+      "translate": "advancements.immortal_god.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "immortal_god_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10000
+  },
+  "parent": "arphex:eternals"
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:crawling_portal"
+    },
+    "title": {
+      "translate": "advancements.crawling_portal_activated.title"
+    },
+    "description": {
+      "translate": "advancements.crawling_portal_activated.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crawling_portal_activated_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:crawling_compass_advancement"
+}

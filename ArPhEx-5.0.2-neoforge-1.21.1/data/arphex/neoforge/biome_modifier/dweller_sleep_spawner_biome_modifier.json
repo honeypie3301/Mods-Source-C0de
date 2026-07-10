@@ -1,0 +1,16 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "dripstone_caves",
+    "lush_caves",
+    "deep_dark",
+    "dark_forest",
+    "jungle"
+  ],
+  "spawners": {
+    "type": "arphex:dweller_sleep_spawner",
+    "weight": 3,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

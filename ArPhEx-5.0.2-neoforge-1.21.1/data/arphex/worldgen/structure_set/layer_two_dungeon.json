@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "arphex:layer_two_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 30,
+    "separation": 20,
+    "salt": 668942527
+  }
+}

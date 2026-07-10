@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "dark_forest",
+    "deep_dark"
+  ],
+  "spawners": {
+    "type": "arphex:giant_web",
+    "weight": 32,
+    "minCount": 1,
+    "maxCount": 5
+  }
+}

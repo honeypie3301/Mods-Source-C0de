@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/chaosgauntlet.geo",
+  "textures": {
+    "0": "arphex:block/forcegauntlet",
+    "particle": "arphex:item/chaosgauntlet"
+  }
+}

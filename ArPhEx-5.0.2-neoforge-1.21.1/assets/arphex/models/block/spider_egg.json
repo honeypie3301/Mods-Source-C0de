@@ -1,0 +1,9 @@
+{
+  "parent": "arphex:custom/spider_egg",
+  "textures": {
+    "all": "arphex:block/spider_egg",
+    "particle": "arphex:block/spider_egg",
+    "0": "arphex:block/spider_egg"
+  },
+  "render_type": "solid"
+}

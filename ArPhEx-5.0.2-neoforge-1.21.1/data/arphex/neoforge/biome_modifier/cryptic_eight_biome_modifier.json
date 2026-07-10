@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "arphex:cryptic_complex",
+  "features": "arphex:cryptic_eight",
+  "step": "strongholds"
+}

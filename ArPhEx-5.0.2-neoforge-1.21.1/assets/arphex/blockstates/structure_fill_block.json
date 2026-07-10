@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arphex:block/structure_fill_block"
+    }
+  }
+}

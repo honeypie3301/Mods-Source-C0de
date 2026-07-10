@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/voidgeode",
+    "up": "arphex:block/voidgeode",
+    "north": "arphex:block/voidgeode",
+    "east": "arphex:block/voidgeode",
+    "south": "arphex:block/voidgeode",
+    "west": "arphex:block/voidgeode",
+    "particle": "arphex:block/voidgeode"
+  },
+  "render_type": "solid"
+}

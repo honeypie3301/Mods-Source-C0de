@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "arphex:block_of_entropy_matrix",
+    "arphex:block_of_time_prism",
+    "arphex:scorched_glass",
+    "arphex:exquisite_ore",
+    "arphex:crawling_barrier",
+    "arphex:block_of_void_geode",
+    "arphex:block_of_abyssal_crystal",
+    "arphex:block_of_fire_opal"
+  ]
+}

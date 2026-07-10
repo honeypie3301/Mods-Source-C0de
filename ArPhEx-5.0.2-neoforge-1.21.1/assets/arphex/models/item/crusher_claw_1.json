@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/crabclaw3",
+  "textures": {
+    "3": "arphex:block/crabclaw",
+    "particle": "arphex:item/constricted"
+  }
+}

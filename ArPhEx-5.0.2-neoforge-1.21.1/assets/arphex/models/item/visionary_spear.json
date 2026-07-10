@@ -1,0 +1,15 @@
+{
+  "parent": "arphex:custom/visionaryspear",
+  "textures": {
+    "1": "arphex:block/visionaryspear",
+    "particle": "arphex:item/spearparalysis"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:visionary_spear_usetime": 1
+      },
+      "model": "arphex:item/visionary_spear_0"
+    }
+  ]
+}

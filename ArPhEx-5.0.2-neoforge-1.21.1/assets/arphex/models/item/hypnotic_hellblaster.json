@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/flamethrower",
+  "textures": {
+    "0": "arphex:block/hypnotichellblaster",
+    "particle": "arphex:item/hypnotic_hellblaster"
+  }
+}

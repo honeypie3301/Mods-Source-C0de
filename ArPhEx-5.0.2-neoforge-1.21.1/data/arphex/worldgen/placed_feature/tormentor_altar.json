@@ -1,0 +1,18 @@
+{
+  "feature": "arphex:tormentor_altar",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 500
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
+      }
+    }
+  ]
+}

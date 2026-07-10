@@ -1,0 +1,30 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "bamboo_jungle",
+    "birch_forest",
+    "dark_forest",
+    "forest",
+    "grove",
+    "jungle",
+    "mangrove_swamp",
+    "meadow",
+    "old_growth_birch_forest",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "plains",
+    "savanna",
+    "savanna_plateau",
+    "sparse_jungle",
+    "sunflower_plains",
+    "swamp",
+    "taiga",
+    "windswept_forest"
+  ],
+  "spawners": {
+    "type": "arphex:spider_obstructer",
+    "weight": 24,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

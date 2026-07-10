@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/tunnelerpickaxe",
+  "textures": {
+    "0": "arphex:block/tunnelerpick",
+    "particle": "arphex:item/tunneler"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/crawling_slate",
+    "up": "arphex:block/crawling_slate",
+    "north": "arphex:block/crawling_slate",
+    "east": "arphex:block/crawling_slate",
+    "south": "arphex:block/crawling_slate",
+    "west": "arphex:block/crawling_slate",
+    "particle": "arphex:block/crawling_slate"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:hedonic_gem"
+    },
+    "b": {
+      "item": "arphex:core_of_eternal_suffering"
+    }
+  },
+  "result": {
+    "id": "arphex:tormentor_summoner",
+    "count": 1
+  }
+}

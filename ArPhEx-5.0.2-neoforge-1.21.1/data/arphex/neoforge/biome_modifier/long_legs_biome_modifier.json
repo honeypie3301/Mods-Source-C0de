@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "dripstone_caves",
+    "lush_caves",
+    "deep_dark",
+    "grove",
+    "jungle",
+    "stony_peaks"
+  ],
+  "spawners": {
+    "type": "arphex:long_legs",
+    "weight": 48,
+    "minCount": 1,
+    "maxCount": 20
+  }
+}

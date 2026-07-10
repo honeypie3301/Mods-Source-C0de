@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:vengeful_voidseeker"
+    },
+    "b": {
+      "item": "arphex:time_prism"
+    },
+    "c": {
+      "item": "arphex:vortex_devastator"
+    },
+    "d": {
+      "item": "arphex:scorch_charge"
+    }
+  },
+  "result": {
+    "id": "arphex:chrono_cannon",
+    "count": 1
+  }
+}

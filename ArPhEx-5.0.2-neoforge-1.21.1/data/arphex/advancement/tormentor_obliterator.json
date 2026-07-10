@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:core_of_eternal_suffering"
+    },
+    "title": {
+      "translate": "advancements.tormentor_obliterator.title"
+    },
+    "description": {
+      "translate": "advancements.tormentor_obliterator.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tormentor_obliterator_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 9999
+  },
+  "parent": "arphex:destroyer"
+}

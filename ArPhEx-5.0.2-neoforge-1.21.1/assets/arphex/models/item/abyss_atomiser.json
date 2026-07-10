@@ -1,0 +1,7 @@
+{
+  "parent": "arphex:custom/abyssalatomiser.geo",
+  "textures": {
+    "1": "arphex:block/abyssalatomiser",
+    "particle": "arphex:item/atomiser"
+  }
+}

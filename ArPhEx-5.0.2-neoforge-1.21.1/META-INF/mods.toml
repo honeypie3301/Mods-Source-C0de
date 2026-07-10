@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT License"
+
+[[mods]]
+modId="arphex"
+version="5.0.2"
+displayName="Arthropod Phobia Expansions"
+displayURL="https://arphex.miraheze.org"
+logoFile="logo.png"
+credits="Created fully by Vllax."
+authors="Vllax"
+description="Beware the thunder bringing forth demonic arachnid overlords. Endure the siege of realistic horrors of nature - Geckolib required"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.arphex]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.arphex]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

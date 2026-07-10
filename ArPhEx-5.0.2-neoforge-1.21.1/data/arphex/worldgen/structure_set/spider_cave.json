@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "arphex:spider_cave",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 40,
+    "separation": 29,
+    "salt": 1954111482
+  }
+}

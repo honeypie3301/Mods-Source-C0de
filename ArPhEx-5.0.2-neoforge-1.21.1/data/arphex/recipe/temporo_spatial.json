@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:time_prism"
+    },
+    "b": {
+      "item": "arphex:vortex_devastator"
+    },
+    "c": {
+      "item": "arphex:arthropod_antenna"
+    }
+  },
+  "result": {
+    "id": "arphex:temporospatial_transmitter",
+    "count": 1
+  }
+}

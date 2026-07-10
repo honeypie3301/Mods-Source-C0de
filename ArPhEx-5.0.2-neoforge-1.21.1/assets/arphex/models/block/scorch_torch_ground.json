@@ -1,0 +1,10 @@
+{
+  "parent": "arphex:custom/scorch_torch",
+  "textures": {
+    "all": "arphex:block/scorch-torch",
+    "particle": "arphex:block/scorch-torch",
+    "1": "arphex:block/scorch-torch",
+    "2": "arphex:block/scorchfire"
+  },
+  "render_type": "cutout"
+}

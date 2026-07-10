@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "arphex:item/warp_wayfinder"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "arphex:warp_wayfinder_warp_cooldown": 1
+      },
+      "model": "arphex:item/warp_wayfinder_0"
+    }
+  ]
+}

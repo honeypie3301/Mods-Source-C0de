@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spidermoth",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arphex:ectoplasm"
+    },
+    {
+      "item": "arphex:cooked_hemolymph"
+    },
+    {
+      "item": "arphex:ectoplasm"
+    }
+  ],
+  "result": {
+    "id": "arphex:hemoplasm",
+    "count": 1
+  }
+}

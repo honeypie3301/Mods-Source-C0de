@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "arphex:vitality_armour_helmet"
+  },
+  "addition": {
+    "item": "arphex:spacetime_ingot"
+  },
+  "result": {
+    "id": "arphex:spacetime_helmet"
+  }
+}

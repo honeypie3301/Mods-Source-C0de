@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "arphex:block/scorpionflesh",
+    "up": "arphex:block/scorpionflesh",
+    "north": "arphex:block/scorpionflesh",
+    "east": "arphex:block/scorpionflesh",
+    "south": "arphex:block/scorpionflesh",
+    "west": "arphex:block/scorpionflesh",
+    "particle": "arphex:block/scorpionflesh"
+  },
+  "render_type": "solid"
+}

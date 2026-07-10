@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bac",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:vortex_devastator"
+    },
+    "b": {
+      "item": "arphex:temporal_guardian"
+    },
+    "c": {
+      "item": "arphex:time_prism"
+    },
+    "d": {
+      "item": "arphex:heavy_chitin"
+    }
+  },
+  "result": {
+    "id": "arphex:vortex_vanguard",
+    "count": 1
+  }
+}

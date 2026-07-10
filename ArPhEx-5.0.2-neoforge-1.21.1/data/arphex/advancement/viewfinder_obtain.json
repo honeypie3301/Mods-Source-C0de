@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:vitality_viewfinder"
+    },
+    "title": {
+      "translate": "advancements.viewfinder_obtain.title"
+    },
+    "description": {
+      "translate": "advancements.viewfinder_obtain.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "viewfinder_obtain_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "minecraft:adventure/kill_a_mob"
+}

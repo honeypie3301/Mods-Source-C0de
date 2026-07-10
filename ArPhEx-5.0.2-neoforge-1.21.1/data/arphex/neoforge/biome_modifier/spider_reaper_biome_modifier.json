@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "forest",
+    "birch_forest"
+  ],
+  "spawners": {
+    "type": "arphex:spider_reaper",
+    "weight": 16,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

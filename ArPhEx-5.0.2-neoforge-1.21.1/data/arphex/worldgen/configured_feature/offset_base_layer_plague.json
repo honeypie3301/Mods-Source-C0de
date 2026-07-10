@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "target": {
+      "Name": "arphex:crawling_compost"
+    },
+    "state": {
+      "Name": "minecraft:black_concrete_powder"
+    },
+    "radius": 12
+  }
+}

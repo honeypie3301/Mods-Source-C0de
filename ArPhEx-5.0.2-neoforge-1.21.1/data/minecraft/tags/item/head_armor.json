@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "arphex:immortal_helmet",
+    "arphex:spacetime_helmet",
+    "arphex:juggernaut_helmet",
+    "arphex:vitality_armour_helmet",
+    "arphex:chitin_armour_tier_2_helmet",
+    "arphex:chitin_armour_tier_3_helmet",
+    "arphex:chitin_armour_helmet",
+    "arphex:eternal_helmet",
+    "arphex:spectral_helmet",
+    "arphex:umbral_helmet",
+    "arphex:infernal_helmet"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "feature": "arphex:small_bushes",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": {
+              "type": "minecraft:uniform",
+              "min_inclusive": {
+                "absolute": 65
+              },
+              "max_inclusive": {
+                "absolute": 110
+              }
+            },
+            "weight": 1
+          },
+          {
+            "data": {
+              "type": "minecraft:uniform",
+              "min_inclusive": {
+                "absolute": 125
+              },
+              "max_inclusive": {
+                "absolute": 200
+              }
+            },
+            "weight": 1
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arphex:item/venus_flytrap_spawn_egg"
+  }
+}

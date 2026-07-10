@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spidermoth",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "arphex:fire_opal"
+    },
+    "b": {
+      "item": "arphex:mantle_of_vitality"
+    },
+    "c": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "result": {
+    "id": "arphex:staff_of_vitality",
+    "count": 1
+  }
+}

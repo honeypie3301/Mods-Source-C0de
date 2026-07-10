@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:crusher_claw"
+    },
+    "title": {
+      "translate": "advancements.crab_kill.title"
+    },
+    "description": {
+      "translate": "advancements.crab_kill.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crab_kill_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "arphex:moth_ward"
+}

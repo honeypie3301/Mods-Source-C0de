@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "arphex:tormentor_summoner"
+    },
+    "title": {
+      "translate": "advancements.torment_tamer.title"
+    },
+    "description": {
+      "translate": "advancements.torment_tamer.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "torment_tamer_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25000
+  },
+  "parent": "arphex:destroyer"
+}
