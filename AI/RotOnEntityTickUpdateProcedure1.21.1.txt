@@ -3816,8 +3816,10 @@ private static float lerpAngle(float pct, float start, float end) {
 			}
 		}
 
-		// Always ignore passive and neutral entities (cows, sheep, pigs, chickens, villagers, ambient, water animals, slimes, etc.) unless retaliating
-		if (target instanceof Villager || target instanceof AmbientCreature || target instanceof Animal || target instanceof Slime || target instanceof net.minecraft.world.entity.animal.WaterAnimal) {
+		boolean isArphexTarget = isArphexEntity(target);
+
+		// Always ignore passive and neutral entities (cows, sheep, pigs, chickens, villagers, ambient, water animals, slimes, etc.) unless they are tagged/registered as ArPhEx combat entities.
+		if (!isArphexTarget && (target instanceof Villager || target instanceof AmbientCreature || target instanceof Animal || target instanceof Slime || target instanceof net.minecraft.world.entity.animal.WaterAnimal)) {
 		    return false;
 		}
 
@@ -3850,8 +3852,8 @@ private static float lerpAngle(float pct, float start, float end) {
 			return true; // Automatically attack hostiles (monsters and enemies)
 		}
 
-		// Treat ArPhEx's own hostile entity tag as hostile even when its classes do not implement Monster/Enemy.
-		if (target.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("arphex:arphex")))) {
+		// Treat ArPhEx's own entity tag/namespace as hostile even when its classes do not implement Monster/Enemy.
+		if (isArphexTarget) {
 			return true;
 		}
 
@@ -3866,6 +3868,15 @@ private static float lerpAngle(float pct, float start, float end) {
 		}
 
 		return bypassFactionFilter;
+	}
+
+	private static boolean isArphexEntity(Entity target) {
+		if (target == null) return false;
+		ResourceLocation entityId = BuiltInRegistries.ENTITY_TYPE.getKey(target.getType());
+		String tid = entityId.toString().toLowerCase(java.util.Locale.ROOT);
+		return target.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("arphex:arphex")))
+			|| "arphex".equals(entityId.getNamespace())
+			|| tid.contains("arphex");
 	}
 
 	private static void handleAdaptationScaling(Entity entity, boolean inCombat) {
