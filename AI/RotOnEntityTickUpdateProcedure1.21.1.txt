@@ -977,7 +977,7 @@ private static float lerpAngle(float pct, float start, float end) {
 
 				AABB checkArea = new AABB(originX - radius - 1.5, originY - radius - 1.5, originZ - radius - 1.5, originX + radius + 1.5, originY + radius + 1.5, originZ + radius + 1.5);
 
-				java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, checkArea, e -> e != entity && isValidTarget(e, entity));
+				java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, checkArea, e -> e != entity);
 				for (LivingEntity victim : targets) {
 					double dist = Math.sqrt(victim.distanceToSqr(originX, originY, originZ));
 					if (Math.abs(dist - radius) <= 1.5) {
@@ -1365,7 +1365,7 @@ private static float lerpAngle(float pct, float start, float end) {
 						}
 					}
 					
-					java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(radius), e -> e != entity && isValidTarget(e, entity));
+					java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(radius), e -> e != entity);
 					for (LivingEntity targetVictim : targets) {
 						float damageVal = totemActive ? 85.0F : 48.0F; // Slightly buffed for being the ultimate 7s move!
 						targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, net.minecraft.resources.ResourceLocation.parse("the_backwoods:rot_sonic_boom"))), entity), damageVal);
@@ -1471,7 +1471,7 @@ private static float lerpAngle(float pct, float start, float end) {
 					playHostileSound(level, tx, ty, tz, "entity.iron_golem.death", 1.1F, 0.65F);
 					List<LivingEntity> nearby = level.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(tx, ty, tz), totemActive ? 10 : 5, totemActive ? 8 : 5, totemActive ? 10 : 5), e -> e != entity && e != livTarget);
 					for (LivingEntity near : nearby) {
-						if (shouldIgnoreCombatFilter(entity) || shouldIgnoreCombatFilter(near) || (!near.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND))) && !(near instanceof RotEntity))) {
+						if (near.isAlive()) {
 							float nearDmg = totemActive ? 22.0F : 10.0F;
 							near.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_overhead_slam"))), entity), nearDmg);
 							Vec3 pushAway = near.position().subtract(livTarget.position()).normalize();
@@ -1654,7 +1654,7 @@ private static float lerpAngle(float pct, float start, float end) {
 
 						List<LivingEntity> nearby = level.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(targetX, targetY, targetZ), 8, 6, 8), e -> e != entity && e != targetLiv);
 						for (LivingEntity near : nearby) {
-							if (shouldIgnoreCombatFilter(entity) || shouldIgnoreCombatFilter(near) || (!near.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND))) && !(near instanceof RotEntity))) {
+							if (near.isAlive()) {
 								float baseNearDmg = 15.0F;
 								if (isInfinity) baseNearDmg *= 2.5F;
 								near.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_judgement_dropkick"))), entity), baseNearDmg);
@@ -2033,7 +2033,7 @@ private static float lerpAngle(float pct, float start, float end) {
 
 			if (entity.getPersistentData().getBoolean("unlocked_sonic_boom") && entity.getPersistentData().getDouble("sentinel_omni_sonic_cooldown") <= 0) {
 				if (world instanceof ServerLevel level) {
-					int count = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(6.0), e -> e != entity && isValidTarget(e, entity)).size();
+					int count = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(6.0), e -> e != entity).size();
 					if (count >= 3) {
 						omniScore = 10.0 + count * 5.0;
 						omniScore *= getMemoryPenalty(entity, "omni");
@@ -2255,7 +2255,6 @@ private static float lerpAngle(float pct, float start, float end) {
 							if (p.isCreative() || p.isSpectator()) continue;
 						}
 					}
-					if (!shouldIgnoreCombatFilter(self) && !shouldIgnoreCombatFilter(ent) && ent.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND)))) continue;
 					if (ent instanceof LivingEntity liv) {
 						// Removed freezing ticks, slow effect, and freeze damage to ensure no freezing effect during melee combat
 					}
@@ -2341,7 +2340,7 @@ private static float lerpAngle(float pct, float start, float end) {
 
 		// Check for first entity hit along the beam range up to block collision point
 		AABB searchRange = new AABB(facePos, firstIntersectionPos).inflate(1.5);
-		List<Entity> possibleEntities = level.getEntitiesOfClass(Entity.class, searchRange, e -> e != entity && e != living && e.isAlive() && (shouldIgnoreCombatFilter(entity) || !e.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND)))));
+		List<Entity> possibleEntities = level.getEntitiesOfClass(Entity.class, searchRange, e -> e != entity && e != living && e.isAlive());
 
 		Entity hitEntity = null;
 		double closestDist = facePos.distanceTo(firstIntersectionPos);
@@ -2605,7 +2604,7 @@ private static float lerpAngle(float pct, float start, float end) {
 
 		// Check for first entity hit along the beam range up to block collision point
 		AABB searchRange = new AABB(facePos, firstIntersectionPos).inflate(1.5);
-		List<Entity> possibleEntities = level.getEntitiesOfClass(Entity.class, searchRange, e -> e != entity && e != living && e.isAlive() && (shouldIgnoreCombatFilter(entity) || !e.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse(K_WOODBOUND)))));
+		List<Entity> possibleEntities = level.getEntitiesOfClass(Entity.class, searchRange, e -> e != entity && e != living && e.isAlive());
 
 		Entity hitEntity = null;
 		double closestDist = facePos.distanceTo(firstIntersectionPos);
@@ -2809,7 +2808,7 @@ private static float lerpAngle(float pct, float start, float end) {
 		// Every tick during the active scream phase (between tick 20 and 200)
 		if (ticksLeft > 20 && ticksLeft <= 200) {
 			// Find all entities and players in a 24-block range
-			List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(24.0), e -> e != entity && isValidTarget(e, entity));
+			List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(24.0), e -> e != entity);
 			for (LivingEntity victim : targets) {
 				// Severe disorientation and immobilization (stun, no damage, no particles)
 				victim.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100, 4, false, false));
@@ -3851,6 +3850,11 @@ private static float lerpAngle(float pct, float start, float end) {
 			return true; // Automatically attack hostiles (monsters and enemies)
 		}
 
+		// Treat ArPhEx's own hostile entity tag as hostile even when its classes do not implement Monster/Enemy.
+		if (target.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("arphex:arphex")))) {
+			return true;
+		}
+
 		String tid = BuiltInRegistries.ENTITY_TYPE.getKey(target.getType()).toString().toLowerCase();
 		if (tid.contains("arphex") || tid.contains("fractus") || tid.contains("hostile") || tid.contains("boss") || tid.contains("sentinel") 
 			|| tid.contains("zombie") || tid.contains("skeleton") || tid.contains("creeper") || tid.contains("spider") 
@@ -4067,8 +4071,8 @@ private static float lerpAngle(float pct, float start, float end) {
 			}
 			level.sendParticles(ParticleTypes.CRIT, beamPoint.x, beamPoint.y, beamPoint.z, 1, 0.2, 0.2, 0.2, 0.1);
 
-			// Devastate valid combat targets nearby
-			List<Entity> swept = level.getEntitiesOfClass(Entity.class, new AABB(beamPoint, beamPoint).inflate(2.4), e -> e != self && e instanceof LivingEntity liv && isValidTarget(liv, self));
+			// Devastate nearby living entities
+			List<Entity> swept = level.getEntitiesOfClass(Entity.class, new AABB(beamPoint, beamPoint).inflate(2.4), e -> e != self && e instanceof LivingEntity);
 			for (Entity targetVictim : swept) {
 				targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, net.minecraft.resources.ResourceLocation.parse("the_backwoods:rot_sonic_boom"))), self), 32.0F);
 				
@@ -5256,7 +5260,7 @@ private static float lerpAngle(float pct, float start, float end) {
 			sendCameraShake(totemActive ? 1.5F : 1.0F, totemActive ? 25 : 15, totemActive ? 30.0F : 20.0F);
 		}
 
-		java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, self.getBoundingBox().inflate(blastRadius), e -> e != self && isValidTarget(e, self));
+		java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, self.getBoundingBox().inflate(blastRadius), e -> e != self);
 		for (LivingEntity victim : targets) {
 			String dmgType = self.getPersistentData().getDouble("sentinel_die_kick_phase") > 0 ? "rot_die_rider_kick" : "rot_seismic_slam";
 			victim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:" + dmgType))), self), blastDamage);
