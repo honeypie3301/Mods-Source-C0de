@@ -144,7 +144,7 @@ public class RotOnEntityTickUpdateProcedure {
 	public static double COMBO_HEAVENLY_REPENTANCE_PLUS_CD_TOTEM = 800.0;
 
 	// --- Customizable Omnidirectional Sonic Boom Settings ---
-	public static double OMNI_SONIC_BOOM_CD = 300.0;               // Cooldown of the ability in ticks (300 ticks = 15s)
+	public static double OMNI_SONIC_BOOM_CD = 600.0;               // Cooldown of the ability in ticks (300 ticks = 15s)
 	public static double OMNI_SONIC_BOOM_ANIMATION_TICKS = 270.0;  // Total duration of the animation (9.5s = 190 ticks)
 	public static double OMNI_SONIC_BOOM_TRIGGER_TICK = 140.0;      // Remainder of ticks when sonic burst is released
 	public static double OMNI_SONIC_BOOM_RANGE = 24.0;             // Max range of the radial sonic shockwave
@@ -440,6 +440,14 @@ private static float lerpAngle(float pct, float start, float end) {
 				}
 			}
 		}
+	}
+
+
+	public static double getAdaptationMultiplier(Entity entity) {
+		double combatTicks = entity.getPersistentData().getDouble("sentinel_combat_ticks");
+		double fraction = Math.min(1.0, combatTicks / 72000.0);
+		double easeInQuart = fraction * fraction * fraction * fraction;
+		return 1.0 + (easeInQuart * 49.0); // Up to 50x damage scaling
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -981,7 +989,7 @@ private static float lerpAngle(float pct, float start, float end) {
 				for (LivingEntity victim : targets) {
 					double dist = Math.sqrt(victim.distanceToSqr(originX, originY, originZ));
 					if (Math.abs(dist - radius) <= 1.5) {
-						victim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_seismic_slam"))), entity), 12.0F);
+						victim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_seismic_slam"))), entity), 12.0F * (float) getAdaptationMultiplier(entity));
 						victim.setDeltaMovement(victim.getDeltaMovement().x(), 0.65, victim.getDeltaMovement().z());
 						victim.hasImpulse = true;
 						level.sendParticles(ParticleTypes.EXPLOSION, victim.getX(), victim.getY() + 0.5, victim.getZ(), 1, 0, 0, 0, 0);
@@ -1368,7 +1376,7 @@ private static float lerpAngle(float pct, float start, float end) {
 					java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(radius), e -> e != entity);
 					for (LivingEntity targetVictim : targets) {
 						float damageVal = totemActive ? 85.0F : 48.0F; // Slightly buffed for being the ultimate 7s move!
-						targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, net.minecraft.resources.ResourceLocation.parse("the_backwoods:rot_sonic_boom"))), entity), damageVal);
+						targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, net.minecraft.resources.ResourceLocation.parse("the_backwoods:rot_sonic_boom"))), entity), damageVal * (float) getAdaptationMultiplier(entity));
 						Vec3 push = targetVictim.position().subtract(entity.position()).multiply(1.0, 0.0, 1.0).normalize();
 						double pushMult = totemActive ? 8.5 : 6.0;
 						double pushUp = totemActive ? 2.25 : 1.5;
@@ -1445,7 +1453,7 @@ private static float lerpAngle(float pct, float start, float end) {
 							livTarget.getPersistentData().putBoolean("sentinel_sky_warp_slam_impact", true);
 							double punchDmg = entity.getPersistentData().getDouble("adapted_punch_damage");
 							if (punchDmg < 8.0) punchDmg = 8.0;
-							livTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_overhead_slam"))), entity), (float) (punchDmg * 2.2));
+							livTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_overhead_slam"))), entity), (float) (punchDmg * 2.2) * (float) getAdaptationMultiplier(entity));
 						}
 					}
 				}
@@ -1463,7 +1471,7 @@ private static float lerpAngle(float pct, float start, float end) {
 					double tz = livTarget.getZ();
 					boolean totemActive = entity.getPersistentData().getBoolean("sentinel_totem_active");
 					float explosionForce = totemActive ? 6.2F : 3.5F;
-					level.explode(entity, tx, ty + 0.5, tz, explosionForce, Level.ExplosionInteraction.MOB);
+					level.explode(entity, tx, ty + 0.5, tz, explosionForce * (float) Math.min(5.0, getAdaptationMultiplier(entity)), Level.ExplosionInteraction.MOB);
 					level.sendParticles(ParticleTypes.EXPLOSION, tx, ty + 0.5, tz, totemActive ? 15 : 6, 0.6, 0.2, 0.6, 0.15);
 					level.sendParticles(ParticleTypes.CRIT, tx, ty + 0.5, tz, totemActive ? 40 : 20, 0.5, 0.5, 0.5, 0.3);
 					level.sendParticles(ParticleTypes.SONIC_BOOM, tx, ty + 0.5, tz, totemActive ? 3 : 1, 0.1, 0.1, 0.1, 0.0);
@@ -1473,7 +1481,7 @@ private static float lerpAngle(float pct, float start, float end) {
 					for (LivingEntity near : nearby) {
 						if (near.isAlive()) {
 							float nearDmg = totemActive ? 22.0F : 10.0F;
-							near.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_overhead_slam"))), entity), nearDmg);
+							near.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_overhead_slam"))), entity), nearDmg * (float) getAdaptationMultiplier(entity));
 							Vec3 pushAway = near.position().subtract(livTarget.position()).normalize();
 							double pushMult = totemActive ? 2.5 : 1.5;
 							near.setDeltaMovement(pushAway.x * pushMult, 0.5, pushAway.z * pushMult);
@@ -1608,9 +1616,9 @@ private static float lerpAngle(float pct, float start, float end) {
 						sendCameraShake(totemActive ? 1.5F : 1.0F, totemActive ? 25 : 15, totemActive ? 30.0F : 20.0F);
 
 						if (isInfinity) {
-							level.explode(entity, targetX, impactY + 0.5, targetZ, 6.0F, Level.ExplosionInteraction.MOB);
+							level.explode(entity, targetX, impactY + 0.5, targetZ, 6.0F * (float) Math.min(5.0, getAdaptationMultiplier(entity)), Level.ExplosionInteraction.MOB);
 						} else if (totemActive) {
-							level.explode(entity, targetX, impactY + 0.5, targetZ, 5.5F, Level.ExplosionInteraction.MOB);
+							level.explode(entity, targetX, impactY + 0.5, targetZ, 5.5F * (float) Math.min(5.0, getAdaptationMultiplier(entity)), Level.ExplosionInteraction.MOB);
 						}
 						level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, targetX, impactY + 0.5, targetZ, totemActive ? 15 : 6, 0.5, 0.2, 0.5, 0.1);
 						level.sendParticles(ParticleTypes.CRIT, targetX, impactY + 0.5, targetZ, totemActive ? 40 : 22, 0.4, 0.4, 0.4, 0.2);
@@ -1621,7 +1629,7 @@ private static float lerpAngle(float pct, float start, float end) {
 						if (isInfinity) {
 							dropkickDamageMult = 3.5 * 2.5;
 						}
-						targetLiv.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_judgement_dropkick"))), entity), (float) (punchDmg * dropkickDamageMult));
+						targetLiv.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_judgement_dropkick"))), entity), (float) (punchDmg * dropkickDamageMult) * (float) getAdaptationMultiplier(entity));
 
 						// Massive knockback on combat target using 2D Normalization to prevent tiny horizontal velocities from vertical differences
 						Vec3 pushVec = targetLiv.position().subtract(entity.position());
@@ -1657,7 +1665,7 @@ private static float lerpAngle(float pct, float start, float end) {
 							if (near.isAlive()) {
 								float baseNearDmg = 15.0F;
 								if (isInfinity) baseNearDmg *= 2.5F;
-								near.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_judgement_dropkick"))), entity), baseNearDmg);
+								near.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_judgement_dropkick"))), entity), baseNearDmg * (float) getAdaptationMultiplier(entity));
 								Vec3 pushAway = near.position().subtract(entity.position());
 								double nearHorizontalDist = Math.sqrt(pushAway.x * pushAway.x + pushAway.z * pushAway.z);
 								if (nearHorizontalDist > 0.01) {
@@ -1722,13 +1730,13 @@ private static float lerpAngle(float pct, float start, float end) {
 						boolean isInfinity = entity.getPersistentData().getBoolean("sentinel_is_infinity_totem");
 						if (isInfinity) {
 							punchDamage *= 2.5F;
-							level.explode(entity, targetLiv.getX(), targetLiv.getY() + 0.5, targetLiv.getZ(), 4.0F, Level.ExplosionInteraction.MOB);
+							level.explode(entity, targetLiv.getX(), targetLiv.getY() + 0.5, targetLiv.getZ(), 4.0F * (float) Math.min(5.0, getAdaptationMultiplier(entity)), Level.ExplosionInteraction.MOB);
 						}
 
 						if (ls != null) {
-							targetLiv.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), ls), punchDamage);
+							targetLiv.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), ls), punchDamage * (float) getAdaptationMultiplier(ls));
 						} else {
-							targetLiv.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), entity), punchDamage);
+							targetLiv.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), entity), punchDamage * (float) getAdaptationMultiplier(entity));
 						}
 
 						Vec3 pushVec = targetLiv.position().subtract(entity.position());
@@ -1868,7 +1876,7 @@ private static float lerpAngle(float pct, float start, float end) {
 					livTarget.setDeltaMovement(0, -2.5, 0);
 					livTarget.hasImpulse = true;
 					if (world instanceof ServerLevel level) {
-						livTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_seismic_slam"))), entity), 15.0F);
+						livTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_seismic_slam"))), entity), 15.0F * (float) getAdaptationMultiplier(entity));
 						double targetNewX = livTarget.getX();
 						double targetNewY = livTarget.getY();
 						double targetNewZ = livTarget.getZ();
@@ -2078,7 +2086,12 @@ private static float lerpAngle(float pct, float start, float end) {
 
 			double maxScore = Math.max(Math.max(laserScore, tkScore), Math.max(screamScore, omniScore));
 
-			if (maxScore > 5.0 && Math.random() < (totemActive ? 0.35 : 0.15)) {
+			double rangedChance = totemActive ? 0.35 : 0.15;
+			double _cTicks = entity.getPersistentData().getDouble("sentinel_combat_ticks");
+			if (_cTicks > 3000.0) {
+				rangedChance *= Math.max(0.1, 1.0 - ((_cTicks - 3000.0) / 12000.0));
+			}
+			if (maxScore > 5.0 && Math.random() < rangedChance) {
 				if (maxScore == omniScore) {
 					recordAttack(entity, "omni");
 					entity.getPersistentData().putDouble("sentinel_omni_sonic_cooldown", OMNI_SONIC_BOOM_CD);
@@ -2233,7 +2246,7 @@ private static float lerpAngle(float pct, float start, float end) {
 			// Contact fire damage within 1.5 blocks range
 			if (dist <= 1.5 && self.tickCount % 4 == 0) {
 				target.setRemainingFireTicks(60);
-				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_inferno_laser"))), self), 4.0F);
+				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_inferno_laser"))), self), 4.0F * (float) getAdaptationMultiplier(self));
 			}
 
 			// Clear freezing and slow debuffs
@@ -2508,12 +2521,12 @@ private static float lerpAngle(float pct, float start, float end) {
 						sonicDmg *= 2.0F;
 						explosionDmg *= 2.0F;
 					}
-					targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_inferno_laser"))), entity), sonicDmg + explosionDmg); // Fire heat penetration
+					targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_inferno_laser"))), entity), (sonicDmg + explosionDmg) * (float) getAdaptationMultiplier(entity)); // Fire heat penetration
 					targetVictim.setRemainingFireTicks(120);
 
 					// Organic knockback
 					Vec3 push = targetVictim.position().subtract(entity.position()).normalize();
-					targetVictim.setDeltaMovement(push.x * 1.0, 0.25, push.z * 1.0);
+					targetVictim.setDeltaMovement(push.x * 0.85, 0.2125, push.z * 0.85);
 
 					// Crack and break blocks behind pushed target
 					breakBlocksBehindTarget(level, targetVictim, push, entity.getPersistentData().getBoolean("sentinel_totem_active"));
@@ -2763,14 +2776,14 @@ private static float lerpAngle(float pct, float start, float end) {
 					if (entity.getPersistentData().getBoolean("sentinel_totem_active")) {
 						dmg *= 2.0F;
 					}
-					targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_cryo_laser"))), entity), dmg); // Extreme cryo/freeze dmg
+					targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_cryo_laser"))), entity), dmg * (float) getAdaptationMultiplier(entity)); // Extreme cryo/freeze dmg
 					((LivingEntity) targetVictim).setTicksFrozen(((LivingEntity) targetVictim).getTicksFrozen() + 180); // Freeze target completely!
 					((LivingEntity) targetVictim).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 4, false, false)); // Complete freeze/slowness!
 					playHostileSound(level, targetVictim.getX(), targetVictim.getY(), targetVictim.getZ(), "entity.player.hurt_freeze", 1.2F, 0.8F);
 
 					// Small frost knockback
 					Vec3 push = targetVictim.position().subtract(entity.position()).normalize();
-					targetVictim.setDeltaMovement(push.x * 0.4, 0.1, push.z * 0.4);
+					targetVictim.setDeltaMovement(push.x * 0.34, 0.085, push.z * 0.34);
 
 					// Crack and break blocks behind pushed target
 					breakBlocksBehindTarget(level, targetVictim, push, entity.getPersistentData().getBoolean("sentinel_totem_active"));
@@ -3096,7 +3109,7 @@ private static float lerpAngle(float pct, float start, float end) {
 			}
 
 			if (ticksLeft % 4 == 0) {
-				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_extraction_grapple"))), self), 4.0F); // Direct biological drain
+				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_extraction_grapple"))), self), 4.0F * (float) getAdaptationMultiplier(self)); // Direct biological drain
 				rawSelf.setHealth(Math.min(rawSelf.getMaxHealth(), rawSelf.getHealth() + 4.5F));
 
 				level.sendParticles(ParticleTypes.SWEEP_ATTACK, self.getX(), self.getY() + 1.2, self.getZ(), 1, 0.3, 0.3, 0.3, 0.0);
@@ -3132,14 +3145,14 @@ private static float lerpAngle(float pct, float start, float end) {
 				// Slam down forcefully
 				target.setDeltaMovement(0, -2.4, 0);
 				target.hasImpulse = true;
-				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_telekinesis"))), self), 12.0F);
+				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_telekinesis"))), self), 12.0F * (float) getAdaptationMultiplier(self));
 				playHostileSound(level, target.getX(), target.getY(), target.getZ(), "entity.iron_golem.damage", 1.0F, 0.65F);
 			} else {
 				// Slam/throw horizontally and up
 				Vec3 throwDir = target.position().subtract(self.position()).normalize();
 				double ty = Math.max(throwDir.y, 0.2);
 				target.setDeltaMovement(throwDir.x * 2.0, ty * 1.5 + 0.3, throwDir.z * 2.0);
-				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_telekinesis"))), self), 8.0F);
+				target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_telekinesis"))), self), 8.0F * (float) getAdaptationMultiplier(self));
 				playHostileSound(level, self.getX(), self.getY(), self.getZ(), "entity.player.attack.sweep", 1.0F, 0.6F);
 			}
 		}
@@ -3325,9 +3338,9 @@ private static float lerpAngle(float pct, float start, float end) {
 
 		// Apply Damage
 		if (ls != null) {
-			target.hurt(ls.damageSources().mobAttack(ls), (float) finalDamage);
+			target.hurt(ls.damageSources().mobAttack(ls), (float) finalDamage * (float) getAdaptationMultiplier(ls));
 		} else {
-			target.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) finalDamage);
+			target.hurt(new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) finalDamage * (float) getAdaptationMultiplier(self));
 		}
 
 		// Effects and Knockback
@@ -3398,7 +3411,7 @@ private static float lerpAngle(float pct, float start, float end) {
 			playHostileSound(level, spawnX, spawnY, spawnZ, "item.chorus_fruit.teleport", 1.1F, 0.95F);
 
 			// Heavier strike damage & backward push
-			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.4));
+			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.4) * (float) getAdaptationMultiplier(ls));
 			liv.setDeltaMovement(liv.getDeltaMovement().add(self.getViewVector(1.0F).scale(1.8)));
 			liv.hasImpulse = true;
 			playHostileSound(level, target.getX(), target.getY(), target.getZ(), "entity.player.attack.sweep", 1.2F, 0.65F);
@@ -3408,7 +3421,7 @@ private static float lerpAngle(float pct, float start, float end) {
 			liv.setDeltaMovement(0.0, 0.45, 0.0);
 			liv.hasImpulse = true;
 			liv.addEffect(new MobEffectInstance(net.minecraft.world.effect.MobEffects.MOVEMENT_SLOWDOWN, 40, 4, false, false));
-			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.5));
+			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.5) * (float) getAdaptationMultiplier(ls));
 			liv.setDeltaMovement(sweepPush.x * 0.2, -1.8, sweepPush.z * 0.2);
 			liv.hasImpulse = true;
 
@@ -3420,7 +3433,7 @@ private static float lerpAngle(float pct, float start, float end) {
 			// Combo 6: Thermal-Cryo Shock Combo (requires unlockedSolar or unlockedCryo)
 			liv.setRemainingFireTicks(80);
 			liv.addEffect(new MobEffectInstance(net.minecraft.world.effect.MobEffects.MOVEMENT_SLOWDOWN, 60, 2, false, false));
-			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.35));
+			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.35) * (float) getAdaptationMultiplier(ls));
 
 			level.sendParticles(ParticleTypes.FLAME, target.getX(), target.getY() + 1.0, target.getZ(), 8, 0.3, 0.3, 0.3, 0.05);
 			level.sendParticles(ParticleTypes.SNOWFLAKE, target.getX(), target.getY() + 1.0, target.getZ(), 8, 0.3, 0.3, 0.3, 0.05);
@@ -3437,7 +3450,7 @@ private static float lerpAngle(float pct, float start, float end) {
 			playHostileSound(level, target.getX(), target.getY(), target.getZ(), "item.chorus_fruit.teleport", 1.3F, 1.2F);
 			playHostileSound(level, target.getX(), target.getY(), target.getZ(), "entity.player.attack.sweep", 1.4F, 1.5F);
 
-			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.6));
+			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.6) * (float) getAdaptationMultiplier(ls));
 			liv.setDeltaMovement(sweepPush.x * 1.6, 0.45, sweepPush.z * 1.6);
 			liv.hasImpulse = true;
 
@@ -3457,7 +3470,7 @@ private static float lerpAngle(float pct, float start, float end) {
 				level.sendParticles(ParticleTypes.PORTAL, tx, ty + 0.5, tz, 6, 0.2, 0.2, 0.2, 0.05);
 				playHostileSound(level, tx, ty, tz, "item.chorus_fruit.teleport", 1.1F, 1.0F + hit * 0.1F);
 				playHostileSound(level, tx, ty, tz, "entity.player.attack.knockback", 1.3F, 0.7F + hit * 0.1F);
-				target.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.2));
+				target.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 1.2) * (float) getAdaptationMultiplier(ls));
 				Vec3 pushVec = target.position().subtract(self.position()).normalize();
 				target.setDeltaMovement(pushVec.x * 1.9, 0.35, pushVec.z * 1.9);
 				target.hasImpulse = true;
@@ -3533,7 +3546,7 @@ private static float lerpAngle(float pct, float start, float end) {
 			playHostileSound(level, tx, ty, tz, "entity.generic.explode", 1.4F, 1.1F);
 			playHostileSound(level, tx, ty, tz, "entity.warden.attack_impact", 1.6F, 0.6F);
 
-			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 2.2));
+			liv.hurt(ls != null ? ls.damageSources().mobAttack(ls) : new DamageSource(level.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) (finalDamage * 2.2) * (float) getAdaptationMultiplier(ls));
 			liv.setDeltaMovement(sweepPush.x * 3.5, 0.95, sweepPush.z * 3.5);
 			liv.hasImpulse = true;
 		} else if (selectCombo == 12 && target instanceof LivingEntity liv) {
@@ -3898,6 +3911,9 @@ private static float lerpAngle(float pct, float start, float end) {
 
 			// Realistically learn teleportation if fighting End entity, Player utilizing Ender Pearl, seeing dropped ender pearl, or in the End dimension
 			boolean learnTP = false;
+			if (combatTicks > 3000.0) {
+				learnTP = true;
+			}
 			if (entity.level().dimension() == net.minecraft.world.level.Level.END) {
 				learnTP = true;
 			} else {
@@ -4085,7 +4101,7 @@ private static float lerpAngle(float pct, float start, float end) {
 			// Devastate nearby living entities
 			List<Entity> swept = level.getEntitiesOfClass(Entity.class, new AABB(beamPoint, beamPoint).inflate(2.4), e -> e != self && e instanceof LivingEntity);
 			for (Entity targetVictim : swept) {
-				targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, net.minecraft.resources.ResourceLocation.parse("the_backwoods:rot_sonic_boom"))), self), 32.0F);
+				targetVictim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, net.minecraft.resources.ResourceLocation.parse("the_backwoods:rot_sonic_boom"))), self), 32.0F * (float) getAdaptationMultiplier(self));
 				
 				Vec3 push = targetVictim.position().subtract(self.position()).normalize();
 				targetVictim.setDeltaMovement(push.x * 2.5, 0.6, push.z * 2.5);
@@ -4991,7 +5007,7 @@ private static float lerpAngle(float pct, float start, float end) {
 					} else {
 						damageSource = liv.damageSources().generic();
 					}
-					liv.hurt(damageSource, 25.0F);
+					liv.hurt(damageSource, 25.0F * (float) getAdaptationMultiplier(entity));
 
 					// Trigger the SAME shockwave around the player/target
 					entity.getPersistentData().putDouble("sentinel_shockwave_stage", 1);
@@ -5039,7 +5055,7 @@ private static float lerpAngle(float pct, float start, float end) {
 
 				// Deal punch damage
 				if (world instanceof ServerLevel level) {
-					target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), entity), (float) MELEE_PUNCH_DAMAGE);
+					target.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), entity), (float) MELEE_PUNCH_DAMAGE * (float) getAdaptationMultiplier(entity));
 				}
 
 				if (world instanceof ServerLevel level) {
@@ -5218,12 +5234,15 @@ private static float lerpAngle(float pct, float start, float end) {
 		boolean isInfinity = self.getPersistentData().getBoolean("sentinel_is_infinity_totem");
 		double blastRadius = totemActive ? 12.0 : 6.5;
 		if (isInfinity) blastRadius = 15.0;
+		double _adaptation = getAdaptationMultiplier(self);
+		blastRadius *= _adaptation;
 		float blastDamage = totemActive ? 55.0F : 30.0F;
 		if (isInfinity) blastDamage *= 2.5F;
+		blastDamage *= (float) _adaptation;
 
 		playHostileSound(level, targetX, targetY, targetZ, "entity.generic.explode", 1.8F, 0.45F);
 		if (isInfinity) {
-			level.explode(self, targetX, targetY + 0.5, targetZ, 6.5F, Level.ExplosionInteraction.MOB);
+			level.explode(self, targetX, targetY + 0.5, targetZ, 6.5F * (float) Math.min(5.0, getAdaptationMultiplier(self)), Level.ExplosionInteraction.MOB);
 		}
 		if (shakeCamera) {
 			playHostileSound(level, targetX, targetY, targetZ, "entity.warden.sonic_boom", 1.5F, 0.6F);
@@ -5274,7 +5293,7 @@ private static float lerpAngle(float pct, float start, float end) {
 		java.util.List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, self.getBoundingBox().inflate(blastRadius), e -> e != self);
 		for (LivingEntity victim : targets) {
 			String dmgType = self.getPersistentData().getDouble("sentinel_die_kick_phase") > 0 ? "rot_die_rider_kick" : "rot_seismic_slam";
-			victim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:" + dmgType))), self), blastDamage);
+			victim.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:" + dmgType))), self), blastDamage * (float) getAdaptationMultiplier(self));
 			Vec3 push = victim.position().subtract(self.position()).multiply(1.0, 0.0, 1.0);
 			double horizontalDist = Math.sqrt(push.x * push.x + push.z * push.z);
 			if (horizontalDist < 0.1) {
@@ -5619,7 +5638,7 @@ private static float lerpAngle(float pct, float start, float end) {
 						entity.getPersistentData().putBoolean("sentinel_cc2_launched", true);
 						if (entity instanceof LivingEntity ls) ls.swing(InteractionHand.MAIN_HAND, true);
 						
-						combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) UPPERCUT_DAMAGE);
+						combatTarget.hurt(entity instanceof LivingEntity ls ? ls.damageSources().mobAttack(ls) : new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK)), (float) UPPERCUT_DAMAGE * (float) getAdaptationMultiplier(entity));
 						
 						double launchHeightVel = 2.8 + Math.random() * 1.0; // Launches 25-45 blocks high
 						applyKnockbackAndSync(combatTarget, 0.0, launchHeightVel, 0.0);
@@ -5842,7 +5861,7 @@ private static float lerpAngle(float pct, float start, float end) {
 				applyKnockbackAndSync(combatTarget, knockDir.x * 2.2, launchHeightVel, knockDir.z * 2.2);
 
 				// Deal punch damage
-				if (world instanceof ServerLevel level) combatTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), entity), (float) MELEE_PUNCH_DAMAGE);
+				if (world instanceof ServerLevel level) combatTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_consecutive_punches"))), entity), (float) MELEE_PUNCH_DAMAGE * (float) getAdaptationMultiplier(entity));
 
 				if (world instanceof ServerLevel level) {
 					level.sendParticles(ParticleTypes.CRIT, combatTarget.getX(), combatTarget.getY() + 0.8, combatTarget.getZ(), 15, 0.3, 0.3, 0.3, 0.2);
@@ -6071,9 +6090,9 @@ private static float lerpAngle(float pct, float start, float end) {
 			if (tickRemaining % CHOKE_DAMAGE_INTERVAL == 0) {
 				if (world instanceof ServerLevel level) {
 					try {
-						livTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_choke_rip")))), (float) CHOKE_DAMAGE);
+						livTarget.hurt(new DamageSource(level.holderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.DAMAGE_TYPE, ResourceLocation.parse("the_backwoods:rot_choke_rip")))), (float) CHOKE_DAMAGE * (float) getAdaptationMultiplier(entity));
 					} catch (Exception e) {
-						livTarget.hurt(livTarget.damageSources().mobAttack(entity instanceof LivingEntity le ? le : null), (float) CHOKE_DAMAGE);
+						livTarget.hurt(livTarget.damageSources().mobAttack(entity instanceof LivingEntity le ? le : null), (float) CHOKE_DAMAGE * (float) getAdaptationMultiplier(entity));
 					}
 					// Play choking/damage sound and particles
 					level.playSound(null, livTarget.getX(), livTarget.getY(), livTarget.getZ(),
