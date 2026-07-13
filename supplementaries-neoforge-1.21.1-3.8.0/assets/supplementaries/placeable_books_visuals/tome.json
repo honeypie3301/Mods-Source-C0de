@@ -1,0 +1,13 @@
+{
+  "variants": [
+    {
+      "models": [
+        {
+          "model": "supplementaries:block/books/book_tome",
+          "color": "brown",
+          "has_glint": true
+        }
+      ]
+    }
+  ]
+}

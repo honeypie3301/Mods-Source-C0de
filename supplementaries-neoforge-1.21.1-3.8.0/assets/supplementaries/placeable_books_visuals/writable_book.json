@@ -1,0 +1,12 @@
+{
+  "variants": [
+    {
+      "models": [
+        {
+          "model": "supplementaries:block/books/book_and_quill",
+          "color": "brown"
+        }
+      ]
+    }
+  ]
+}

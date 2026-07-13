@@ -1,0 +1,39 @@
+{
+  "required": true,
+  "package": "net.mehvahdjukaar.supplementaries.mixins.neoforge",
+  "plugin": "net.mehvahdjukaar.supplementaries.mixins.MixinPlugin",
+  "client": [
+    "BlockEntityRendererDispatcherMixin",
+    "ChatMixin",
+    "LevelRendererMixin",
+    "ParrotLayerMixin",
+    "compat.CompatEmbFluidRendererMixin",
+    "compat.CompatIFMapAtlasTextureMixin",
+    "compat.CompatIFMapTextureMixin2",
+    "compat.CompatSodiumFluidRendererMixin"
+  ],
+  "mixins": [
+    "ChunkHolderMixin",
+    "FireBlockAccessor",
+    "ItemStackAccessor",
+    "LivingEntityMixin",
+    "TreasureMapForEmeraldsMixin",
+    "ZetaPistonStructureResolverMixin",
+    "self.SelfFlammableFluidBlockMixin",
+    "self.SelfFrameMixin",
+    "self.SelfGunpowderMixin",
+    "self.SelfLumiseneFluidMixin",
+    "self.SelfNetheriteDoorMixin",
+    "self.SelfPlanterMixin",
+    "self.SelfSafeMixin",
+    "self.SelfSlingshotMixin",
+    "self.SelfSoapItemMixin",
+    "self.SelfWrenchMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixinextras": {
+    "minVersion": "0.5.3"
+  }
+}
