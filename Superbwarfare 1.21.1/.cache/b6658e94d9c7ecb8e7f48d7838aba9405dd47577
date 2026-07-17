@@ -1,0 +1,11 @@
+// 1.21.1	2026-03-17T15:17:57.6965223	Tags for minecraft:entity_type mod id superbwarfare
+9ea634c77962f84c5a0cbc38d888368be4a4c3f2 data/superbwarfare/tags/entity_type/aa_missile.json
+7fe9aca918179967830b4c9a9fa1f2ada0602bce data/superbwarfare/tags/entity_type/aerial_bomb.json
+55abe2413db83faacca820b7425d20e44ea2d5bf data/superbwarfare/tags/entity_type/at_rocket.json
+2ed327c93a02bf9bf4d42ce6721c4fde0dce31bb data/superbwarfare/tags/entity_type/biogas_generator_whitelist.json
+fdc757f3a93e3eb5cd319b1b69563f8e95dfff47 data/superbwarfare/tags/entity_type/can_repair.json
+831bbb12a31a9fd9a731e812b690d09d70ade7e9 data/superbwarfare/tags/entity_type/decoy.json
+3f6d0231a59340776af6c5c0ba2d06118131efcc data/superbwarfare/tags/entity_type/destroyable_projectile.json
+d41fd96a3f7a9fb22bc35da61b545d13871ee6c4 data/superbwarfare/tags/entity_type/mine.json
+80e455e3689fb743901094a338ab7d6dd0b28d83 data/superbwarfare/tags/entity_type/no_experience.json
+f8c212aa5ef8ab90b222aff6f5878dd17ae6597a data/superbwarfare/tags/entity_type/seek_blacklist.json

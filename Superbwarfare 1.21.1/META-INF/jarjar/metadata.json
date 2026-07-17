@@ -1,0 +1,16 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "com.github.MCModderAnchor",
+        "artifact": "SimpleBedrockModel"
+      },
+      "version": {
+        "range": "[2.0,3.0)",
+        "artifactVersion": "2.3.3-neoforge-mc1.21.1"
+      },
+      "path": "META-INF/jarjar/SimpleBedrockModel-2.3.3-neoforge-mc1.21.1.jar",
+      "isObfuscated": false
+    }
+  ]
+}

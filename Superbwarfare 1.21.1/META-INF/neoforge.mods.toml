@@ -1,0 +1,61 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[5.8.0,)"
+license = "GNU General Public License v3.0"
+
+[[mods]]
+modId = "superbwarfare"
+version = "0.8.9"
+displayName = "Superb Warfare"
+authors = "Atsuishio, Roki27, Light_Quanta"
+logoFile = "../../resources/logo.png"
+description = "A Warfare Mod"
+enumExtensions = "META-INF/enumextensions.json"
+
+[[mixins]]
+config = "mixins.superbwarfare.json"
+
+[[dependencies.superbwarfare]]
+modId = "neoforge" #mandatory
+mandatory = true #mandatory
+versionRange = "[21.1.203,)" #mandatory
+ordering = "NONE"
+side = "BOTH"# Here's another dependency
+
+[[dependencies.superbwarfare]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.superbwarfare]]
+modId = "curios"
+type = "required"
+versionRange = "[5.4.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.superbwarfare]]
+modId = "geckolib"
+type = "required"
+versionRange = "[4.4.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.superbwarfare]]
+modId = "optifine"
+type = "discouraged"
+
+[[dependencies.superbwarfare]]
+modId = "geckoanimfix"
+type = "incompatible"
+
+[[dependencies.superbwarfare]]
+modId = "realcamera"
+type = "optional"
+versionRange = "[0.7.0-beta,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[features.superbwarfare]
+openGLVersion = "[3.2,)"
