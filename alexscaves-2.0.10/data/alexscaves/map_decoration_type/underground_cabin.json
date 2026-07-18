@@ -1,0 +1,8 @@
+{
+  "asset_id": "alexscaves:underground_cabin",
+  "map_color": 5393476,
+  "exploration_map_element": true,
+  "tracking_count_limit": 256,
+  "show_on_item_frame": true,
+  "has_map_color": true
+}

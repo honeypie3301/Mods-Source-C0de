@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "alexscaves:ferrouslime_ball"
+    },
+    {
+      "tag": "c:raw_materials/iron"
+    },
+    {
+      "tag": "c:gravel"
+    },
+    {
+      "tag": "c:gravel"
+    }
+  ],
+  "result": { "id": "alexscaves:metal_swarf",
+    "count": 2
+  }
+}

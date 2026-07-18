@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Specification-Title: alexscaves
+Specification-Vendor: alexthe668
+Specification-Version: 2.0.3
+Implementation-Title: AlexsCaves-1.21.1
+Implementation-Version: 2.0.10
+Implementation-Vendor: alexthe668
+
