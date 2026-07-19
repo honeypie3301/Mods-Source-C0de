@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "netherman:polished_samsonit"
+  },
+  "result": {
+    "id": "netherman:polished_samsonit_stairs",
+    "count": 1
+  }
+}

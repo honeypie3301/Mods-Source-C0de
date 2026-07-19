@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "netherman:blackstone_column",
+    "netherman:pointed_blackstone",
+    "netherman:statue_stand",
+    "netherman:totemus",
+    "netherman:azazel_trophy",
+    "netherman:azazel_trophy_stage2",
+    "netherman:azazel_trophy_stage3",
+    "netherman:potent_magma",
+    "netherman:locker_nether",
+    "netherman:totemus_hole",
+    "netherman:maze_door",
+    "netherman:face_puzzle_left_down",
+    "netherman:face_puzzle_left_up",
+    "netherman:face_puzzle_right_up",
+    "netherman:face_puzzle_right_down",
+    "netherman:samsonite_bell"
+  ]
+}

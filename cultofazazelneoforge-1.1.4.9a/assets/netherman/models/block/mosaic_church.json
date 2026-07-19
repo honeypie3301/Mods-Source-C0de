@@ -1,0 +1,52 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "netherman:block/mosaic_church",
+		"particle": "netherman:block/mosaic_church"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 7],
+			"to": [16, 16, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 4, 8, 8], "texture": "#1"},
+				"east": {"uv": [3.5, 4, 4, 8], "texture": "#1"},
+				"south": {"uv": [8.5, 4, 12.5, 8], "texture": "#1"},
+				"west": {"uv": [8, 4, 8.5, 8], "texture": "#1"},
+				"up": {"uv": [8, 4, 4, 3.5], "texture": "#1"},
+				"down": {"uv": [12, 3.5, 8, 4], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 1.75, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 1.25, 0],
+			"scale": [0.31, 0.31, 0.31]
+		},
+		"firstperson_righthand": {
+			"rotation": [-19, 98, 0],
+			"translation": [0, 2.25, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-15, 91, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.56, 0.56, 0.56]
+		},
+		"ground": {
+			"translation": [0, 2.75, 0],
+			"scale": [0.32, 0.32, 0.32]
+		},
+		"gui": {
+			"rotation": [26, -34, 0],
+			"scale": [0.65, 0.65, 0.65]
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:chiseled_polished_blackstone"
+    }
+  ],
+  "result": {
+    "id": "netherman:blackstone_column"
+  }
+}

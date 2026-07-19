@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "particle": "netherman:block/nether_spawner_particles",
+    "end": "netherman:block/blackstone_column_top",
+    "side": "netherman:block/blackstone_column"
+  }
+}
