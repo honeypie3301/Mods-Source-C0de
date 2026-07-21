@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "legendary_monsters:lava_eater_spawn",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 30,
+    "separation": 20,
+    "salt": 435246
+  }
+
+}
