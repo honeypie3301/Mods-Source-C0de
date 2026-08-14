@@ -1,0 +1,51 @@
+{
+	"name": "witherstormmod:bowels/bowels_tunnels",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 10,
+			"element": {
+				"location": "witherstormmod:bowels/bowels_tunnel_obstructed",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "witherstormmod:bowels/bowels_tunnel",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "witherstormmod:bowels/bowels_tunnel_garden",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 9,
+			"element": {
+				"location": "witherstormmod:bowels/bowels_tunnel_mineshaft",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 9,
+			"element": {
+				"location": "witherstormmod:bowels/bowels_tunnel_village",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

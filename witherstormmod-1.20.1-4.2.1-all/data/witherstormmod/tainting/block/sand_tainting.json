@@ -1,0 +1,6 @@
+{
+  "block": "#forge:sand",
+  "replacement": {
+    "Name": "witherstormmod:tainted_sand"
+  }
+}

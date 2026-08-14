@@ -1,0 +1,41 @@
+{
+	"precipitation": "none",
+	"category": "none",
+	"depth": 0.1,
+	"scale": 0.2,
+	"temperature": 2.0,
+	"temperature_modifier": "none",
+	"downfall": 0.0,
+	"creature_spawn_probability": 0.1,
+	"effects": {
+		"fog_color": 16739320,
+		"foliage_color": 7229804,
+		"grass_color": 7229804,
+		"sky_color": 2825770,
+		"water_color": 2825770,
+		"water_fog_color": 8540030,
+		"grass_color_modifier": "none",
+		"ambient_sound": "witherstormmod:bowels_loop",
+		"mood_sound": {
+			"sound": "witherstormmod:bowels_mood",
+			"tick_delay": 240,
+			"block_search_extent": 8,
+			"offset": 2.0
+		}
+	},
+	"surface_builder": "minecraft:nope",
+	"carvers": {},
+	"features": [],
+	"starts": [],
+	"spawners": {
+		"monster": [],
+		"creature": [],
+		"ambient": [],
+		"water_creature": [],
+		"water_ambient": [],
+		"misc": []
+	},
+	"player_spawn_friendly": false,
+	"spawn_costs": {},
+	"has_precipitation": false 
+}

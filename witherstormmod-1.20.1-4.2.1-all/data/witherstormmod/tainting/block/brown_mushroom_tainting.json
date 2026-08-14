@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:brown_mushroom",
+  "replacement": {
+    "Name": "witherstormmod:tainted_mushroom"
+  }
+}

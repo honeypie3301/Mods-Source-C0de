@@ -1,0 +1,16 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "condition": "all_supports",
+  "entity": "witherstormmod:sickened_chicken",
+  "ingredients": [
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "witherstormmod:withered_bone"
+    },
+    {
+      "item": "minecraft:feather"
+    }
+  ]
+}

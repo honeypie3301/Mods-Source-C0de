@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "witherstormmod:wither_sickness",
+    "witherstormmod:wither_storm_attack_mob",
+    "witherstormmod:iron_pierce"
+  ]
+}

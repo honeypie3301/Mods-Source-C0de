@@ -1,0 +1,5 @@
+{
+  "convert_from_sickness": true,
+  "from": "minecraft:spider",
+  "to": "witherstormmod:sickened_spider"
+}

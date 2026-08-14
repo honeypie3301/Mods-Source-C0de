@@ -1,0 +1,27 @@
+{
+  "type": "witherstormmod:item_craft_super_beacon",
+  "condition": "main_activated",
+  "ingredients": [
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    }
+  ],
+  "result": {
+    "item": "witherstormmod:withered_spider_eye"
+  }
+}

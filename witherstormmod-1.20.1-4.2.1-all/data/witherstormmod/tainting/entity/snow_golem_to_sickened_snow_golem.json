@@ -1,0 +1,5 @@
+{
+  "convert_from_sickness": false,
+  "from": "minecraft:snow_golem",
+  "to": "witherstormmod:sickened_snow_golem"
+}

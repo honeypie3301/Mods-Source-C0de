@@ -1,0 +1,31 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "condition": "all_supports",
+  "entity": "witherstormmod:sickened_bee",
+  "ingredients": [
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ]
+}

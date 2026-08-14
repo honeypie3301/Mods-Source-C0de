@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "witherstormmod:sickened_chicken",
+    "witherstormmod:sickened_iron_golem",
+    "witherstormmod:sickened_bee",
+    "witherstormmod:sickened_snow_golem",
+    "witherstormmod:sickened_cat"
+  ]
+}

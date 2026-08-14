@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "witherstormmod:tainted_glass"
+    },
+    "I": {
+      "item": "witherstormmod:tainted_flesh_block"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GSG",
+    "III"
+  ],
+  "result": {
+    "item": "witherstormmod:super_support_beacon"
+  },
+  "show_notification": true
+}

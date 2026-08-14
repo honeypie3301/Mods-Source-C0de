@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "witherstormmod:item/gold_command_block_hoe"
+  }
+}

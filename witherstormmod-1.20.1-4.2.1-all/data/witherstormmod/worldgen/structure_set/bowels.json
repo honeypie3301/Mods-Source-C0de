@@ -1,0 +1,14 @@
+{
+  "structures": [
+  	{
+  	  "structure": "witherstormmod:bowels",
+  	  "weight": 1
+  	}
+  ],
+  "placement": {
+  	"salt": 0,
+  	"spacing": 20,
+  	"separation": 19,
+  	"type": "minecraft:random_spread"
+  }
+}

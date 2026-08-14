@@ -1,0 +1,30 @@
+{
+	"replace": false,
+	"values": [
+		"witherstormmod:tainted_stone",
+		"witherstormmod:tainted_stone_slab",
+		"witherstormmod:tainted_stone_stairs",
+		"witherstormmod:tainted_stone_pressure_plate",
+		"witherstormmod:tainted_stone_button",
+		"witherstormmod:tainted_cobblestone",
+		"witherstormmod:tainted_cobblestone_slab",
+		"witherstormmod:tainted_cobblestone_stairs",
+		"witherstormmod:tainted_cobblestone_wall",
+		"witherstormmod:tainted_dust_block",
+		"witherstormmod:tainted_glass",
+		"witherstormmod:tainted_glass_pane",
+		"witherstormmod:super_beacon",
+		"witherstormmod:super_support_beacon",
+		"witherstormmod:tainted_sandstone",
+		"witherstormmod:tainted_sandstone_stairs",
+		"witherstormmod:tainted_sandstone_slab",
+		"witherstormmod:tainted_sandstone_wall",
+		"witherstormmod:tainted_cut_sandstone",
+		"witherstormmod:tainted_cut_sandstone_slab",
+		"witherstormmod:tainted_chiseled_sandstone",
+		"witherstormmod:tainted_smooth_sandstone",
+		"witherstormmod:tainted_smooth_sandstone_stairs",
+		"witherstormmod:tainted_smooth_sandstone_slab",
+		"witherstormmod:tainted_smooth_sandstone_wall"
+	]
+}

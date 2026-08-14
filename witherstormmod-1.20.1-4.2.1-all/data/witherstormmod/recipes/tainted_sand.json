@@ -1,0 +1,27 @@
+{
+  "type": "witherstormmod:item_craft_super_beacon",
+  "condition": "main_activated",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "result": {
+    "item": "witherstormmod:tainted_sand"
+  }
+}

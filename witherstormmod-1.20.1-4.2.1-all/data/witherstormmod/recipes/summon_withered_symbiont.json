@@ -1,0 +1,25 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "condition": "fully_completed",
+  "entity": "witherstormmod:withered_symbiont",
+  "ingredients": [
+    {
+      "item": "witherstormmod:infected_flesh_block"
+    },
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "witherstormmod:withered_bone"
+    },
+    {
+      "item": "witherstormmod:tainted_dust_block"
+    },
+    {
+      "item": "minecraft:wither_skeleton_skull"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "witherstormmod:item_craft_super_beacon",
+  "condition": "main_activated",
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "result": {
+    "item": "witherstormmod:withered_bone"
+  }
+}

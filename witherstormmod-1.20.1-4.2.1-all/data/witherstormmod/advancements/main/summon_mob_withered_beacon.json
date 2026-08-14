@@ -1,0 +1,29 @@
+{
+  "parent": "witherstormmod:main/activate_super_beacon",
+  "display": {
+    "icon": {
+      "item": "witherstormmod:tainted_zombie_wall"
+    },
+    "title": {
+      "translate": "advancements.witherstormmod.main.summon_mob_withered_beacon.title"
+    },
+    "description": {
+      "translate": "advancements.witherstormmod.main.summon_mob_withered_beacon.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "summoned_mob": {
+      "trigger": "witherstormmod:summon_mob_withered_beacon",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "summoned_mob"
+    ]
+  ]
+}

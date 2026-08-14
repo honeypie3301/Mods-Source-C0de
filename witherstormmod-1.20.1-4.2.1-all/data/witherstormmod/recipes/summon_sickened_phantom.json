@@ -1,0 +1,22 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "condition": "all_supports",
+  "entity": "witherstormmod:sickened_phantom",
+  "ingredients": [
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "witherstormmod:withered_bone"
+    },
+    {
+      "item": "witherstormmod:withered_bone"
+    },
+    {
+      "item": "minecraft:phantom_membrane"
+    }
+  ]
+}

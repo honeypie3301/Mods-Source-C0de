@@ -1,0 +1,33 @@
+{
+  "parent": "witherstormmod:main/amulet",
+  "display": {
+    "icon": {
+      "item": "minecraft:ender_eye"
+    },
+    "title": {
+      "translate": "advancements.witherstormmod.main.fully_link_amulet.title"
+    },
+    "description": {
+      "translate": "advancements.witherstormmod.main.fully_link_amulet.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fully_linked": {
+      "trigger": "witherstormmod:link_amulet",
+      "conditions": {
+        "total_linked": {
+          "min": 4
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fully_linked"
+    ]
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "block": "#minecraft:small_flowers",
+  "replacement": {
+    "Name": "minecraft:wither_rose"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "witherstormmod:tainted_leaves",
+    "witherstormmod:tainted_flesh_block",
+    "witherstormmod:infected_flesh_block",
+    "witherstormmod:firework_bundle",
+    "witherstormmod:tainted_flesh_veins",
+    "#witherstormmod:mob_statues"
+  ]
+}

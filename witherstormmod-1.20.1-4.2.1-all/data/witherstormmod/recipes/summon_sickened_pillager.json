@@ -1,0 +1,25 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "condition": "all_supports",
+  "entity": "witherstormmod:sickened_pillager",
+  "ingredients": [
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    {
+      "item": "minecraft:crossbow"
+    },
+    {
+      "item": "minecraft:arrow"
+    },
+    {
+      "item": "minecraft:arrow"
+    }
+  ]
+}

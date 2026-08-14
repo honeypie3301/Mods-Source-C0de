@@ -1,0 +1,29 @@
+{
+	"type": "witherstormmod:bowels",
+	"generator": {
+		"type": "minecraft:flat",
+		"settings": {
+			"layers": [{
+				"height": 256,
+				"block": "witherstormmod:hardened_flesh_block"
+			}],
+			"biome": "witherstormmod:bowels",
+			"lakes": false,
+			"features": false,
+			"structures": {
+				"stronghold": {
+					"distance": 0,
+					"count": 0,
+					"spread": 0
+				},
+				"structures": {
+					"witherstormmod:bowels": {
+						"spacing": 60,
+						"separation": 59,
+						"salt": 0
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "type": "witherstormmod:anvil",
+  "cost": 1,
+  "left": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "result": "witherstormmod:command_block_pickaxe",
+  "right": {
+    "item": "witherstormmod:command_block_book"
+  }
+}

@@ -1,0 +1,105 @@
+{
+	"parent": "minecraft:item/generated",
+	"loader": "forge:separate_transforms",
+	"base": {
+		"textures": {
+			"2": "witherstormmod:item/phasometer_model"
+		},
+		"elements": [
+			{
+				"from": [7, 0, 8],
+				"to": [9, 2, 13],
+				"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+				"faces": {
+					"north": {"uv": [0, 0, 2, 2], "texture": "#2"},
+					"east": {"uv": [2, 0, 7, 2], "texture": "#2"},
+					"south": {"uv": [0, 0, 2, 2], "texture": "#2"},
+					"west": {"uv": [2, 0, 7, 2], "rotation": 180, "texture": "#2"},
+					"up": {"uv": [7, 2, 2, 0], "rotation": 90, "texture": "#2"},
+					"down": {"uv": [2, 2, 7, 0], "rotation": 90, "texture": "#2"}
+				}
+			},
+			{
+				"from": [6.9, -0.1, 2],
+				"to": [9.1, 2.1, 8],
+				"rotation": {"angle": 0, "axis": "y", "origin": [8, 1, 8]},
+				"faces": {
+					"north": {"uv": [13, 0, 15, 2], "texture": "#2"},
+					"east": {"uv": [7, 0, 13, 2], "texture": "#2"},
+					"south": {"uv": [5, 0, 7, 2], "texture": "#2"},
+					"west": {"uv": [7, 0, 13, 2], "rotation": 180, "texture": "#2"},
+					"up": {"uv": [13, 2, 7, 0], "rotation": 90, "texture": "#2"},
+					"down": {"uv": [7, 2, 13, 0], "rotation": 90, "texture": "#2"}
+				}
+			},
+			{
+				"from": [6, 1.5, 7],
+				"to": [10, 2.5, 10],
+				"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 2, 9.5]},
+				"faces": {
+					"north": {"uv": [3, 6, 7, 7], "texture": "#2"},
+					"east": {"uv": [0, 6, 3, 7], "texture": "#2"},
+					"south": {"uv": [10, 6, 14, 7], "texture": "#2"},
+					"west": {"uv": [7, 6, 10, 7], "texture": "#2"},
+					"up": {"uv": [7, 6, 3, 3], "texture": "#2"},
+					"down": {"uv": [11, 3, 7, 6], "texture": "#2"}
+				}
+			}
+		],
+		"display": {
+			"thirdperson_righthand": {
+				"rotation": [90, 180, 180],
+				"translation": [0, -1.5, -7]
+			},
+			"thirdperson_lefthand": {
+				"rotation": [90, 180, 180],
+				"translation": [0, -1.5, -7]
+			},
+			"firstperson_righthand": {
+				"rotation": [-90, 0, 0],
+				"translation": [-1.75, 1, -5.75]
+			},
+			"firstperson_lefthand": {
+				"rotation": [-90, 0, 0],
+				"translation": [-1.75, 1, -5.75]
+			},
+			"ground": {
+				"translation": [0, 5, 0]
+			},
+			"head": {
+				"translation": [0, 11.5, -14.5],
+				"scale": [1.628, 1.628, 1.628]
+			}
+		},
+		"groups": [
+			0,
+			1,
+			{
+				"name": "display",
+				"origin": [0, 0, 1],
+				"color": 0,
+				"children": [2]
+			}
+		]
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": "witherstormmod:item/phasometer"
+			}
+		},
+		"ground": {
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": "witherstormmod:item/phasometer"
+			}
+		},
+		"fixed": {
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": "witherstormmod:item/phasometer"
+			}
+		}
+	}
+}

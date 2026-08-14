@@ -1,0 +1,6 @@
+{
+  "block": "#minecraft:planks",
+  "replacement": {
+    "Name": "witherstormmod:tainted_planks"
+  }
+}

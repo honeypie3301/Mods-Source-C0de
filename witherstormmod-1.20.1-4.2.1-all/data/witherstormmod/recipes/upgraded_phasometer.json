@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "DPD",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:ender_eye"
+    },
+    "P": {
+      "item": "witherstormmod:phasometer"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+  	"item": "witherstormmod:phasometer",
+  	"nbt": {
+  	  "IsUpgraded": true
+  	}
+  }
+}

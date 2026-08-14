@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:black_dye"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "minecraft:stone_button"
+    },
+    "X": {
+      "item": "minecraft:repeater"
+    },
+    "Z": {
+      "item": "minecraft:spyglass"
+    }
+  },
+  "pattern": [
+    " # ",
+    "SZR",
+    " X "
+  ],
+  "result": {
+    "item": "witherstormmod:phasometer"
+  },
+  "show_notification": true
+}

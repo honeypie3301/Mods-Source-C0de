@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "witherstormmod:item/wooden_command_block_shovel"
+  }
+}

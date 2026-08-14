@@ -1,0 +1,14 @@
+{
+  "block": "minecraft:sandstone_slab",
+  "properties_to_copy": [
+    "type",
+    "waterlogged"
+  ],
+  "replacement": {
+    "Name": "witherstormmod:tainted_sandstone_slab",
+    "Properties": {
+      "type": "bottom",
+      "waterlogged": "false"
+    }
+  }
+}

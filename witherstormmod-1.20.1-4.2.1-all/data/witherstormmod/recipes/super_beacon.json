@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "witherstormmod:amulet"
+    },
+    "G": {
+      "item": "witherstormmod:tainted_glass"
+    },
+    "I": {
+      "item": "witherstormmod:tainted_flesh_block"
+    },
+    "S": {
+      "item": "witherstormmod:withered_nether_star"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GSG",
+    "IAI"
+  ],
+  "result": {
+    "item": "witherstormmod:super_beacon"
+  },
+  "show_notification": true
+}

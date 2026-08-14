@@ -1,0 +1,30 @@
+{
+  "type": "witherstormmod:item_craft_super_beacon",
+  "condition": "all_supports",
+  "ingredients": [
+    {
+      "item": "witherstormmod:command_block_sword"
+    },
+    {
+      "item": "witherstormmod:tainted_flesh_block"
+    },
+    {
+      "item": "witherstormmod:tainted_flesh_block"
+    },
+    {
+      "item": "witherstormmod:tainted_flesh_block"
+    },
+    {
+      "item": "witherstormmod:tainted_flesh_block"
+    },
+    {
+      "item": "witherstormmod:tainted_dust"
+    },
+    {
+      "item": "minecraft:carrot"
+    }
+  ],
+  "result": {
+    "item": "witherstormmod:eye_of_the_storm"
+  }
+}

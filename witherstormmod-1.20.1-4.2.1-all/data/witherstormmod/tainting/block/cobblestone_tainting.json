@@ -1,0 +1,6 @@
+{
+  "block": "#forge:cobblestone",
+  "replacement": {
+    "Name": "witherstormmod:tainted_cobblestone"
+  }
+}

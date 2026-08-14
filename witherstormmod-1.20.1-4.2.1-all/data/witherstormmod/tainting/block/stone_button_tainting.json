@@ -1,0 +1,16 @@
+{
+  "block": "minecraft:stone_button",
+  "properties_to_copy": [
+    "face",
+    "facing",
+    "powered"
+  ],
+  "replacement": {
+    "Name": "witherstormmod:tainted_stone_button",
+    "Properties": {
+      "face": "wall",
+      "facing": "north",
+      "powered": "false"
+    }
+  }
+}

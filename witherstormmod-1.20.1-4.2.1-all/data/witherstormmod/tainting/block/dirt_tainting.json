@@ -1,0 +1,6 @@
+{
+  "block": "#minecraft:dirt",
+  "replacement": {
+    "Name": "witherstormmod:tainted_dirt"
+  }
+}

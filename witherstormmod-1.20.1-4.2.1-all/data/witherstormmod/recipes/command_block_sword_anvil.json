@@ -1,0 +1,11 @@
+{
+  "type": "witherstormmod:anvil",
+  "cost": 1,
+  "left": {
+    "item": "minecraft:diamond_sword"
+  },
+  "result": "witherstormmod:command_block_sword",
+  "right": {
+    "item": "witherstormmod:command_block_book"
+  }
+}

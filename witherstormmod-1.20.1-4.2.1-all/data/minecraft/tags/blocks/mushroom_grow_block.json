@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "witherstormmod:tainted_flesh_block",
+    "witherstormmod:infected_flesh_block"
+  ]
+}

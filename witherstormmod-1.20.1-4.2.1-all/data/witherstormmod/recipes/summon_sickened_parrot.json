@@ -1,0 +1,149 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "condition": "all_supports",
+  "entity": "witherstormmod:sickened_parrot",
+  "ingredients": [
+    {
+      "item": "witherstormmod:withered_flesh"
+    },
+    [
+      {
+        "item": "minecraft:beetroot_seeds"
+      },
+      {
+        "item": "minecraft:melon_seeds"
+      },
+      {
+        "item": "minecraft:pumpkin_seeds"
+      },
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:torchflower_seeds"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:beetroot_seeds"
+      },
+      {
+        "item": "minecraft:melon_seeds"
+      },
+      {
+        "item": "minecraft:pumpkin_seeds"
+      },
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:torchflower_seeds"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:beetroot_seeds"
+      },
+      {
+        "item": "minecraft:melon_seeds"
+      },
+      {
+        "item": "minecraft:pumpkin_seeds"
+      },
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:torchflower_seeds"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:beetroot_seeds"
+      },
+      {
+        "item": "minecraft:melon_seeds"
+      },
+      {
+        "item": "minecraft:pumpkin_seeds"
+      },
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:torchflower_seeds"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:beetroot_seeds"
+      },
+      {
+        "item": "minecraft:melon_seeds"
+      },
+      {
+        "item": "minecraft:pumpkin_seeds"
+      },
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:torchflower_seeds"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:beetroot_seeds"
+      },
+      {
+        "item": "minecraft:melon_seeds"
+      },
+      {
+        "item": "minecraft:pumpkin_seeds"
+      },
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:torchflower_seeds"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:beetroot_seeds"
+      },
+      {
+        "item": "minecraft:melon_seeds"
+      },
+      {
+        "item": "minecraft:pumpkin_seeds"
+      },
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:torchflower_seeds"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:beetroot_seeds"
+      },
+      {
+        "item": "minecraft:melon_seeds"
+      },
+      {
+        "item": "minecraft:pumpkin_seeds"
+      },
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:torchflower_seeds"
+      }
+    ],
+    {
+      "item": "minecraft:name_tag"
+    }
+  ]
+}

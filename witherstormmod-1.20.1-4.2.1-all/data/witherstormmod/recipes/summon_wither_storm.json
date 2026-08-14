@@ -1,0 +1,16 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "condition": "none",
+  "entity": "witherstormmod:wither_storm",
+  "ingredients": [
+    {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    {
+      "item": "minecraft:wither_skeleton_skull"
+    }
+  ]
+}

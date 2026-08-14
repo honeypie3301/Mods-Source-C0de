@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "witherstormmod:tainted_planks",
+    "witherstormmod:tainted_trapdoor",
+    "witherstormmod:tainted_door",
+    "witherstormmod:tainted_fence",
+    "witherstormmod:tainted_fence_gate",
+    "witherstormmod:tainted_stairs",
+    "witherstormmod:tainted_slab",
+    "witherstormmod:tainted_log",
+    "witherstormmod:tainted_wood",
+    "witherstormmod:tainted_button",
+    "witherstormmod:tainted_pressure_plate",
+    "witherstormmod:tainted_pumpkin",
+    "witherstormmod:tainted_carved_pumpkin",
+    "witherstormmod:tainted_jack_o_lantern",
+    "witherstormmod:tainted_sign",
+    "witherstormmod:stripped_tainted_wood",
+    "witherstormmod:stripped_tainted_log"
+  ]
+}

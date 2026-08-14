@@ -1,0 +1,49 @@
+{
+  "parent": "witherstormmod:main/summon_wither_storm",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "advancements.witherstormmod.main.spyglass_at_wither_storm.title"
+    },
+    "description": {
+      "translate": "advancements.witherstormmod.main.spyglass_at_wither_storm.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_wither_storm": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "looking_at": {
+                  "type": "witherstormmod:wither_storm"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_wither_storm"
+    ]
+  ]
+}

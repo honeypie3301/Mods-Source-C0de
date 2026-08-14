@@ -1,0 +1,44 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+issueTrackerURL="https://github.com/nonamecrackers2/crackers-wither-storm-mod/issues"
+
+[[mods]]
+modId="witherstormmod"
+version="4.2.1"
+displayName="Cracker's Wither Storm Mod"
+logoFile="wither_storm_mod_logo.png"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/crackers-wither-storm-mod"
+updateJSONURL="https://raw.githubusercontent.com/nonamecrackers2/cwsm-update-info/main/update_checker.json"
+credits='''
+Antimo & Welles https://linktr.ee/antimowelles
+Telltale for the inspiration and sound effects
+Nazaru for additional code and assets
+McFella for additional textures
+Mar Mar for music https://www.youtube.com/watch?v=qtMPeI1T5iA
+'''
+authors="nonamecrackers2, Nazaru"
+description='''
+Adds the Wither Storm from Minecraft: Story Mode
+'''
+
+[[dependencies.witherstormmod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.1.0,47.1.5),[47.1.40,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.witherstormmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.witherstormmod]]
+    modId="crackerslib"
+    mandatory=true
+    versionRange="[1.20.1-0.3.2.1,)"
+    ordering="NONE"
+    side="BOTH"

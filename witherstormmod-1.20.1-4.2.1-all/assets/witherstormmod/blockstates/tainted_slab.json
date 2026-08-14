@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "witherstormmod:block/tainted_slab"
+    },
+    "type=double": {
+      "model": "witherstormmod:block/tainted_planks"
+    },
+    "type=top": {
+      "model": "witherstormmod:block/tainted_slab_top"
+    }
+  }
+}

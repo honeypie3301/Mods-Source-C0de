@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "witherstormmod:tainted_stone_stairs",
+    "witherstormmod:tainted_cobblestone_stairs",
+    "witherstormmod:tainted_stairs",
+    "witherstormmod:tainted_sandstone_stairs",
+    "witherstormmod:tainted_smooth_sandstone_stairs"
+  ]
+}

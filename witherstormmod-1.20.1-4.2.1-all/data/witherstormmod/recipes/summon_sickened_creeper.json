@@ -1,0 +1,25 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "condition": "all_supports",
+  "entity": "witherstormmod:sickened_creeper",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "witherstormmod:tainted_dust"
+    },
+    {
+      "item": "witherstormmod:tainted_dust"
+    },
+    {
+      "item": "witherstormmod:tainted_dust"
+    }
+  ]
+}

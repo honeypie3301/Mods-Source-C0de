@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:red_sandstone",
+  "replacement": {
+    "Name": "witherstormmod:tainted_sandstone"
+  }
+}

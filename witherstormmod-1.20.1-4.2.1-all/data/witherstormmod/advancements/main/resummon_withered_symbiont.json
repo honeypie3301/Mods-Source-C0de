@@ -1,0 +1,39 @@
+{
+  "parent": "witherstormmod:main/activate_super_beacon",
+  "display": {
+    "icon": {
+      "item": "witherstormmod:withered_symbiont_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.witherstormmod.main.resummon_withered_symbiont.title"
+    },
+    "description": {
+      "translate": "advancements.witherstormmod.main.resummon_withered_symbiont.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "summoned_withered_symbiont": {
+      "trigger": "witherstormmod:summon_mob_withered_beacon",
+      "conditions": {
+        "resummoned": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "witherstormmod:withered_symbiont"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "summoned_withered_symbiont"
+    ]
+  ]
+}

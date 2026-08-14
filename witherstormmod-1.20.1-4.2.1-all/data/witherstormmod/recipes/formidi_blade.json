@@ -1,0 +1,33 @@
+{
+  "type": "witherstormmod:item_craft_super_beacon",
+  "condition": "all_supports",
+  "ingredients": [
+    {
+      "item": "witherstormmod:command_block_sword"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    },
+    {
+      "item": "witherstormmod:formidibomb"
+    }
+  ],
+  "result": {
+    "item": "witherstormmod:formidi_blade"
+  }
+}

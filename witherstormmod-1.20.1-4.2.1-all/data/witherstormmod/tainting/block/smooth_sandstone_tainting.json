@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:smooth_sandstone",
+  "replacement": {
+    "Name": "witherstormmod:tainted_smooth_sandstone"
+  }
+}

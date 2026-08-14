@@ -1,0 +1,37 @@
+{
+  "parent": "witherstormmod:main/insane_dedication",
+  "display": {
+    "icon": {
+      "item": "witherstormmod:wooden_command_block_hoe"
+    },
+    "title": {
+      "translate": "advancements.witherstormmod.main.overly_dedicated.title"
+    },
+    "description": {
+      "translate": "advancements.witherstormmod.main.overly_dedicated.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+               "witherstormmod:wooden_command_block_hoe"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ]
+}

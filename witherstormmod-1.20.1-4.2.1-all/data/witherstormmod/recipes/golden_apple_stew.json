@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "witherstormmod:cure_ingredient"
+    },
+    {
+      "item": "minecraft:suspicious_stew"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "tag": "witherstormmod:cure_base"
+    }
+  ],
+  "result": {
+    "item": "witherstormmod:golden_apple_stew"
+  }
+}

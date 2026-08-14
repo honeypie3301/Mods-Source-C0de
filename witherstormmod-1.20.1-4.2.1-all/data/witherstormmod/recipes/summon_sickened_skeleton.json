@@ -1,0 +1,25 @@
+{
+  "type": "witherstormmod:resummon_super_beacon",
+  "condition": "all_supports",
+  "entity": "witherstormmod:sickened_skeleton",
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "witherstormmod:withered_bone"
+    },
+    {
+      "item": "witherstormmod:withered_bone"
+    },
+    {
+      "item": "witherstormmod:withered_bone"
+    }
+  ]
+}

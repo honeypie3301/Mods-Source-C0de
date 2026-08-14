@@ -1,0 +1,11 @@
+{
+  "type": "witherstormmod:bowels",
+  "biomes": "#witherstormmod:has_structure/bowels",
+  "adapt_noise": false,
+  "spawn_overrides": {},
+  "start_pool": "witherstormmod:bowels/bowels_mains",
+  "step": "underground_structures",
+  "start_height": {
+    "absolute": 100
+  }
+}

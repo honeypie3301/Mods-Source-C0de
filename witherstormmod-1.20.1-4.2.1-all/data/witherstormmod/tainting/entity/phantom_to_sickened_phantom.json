@@ -1,0 +1,5 @@
+{
+  "convert_from_sickness": true,
+  "from": "minecraft:phantom",
+  "to": "witherstormmod:sickened_phantom"
+}

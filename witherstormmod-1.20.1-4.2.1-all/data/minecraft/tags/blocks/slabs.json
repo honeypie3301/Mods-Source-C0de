@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "witherstormmod:tainted_stone_slab",
+    "witherstormmod:tainted_cobblestone_slab",
+    "witherstormmod:tainted_slab",
+    "witherstormmod:tainted_sandstone_slab",
+    "witherstormmod:tainted_cut_sandstone_slab",
+    "witherstormmod:tainted_smooth_sandstone_slab"
+  ]
+}
