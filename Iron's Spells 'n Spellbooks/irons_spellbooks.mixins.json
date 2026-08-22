@@ -1,0 +1,48 @@
+{
+  "required": true,
+  "package": "io.redspace.ironsspellbooks.mixin",
+  "refmap": "irons_spellbooks.refmap.json",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "io.redspace.ironsspellbooks.mixin.MixinPlugin",
+  "mixins": [
+    "AbstractArrowAccessor",
+    "BeardifierMixin",
+    "Compat$apothic_attributes$AttributeHandler",
+    "CreeperMixin",
+    "CurioHooksMixin",
+    "DispenserBlockMixin",
+    "EntityAccessor",
+    "EntityMixin",
+    "IItemExtensionMixin",
+    "ItemMixin",
+    "ItemStackMixin",
+    "LecternBlockEntityMixin",
+    "LevelMixin",
+    "LivingEntityAccessor",
+    "LivingEntityMixin",
+    "MobEffectMixin",
+    "NoiseChunkGeneratorMixin",
+    "NoiseChunkMixin",
+    "PlayerMixin",
+    "SmithingRecipeMixin",
+    "TridentItemMixin",
+    "VaultServerDataAccessor"
+  ],
+  "client": [
+    "ClientBookAccessMixin",
+    "ClientEntityMixin",
+    "EntityRendererMixin",
+    "GuiMixin",
+    "LecternRendererMixin",
+    "MinecraftMixin",
+    "ParticleAccessor",
+    "ParticleMixin",
+    "SimpleTextureMixin",
+    "SpellParticleProviderMixin",
+    "SpinAttackEffectLayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
