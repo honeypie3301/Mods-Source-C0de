@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "grimac",
+  "version": "2.3.73",
+  "name": "GrimAC",
+  "description": "Libre simulation anticheat designed for 1.21 with 1.8-1.21 support, powered by PacketEvents 2.0.",
+  "authors": [
+    "GrimAC"
+  ],
+  "license": "GPLv3",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "ac.grim.grimac.platform.fabric.GrimACFabricEntryPoint"
+    ],
+    "preLaunch": [
+      "ac.grim.grimac.platform.fabric.GrimACFabricEntryPoint"
+    ]
+  },
+  "mixins": [
+    "grimac.mixins.json"
+  ],
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/world/level/Level": [
+        "ac/grim/grimac/platform/api/world/PlatformWorld"
+      ]
+    }
+  },
+  "accessWidener": "grimac.accesswidener",
+  "depends": {
+    "fabricloader": "\u003e\u003d0.16",
+    "fabric-lifecycle-events-v1": "*",
+    "packetevents": "*"
+  },
+  "recommends": {
+    "cloud": "*",
+    "fabric-permissions-api-v0": "*"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/GrimAPI-1.2.4.0.jar"
+    },
+    {
+      "file": "META-INF/jars/HikariCP-7.0.2.jar"
+    },
+    {
+      "file": "META-INF/jars/adventure-text-minimessage-4.25.0.jar"
+    },
+    {
+      "file": "META-INF/jars/annotations-24.1.0.jar"
+    },
+    {
+      "file": "META-INF/jars/cloud-annotations-2.0.0.jar"
+    },
+    {
+      "file": "META-INF/jars/cloud-fabric-2.0.0-beta.15.jar"
+    },
+    {
+      "file": "META-INF/jars/cloud-processors-requirements-1.0.0-rc.1.jar"
+    },
+    {
+      "file": "META-INF/jars/common-2.3.73.jar"
+    },
+    {
+      "file": "META-INF/jars/configuralize-1.4.1-slim.jar"
+    },
+    {
+      "file": "META-INF/jars/dynamics-4.0.jar"
+    },
+    {
+      "file": "META-INF/jars/fluent-2.0.jar"
+    },
+    {
+      "file": "META-INF/jars/grim-internal-1.2.4.0.jar"
+    },
+    {
+      "file": "META-INF/jars/grimac-fabric-mc1161-2.3.73.jar"
+    },
+    {
+      "file": "META-INF/jars/grimac-fabric-mc1171-2.3.73.jar"
+    },
+    {
+      "file": "META-INF/jars/grimac-fabric-mc1194-2.3.73.jar"
+    },
+    {
+      "file": "META-INF/jars/grimac-fabric-mc1205-2.3.73.jar"
+    },
+    {
+      "file": "META-INF/jars/grimac-fabric-mc12111-2.3.73.jar"
+    },
+    {
+      "file": "META-INF/jars/json-simple-1.1.1.jar"
+    },
+    {
+      "file": "META-INF/jars/packetevents-fabric-2.11.2+675bc5c-SNAPSHOT.jar"
+    },
+    {
+      "file": "META-INF/jars/slf4j-api-2.0.17.jar"
+    },
+    {
+      "file": "META-INF/jars/snakeyaml-2.2.jar"
+    }
+  ]
+}

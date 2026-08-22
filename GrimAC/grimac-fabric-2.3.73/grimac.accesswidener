@@ -1,0 +1,7 @@
+accessWidener	v2	intermediary
+accessible	field	net/minecraft/class_3218	field_24456	Lnet/minecraft/class_5268;
+accessible	field	net/minecraft/class_2168	field_9819	Lnet/minecraft/class_2165;
+accessible	field	net/minecraft/class_1657	field_7514	Lnet/minecraft/class_1661;
+accessible	field	net/minecraft/class_1297	field_6002	Lnet/minecraft/class_1937;
+accessible	field	net/minecraft/server/MinecraftServer	field_24371	Lnet/minecraft/class_29;
+accessible	field	net/minecraft/class_29	field_144	Ljava/io/File;
