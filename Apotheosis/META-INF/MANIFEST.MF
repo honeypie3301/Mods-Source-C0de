@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: Apotheosis
+Specification-Vendor: Shadows_of_Fire
+Specification-Version: 8.7.0
+Implementation-Title: Apotheosis
+Implementation-Version: 8.7.0
+Implementation-Vendor: Shadows_of_Fire
+Implementation-Timestamp: 2026-08-02T18:24:18-0400
+

@@ -1,0 +1,44 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apothic_spawners"
+        },
+        {
+            "type": "neoforge:not",
+            "value": {
+                "type": "neoforge:mod_loaded",
+                "modid": "apothic_enchanting"
+            }
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "apotheosis",
+    "key": {
+        "A": {
+            "item": "apotheosis:arcane_sands"
+        },
+        "E": {
+            "item": "minecraft:echo_shard"
+        },
+        "I": {
+            "item": "apotheosis:infused_spawner_rune"
+        },
+        "P": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "S": {
+            "item": "apotheosis:sigil_of_malice"
+        }
+    },
+    "pattern": [
+        "AEA",
+        "PIP",
+        "ASA"
+    ],
+    "result": {
+        "count": 1,
+        "id": "apotheosis:summit_spawner_upgrade_rune"
+    }
+}
