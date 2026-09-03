@@ -1,0 +1,99 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/Cannoneers-of-Create/CreateBigCannons/issues"
+license = "MIT and CC BY-NC-SA (see github for details)"
+
+[[mods]]
+modId = "createbigcannons"
+version = "5.11.7"
+displayName = "Create Big Cannons"
+authors = "rbasamoyai"
+description = """Artillery engineering comes to Create
+Attributions:
+Logo by Milkyfur
+Textures by rbasamoyai, Milkyfur, and LopyLuna
+"""
+logoFile = "icon.png"
+
+[[mixins]]
+config = "createbigcannons.mixins.json"
+
+[[accessTransformers]]
+file="META-INF/accesstransformer.cfg"
+
+[[dependencies.createbigcannons]]
+modId = "neoforge"
+type = "required"
+versionRange = "21.1.228"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "create"
+type = "required"
+versionRange="[6.0.7,6.1.0)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "ritchiesprojectilelib"
+type = "required"
+versionRange="[2.1.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "copycats"
+type = "optional"
+versionRange = "[3.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "framedblocks"
+type = "optional"
+versionRange = "[10.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "curios"
+type = "optional"
+versionRange = "[9.2.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "sable"
+type = "optional"
+versionRange = "[2.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "simulated"
+type = "optional"
+versionRange = "[1.3.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "aeronautics"
+type = "optional"
+versionRange = "[1.3.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createbigcannons]]
+modId = "offroad"
+type = "optional"
+versionRange = "[1.3.0,)"
+ordering = "NONE"
+side = "BOTH"

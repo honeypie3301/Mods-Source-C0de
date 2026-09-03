@@ -1,0 +1,22 @@
+{
+  "impact_particles": [
+    {
+      "type": "createbigcannons:glass_burst",
+      "block_state": {
+        "Name": "minecraft:air"
+      },
+      "count": 40
+    }
+  ],
+  "deflect_particles": [
+    {
+      "type": "createbigcannons:glass_burst",
+      "block_state": {
+        "Name": "minecraft:air"
+      },
+      "count": 40
+    }
+  ],
+  "impact_sound": { "sound": "minecraft:block.glass.break", "pitch": 0.95, "pitch_variation": 0.1 },
+  "deflect_sound": { "sound": "minecraft:block.glass.break", "pitch": 0.95, "pitch_variation": 0.1 }
+}
