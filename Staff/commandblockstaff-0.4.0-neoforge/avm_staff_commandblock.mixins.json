@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "package": "pandzio21.avm_staff.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "MouseMixin",
+    "ClientPlayerEntityMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "HeldItemFeatureRendererMixin",
+    "PlayerEntityRendererMixin",
+    "InventoryScreenMixin"
+  ],
+  "mixins": [
+    "ServerWorldMixin",
+    "RegistryEntryReferenceAccessor",
+    "PlayerInteractionManagerMixin",
+    "EntityExplosionMixin",
+    "StructureTemplateAccessor",
+    "MerchantEntityMixin"
+  ]
+}

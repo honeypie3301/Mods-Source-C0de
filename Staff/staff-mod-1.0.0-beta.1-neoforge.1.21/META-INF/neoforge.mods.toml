@@ -1,0 +1,57 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[5.4.0,)"
+issueTrackerURL = "https://github.com/opekope2/StaffMod/issues"
+license = "LGPL-3.0-or-later"
+
+[[mods]]
+modId = "avm_staff"
+version = "1.0.0-beta.1-neoforge.1.21"
+displayName = "Staff Mod (Animation vs Minecraft)"
+authors = "opekope2"
+credits = "Alan Becker, Brother_Oliviär, Ink&Soul, MoonWolf"
+description = '''
+AvM Staff Mod is a fan-made, mostly canonically accurate, and close to vanilla mod adding staffs from Animation vs Minecraft series to the latest version of Minecraft: Java Edition
+'''
+logoFile = "assets/avm_staff/icon.png"
+features = { java_version = "[21,)" }
+displayURL = "https://opekope2.dev/StaffMod"
+
+[[mixins]]
+config = "avm_staff.mixins.json"
+
+[[mixins]]
+config = "avm_staff_neoforge.mixins.json"
+
+[[dependencies.avm_staff]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0.164,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.avm_staff]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.avm_staff]]
+modId = "kotlinforforge"
+type = "required"
+versionRange = "[5.4.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.avm_staff]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[mc-publish]
+dependencies = [
+    "architectury-api@13.0.8",
+    "kotlin-for-forge@5.4.0"
+]

@@ -1,0 +1,118 @@
+{
+  "mappings": {
+    "opekope2/avm_staff/mixin/BipedEntityModelMixin": {
+      "positionLeftArm": "Lnet/minecraft/class_572;method_30155(Lnet/minecraft/class_1309;)V",
+      "positionRightArm": "Lnet/minecraft/class_572;method_30154(Lnet/minecraft/class_1309;)V"
+    },
+    "opekope2/avm_staff/mixin/EntityMixin": {
+      "onStruckByLightning": "Lnet/minecraft/class_1297;method_5800(Lnet/minecraft/class_3218;Lnet/minecraft/class_1538;)V"
+    },
+    "opekope2/avm_staff/mixin/IAbstractFurnaceBlockEntityAccessor": {
+      "dropExperience": "method_17760(Lnet/minecraft/class_3218;Lnet/minecraft/class_243;IF)V"
+    },
+    "opekope2/avm_staff/mixin/IAnvilBlockAccessor": {
+      "FALLING_BLOCK_ENTITY_DAMAGE_MULTIPLIER": "field_30993:F",
+      "FALLING_BLOCK_ENTITY_MAX_DAMAGE": "field_30994:I"
+    },
+    "opekope2/avm_staff/mixin/IBeehiveBlockEntityAccessor": {
+      "isSmoked": "method_23904()Z",
+      "tryReleaseBee": "method_21852(Lnet/minecraft/class_2680;Lnet/minecraft/class_4482$class_4484;)Ljava/util/List;"
+    },
+    "opekope2/avm_staff/mixin/IBellBlockEntityAccessor": {
+      "MAX_BELL_HEARING_DISTANCE": "field_31322:I",
+      "MAX_RESONATING_TICKS": "field_31319:I",
+      "field_31317": "field_31317:I"
+    },
+    "opekope2/avm_staff/mixin/ICakeBlockAccessor": {
+      "BITES_TO_SHAPE": "field_10738:[Lnet/minecraft/class_265;"
+    },
+    "opekope2/avm_staff/mixin/IMinecraftClientAccessor": {
+      "itemUseCooldown": "field_1752:I"
+    },
+    "opekope2/avm_staff/mixin/IParticleManagerAccessor": {
+      "MAX_PARTICLE_COUNT": "field_32657:I"
+    },
+    "opekope2/avm_staff/mixin/IParticleMixin": {
+      "stopped": "field_21507:Z"
+    },
+    "opekope2/avm_staff/mixin/IPiglinBrainAccessor": {
+      "becomeAngryWith": "method_24750(Lnet/minecraft/class_5418;Lnet/minecraft/class_1309;)V"
+    },
+    "opekope2/avm_staff/mixin/ISmithingTemplateItemAccessor": {
+      "ARMOR_TRIM_INGREDIENTS_TEXT": "field_41981:Lnet/minecraft/class_2561;",
+      "DESCRIPTION_FORMATTING": "field_41975:Lnet/minecraft/class_124;",
+      "TITLE_FORMATTING": "field_41974:Lnet/minecraft/class_124;"
+    },
+    "opekope2/avm_staff/mixin/PlayerEntityMixin": {
+      "Lnet/minecraft/entity/LivingEntity;disablesShield()Z": "Lnet/minecraft/class_1309;method_42149()Z",
+      "Lnet/minecraft/entity/player/PlayerEntity;equipStack(Lnet/minecraft/entity/EquipmentSlot;Lnet/minecraft/item/ItemStack;)V": "Lnet/minecraft/class_1657;method_5673(Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V",
+      "damageShield": "Lnet/minecraft/class_1657;method_6056(F)V",
+      "takeShieldHit": "Lnet/minecraft/class_1657;method_6090(Lnet/minecraft/class_1309;)V"
+    },
+    "opekope2/avm_staff/mixin/SculkShriekerBlockEntityMixin": {
+      "findResponsiblePlayerFromEntity": "Lnet/minecraft/class_7133;method_44018(Lnet/minecraft/class_1297;)Lnet/minecraft/class_3222;"
+    },
+    "opekope2/avm_staff/mixin/WorldRendererMixin": {
+      "processWorldEvent": "Lnet/minecraft/class_761;method_8567(ILnet/minecraft/class_2338;I)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "opekope2/avm_staff/mixin/BipedEntityModelMixin": {
+        "positionLeftArm": "Lnet/minecraft/class_572;method_30155(Lnet/minecraft/class_1309;)V",
+        "positionRightArm": "Lnet/minecraft/class_572;method_30154(Lnet/minecraft/class_1309;)V"
+      },
+      "opekope2/avm_staff/mixin/EntityMixin": {
+        "onStruckByLightning": "Lnet/minecraft/class_1297;method_5800(Lnet/minecraft/class_3218;Lnet/minecraft/class_1538;)V"
+      },
+      "opekope2/avm_staff/mixin/IAbstractFurnaceBlockEntityAccessor": {
+        "dropExperience": "method_17760(Lnet/minecraft/class_3218;Lnet/minecraft/class_243;IF)V"
+      },
+      "opekope2/avm_staff/mixin/IAnvilBlockAccessor": {
+        "FALLING_BLOCK_ENTITY_DAMAGE_MULTIPLIER": "field_30993:F",
+        "FALLING_BLOCK_ENTITY_MAX_DAMAGE": "field_30994:I"
+      },
+      "opekope2/avm_staff/mixin/IBeehiveBlockEntityAccessor": {
+        "isSmoked": "method_23904()Z",
+        "tryReleaseBee": "method_21852(Lnet/minecraft/class_2680;Lnet/minecraft/class_4482$class_4484;)Ljava/util/List;"
+      },
+      "opekope2/avm_staff/mixin/IBellBlockEntityAccessor": {
+        "MAX_BELL_HEARING_DISTANCE": "field_31322:I",
+        "MAX_RESONATING_TICKS": "field_31319:I",
+        "field_31317": "field_31317:I"
+      },
+      "opekope2/avm_staff/mixin/ICakeBlockAccessor": {
+        "BITES_TO_SHAPE": "field_10738:[Lnet/minecraft/class_265;"
+      },
+      "opekope2/avm_staff/mixin/IMinecraftClientAccessor": {
+        "itemUseCooldown": "field_1752:I"
+      },
+      "opekope2/avm_staff/mixin/IParticleManagerAccessor": {
+        "MAX_PARTICLE_COUNT": "field_32657:I"
+      },
+      "opekope2/avm_staff/mixin/IParticleMixin": {
+        "stopped": "field_21507:Z"
+      },
+      "opekope2/avm_staff/mixin/IPiglinBrainAccessor": {
+        "becomeAngryWith": "method_24750(Lnet/minecraft/class_5418;Lnet/minecraft/class_1309;)V"
+      },
+      "opekope2/avm_staff/mixin/ISmithingTemplateItemAccessor": {
+        "ARMOR_TRIM_INGREDIENTS_TEXT": "field_41981:Lnet/minecraft/class_2561;",
+        "DESCRIPTION_FORMATTING": "field_41975:Lnet/minecraft/class_124;",
+        "TITLE_FORMATTING": "field_41974:Lnet/minecraft/class_124;"
+      },
+      "opekope2/avm_staff/mixin/PlayerEntityMixin": {
+        "Lnet/minecraft/entity/LivingEntity;disablesShield()Z": "Lnet/minecraft/class_1309;method_42149()Z",
+        "Lnet/minecraft/entity/player/PlayerEntity;equipStack(Lnet/minecraft/entity/EquipmentSlot;Lnet/minecraft/item/ItemStack;)V": "Lnet/minecraft/class_1657;method_5673(Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V",
+        "damageShield": "Lnet/minecraft/class_1657;method_6056(F)V",
+        "takeShieldHit": "Lnet/minecraft/class_1657;method_6090(Lnet/minecraft/class_1309;)V"
+      },
+      "opekope2/avm_staff/mixin/SculkShriekerBlockEntityMixin": {
+        "findResponsiblePlayerFromEntity": "Lnet/minecraft/class_7133;method_44018(Lnet/minecraft/class_1297;)Lnet/minecraft/class_3222;"
+      },
+      "opekope2/avm_staff/mixin/WorldRendererMixin": {
+        "processWorldEvent": "Lnet/minecraft/class_761;method_8567(ILnet/minecraft/class_2338;I)V"
+      }
+    }
+  }
+}

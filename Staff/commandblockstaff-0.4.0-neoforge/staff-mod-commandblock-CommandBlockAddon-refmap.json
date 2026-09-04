@@ -1,0 +1,86 @@
+{
+  "mappings": {
+    "pandzio21/avm_staff/mixin/ClientPlayerEntityMixin": {
+      "Lnet/minecraft/client/network/ClientPlayerEntity;isUsingItem()Z": "Lnet/minecraft/class_746;method_6115()Z",
+      "canStartSprinting": "Lnet/minecraft/class_746;method_48300()Z",
+      "tickMovement": "Lnet/minecraft/class_746;method_6007()V"
+    },
+    "pandzio21/avm_staff/mixin/ClientPlayerInteractionManagerMixin": {
+      "stopUsingItem": "Lnet/minecraft/class_636;method_2897(Lnet/minecraft/class_1657;)V"
+    },
+    "pandzio21/avm_staff/mixin/EntityExplosionMixin": {
+      "isImmuneToExplosion": "Lnet/minecraft/class_1297;method_5659(Lnet/minecraft/class_1927;)Z"
+    },
+    "pandzio21/avm_staff/mixin/HeldItemFeatureRendererMixin": {
+      "renderItem": "Lnet/minecraft/class_989;method_4192(Lnet/minecraft/class_1309;Lnet/minecraft/class_1799;Lnet/minecraft/class_811;Lnet/minecraft/class_1306;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+    },
+    "pandzio21/avm_staff/mixin/InventoryScreenMixin": {
+      "drawEntity(Lnet/minecraft/client/gui/DrawContext;IIIIIFFFLnet/minecraft/entity/LivingEntity;)V": "Lnet/minecraft/class_490;method_2486(Lnet/minecraft/class_332;IIIIIFFFLnet/minecraft/class_1309;)V"
+    },
+    "pandzio21/avm_staff/mixin/MerchantEntityMixin": {
+      "interactMob(Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;)Lnet/minecraft/util/ActionResult;": "Lnet/minecraft/class_1646;method_5992(Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;"
+    },
+    "pandzio21/avm_staff/mixin/MouseMixin": {
+      "onMouseButton(JIII)V": "Lnet/minecraft/class_312;method_1601(JIII)V",
+      "onMouseScroll(JDD)V": "Lnet/minecraft/class_312;method_1598(JDD)V"
+    },
+    "pandzio21/avm_staff/mixin/PlayerEntityRendererMixin": {
+      "render(Lnet/minecraft/client/network/AbstractClientPlayerEntity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V": "Lnet/minecraft/class_1007;method_4215(Lnet/minecraft/class_742;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+    },
+    "pandzio21/avm_staff/mixin/PlayerInteractionManagerMixin": {
+      "tryBreakBlock": "Lnet/minecraft/class_3225;method_14266(Lnet/minecraft/class_2338;)Z"
+    },
+    "pandzio21/avm_staff/mixin/RegistryEntryReferenceAccessor": {
+      "setValue": "method_45918(Ljava/lang/Object;)V"
+    },
+    "pandzio21/avm_staff/mixin/ServerWorldMixin": {
+      "tick": "Lnet/minecraft/class_3218;method_18765(Ljava/util/function/BooleanSupplier;)V"
+    },
+    "pandzio21/avm_staff/mixin/StructureTemplateAccessor": {
+      "blockInfoLists": "field_15586:Ljava/util/List;"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "pandzio21/avm_staff/mixin/ClientPlayerEntityMixin": {
+        "Lnet/minecraft/client/network/ClientPlayerEntity;isUsingItem()Z": "Lnet/minecraft/class_746;method_6115()Z",
+        "canStartSprinting": "Lnet/minecraft/class_746;method_48300()Z",
+        "tickMovement": "Lnet/minecraft/class_746;method_6007()V"
+      },
+      "pandzio21/avm_staff/mixin/ClientPlayerInteractionManagerMixin": {
+        "stopUsingItem": "Lnet/minecraft/class_636;method_2897(Lnet/minecraft/class_1657;)V"
+      },
+      "pandzio21/avm_staff/mixin/EntityExplosionMixin": {
+        "isImmuneToExplosion": "Lnet/minecraft/class_1297;method_5659(Lnet/minecraft/class_1927;)Z"
+      },
+      "pandzio21/avm_staff/mixin/HeldItemFeatureRendererMixin": {
+        "renderItem": "Lnet/minecraft/class_989;method_4192(Lnet/minecraft/class_1309;Lnet/minecraft/class_1799;Lnet/minecraft/class_811;Lnet/minecraft/class_1306;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+      },
+      "pandzio21/avm_staff/mixin/InventoryScreenMixin": {
+        "drawEntity(Lnet/minecraft/client/gui/DrawContext;IIIIIFFFLnet/minecraft/entity/LivingEntity;)V": "Lnet/minecraft/class_490;method_2486(Lnet/minecraft/class_332;IIIIIFFFLnet/minecraft/class_1309;)V"
+      },
+      "pandzio21/avm_staff/mixin/MerchantEntityMixin": {
+        "interactMob(Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;)Lnet/minecraft/util/ActionResult;": "Lnet/minecraft/class_1646;method_5992(Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;"
+      },
+      "pandzio21/avm_staff/mixin/MouseMixin": {
+        "onMouseButton(JIII)V": "Lnet/minecraft/class_312;method_1601(JIII)V",
+        "onMouseScroll(JDD)V": "Lnet/minecraft/class_312;method_1598(JDD)V"
+      },
+      "pandzio21/avm_staff/mixin/PlayerEntityRendererMixin": {
+        "render(Lnet/minecraft/client/network/AbstractClientPlayerEntity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V": "Lnet/minecraft/class_1007;method_4215(Lnet/minecraft/class_742;FFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;I)V"
+      },
+      "pandzio21/avm_staff/mixin/PlayerInteractionManagerMixin": {
+        "tryBreakBlock": "Lnet/minecraft/class_3225;method_14266(Lnet/minecraft/class_2338;)Z"
+      },
+      "pandzio21/avm_staff/mixin/RegistryEntryReferenceAccessor": {
+        "setValue": "method_45918(Ljava/lang/Object;)V"
+      },
+      "pandzio21/avm_staff/mixin/ServerWorldMixin": {
+        "tick": "Lnet/minecraft/class_3218;method_18765(Ljava/util/function/BooleanSupplier;)V"
+      },
+      "pandzio21/avm_staff/mixin/StructureTemplateAccessor": {
+        "blockInfoLists": "field_15586:Ljava/util/List;"
+      }
+    }
+  }
+}

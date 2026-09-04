@@ -1,0 +1,26 @@
+{
+  "entity.beam.start": {
+    "sounds": [
+      "avm_staff:entity/beam/start"
+    ],
+    "subtitle": "subtitles.entity.avm_staff.beam.start"
+  },
+  "entity.beam.loop": {
+    "sounds": [
+      "avm_staff:entity/beam/loop"
+    ],
+    "subtitle": "subtitles.entity.avm_staff.beam.loop"
+  },
+  "entity.beam.end": {
+    "sounds": [
+      "avm_staff:entity/beam/end"
+    ],
+    "subtitle": "subtitles.entity.avm_staff.beam.end"
+  },
+  "entity.flying.fly_loop": {
+    "sounds": [
+      "avm_staff:entity/flying/fly-loop"
+    ],
+    "subtitle": "subtitles.entity.avm_staff.flying.fly_loop"
+  }
+}

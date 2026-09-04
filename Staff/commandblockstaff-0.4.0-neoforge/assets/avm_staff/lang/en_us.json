@@ -1,0 +1,12 @@
+{
+  "key.categories.avm_staff_commandblock": "Command Block Staff Addon",
+  "key.avm_staff.change_staff_mode": "Change Ability (hold + scroll)",
+  "key.avm_staff.adjust_setting": "Adjust Ability (hold + scroll)",
+  "key.avm_staff.cycle_placement_mode": "Change Ability Mode",
+  "key.avm_staff.open_ability_settings": "Open Ability Settings",
+  "key.avm_staff.ride_staff": "Ride Staff (mount/dismount)",
+  "key.avm_staff.undo_command": "Undo Last Command",
+  "key.avm_staff.paint_modifier": "Build Modifier",
+  "key.avm_staff.unelectrify": "Un-electrify (aimed entity/block)",
+  "key.avm_staff.choke": "Choke (hold, while gripping with the Beam)"
+}

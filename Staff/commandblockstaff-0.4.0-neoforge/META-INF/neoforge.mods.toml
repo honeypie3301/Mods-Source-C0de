@@ -1,0 +1,63 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[5.4.0,)"
+issueTrackerURL = "https://github.com/Pandzio21/command-block-staff/issues"
+license = "All-Rights-Reserved"
+
+[[mods]]
+modId = "avm_staff_commandblock"
+version = "0.4.0"
+displayName = "Staff Mod - Command Block Addon"
+authors = "Pandzio21"
+logoFile = "assets/avm_staff/icon/icon.png"
+description = '''
+Optional add-on for AvM Staff Mod that adds the Command Block staff — channel the chaos of the Command Block from the Animation vs Minecraft series with abilities like beam, electrify, placement, projectiles, shield, and commands.
+'''
+displayURL = "https://modrinth.com/mod/command_block_staff_addon"
+
+[[mixins]]
+config = "avm_staff_commandblock.mixins.json"
+
+[[dependencies.avm_staff_commandblock]]
+modId = "avm_staff"
+type = "required"
+versionRange = "[1.0.0-beta.1,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# OPTIONAL: only the animated staff-ride MODEL needs GeckoLib (flight itself works without it). All
+# GeckoLib access is guarded by RideBridge. Keeping this optional is what lets the add-on run on 1.21.1,
+# where GeckoLib's 1.21 build hard-crashes (its HumanoidArmorLayerMixin finds no target).
+[[dependencies.avm_staff_commandblock]]
+modId = "geckolib"
+type = "optional"
+versionRange = "[4.5.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.avm_staff_commandblock]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0.164,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.avm_staff_commandblock]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.avm_staff_commandblock]]
+modId = "kotlinforforge"
+type = "required"
+versionRange = "[5.4.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.avm_staff_commandblock]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"

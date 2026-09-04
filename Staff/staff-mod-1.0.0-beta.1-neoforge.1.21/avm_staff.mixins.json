@@ -1,0 +1,31 @@
+{
+  "required": true,
+  "package": "opekope2.avm_staff.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "BipedEntityModelMixin",
+    "IMinecraftClientAccessor",
+    "IParticleManagerAccessor",
+    "IParticleMixin",
+    "WorldRendererMixin"
+  ],
+  "mixins": [
+    "AbstractFurnaceBlockEntityMixin",
+    "BeehiveBlockMixin",
+    "EntityMixin",
+    "IAbstractFurnaceBlockEntityAccessor",
+    "IAnvilBlockAccessor",
+    "IBeehiveBlockEntityAccessor",
+    "IBellBlockEntityAccessor",
+    "ICakeBlockAccessor",
+    "IPiglinBrainAccessor",
+    "ISmithingTemplateItemAccessor",
+    "PlayerEntityMixin",
+    "SculkShriekerBlockEntityMixin",
+    "TurtleEggBlockMixin"
+  ]
+}
