@@ -1,0 +1,62 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "custom"
+
+[[mods]]
+modId = "create_radar"
+version = "0.4.9.4-1.21.1"
+displayName = "Create: Radars"
+authors = "Aycer, HappySG, CeoOfGoogle, Kipti, OndatraCZE, Ray(furuochen)"
+description = '''Welcome to Create Radars, a mod offering a variety of tools and blocks for Surveillance, Detection, and Controlling Weapons.'''
+
+[[mixins]]
+config = "create_radar.mixins.json"
+
+[[dependencies.create_radar]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_radar]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_radar]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.10,6.1.0)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_radar]]
+modId = "createbigcannons"
+type = "required"
+versionRange = "[5.11.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_radar]]
+modId = "valkyrienskies"
+type = "optional"
+versionRange = "[2.4.7,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_radar]]
+modId = "shupapium"
+type = "optional"
+versionRange = "[1.0,2.0)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_radar]]
+modId = "computercraft"
+type = "optional"
+versionRange = "[1.113.0,2.0)"
+ordering = "AFTER"
+side = "BOTH"
