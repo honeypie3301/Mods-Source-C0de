@@ -1,0 +1,44 @@
+{
+  "mappings": {
+    "com/seibel/distanthorizons/fabric/mixins/client/MixinClientPacketListener": {
+      "handleLogin": "Lnet/minecraft/class_634;method_11120(Lnet/minecraft/class_2678;)V",
+      "close": "Lnet/minecraft/class_634;method_47658()V",
+      "enableChunkLight": "Lnet/minecraft/class_634;method_38541(Lnet/minecraft/class_2818;II)V"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/client/MixinDebugScreenOverlay": {
+      "getSystemInformation": "Lnet/minecraft/class_340;method_1839()Ljava/util/List;"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/client/MixinFogRenderer": {
+      "setupFog": "Lnet/minecraft/class_758;method_3211(Lnet/minecraft/class_4184;Lnet/minecraft/class_758$class_4596;FZF)V"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/client/MixinLevelRenderer": {
+      "Lnet/minecraft/client/renderer/LevelRenderer;renderSectionLayer(Lnet/minecraft/client/renderer/RenderType;DDDLorg/joml/Matrix4f;Lorg/joml/Matrix4f;)V": "Lnet/minecraft/class_761;method_3251(Lnet/minecraft/class_1921;DDDLorg/joml/Matrix4f;Lorg/joml/Matrix4f;)V"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/client/MixinLightTexture": {
+      "updateLightTexture(F)V": "Lnet/minecraft/class_765;method_3313(F)V"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/client/MixinMain": {
+      "Lnet/minecraft/client/main/Main;main([Ljava/lang/String;)V": "Lnet/minecraft/client/main/Main;main([Ljava/lang/String;)V"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/client/MixinMinecraft": {
+      "Lnet/minecraft/client/Minecraft;onGameLoadFinished(Lnet/minecraft/client/Minecraft$GameLoadCookie;)V": "Lnet/minecraft/class_310;method_51736(Lnet/minecraft/class_310$class_8764;)V",
+      "close()V": "Lnet/minecraft/class_310;close()V"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/client/MixinOptionsScreen": {
+      "init": "Lnet/minecraft/class_429;method_25426()V"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/server/MixinChunkMap": {
+      "Lnet/minecraft/world/level/chunk/storage/ChunkSerializer;write(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/chunk/ChunkAccess;)Lnet/minecraft/nbt/CompoundTag;": "Lnet/minecraft/class_2852;method_12410(Lnet/minecraft/class_3218;Lnet/minecraft/class_2791;)Lnet/minecraft/class_2487;",
+      "save": "Lnet/minecraft/class_3898;method_17228(Lnet/minecraft/class_2791;)Z"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/server/MixinServerPlayer": {
+      "changeDimension": "Lnet/minecraft/class_3222;method_5731(Lnet/minecraft/class_5454;)Lnet/minecraft/class_1297;",
+      "setServerLevel": "Lnet/minecraft/class_3222;method_51468(Lnet/minecraft/class_3218;)V"
+    },
+    "com/seibel/distanthorizons/fabric/mixins/server/MixinUtilBackgroundThread": {
+      "backgroundExecutor": "Lnet/minecraft/class_156;method_18349()Ljava/util/concurrent/ExecutorService;",
+      "wrapThreadWithTaskName(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Runnable;": "Lnet/minecraft/class_156;method_33787(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Runnable;",
+      "wrapThreadWithTaskName(Ljava/lang/String;Ljava/util/function/Supplier;)Ljava/util/function/Supplier;": "Lnet/minecraft/class_156;method_37910(Ljava/lang/String;Ljava/util/function/Supplier;)Ljava/util/function/Supplier;"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+accessWidener	v1	intermediary
+accessible	field	net/minecraft/class_26	field_17664	Ljava/io/File;
+accessible	field	net/minecraft/class_4543	field_20641	J
+accessible	method	net/minecraft/class_757	method_3196	(Lnet/minecraft/class_4184;FZ)D
+accessible	field	net/minecraft/class_761	field_45616	Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+accessible	field	net/minecraft/class_2818	field_12855	Z
+accessible	field	net/minecraft/class_3558	field_15793	Lnet/minecraft/class_3560;
+accessible	method	net/minecraft/class_3560	method_51548	(J)Z
+accessible	field	net/minecraft/class_3215	field_17252	Lnet/minecraft/class_3204;
+accessible	method	net/minecraft/class_3898	method_17255	(J)Lnet/minecraft/class_3193;
+accessible	method	net/minecraft/class_3898	method_17233	(Ljava/util/function/BooleanSupplier;)V
+accessible	field	net/minecraft/class_3218	field_26935	Lnet/minecraft/class_5579;
+accessible	field	net/minecraft/class_3898	field_17216	Lnet/minecraft/class_1255;
+accessible	field	net/minecraft/class_3977	field_21494	Lnet/minecraft/class_4698;
+accessible	field	net/minecraft/class_4698	field_21499	Lnet/minecraft/class_2867;
+accessible	field	net/minecraft/class_2867	field_17657	Lit/unimi/dsi/fastutil/longs/Long2ObjectLinkedOpenHashMap;
+accessible	field	net/minecraft/class_2867	field_18690	Ljava/nio/file/Path;
+accessible	class	net/minecraft/class_7764$class_5790
+accessible	method	net/minecraft/class_7764$class_5790	method_33446	(I)I
+accessible	method	net/minecraft/class_7764$class_5790	method_33451	(I)I
+accessible	field	net/minecraft/class_7764	field_40541	Lnet/minecraft/class_7764$class_5790;
+accessible	field	net/minecraft/class_7764	field_40539	Lnet/minecraft/class_1011;
+accessible	field	net/minecraft/class_4264	field_45339	Lnet/minecraft/class_8666;
+accessible	field	net/minecraft/class_8132	field_42491	Lnet/minecraft/class_7843;
+accessible	field	net/minecraft/class_7843	field_40766	Ljava/util/List;
+accessible	class	net/minecraft/class_7843$class_7844
+accessible	field	net/minecraft/class_8667	field_45400	Lnet/minecraft/class_7845;
+accessible	field	net/minecraft/class_5798	field_36295	Ljava/util/concurrent/Semaphore;
+mutable	field	net/minecraft/class_5798	field_36295	Ljava/util/concurrent/Semaphore;
+accessible	field	net/minecraft/class_350	field_22749	D

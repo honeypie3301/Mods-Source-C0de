@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Fabric-Minecraft-Version: 1.21.1
+Fabric-Loader-Version: 0.16.9
+Implementation-Title: DistantHorizons
+Implementation-Version: 3.3.2
+Multi-Release: true
+Main-Class: com.seibel.distanthorizons.core.jar.JarMain
+Fabric-Loom-Mixin-Remap-Type: mixin
+Forgix-Version: 2.0.0
+Forgix-Mappings: META-INF/forgix/DistantHorizons-fabric-3.3.2-1.21.1.fabric.tiny;META-INF/forgix/DistantHorizons-neoforge-3.3.2-1.21.1.neoforge.tiny
