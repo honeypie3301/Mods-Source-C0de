@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+MixinConfigs: shooting_star_demo.mc1201.mixins.json
+

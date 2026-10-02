@@ -1,0 +1,31 @@
+# The NeoForge jar as NeoForge 1.20.1 sees it (it still reads Forge's file): the Forge 1.20.1 build, package mc1201.
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "shooting_star_demo"
+version = "1.1.1-demo"
+displayName = "The Shooting Star (Demo)"
+authors = "rimuru.dev"
+displayURL = "https://www.tiktok.com/@rimuru.dev"
+logoFile = "shooting_star_demo_icon.png"
+description = '''
+A demo of the Stellar Remote: SS-01 The Shooting Star and SS-04 Seven Stars.
+Demo made by tiktok.com/@rimuru.dev - All rights reserved.
+'''
+
+# NeoForge 1.20.1 kept Forge's mod id
+[[dependencies.shooting_star_demo]]
+modId = "forge"
+mandatory = true
+versionRange = "[47.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.shooting_star_demo]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.20.2)"
+ordering = "NONE"
+side = "BOTH"

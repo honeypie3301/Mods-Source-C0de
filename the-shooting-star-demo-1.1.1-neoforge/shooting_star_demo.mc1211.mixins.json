@@ -1,0 +1,1 @@
+{"required":true,"minVersion":"0.8","package":"dev.aek.shootingstardemo.mc1211.client.mixin","plugin":"dev.aek.shootingstardemo.mc1211.client.MixinGate","compatibilityLevel":"JAVA_17","injectors":{"defaultRequire":1}}

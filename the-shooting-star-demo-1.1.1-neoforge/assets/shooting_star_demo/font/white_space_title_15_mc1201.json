@@ -1,0 +1,18 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "shooting_star_demo:white_space/selawik_light.ttf",
+      "size": 19.22,
+      "oversample": 1.5,
+      "shift": [
+        0.0,
+        -2.42
+      ]
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:default"
+    }
+  ]
+}
