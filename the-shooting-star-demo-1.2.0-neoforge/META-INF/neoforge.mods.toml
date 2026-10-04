@@ -1,0 +1,33 @@
+# The NeoForge jar as NeoForge 1.21.1 sees it: the NeoForge 1.21.1 build, package mc1211.
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "shooting_star_demo"
+version = "1.2.0-demo"
+displayName = "The Shooting Star (Demo)"
+authors = "rimuru.dev"
+displayURL = "https://www.tiktok.com/@rimuru.dev"
+logoFile = "shooting_star_demo_icon.png"
+description = '''
+A demo of the Stellar Remote: SS-01 The Shooting Star, SS-03 Gungnir and SS-04 Seven Stars.
+Demo made by tiktok.com/@rimuru.dev - All rights reserved.
+'''
+
+[[mixins]]
+config = "shooting_star_demo.mc1211.mixins.json"
+
+[[dependencies.shooting_star_demo]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.shooting_star_demo]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"

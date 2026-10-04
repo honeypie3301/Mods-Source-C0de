@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "shooting_star_demo:block/gungnir_hull_end",
+    "side": "shooting_star_demo:block/gungnir_hull"
+  }
+}
