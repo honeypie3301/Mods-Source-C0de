@@ -1,0 +1,57 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "shooting_star_demo:block/star_core_body"
+      }
+    },
+    {
+      "when": {
+        "north": "false"
+      },
+      "apply": {
+        "model": "shooting_star_demo:block/star_core_rim_north"
+      }
+    },
+    {
+      "when": {
+        "south": "false"
+      },
+      "apply": {
+        "model": "shooting_star_demo:block/star_core_rim_south"
+      }
+    },
+    {
+      "when": {
+        "west": "false"
+      },
+      "apply": {
+        "model": "shooting_star_demo:block/star_core_rim_west"
+      }
+    },
+    {
+      "when": {
+        "east": "false"
+      },
+      "apply": {
+        "model": "shooting_star_demo:block/star_core_rim_east"
+      }
+    },
+    {
+      "when": {
+        "down": "false"
+      },
+      "apply": {
+        "model": "shooting_star_demo:block/star_core_rim_down"
+      }
+    },
+    {
+      "when": {
+        "up": "false"
+      },
+      "apply": {
+        "model": "shooting_star_demo:block/star_core_rim_up"
+      }
+    }
+  ]
+}

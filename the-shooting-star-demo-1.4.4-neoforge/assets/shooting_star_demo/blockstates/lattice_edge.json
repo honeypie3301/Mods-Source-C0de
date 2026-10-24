@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "hue=0": {
+      "model": "shooting_star_demo:block/lattice_edge_0"
+    },
+    "hue=1": {
+      "model": "shooting_star_demo:block/lattice_edge_1"
+    },
+    "hue=2": {
+      "model": "shooting_star_demo:block/lattice_edge_2"
+    },
+    "hue=3": {
+      "model": "shooting_star_demo:block/lattice_edge_3"
+    },
+    "hue=4": {
+      "model": "shooting_star_demo:block/lattice_edge_4"
+    },
+    "hue=5": {
+      "model": "shooting_star_demo:block/lattice_edge_5"
+    },
+    "hue=6": {
+      "model": "shooting_star_demo:block/lattice_edge_6"
+    }
+  }
+}

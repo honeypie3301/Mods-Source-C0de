@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "shooting_star_demo:gungnir_hull"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        },
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "#shooting_star_demo:needs_netherite_tool"
+          }
+        }
+      ]
+    }
+  ]
+}

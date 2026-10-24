@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "shooting_star_demo:gungnir_hull",
+    "shooting_star_demo:gungnir_seam",
+    "shooting_star_demo:star_core",
+    "shooting_star_demo:star_trace",
+    "shooting_star_demo:lattice_edge"
+  ]
+}

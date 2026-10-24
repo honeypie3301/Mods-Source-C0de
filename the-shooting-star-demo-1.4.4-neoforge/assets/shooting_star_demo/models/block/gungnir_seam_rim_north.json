@@ -1,0 +1,81 @@
+{
+  "textures": {
+    "rim": "shooting_star_demo:block/gungnir_seam_rim",
+    "rim_v": "shooting_star_demo:block/gungnir_seam_rim_v",
+    "particle": "shooting_star_demo:block/gungnir_seam"
+  },
+  "elements": [
+    {
+      "from": [
+        -0.08,
+        0.0,
+        0
+      ],
+      "to": [
+        -0.08,
+        16.0,
+        2
+      ],
+      "faces": {
+        "west": {
+          "texture": "#rim_v",
+          "cullface": "west"
+        }
+      }
+    },
+    {
+      "from": [
+        16.08,
+        0.0,
+        0
+      ],
+      "to": [
+        16.08,
+        16.0,
+        2
+      ],
+      "faces": {
+        "east": {
+          "texture": "#rim_v",
+          "cullface": "east"
+        }
+      }
+    },
+    {
+      "from": [
+        0.0,
+        -0.04,
+        0
+      ],
+      "to": [
+        16.0,
+        -0.04,
+        2
+      ],
+      "faces": {
+        "down": {
+          "texture": "#rim",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "from": [
+        0.0,
+        16.04,
+        0
+      ],
+      "to": [
+        16.0,
+        16.04,
+        2
+      ],
+      "faces": {
+        "up": {
+          "texture": "#rim",
+          "cullface": "up"
+        }
+      }
+    }
+  ]
+}

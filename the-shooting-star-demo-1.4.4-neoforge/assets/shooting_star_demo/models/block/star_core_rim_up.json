@@ -1,0 +1,81 @@
+{
+  "textures": {
+    "rim": "shooting_star_demo:block/star_core_rim",
+    "rim_v": "shooting_star_demo:block/star_core_rim_v",
+    "particle": "shooting_star_demo:block/star_core"
+  },
+  "elements": [
+    {
+      "from": [
+        0.0,
+        14,
+        -0.04
+      ],
+      "to": [
+        16.0,
+        16,
+        -0.04
+      ],
+      "faces": {
+        "north": {
+          "texture": "#rim",
+          "cullface": "north"
+        }
+      }
+    },
+    {
+      "from": [
+        0.0,
+        14,
+        16.04
+      ],
+      "to": [
+        16.0,
+        16,
+        16.04
+      ],
+      "faces": {
+        "south": {
+          "texture": "#rim",
+          "cullface": "south"
+        }
+      }
+    },
+    {
+      "from": [
+        -0.04,
+        14,
+        0.0
+      ],
+      "to": [
+        -0.04,
+        16,
+        16.0
+      ],
+      "faces": {
+        "west": {
+          "texture": "#rim",
+          "cullface": "west"
+        }
+      }
+    },
+    {
+      "from": [
+        16.04,
+        14,
+        0.0
+      ],
+      "to": [
+        16.04,
+        16,
+        16.0
+      ],
+      "faces": {
+        "east": {
+          "texture": "#rim",
+          "cullface": "east"
+        }
+      }
+    }
+  ]
+}
