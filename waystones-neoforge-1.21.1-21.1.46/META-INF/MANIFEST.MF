@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: Waystones
+Specification-Vendor: BlayTheNinth
+Specification-Version: 21.1.46
+Implementation-Title: neoforge
+Implementation-Version: 21.1.46
+Implementation-Vendor: BlayTheNinth
+Built-On-Minecraft: 1.21.1
+MixinConfigs: waystones.mixins.json,waystones.neoforge.mixins.json
+
