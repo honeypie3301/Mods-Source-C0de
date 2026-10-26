@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: viltrumiteflight
+Specification-Vendor: 
+Specification-Version: 1
+Implementation-Title: viltrumiteflight
+Implementation-Version: 1.6.8
+Implementation-Vendor: 
+Implementation-Timestamp: 2026-10-11T13:57:16+0300
+

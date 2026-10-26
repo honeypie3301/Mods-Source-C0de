@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.baranhan.viltrumiteflight.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AbstractClientPlayerMixin",
+    "CapeHeatFeatureMixin",
+    "FlightCameraMixin",
+    "GameRendererMixin",
+    "ItemInHandRendererMixin",
+    "LocalPlayerMixin",
+    "PlayerFeatureRendererMixin",
+    "PlayerModelAccessor",
+    "PlayerModelMixin",
+    "PlayerRendererMixin",
+    "PostChainAccessor",
+    "SlowFlyingModelMixin",
+    "SlowFlyingRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

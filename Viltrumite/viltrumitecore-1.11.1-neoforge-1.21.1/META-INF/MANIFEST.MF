@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: viltrumitecore
+Specification-Vendor: 
+Specification-Version: 1
+Implementation-Title: viltrumitecore
+Implementation-Version: 1.11.1
+Implementation-Vendor: 
+Implementation-Timestamp: 2026-10-18T20:30:23+0000
+

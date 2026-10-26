@@ -1,0 +1,34 @@
+# NeoForge mod metadata dosyası. Biçim: TOML v0.5.0
+# Ayrıntılar: https://docs.neoforged.net/docs/gettingstarted/modfiles
+
+modLoader = "javafml" #mandatory
+loaderVersion = "[4,)" #mandatory
+license = "All Rights Reserved"
+
+[[mods]] #mandatory
+modId = "viltrumiteflight" #mandatory
+version = "1.6.8" #mandatory
+displayName = "ViltrumiteFlight" #mandatory
+authors = "" #optional
+description = ''''''
+
+# Mixin yapılandırmaları
+[[mixins]]
+config = "viltrumiteflight.mixins.json"
+
+[[mixins]]
+config = "viltrumiteflight.client.mixins.json"
+
+[[dependencies."viltrumiteflight"]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."viltrumiteflight"]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
