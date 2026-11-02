@@ -1,0 +1,21 @@
+SS-06 Gravitia textures and meshes — every one from free licensed sources (never drawn by hand)
+
+nebula.jpg
+    The Orion Nebula (heic0601a). NASA, ESA, M. Robberto (STScI/ESA) and the Hubble Space Telescope Orion Treasury
+    Project Team. ESA/Hubble, licensed CC BY 4.0. https://esahubble.org/images/heic0601a/
+    Its hues turned violet by tools/art/gravitia_nebula.py.
+rock_pale.png
+    Poly Haven texture rock_boulder_dry (diffuse 1k). CC0. https://polyhaven.com/textures
+models/gravitia/rocks.bin
+    Poly Haven models moon_rock_01 to moon_rock_07 (Greg Zaal, Rico Cilliers, Jenelle van Heerden, Dario Barresi),
+    decimated to about 420 and 64 triangles. CC0. https://polyhaven.com/models
+spark.png
+    Kenney, Particle Pack (flare, light, star, spark, trace, twirl, flame). CC0. https://kenney.nl/assets/particle-pack
+fire_raw.png
+    Unity Labs Paris, Explosion02HD flipbook (5 x 5 frames). CC0.
+    https://unity.com/blog/engine-platform/free-vfx-image-sequences-flipbooks
+    The burst kit's copy with its fade baked into its colour by tools/art/gravitia_fire_raw.py.
+(rock_pale.png, rocks.bin, spark.png and soft.png are the Mṛtyu burst kit's own copies.)
+
+The Earth, Moon, planet and Milky Way maps are the ones in textures/moonfall and textures/shooting_star (see their
+CREDITS.txt).
