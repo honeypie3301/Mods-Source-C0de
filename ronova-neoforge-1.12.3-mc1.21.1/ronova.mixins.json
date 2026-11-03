@@ -1,0 +1,8 @@
+{
+	"required": true,
+	"package": "dev.mian.ronova.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": ["LivingEntityMixin", "PlayerMixin", "WorldDimensionsMixin", "SpawnBlockMixin", "NaturalSpawnerMixin", "HeldNoDespawnMixin", "ConnectionAccessor", "AbstractArrowAccessor", "DamageSourcesAccessor", "ServerPlayerGameModeMixin", "PlayerNameMixin", "ServerPlayerTabNameMixin", "PlayerListChatMixin", "BotPacketMixin"],
+	"injectors": { "defaultRequire": 1 },
+	"overwrites": { "requireAnnotations": true }
+}

@@ -1,0 +1,9 @@
+{
+	"required": true,
+	"package": "dev.mian.ronova.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"plugin": "dev.mian.ronova.client.RonovaMixinPlugin",
+	"client": ["AbstractClientPlayerMixin", "PlayerModelMixin", "FirstPersonHandsMixin", "LivingEntityRendererMixin", "EntityRenderDispatcherMixin", "DoomFreezeMixin", "DoomFreezeLivingMixin", "UseItemMixin", "ModelPartAccessor", "ItemActivationMixin", "ScreenEffectRendererMixin", "ClientVoiceMixin", "HudHeartsMixin", "ParticleEngineAccessor", "TrackingEmitterAccessor", "CameraMixin", "HudTitleMixin", "LevelRendererSubmitMixin", "KeyMappingAccessor", "GuiEntityRendererMixin", "SealingNightMixin", "LevelLoadingBlastMixin", "SkillSlotMixin", "CloudRenderMixin", "MusicManagerMixin", "ScrollSkillMixin", "PlayerInfoSkinMixin", "NativeImageAccessor", "GameRendererAccessor", "MouseHandlerAccessor", "DimensionFxMixin", "FogDistanceMixin", "TextureFilterMixin", "SimpleTextureAccessor", "DimensionLightmapMixin", "KeyShareMixin", "KeyShareMixin$Clicks", "AshNoFallMixin", "SodiumCloudMixin", "ShaderEntityLightMixin", "GameRendererOverlayMixin"],
+	"injectors": { "defaultRequire": 1 },
+	"overwrites": { "requireAnnotations": true }
+}

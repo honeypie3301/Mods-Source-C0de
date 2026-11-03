@@ -1,0 +1,14 @@
+{
+  "type": "ronova:afterlife",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [
+        { "block": "minecraft:air", "height": 1 }
+      ],
+      "biome": "ronova:afterlife",
+      "lakes": false,
+      "features": false
+    }
+  }
+}

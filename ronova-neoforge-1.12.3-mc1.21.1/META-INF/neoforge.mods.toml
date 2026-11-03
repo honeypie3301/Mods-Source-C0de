@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/ronova-ruler-of-death"
+
+[[mods]]
+modId="ronova"
+version="1.12.3"
+displayName="Ronova: Ruler of Death"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/ronova-ruler-of-death"
+logoFile="assets/ronova/icon.png"
+authors="Mian3450"
+description='''
+Play as Ronova, the Shade of Death from Genshin Impact: her look, her wings and eyes, and her authority over death.
+'''
+
+[[mixins]]
+config="ronova.mixins.json"
+
+[[mixins]]
+config="ronova.client.mixins.json"
+
+[[dependencies.ronova]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.265,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ronova]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ronova]]
+modId="entity_model_features"
+type="optional"
+versionRange="*"
+ordering="AFTER"
+side="CLIENT"

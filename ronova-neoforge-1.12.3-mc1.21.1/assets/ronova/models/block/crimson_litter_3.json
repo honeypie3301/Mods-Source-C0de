@@ -1,0 +1,42 @@
+{
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "ronova:block/crimson_litter",
+    "litter": "ronova:block/crimson_litter"
+  },
+  "elements": [
+    {
+      "from": [
+        8,
+        0.25,
+        8
+      ],
+      "to": [
+        16,
+        0.25,
+        16
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#litter"
+        },
+        "down": {
+          "uv": [
+            8,
+            16,
+            16,
+            8
+          ],
+          "texture": "#litter"
+        }
+      }
+    }
+  ]
+}
