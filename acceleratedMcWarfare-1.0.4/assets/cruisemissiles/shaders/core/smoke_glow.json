@@ -1,0 +1,144 @@
+{
+  "vertex": "cruisemissiles:smoke_glow",
+  "fragment": "cruisemissiles:smoke_glow",
+  "samplers": [
+    {
+      "name": "Sampler0"
+    },
+    {
+      "name": "DhDepthSampler"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "DhInvViewProjMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ScreenSize",
+      "type": "float",
+      "count": 2,
+      "values": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HasDhDepth",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "ModelViewMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ProjMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GlowColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        1.0,
+        0.7,
+        0.25
+      ]
+    },
+    {
+      "name": "GlowStrength",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "LightPos",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "NightFactor",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "DhDepthReversed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    }
+  ]
+}

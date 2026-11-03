@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.bukm2.undepl_hold": {
+      "loop": true, "animation_length": 0.001,
+      "bones": {
+        "fasteners for rockets1": {"rotation": [0, 0, 0], "position": [0, 0, 0]},
+        "rotatble fisrt fasteners": {"rotation": [0, 0, 0], "position": [0, 0, 0]}
+      }
+    },
+    "animation.default_player.new.bukm2.depl": {
+      "animation_length": 2.3333,
+      "bones": {
+        "fasteners for rockets1": {"rotation": {"0.0": [0,0,0], "1.625": [52.5,0,0]}},
+        "rotatble fisrt fasteners": {"rotation": {"0.0": [0,0,0], "1.625": [-20,0,0]}, "position": {"0.0": [0,0,0], "1.625": [0,1,-5]}}
+      }
+    },
+    "animation.bukm2.depl_hold": {
+      "loop": true, "animation_length": 0.001,
+      "bones": {
+        "fasteners for rockets1": {"rotation": [52.5,0,0]},
+        "rotatble fisrt fasteners": {"rotation": [-20,0,0], "position": [0,1,-5]}
+      }
+    },
+    "animation.default_player.new.bukm2.undepl": {
+      "animation_length": 2.5833,
+      "bones": {
+        "fasteners for rockets1": {"rotation": {"0.0": [52.5,0,0], "1.625": [0,0,0]}},
+        "rotatble fisrt fasteners": {"rotation": {"0.0": [-20,0,0], "1.625": [0,0,0]}, "position": {"0.0": [0,1,-5], "1.625": [0,0,0]}}
+      }
+    }
+  }
+}

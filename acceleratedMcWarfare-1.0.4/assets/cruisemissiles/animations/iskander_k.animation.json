@@ -1,0 +1,1741 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.default_player.new.siakndrK.deployment2": {
+      "animation_length": 10.3333,
+      "bones": {
+        "11_Vertical_launcher_support2": {
+          "rotation": {
+            "3.5833": [
+              0,
+              0,
+              0
+            ],
+            "10.3333": [
+              0,
+              0,
+              90
+            ]
+          }
+        },
+        "tut": {
+          "rotation": {
+            "4.75": [
+              0,
+              0,
+              -20
+            ],
+            "6.5833": [
+              0,
+              0,
+              -15
+            ],
+            "7.9167": [
+              0,
+              0,
+              -12.5
+            ],
+            "9.1667": [
+              0,
+              0,
+              -10
+            ],
+            "10.3333": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "11_Vertical_launcher_support4": {
+          "rotation": {
+            "3.5833": [
+              0,
+              0,
+              0
+            ],
+            "10.3333": [
+              0,
+              0,
+              90
+            ]
+          }
+        },
+        "05_Left_rear_door2": {
+          "rotation": {
+            "1.8333": [
+              0,
+              0,
+              0
+            ],
+            "3.25": [
+              0,
+              122.5,
+              0
+            ]
+          }
+        },
+        "05_Left_front_door2": {
+          "rotation": {
+            "1.8333": [
+              0,
+              0,
+              0
+            ],
+            "3.25": [
+              0,
+              -122.5,
+              0
+            ]
+          }
+        },
+        "04_Left_open_cover3": {
+          "rotation": {
+            "0.0": [
+              0.0065,
+              0.1724,
+              0.0485
+            ],
+            "1.8333": [
+              105,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners9": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.8333": [
+              -55,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners10": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.8333": [
+              -50,
+              0,
+              0
+            ]
+          }
+        },
+        "04_Left_open_cover4": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.8333": [
+              -100,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners11": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.8333": [
+              47.5,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners12": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.8333": [
+              52.5,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.default_player.new.iskanderKundeployment": {
+      "animation_length": 10.3333,
+      "bones": {
+        "11_Vertical_launcher_support2": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              90
+            ],
+            "6.75": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "tut": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.1667": [
+              0,
+              0,
+              -10
+            ],
+            "2.4167": [
+              0,
+              0,
+              -12.5
+            ],
+            "3.75": [
+              0,
+              0,
+              -15
+            ],
+            "5.5833": [
+              0,
+              0,
+              -20
+            ]
+          }
+        },
+        "11_Vertical_launcher_support4": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              90
+            ],
+            "6.75": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "05_Left_rear_door2": {
+          "rotation": {
+            "7.0833": [
+              0,
+              122.5,
+              0
+            ],
+            "8.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "05_Left_front_door2": {
+          "rotation": {
+            "7.0833": [
+              0,
+              -122.5,
+              0
+            ],
+            "8.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "04_Left_open_cover3": {
+          "rotation": {
+            "8.5": [
+              105,
+              0,
+              0
+            ],
+            "10.3333": [
+              0.0065,
+              0.1724,
+              0.0485
+            ]
+          }
+        },
+        "rotatble_opened_fasteners9": {
+          "rotation": {
+            "8.5": [
+              -55,
+              0,
+              0
+            ],
+            "10.3333": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners10": {
+          "rotation": {
+            "8.5": [
+              -50,
+              0,
+              0
+            ],
+            "10.3333": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "04_Left_open_cover4": {
+          "rotation": {
+            "8.5": [
+              -100,
+              0,
+              0
+            ],
+            "10.3333": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners11": {
+          "rotation": {
+            "8.5": [
+              47.5,
+              0,
+              0
+            ],
+            "10.3333": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners12": {
+          "rotation": {
+            "8.5": [
+              52.5,
+              0,
+              0
+            ],
+            "10.3333": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.iskander_k.raised_hold": {
+      "animation_length": 0.01,
+      "loop": true,
+      "bones": {
+        "11_Vertical_launcher_support2": {
+          "rotation": [
+            0,
+            0,
+            90
+          ]
+        },
+        "tut": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "11_Vertical_launcher_support4": {
+          "rotation": [
+            0,
+            0,
+            90
+          ]
+        },
+        "05_Left_rear_door2": {
+          "rotation": [
+            0,
+            122.5,
+            0
+          ]
+        },
+        "05_Left_front_door2": {
+          "rotation": [
+            0,
+            -122.5,
+            0
+          ]
+        },
+        "04_Left_open_cover3": {
+          "rotation": [
+            105,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners9": {
+          "rotation": [
+            -55,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners10": {
+          "rotation": [
+            -50,
+            0,
+            0
+          ]
+        },
+        "04_Left_open_cover4": {
+          "rotation": [
+            -100,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners11": {
+          "rotation": [
+            47.5,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners12": {
+          "rotation": [
+            52.5,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.iskander_k.lowered_hold": {
+      "animation_length": 0.01,
+      "loop": true,
+      "bones": {
+        "main2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "11_Vertical_launcher_support2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "tut": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "tut2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rocket3": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners3": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners4": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners5": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners6": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners7": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners8": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners9": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners19": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "openable door1": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "bone2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "up part of rocket1": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "down_part_of_rocket2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "11_Vertical_launcher_support4": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rocket2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners10": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners11": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners12": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners13": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners14": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners15": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners16": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners17": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fasteners18": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "openable_door2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "bone": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "up_part_of_rocket2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "down part of rocket": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "10_Windshield2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "09_Cab_roofs_and_rear_wall2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "08_Cab_left_walls2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "08_Cab_right_walls2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "07_Cab_lower_shell2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "05_Left_rear_door2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "05_Left_front_door2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "04_right_open_cover3": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners7": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners8": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "04_Left_open_cover3": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners9": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners10": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "04_Left_open_cover4": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners11": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners12": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "03_Chamfered_bulkhead_behind_cab2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "02_Right_body_and_wheel_openings2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "02_Left_body_and_wheel_openings2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "01_Chassis2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "DOOR4": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "DOOR5": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "FASTENERS_FOR_WHEELS3": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "FASTENERS_FOR_WHEELS4": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL8": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL10": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL11": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL12": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL13": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL14": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL15": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL16": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "damage_hull_front_left": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "damage_hull_mid_left": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "damage_hull_mid_right": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "damage_hull_rear_left": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rule": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "animation.iskander_k.open_lids": {
+      "animation_length": 0.625,
+      "bones": {
+        "bone": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "0.625": [
+              -205,
+              0,
+              0
+            ]
+          }
+        },
+        "bone2": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "0.625": [
+              207.5,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.default_player.new.9m728_win_deploy": {
+      "animation_length": 3.125,
+      "bones": {
+        "wing1": {
+          "rotation": {
+            "0.0": [
+              0,
+              -80,
+              0
+            ],
+            "0.2917": [
+              0,
+              -82.5,
+              0
+            ],
+            "1.2917": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "wing2": {
+          "rotation": {
+            "0.2917": [
+              0,
+              80,
+              0
+            ],
+            "1.2917": [
+              0,
+              -2.5,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.default_player.new.wings_deploy": {
+      "animation_length": 2.1667,
+      "bones": {
+        "wing1": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.0": [
+              0,
+              -82.5,
+              0
+            ],
+            "1.2917": [
+              0,
+              -80,
+              0
+            ]
+          }
+        },
+        "wing2": {
+          "rotation": {
+            "0.0": [
+              0,
+              -2.5,
+              0
+            ],
+            "1.0": [
+              0,
+              80,
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

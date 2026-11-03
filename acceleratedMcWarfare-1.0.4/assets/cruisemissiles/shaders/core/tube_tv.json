@@ -1,0 +1,14 @@
+{
+  "vertex": "cruisemissiles:tube_tv",
+  "fragment": "cruisemissiles:tube_tv",
+  "samplers": [
+    { "name": "DiffuseSampler" }
+  ],
+  "uniforms": [
+    { "name": "OutSize", "type": "float", "count": 2, "values": [1.0, 1.0] },
+    { "name": "Time", "type": "float", "count": 1, "values": [0.0] },
+    { "name": "SkyLight", "type": "float", "count": 1, "values": [1.0] },
+    { "name": "BlockLight", "type": "float", "count": 1, "values": [0.0] },
+    { "name": "Flash", "type": "float", "count": 1, "values": [0.0] }
+  ]
+}

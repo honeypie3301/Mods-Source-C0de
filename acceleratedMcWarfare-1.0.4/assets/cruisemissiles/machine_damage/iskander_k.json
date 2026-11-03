@@ -1,0 +1,239 @@
+{
+  "mesh": "iskander_k.geo.json",
+  "texture": "textures/entity/iskander_k.png",
+  "kind": "wheeled",
+  "mass": 24000,
+  "parts": [
+    {
+      "id": "hull",
+      "roots": [
+        "01_Chassis2"
+      ],
+      "behavior": "hull",
+      "vulnerability": 0.15,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 200,
+      "wheel": -1
+    },
+    {
+      "id": "wheel_0",
+      "roots": [
+        "WHEEL8"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 110,
+      "wheel": 0
+    },
+    {
+      "id": "wheel_1",
+      "roots": [
+        "WHEEL10"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 110,
+      "wheel": 1
+    },
+    {
+      "id": "wheel_2",
+      "roots": [
+        "WHEEL14"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 110,
+      "wheel": 2
+    },
+    {
+      "id": "wheel_3",
+      "roots": [
+        "WHEEL11"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 110,
+      "wheel": 3
+    },
+    {
+      "id": "wheel_4",
+      "roots": [
+        "WHEEL15"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 110,
+      "wheel": 4
+    },
+    {
+      "id": "wheel_5",
+      "roots": [
+        "WHEEL12"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 110,
+      "wheel": 5
+    },
+    {
+      "id": "wheel_6",
+      "roots": [
+        "WHEEL16"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 110,
+      "wheel": 6
+    },
+    {
+      "id": "wheel_7",
+      "roots": [
+        "WHEEL13"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 110,
+      "wheel": 7
+    },
+    {
+      "id": "engine",
+      "roots": [
+        "07_Cab_lower_shell2"
+      ],
+      "behavior": "internal",
+      "vulnerability": 0.5,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 500,
+      "wheel": -1
+    },
+    {
+      "id": "transmission",
+      "roots": [
+        "03_Chamfered_bulkhead_behind_cab2"
+      ],
+      "behavior": "internal",
+      "vulnerability": 0.5,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 250,
+      "wheel": -1
+    },
+    {
+      "id": "cab_roof",
+      "roots": [
+        "09_Cab_roofs_and_rear_wall2"
+      ],
+      "behavior": "attachment",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 100,
+      "wheel": -1
+    },
+    {
+      "id": "wheel_bracket_left",
+      "roots": [
+        "FASTENERS_FOR_WHEELS3"
+      ],
+      "behavior": "attachment",
+      "vulnerability": 2,
+      "joint": 1.5,
+      "destroy": 4,
+      "mass": 45,
+      "wheel": -1
+    },
+    {
+      "id": "wheel_bracket_right",
+      "roots": [
+        "FASTENERS_FOR_WHEELS4"
+      ],
+      "behavior": "attachment",
+      "vulnerability": 2,
+      "joint": 1.5,
+      "destroy": 4,
+      "mass": 45,
+      "wheel": -1
+    },
+    {
+      "roots": [
+        "damage_hull_front_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_front_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_mid_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_mid_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_mid_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_mid_right",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_rear_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_rear_left",
+      "behavior": "structure"
+    }
+  ],
+  "mounts": {
+    "wheel_0": "hull",
+    "wheel_1": "hull",
+    "wheel_2": "hull",
+    "wheel_3": "hull",
+    "wheel_4": "hull",
+    "wheel_5": "hull",
+    "wheel_6": "hull",
+    "wheel_7": "hull",
+    "engine": "hull",
+    "transmission": "hull",
+    "cab_roof": "hull",
+    "wheel_bracket_left": "hull",
+    "wheel_bracket_right": "hull"
+  }
+}

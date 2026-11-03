@@ -1,0 +1,241 @@
+{
+  "mesh": "buk_m2e.geo.json",
+  "texture": "textures/entity/bukm2/buk_m2e.png",
+  "kind": "wheeled",
+  "mass": 24000,
+  "parts": [
+    {
+      "id": "hull",
+      "roots": [
+        "body_main1"
+      ],
+      "behavior": "hull",
+      "vulnerability": 0.15,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 200,
+      "wheel": -1
+    },
+    {
+      "id": "engine",
+      "roots": [],
+      "behavior": "internal",
+      "vulnerability": 1,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 10,
+      "wheel": -1
+    },
+    {
+      "id": "transmission",
+      "roots": [],
+      "behavior": "internal",
+      "vulnerability": 1,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 10,
+      "wheel": -1
+    },
+    {
+      "id": "power",
+      "roots": [],
+      "behavior": "internal",
+      "vulnerability": 1,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 10,
+      "wheel": -1
+    },
+    {
+      "id": "radar_electronics",
+      "roots": [],
+      "behavior": "internal",
+      "vulnerability": 1,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 10,
+      "wheel": -1
+    },
+    {
+      "id": "radar_antenna",
+      "roots": [
+        "RADAR"
+      ],
+      "behavior": "radar",
+      "vulnerability": 5,
+      "joint": 1.8,
+      "destroy": 4,
+      "mass": 180,
+      "wheel": -1,
+      "failure_health": 0.5
+    },
+    {
+      "id": "wheel_front_left",
+      "roots": [
+        "wheel7"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 100,
+      "wheel": 0
+    },
+    {
+      "id": "wheel_front_right",
+      "roots": [
+        "wheel4"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 100,
+      "wheel": 1
+    },
+    {
+      "id": "wheel_middle_left",
+      "roots": [
+        "wheel3"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 100,
+      "wheel": 2
+    },
+    {
+      "id": "wheel_middle_right",
+      "roots": [
+        "wheel5"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 100,
+      "wheel": 3
+    },
+    {
+      "id": "wheel_rear_left",
+      "roots": [
+        "wheel2"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 100,
+      "wheel": 4
+    },
+    {
+      "id": "wheel_rear_right",
+      "roots": [
+        "wheel6"
+      ],
+      "behavior": "wheel",
+      "vulnerability": 1.5,
+      "joint": 2,
+      "destroy": 5,
+      "mass": 100,
+      "wheel": 5
+    },
+    {
+      "id": "launcher_bracket",
+      "roots": [
+        "fasteners for rockets1"
+      ],
+      "behavior": "attachment",
+      "vulnerability": 2,
+      "joint": 1.5,
+      "destroy": 4,
+      "mass": 45,
+      "wheel": -1
+    },
+    {
+      "roots": [
+        "damage_hull_front_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_front_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_front_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_front_right",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_mid_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_mid_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_mid_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_mid_right",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_rear_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_rear_right",
+      "behavior": "structure"
+    },
+    {
+      "id": "turret_mount",
+      "roots": [
+        "turret"
+      ],
+      "behavior": "turret",
+      "vulnerability": 0.7,
+      "joint": 8,
+      "destroy": 24,
+      "mass": 4000,
+      "wheel": -1
+    }
+  ],
+  "legacy": "buk_m2e",
+  "mounts": {
+    "radar_antenna": "turret_mount",
+    "wheel_front_left": "hull",
+    "wheel_front_right": "hull",
+    "wheel_middle_left": "hull",
+    "wheel_middle_right": "hull",
+    "wheel_rear_left": "hull",
+    "wheel_rear_right": "hull",
+    "launcher_bracket": "turret_mount",
+    "turret_mount": "hull"
+  }
+}

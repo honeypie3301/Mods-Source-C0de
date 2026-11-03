@@ -1,0 +1,1327 @@
+{
+  "missile_passby_storm": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/passby_rocket",
+        "stream": false
+      }
+    ]
+  },
+  "missile_passby_rocket": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/passby_rocket",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:missile/passby_rocket_3",
+        "stream": false
+      }
+    ]
+  },
+  "missile_terminal_projectile": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/projectile_launch",
+        "stream": false
+      }
+    ]
+  },
+  "missile_terminal_soundfly": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/soundfly_230_1",
+        "stream": false
+      }
+    ]
+  },
+  "missile_terminal_soundfly_short": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/soundfly_230_1_short",
+        "stream": false
+      }
+    ]
+  },
+  "iskander_incoming": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:iskander/incoming",
+        "stream": false
+      }
+    ]
+  },
+  "iskander_launch_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:iskander/launch_close",
+        "stream": true
+      }
+    ]
+  },
+  "iskander_launch_mid": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:iskander/launch_mid",
+        "stream": true
+      }
+    ]
+  },
+  "iskander_launch_muffled": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:iskander/launch_muffled",
+        "stream": true
+      }
+    ]
+  },
+  "iskander_launch_far": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:iskander/launch_far",
+        "stream": true
+      }
+    ]
+  },
+  "iskander_target_ping": {
+    "sounds": [
+      "cruisemissiles:ui/iskander_target_ping"
+    ]
+  },
+  "missile_woosh_01": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      "cruisemissiles:missile/woosh_01"
+    ]
+  },
+  "missile_woosh_02": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      "cruisemissiles:missile/woosh_02"
+    ]
+  },
+  "engine_ballistic": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/engine_ballistic",
+        "stream": true
+      }
+    ]
+  },
+  "engine_cruise": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/engine_cruise",
+        "stream": false,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "storm_approach_loop": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/ffar_proj_far_loop",
+        "stream": false,
+        "volume": 1.35,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "missile_far": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/far",
+        "stream": false
+      }
+    ]
+  },
+  "missile_rumble_mid": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      "cruisemissiles:missile/rumble_mid"
+    ]
+  },
+  "missile_rumble_near": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/rumble_near",
+        "stream": false,
+        "volume": 1.55,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_boom": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      "cruisemissiles:missile/missile_explosion"
+    ]
+  },
+  "missile_wind": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/windnoise",
+        "stream": false,
+        "volume": 1.35,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "missile_rocket_fly": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/rocket_fly_approach_loop",
+        "stream": false,
+        "volume": 1.25,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "missile_engine": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/soundengine",
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "missile_missoundfly": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/missoundfly_missile",
+        "stream": false,
+        "volume": 1.3,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "missile_aa_flyby": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/aa_flyby",
+        "volume": 2.5,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "windnose_h55": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/windnose_h55",
+        "stream": false,
+        "volume": 1.3,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "missile_whistle_h55": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/whistle_h55",
+        "volume": 1.4,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_huge_meadow": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/huge_meadow",
+        "volume": 2.0,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_medium_meadow": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/medium_meadow",
+        "volume": 1.85,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_short_impact": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/short_impact",
+        "volume": 1.75,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_short_echo": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/cruise_short_echo",
+        "volume": 1.55,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_medium_impact": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/medium_impact",
+        "volume": 1.7,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_medium_echo": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/medium_echo",
+        "volume": 1.5,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_long_explosion": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/long_explosion",
+        "volume": 1.65,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_short_debris": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/short_debris",
+        "volume": 1.55,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_long_impact": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      "cruisemissiles:explosion/long_impact"
+    ]
+  },
+  "explosion_long_echo": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      "cruisemissiles:explosion/long_echo"
+    ]
+  },
+  "explosion_longfar_impact": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      "cruisemissiles:explosion/longfar_impact"
+    ]
+  },
+  "explosion_longfar_echo": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      "cruisemissiles:explosion/longfar_echo"
+    ]
+  },
+  "explosion_echotail": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      "cruisemissiles:explosion/echotail"
+    ]
+  },
+  "explosion_debris_big": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/debris_big_1",
+        "volume": 1.85,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_debris_regular": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/debris_regular_2",
+        "volume": 1.7,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_rockets_6": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      "cruisemissiles:explosion/rockets_6"
+    ]
+  },
+  "explosion_loud_close": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/loud_close",
+        "volume": 2.2,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_close_distance_22": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/close_distance_22",
+        "volume": 2.2,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_close_33": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/close_33",
+        "volume": 2.2,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_ied_mid_initial": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/ied_exp_a",
+        "volume": 2.2,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_ied_close_initial": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/ied_exp_b",
+        "volume": 2.2,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_ied_far_initial": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/ied_exp_c",
+        "volume": 2.2,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_h22_short_impact": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/h22_short_impact",
+        "volume": 1.8,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_h22_short_echo": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/h22_short_echo",
+        "volume": 1.8,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_h22_short_explosion": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/h22_short_explosion",
+        "volume": 1.9,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_h22_close_distance": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/h22_close_distance",
+        "volume": 2.0,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_h22_huge_meadow": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/h22_huge_meadow",
+        "volume": 1.0,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_h22_far_distance": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/h22_far_distance",
+        "volume": 1.9,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_loud_impact_close_02": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/loud_impact_close_02",
+        "volume": 2.2,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_loud_impact_close_03": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/loud_impact_close_03",
+        "volume": 2.2,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_distance_shock_1": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/distance_shock_1",
+        "volume": 1.9,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_distance_shock_2": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/distance_shock_2",
+        "volume": 1.9,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_explo_short": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/explo_short",
+        "volume": 1.9,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_explo_medium": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/explo_medium",
+        "volume": 1.85,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_explo_long": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/explo_long",
+        "volume": 1.8,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "explosion_cruise_short_echo": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/cruise_short_echo",
+        "volume": 1.85,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "buk_engine_start": {
+    "subtitle": "subtitle.cruisemissiles.vehicle",
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/bukm3_start",
+        "volume": 1.0,
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "buk_engine_idle": {
+    "subtitle": "subtitle.cruisemissiles.vehicle",
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/bukm3_idle",
+        "stream": true,
+        "volume": 0.85,
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "buk_engine_high": {
+    "subtitle": "subtitle.cruisemissiles.vehicle",
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/bukm3_high",
+        "stream": true,
+        "volume": 1.0,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "buk_engine_brake": {
+    "subtitle": "subtitle.cruisemissiles.vehicle",
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/bukm3_brake",
+        "volume": 0.95,
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "buk_engine_burst": {
+    "subtitle": "subtitle.cruisemissiles.vehicle",
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/bukm3_burst",
+        "volume": 1.0,
+        "attenuation_distance": 40
+      }
+    ]
+  },
+  "sam_9m317_launch": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:pvo/9m317_launch",
+        "volume": 1.5,
+        "attenuation_distance": 160
+      }
+    ]
+  },
+  "sam_9m317_launch_close": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:pvo/9m317_launch_close",
+        "volume": 1.6,
+        "attenuation_distance": 220
+      }
+    ]
+  },
+  "sam_9m317_launch_medium": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:pvo/9m317_launch_medium",
+        "volume": 1.4,
+        "attenuation_distance": 520
+      },
+      {
+        "name": "cruisemissiles:pvo/9m317_launch_medium_2",
+        "volume": 1.4,
+        "attenuation_distance": 520
+      }
+    ]
+  },
+  "sam_9m317_launch_far": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:pvo/9m317_launch_far",
+        "volume": 1.2,
+        "stream": true,
+        "attenuation_distance": 2000
+      },
+      {
+        "name": "cruisemissiles:pvo/9m317_launch_far_2",
+        "volume": 1.2,
+        "stream": true,
+        "attenuation_distance": 2000
+      }
+    ]
+  },
+  "sam_9m317_engine": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:pvo/9m317_soundengine",
+        "stream": true,
+        "volume": 1.35,
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "sam_9m317_fly_far": {
+    "subtitle": "subtitle.cruisemissiles.missile",
+    "sounds": [
+      {
+        "name": "cruisemissiles:pvo/9m317_missoundfly",
+        "stream": true,
+        "volume": 1.25,
+        "attenuation_distance": 1024
+      }
+    ]
+  },
+  "sam_air_intercept_a": {
+    "subtitle": "subtitle.cruisemissiles.explosion",
+    "sounds": [
+      {
+        "name": "cruisemissiles:pvo/sam_air_intercept_a",
+        "volume": 1.5,
+        "attenuation_distance": 2000
+      },
+      {
+        "name": "cruisemissiles:pvo/sam_air_intercept_far_expl",
+        "volume": 1.5,
+        "attenuation_distance": 2000
+      },
+      {
+        "name": "cruisemissiles:pvo/sam_air_intercept_sky2",
+        "volume": 1.45,
+        "attenuation_distance": 2000
+      },
+      {
+        "name": "cruisemissiles:pvo/sam_air_intercept_sky4",
+        "volume": 1.45,
+        "attenuation_distance": 2000
+      },
+      {
+        "name": "cruisemissiles:pvo/sam_air_intercept_sky5",
+        "volume": 1.45,
+        "attenuation_distance": 2000
+      },
+      {
+        "name": "cruisemissiles:pvo/sam_air_intercept_sky6",
+        "volume": 1.45,
+        "attenuation_distance": 2000
+      }
+    ]
+  },
+  "alarm_siren": {
+    "subtitle": "subtitle.cruisemissiles.alarm",
+    "sounds": [
+      {
+        "name": "cruisemissiles:alarm/siren",
+        "stream": true,
+        "volume": 1.0,
+        "attenuation_distance": 400
+      }
+    ]
+  },
+  "alarm_siren_war": {
+    "subtitle": "subtitle.cruisemissiles.alarm",
+    "sounds": [
+      {
+        "name": "cruisemissiles:alarm/siren_war",
+        "stream": true,
+        "volume": 1.0,
+        "attenuation_distance": 400
+      }
+    ]
+  },
+  "alarm_notification": {
+    "subtitle": "subtitle.cruisemissiles.alarm",
+    "sounds": [
+      {
+        "name": "cruisemissiles:alarm/notification",
+        "stream": true,
+        "volume": 1.0,
+        "attenuation_distance": 400
+      }
+    ]
+  },
+  "vehicle_ammo_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_11_close",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_12_close",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_13_close",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_14_close",
+        "attenuation_distance": 1024
+      }
+    ]
+  },
+  "vehicle_ammo_mid": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_11_mid",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_12_mid",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_13_mid",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_14_mid",
+        "attenuation_distance": 1024
+      }
+    ]
+  },
+  "vehicle_ammo_far": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_11_far",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_12_far",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_13_far",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/ammo_boom_exp_close_14_far",
+        "attenuation_distance": 1024
+      }
+    ]
+  },
+  "vehicle_engine_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_cookoff/engine_boom_apc_pops_01_close",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/engine_boom_apc_pops_02_close",
+        "attenuation_distance": 1024
+      }
+    ]
+  },
+  "vehicle_engine_mid": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_cookoff/engine_boom_apc_pops_01_mid",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/engine_boom_apc_pops_02_mid",
+        "attenuation_distance": 1024
+      }
+    ]
+  },
+  "vehicle_engine_far": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_cookoff/engine_boom_apc_pops_01_far",
+        "attenuation_distance": 1024
+      },
+      {
+        "name": "cruisemissiles:vehicle_cookoff/engine_boom_apc_pops_02_far",
+        "attenuation_distance": 1024
+      }
+    ]
+  },
+  "vehicle_event_ammo_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_1_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_2_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_3_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_4_close",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_ammo_mid": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_1_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_2_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_3_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_4_mid",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_ammo_far": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_1_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_2_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_3_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/ammo_4_far",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_tear_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/tear_1_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/tear_2_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/tear_3_close",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_tear_mid": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/tear_1_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/tear_2_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/tear_3_mid",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_tear_far": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/tear_1_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/tear_2_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/tear_3_far",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_rare_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/rare_1_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/rare_2_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/rare_3_close",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_rare_mid": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/rare_1_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/rare_2_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/rare_3_mid",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_rare_far": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/rare_1_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/rare_2_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/rare_3_far",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_crash_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/crash_1_close",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_crash_mid": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/crash_1_mid",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_crash_far": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/crash_1_far",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_impact_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/impact_1_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/impact_2_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/impact_3_close",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/impact_4_close",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_impact_mid": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/impact_1_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/impact_2_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/impact_3_mid",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/impact_4_mid",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle_event_impact_far": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle_events/impact_1_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/impact_2_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/impact_3_far",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:vehicle_events/impact_4_far",
+        "stream": false
+      }
+    ]
+  },
+  "explosion_bomb_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/bomb_near05",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:explosion/bomb_mid04",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:explosion/bomb_near01",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:explosion/bomb_near04",
+        "stream": false
+      }
+    ]
+  },
+  "explosion_heavy_distant": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/distant_heavy",
+        "stream": false
+      }
+    ]
+  },
+  "sam_intercept_distant": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:explosion/sam_dist29",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:explosion/sam_dist10",
+        "stream": false
+      },
+      {
+        "name": "cruisemissiles:explosion/sam_dist11",
+        "stream": false
+      }
+    ]
+  },
+  "sam_intercept_close_02": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:sam/intercept_close_02",
+        "stream": false
+      }
+    ]
+  },
+  "sam_intercept_close_03": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:sam/intercept_close_03",
+        "stream": false
+      }
+    ]
+  },
+  "sam_intercept_muffled_02": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:sam/intercept_muffled_02",
+        "stream": false
+      }
+    ]
+  },
+  "sam_intercept_muffled_03": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:sam/intercept_muffled_03",
+        "stream": false
+      }
+    ]
+  },
+  "missile_approach_windnoise": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/approach_windnoise",
+        "stream": false
+      }
+    ]
+  },
+  "missile_terminal_projectile_aligned": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/projectile_aligned",
+        "stream": false
+      }
+    ]
+  },
+  "missile_terminal_soundfly_aligned": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/soundfly_aligned",
+        "stream": false
+      }
+    ]
+  },
+  "missile_terminal_aa_aligned": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/aa_aligned",
+        "stream": false
+      }
+    ]
+  },
+  "storm_terminal_projectile_loud": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/storm_projectile_loud",
+        "stream": false
+      }
+    ]
+  },
+  "storm_terminal_soundfly_loud": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/storm_soundfly_loud",
+        "stream": false
+      }
+    ]
+  },
+  "storm_terminal_aa_loud": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:missile/storm_aa_loud",
+        "stream": false
+      }
+    ]
+  },
+  "iskander_deploy_mechanism": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/deploy",
+        "stream": false,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "iskander_engine_idle": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/iskander_idle",
+        "stream": false,
+        "attenuation_distance": 96
+      }
+    ]
+  },
+  "wheel_engine_drive": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/drive",
+        "stream": false,
+        "attenuation_distance": 96
+      }
+    ]
+  },
+  "wheel_engine_idle": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/idle",
+        "stream": false,
+        "attenuation_distance": 96
+      }
+    ]
+  },
+  "wheel_dirt_slow": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/dirt_slow",
+        "stream": false,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "wheel_dirt_fast": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:vehicle/dirt_fast",
+        "stream": false,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "iskander_terminal_rocket": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:iskander/rocket_fly1",
+        "stream": false
+      }
+    ]
+  },
+  "mavic_rotor_close": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:mavic/close",
+        "stream": false
+      }
+    ]
+  },
+  "mavic_rotor_distance": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:mavic/distance",
+        "stream": false
+      }
+    ]
+  },
+  "mavic_rotor_echo": {
+    "sounds": [
+      {
+        "name": "cruisemissiles:mavic/echo",
+        "stream": false
+      }
+    ]
+  }
+}

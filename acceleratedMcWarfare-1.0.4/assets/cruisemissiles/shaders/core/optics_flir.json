@@ -1,0 +1,238 @@
+{
+  "vertex": "cruisemissiles:optics_flir",
+  "fragment": "cruisemissiles:optics_flir",
+  "samplers": [
+    {
+      "name": "DiffuseSampler"
+    },
+    {
+      "name": "HeatSampler"
+    },
+    {
+      "name": "SceneDepthSampler"
+    },
+    {
+      "name": "DhDepthSampler"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "ModelViewMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ProjMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "OutSize",
+      "type": "float",
+      "count": 2,
+      "values": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Time",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "Thermal",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "Degrade",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "NoiseAmount",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.06
+      ]
+    },
+    {
+      "name": "HeatBoost",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.0
+      ]
+    },
+    {
+      "name": "Flash",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "Exposure",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "FlashUv",
+      "type": "float",
+      "count": 2,
+      "values": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "FlashRad",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "MissileOnly",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "ThermalMode",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "HasHeatMask",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "HasDhDepth",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "SkyColor",
+      "type": "float",
+      "count": 3,
+      "values": [
+        0.5,
+        0.7,
+        1.0
+      ]
+    },
+    {
+      "values": [
+        0.45
+      ],
+      "name": "ThermalLow",
+      "type": "float",
+      "count": 1
+    },
+    {
+      "values": [
+        1.25
+      ],
+      "name": "ThermalHigh",
+      "type": "float",
+      "count": 1
+    },
+    {
+      "name": "LaunchSaturation",
+      "count": 1,
+      "type": "float",
+      "values": [
+        0
+      ]
+    },
+    {
+      "name": "EnvironmentLow",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.45
+      ]
+    },
+    {
+      "name": "EnvironmentHigh",
+      "type": "float",
+      "count": 1,
+      "values": [
+        1.2
+      ]
+    },
+    {
+      "name": "DhDepthReversed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1, "mesh": "buk_m2e.geo.json", "hull_bone": "body_main1", "antenna_root": "RADAR",
+  "game_shielding_per_block": 1.8,
+  "internal_fraction_boxes": {
+    "engine": [0.18, 0.25, 0.73, 0.65, 0.68, 0.90],
+    "transmission": [0.25, 0.15, 0.57, 0.65, 0.42, 0.69],
+    "power": [0.65, 0.28, 0.12, 0.86, 0.65, 0.26],
+    "radar_electronics": [0.20, 0.40, 0.34, 0.75, 0.78, 0.48]
+  }
+}

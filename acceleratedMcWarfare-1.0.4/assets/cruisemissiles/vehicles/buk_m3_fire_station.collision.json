@@ -1,0 +1,25 @@
+{
+  "id": "cruisemissiles:buk_m3_fire_station",
+  "comment": "BB units. Same chassis class as 9S18 radar; turret boxes activate when deployed.",
+  "walk_cell": 8,
+  "pick_cell": 12,
+  "world_from_geo": true,
+  "walk": [
+    { "kind": "hull", "min": [-42, 24, -58], "max": [37, 28, 28] },
+    { "kind": "hull", "min": [-34, 24, -128], "max": [29, 28, -58] },
+    { "kind": "hull", "min": [-34, 28, -150], "max": [29, 36, -128] },
+    { "kind": "hull", "min": [-40, 24, -148], "max": [35, 34, -132] },
+    { "kind": "hull", "min": [-42, 42, -128], "max": [37, 50, -50] },
+    { "kind": "hull", "min": [-42, 35, -51], "max": [37, 38, 13] },
+    { "kind": "hull", "min": [-42, 35, 13], "max": [37, 38, 27] },
+    { "kind": "hull", "min": [29, 27, -129], "max": [41, 36, 12] },
+    { "kind": "hull", "min": [-46, 27, -129], "max": [-34, 36, 12] },
+    { "kind": "radar", "min": [-32, 44, -162], "max": [35, 92, -18] }
+  ],
+  "shells": [],
+  "pick": [
+    { "kind": "pick", "min": [-34, 10, -140], "max": [30, 40, -70] },
+    { "kind": "pick", "min": [-34, 10, -70], "max": [30, 36, 12] },
+    { "kind": "pick", "min": [-20, 36, -135], "max": [15, 60, -83] }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "twilightforest"
+        },
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apothic_enchanting"
+        }
+    ],
+    "type": "placebo:gear_set",
+    "boots": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:protection": 10
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_boots"
+            },
+            "weight": 10
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:feather_falling": 15
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_boots"
+            },
+            "weight": 4
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:thorns": 15
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_boots"
+            },
+            "weight": 2
+        }
+    ],
+    "chestplates": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:protection": 10
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_chestplate"
+            },
+            "weight": 10
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:thorns": 15
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_chestplate"
+            },
+            "weight": 3
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:icy_thorns": 15
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_chestplate"
+            },
+            "weight": 4
+        }
+    ],
+    "helmets": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:protection": 10
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_helmet"
+            },
+            "weight": 10
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:respiration": 15
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_helmet"
+            },
+            "weight": 3
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:thorns": 15
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_helmet"
+            },
+            "weight": 2
+        }
+    ],
+    "leggings": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:protection": 10
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_leggings"
+            },
+            "weight": 10
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:thorns": 15
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:yeti_leggings"
+            },
+            "weight": 3
+        }
+    ],
+    "mainhands": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:scavenger": 10
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "minecraft:netherite_sword"
+            },
+            "weight": 6
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:scavenger": 10
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "minecraft:netherite_axe"
+            },
+            "weight": 4
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:boon_of_the_earth": 10
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "minecraft:netherite_pickaxe"
+            },
+            "weight": 6
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:scavenger": 10
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:giant_sword"
+            },
+            "weight": 4
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:boon_of_the_earth": 10
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:giant_pickaxe"
+            },
+            "weight": 4
+        }
+    ],
+    "offhands": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:shield_bash": 15
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:knightmetal_shield"
+            },
+            "weight": 5
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:reflective_defenses": 15
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "twilightforest:knightmetal_shield"
+            },
+            "weight": 5
+        }
+    ],
+    "quality": 5.0,
+    "tags": [
+        "pinnacle_melee"
+    ],
+    "weight": 14
+}

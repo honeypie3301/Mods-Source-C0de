@@ -1,0 +1,37 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.player.cruisemissiles.mixin",
+  "plugin": "ru.player.cruisemissiles.mixin.CruiseMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "VehicleMeshMovementMixin",
+    "VehiclePlacementMixin"
+  ],
+  "client": [
+    "client.CollisionPartRendererMixin",
+    "client.SbwKotlinSeekToolMixin",
+    "client.SodiumShaderLoaderMixin",
+    "client.SodiumTerrainStateMixin",
+    "client.SbwSeekToolMixin",
+    "client.LevelRendererMixin",
+    "client.VanillaLevelRendererMixin",
+    "client.VehicleHitboxDebugMixin",
+    "client.CameraMixin",
+    "client.MavicSoundEngineMixin",
+    "client.ClientChunkCacheMixin",
+    "client.LevelChunkLookupMixin",
+    "client.LevelLightEngineMixin",
+    "client.RenderSectionMixin",
+    "client.GameRendererMixin",
+    "client.ParticleEngineMixin",
+    "client.LivingThermalMixin",
+    "client.DhThermalSourceMixin",
+    "client.DhThermalProgramMixin",
+    "client.VehicleModelUseMixin",
+    "client.VehicleRiderRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

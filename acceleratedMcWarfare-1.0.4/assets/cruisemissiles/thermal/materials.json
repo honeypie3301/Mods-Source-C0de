@@ -1,0 +1,28 @@
+{
+  "profiles": {
+    "default":{"emissivity":0.94,"solarRise":9,"inertia":130,"skyLoss":2},
+    "stone":{"emissivity":0.95,"solarRise":15,"inertia":190,"skyLoss":2},
+    "soil":{"emissivity":0.96,"solarRise":12,"inertia":90,"skyLoss":3},
+    "sand":{"emissivity":0.93,"solarRise":22,"inertia":60,"skyLoss":5},
+    "vegetation":{"emissivity":0.98,"solarRise":3,"inertia":25,"skyLoss":4},
+    "wood":{"emissivity":0.94,"solarRise":8,"inertia":80,"skyLoss":3},
+    "water":{"emissivity":0.97,"solarRise":2,"inertia":500,"skyLoss":0.5},
+    "snow":{"emissivity":0.99,"solarRise":0.5,"inertia":180,"skyLoss":4,"kelvin":269},
+    "ice":{"emissivity":0.97,"solarRise":0.5,"inertia":250,"skyLoss":2,"kelvin":271},
+    "metal":{"emissivity":0.35,"solarRise":18,"inertia":120,"skyLoss":1},
+    "glass":{"emissivity":0.88,"solarRise":5,"inertia":70,"skyLoss":2},
+    "lava":{"emissivity":0.96,"solarRise":0,"inertia":1,"skyLoss":0,"kelvin":1150},
+    "hot":{"emissivity":0.95,"solarRise":0,"inertia":1,"skyLoss":0,"kelvin":510}
+  },
+  "blocks": {
+    "minecraft:stone":"stone","minecraft:cobblestone":"stone","minecraft:deepslate":"stone",
+    "minecraft:bricks":"stone","minecraft:stone_bricks":"stone","minecraft:obsidian":"stone",
+    "minecraft:grass_block":"soil","minecraft:short_grass":"vegetation","minecraft:tall_grass":"vegetation",
+    "minecraft:fern":"vegetation","minecraft:large_fern":"vegetation","minecraft:moss_block":"vegetation",
+    "minecraft:snow":"snow","minecraft:snow_block":"snow","minecraft:powder_snow":"snow",
+    "minecraft:ice":"ice","minecraft:packed_ice":"ice","minecraft:blue_ice":"ice",
+    "minecraft:iron_block":"metal","minecraft:gold_block":"metal","minecraft:copper_block":"metal",
+    "minecraft:glass":"glass","minecraft:glass_pane":"glass","minecraft:torch":"hot",
+    "minecraft:fire":"hot","minecraft:soul_fire":"hot","minecraft:magma_block":"hot"
+  }
+}

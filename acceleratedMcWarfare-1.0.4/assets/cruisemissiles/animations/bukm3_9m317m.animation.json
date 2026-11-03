@@ -1,0 +1,54 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bukm3.9m317m.idle": {
+			"loop": true,
+			"animation_length": 0.001,
+			"bones": {
+				"bone5": { "rotation": [47.5, 0, 0] },
+				"bone3": { "rotation": [-47.5, 0, 0] },
+				"bone4": { "rotation": [47.5, 0, 0] },
+				"bone6": { "rotation": [-47.5, 0, 0] }
+			}
+		},
+		"animation.bukm3.9m317m.wings_stowed": {
+			"loop": true,
+			"animation_length": 0.001,
+			"bones": {
+				"bone5": { "rotation": [47.5, 0, 0] },
+				"bone3": { "rotation": [-47.5, 0, 0] },
+				"bone4": { "rotation": [47.5, 0, 0] },
+				"bone6": { "rotation": [-47.5, 0, 0] }
+			}
+		},
+		"animation.bukm3.9m317m.wings_deploy": {
+			"animation_length": 0.5,
+			"bones": {
+				"bone5": {
+					"rotation": {
+						"0.0": [47.5, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"bone3": {
+					"rotation": {
+						"0.0": [-47.5, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"bone4": {
+					"rotation": {
+						"0.0": [47.5, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"bone6": {
+					"rotation": {
+						"0.0": [-47.5, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "vertex": "cruisemissiles:optics_blit",
+  "fragment": "cruisemissiles:optics_blit",
+  "samplers": [
+    { "name": "DiffuseSampler" }
+  ],
+  "uniforms": [
+    { "name": "OutSize", "type": "float", "count": 2, "values": [1.0, 1.0] }
+  ]
+}

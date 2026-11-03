@@ -1,0 +1,474 @@
+{
+  "mesh": "bukm3_radar.geo.json",
+  "texture": "textures/entity/bukm3/bukm3_radar.png",
+  "kind": "tracked",
+  "mass": 24000,
+  "parts": [
+    {
+      "id": "hull",
+      "roots": [
+        "body"
+      ],
+      "behavior": "hull",
+      "vulnerability": 0.15,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 200,
+      "wheel": -1
+    },
+    {
+      "id": "engine",
+      "roots": [],
+      "behavior": "internal",
+      "vulnerability": 1,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 10,
+      "wheel": -1
+    },
+    {
+      "id": "transmission",
+      "roots": [],
+      "behavior": "internal",
+      "vulnerability": 1,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 10,
+      "wheel": -1
+    },
+    {
+      "id": "power",
+      "roots": [],
+      "behavior": "internal",
+      "vulnerability": 1,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 10,
+      "wheel": -1
+    },
+    {
+      "id": "radar_electronics",
+      "roots": [],
+      "behavior": "internal",
+      "vulnerability": 1,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 10,
+      "wheel": -1
+    },
+    {
+      "id": "radar_antenna",
+      "roots": [
+        "radar1"
+      ],
+      "behavior": "radar",
+      "vulnerability": 3.7,
+      "joint": 6,
+      "destroy": 12,
+      "mass": 80,
+      "wheel": -1,
+      "failure_health": 0.5
+    },
+    {
+      "id": "track_left",
+      "roots": [
+        "tracks2"
+      ],
+      "behavior": "track",
+      "vulnerability": 1,
+      "joint": 1.2,
+      "destroy": 3,
+      "mass": 450,
+      "wheel": -1
+    },
+    {
+      "id": "track_right",
+      "roots": [
+        "tracks"
+      ],
+      "behavior": "track",
+      "vulnerability": 1,
+      "joint": 1.2,
+      "destroy": 3,
+      "mass": 450,
+      "wheel": -1
+    },
+    {
+      "id": "rear_cover",
+      "roots": [
+        "back part 2"
+      ],
+      "behavior": "panel",
+      "vulnerability": 2,
+      "joint": 1,
+      "destroy": 3,
+      "mass": 35,
+      "wheel": -1
+    },
+    {
+      "roots": [
+        "damage_hull_front_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_front_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_front_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_front_right",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_mid_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_mid_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_mid_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_mid_right",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_rear_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_rear_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_rear_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 850,
+      "vulnerability": 1.1,
+      "id": "hull_rear_right",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "wheels8"
+      ],
+      "destroy": 4,
+      "wheel": 0,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_left_0",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels9"
+      ],
+      "destroy": 4,
+      "wheel": 1,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_left_1",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels10"
+      ],
+      "destroy": 4,
+      "wheel": 2,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_left_2",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels11"
+      ],
+      "destroy": 4,
+      "wheel": 3,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_left_3",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels12"
+      ],
+      "destroy": 4,
+      "wheel": 4,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_left_4",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels13"
+      ],
+      "destroy": 4,
+      "wheel": 5,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_left_5",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels14"
+      ],
+      "destroy": 4,
+      "wheel": 6,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_left_6",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels front side"
+      ],
+      "destroy": 4,
+      "wheel": 7,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_left_7",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels_rear_side"
+      ],
+      "destroy": 4,
+      "wheel": 8,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_left_8",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels7"
+      ],
+      "destroy": 4,
+      "wheel": 9,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_right_0",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels2"
+      ],
+      "destroy": 4,
+      "wheel": 10,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_right_1",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels3"
+      ],
+      "destroy": 4,
+      "wheel": 11,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_right_2",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels4"
+      ],
+      "destroy": 4,
+      "wheel": 12,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_right_3",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels5"
+      ],
+      "destroy": 4,
+      "wheel": 13,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_right_4",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels6"
+      ],
+      "destroy": 4,
+      "wheel": 14,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_right_5",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels15"
+      ],
+      "destroy": 4,
+      "wheel": 15,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_right_6",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels_front_side2"
+      ],
+      "destroy": 4,
+      "wheel": 16,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_right_7",
+      "behavior": "roadwheel"
+    },
+    {
+      "roots": [
+        "wheels_rear_side2"
+      ],
+      "destroy": 4,
+      "wheel": 17,
+      "joint": 1.5,
+      "mass": 120,
+      "vulnerability": 1.6,
+      "id": "roadwheel_right_8",
+      "behavior": "roadwheel"
+    },
+    {
+      "id": "radar_mount",
+      "roots": [
+        "radar"
+      ],
+      "behavior": "attachment",
+      "vulnerability": 1.2,
+      "joint": 5,
+      "destroy": 12,
+      "mass": 220,
+      "wheel": -1
+    },
+    {
+      "id": "radar_brace_front",
+      "roots": [
+        "big radar fastenings"
+      ],
+      "behavior": "attachment",
+      "vulnerability": 3,
+      "joint": 0.8,
+      "destroy": 2.5,
+      "mass": 8,
+      "wheel": -1
+    },
+    {
+      "id": "radar_brace_upper",
+      "roots": [
+        "big_radar_fastenings3"
+      ],
+      "behavior": "attachment",
+      "vulnerability": 3,
+      "joint": 0.8,
+      "destroy": 2.5,
+      "mass": 8,
+      "wheel": -1
+    },
+    {
+      "id": "radar_brace_rear",
+      "roots": [
+        "big_radar_fastenings4"
+      ],
+      "behavior": "attachment",
+      "vulnerability": 3,
+      "joint": 0.8,
+      "destroy": 2.5,
+      "mass": 8,
+      "wheel": -1
+    }
+  ],
+  "legacy": "buk_radar",
+  "mounts": {
+    "radar_antenna": "radar_mount",
+    "track_left": "hull",
+    "track_right": "hull",
+    "rear_cover": "hull",
+    "roadwheel_left_0": "hull",
+    "roadwheel_left_1": "hull",
+    "roadwheel_left_2": "hull",
+    "roadwheel_left_3": "hull",
+    "roadwheel_left_4": "hull",
+    "roadwheel_left_5": "hull",
+    "roadwheel_left_6": "hull",
+    "roadwheel_left_7": "hull",
+    "roadwheel_left_8": "hull",
+    "roadwheel_right_0": "hull",
+    "roadwheel_right_1": "hull",
+    "roadwheel_right_2": "hull",
+    "roadwheel_right_3": "hull",
+    "roadwheel_right_4": "hull",
+    "roadwheel_right_5": "hull",
+    "roadwheel_right_6": "hull",
+    "roadwheel_right_7": "hull",
+    "roadwheel_right_8": "hull",
+    "radar_mount": "hull",
+    "radar_brace_front": "radar_mount",
+    "radar_brace_upper": "radar_mount",
+    "radar_brace_rear": "radar_mount"
+  }
+}

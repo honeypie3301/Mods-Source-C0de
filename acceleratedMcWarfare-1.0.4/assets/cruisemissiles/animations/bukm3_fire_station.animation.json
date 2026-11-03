@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bukm3.firestation.folded_hold": {
+			"loop": true,
+			"animation_length": 0.001,
+			"bones": {
+				"ROCKETS8": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.bukm3.firestation.deployment": {
+			"animation_length": 2.3333,
+			"bones": {
+				"ROCKETS8": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0417": [-37.5, 0, 0]
+					},
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.bukm3.firestation.deployed_hold": {
+			"loop": true,
+			"animation_length": 0.001,
+			"bones": {
+				"ROCKETS8": {
+					"rotation": [-37.5, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.bukm3.firestation.undeployment": {
+			"animation_length": 2.5833,
+			"bones": {
+				"ROCKETS8": {
+					"rotation": {
+						"0.0": [-37.5, 0, 0],
+						"1.9583": [0, 0, 0]
+					},
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

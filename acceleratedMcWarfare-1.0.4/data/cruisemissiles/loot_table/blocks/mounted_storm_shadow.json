@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "name": "cruisemissiles:mounted_storm_shadow",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

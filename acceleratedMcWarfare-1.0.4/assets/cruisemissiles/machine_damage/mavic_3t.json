@@ -1,0 +1,181 @@
+{
+  "mesh": "mavic_3t.geo.json",
+  "texture": "textures/entity/mavic_3t.png",
+  "kind": "drone",
+  "mass": 0.92,
+  "parts": [
+    {
+      "id": "hull",
+      "roots": [
+        "bone"
+      ],
+      "behavior": "hull",
+      "vulnerability": 0.15,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 0.5,
+      "wheel": -1
+    },
+    {
+      "id": "battery",
+      "roots": [],
+      "behavior": "battery",
+      "vulnerability": 4,
+      "joint": 100,
+      "destroy": 100,
+      "mass": 0.15,
+      "wheel": -1
+    },
+    {
+      "id": "camera",
+      "roots": [
+        "камера"
+      ],
+      "behavior": "camera",
+      "vulnerability": 6,
+      "joint": 1.5,
+      "destroy": 4,
+      "mass": 0.07,
+      "wheel": -1
+    },
+    {
+      "id": "rotor_0",
+      "roots": [
+        "лопасти4"
+      ],
+      "behavior": "rotor",
+      "vulnerability": 8,
+      "joint": 1,
+      "destroy": 3,
+      "mass": 0.01,
+      "wheel": -1
+    },
+    {
+      "id": "rotor_1",
+      "roots": [
+        "лопасти2"
+      ],
+      "behavior": "rotor",
+      "vulnerability": 8,
+      "joint": 1,
+      "destroy": 3,
+      "mass": 0.01,
+      "wheel": -1
+    },
+    {
+      "id": "rotor_2",
+      "roots": [
+        "лопасти3"
+      ],
+      "behavior": "rotor",
+      "vulnerability": 8,
+      "joint": 1,
+      "destroy": 3,
+      "mass": 0.01,
+      "wheel": -1
+    },
+    {
+      "id": "rotor_3",
+      "roots": [
+        "лопасти1"
+      ],
+      "behavior": "rotor",
+      "vulnerability": 8,
+      "joint": 1,
+      "destroy": 3,
+      "mass": 0.01,
+      "wheel": -1
+    },
+    {
+      "roots": [
+        "damage_hull_front_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 0.06,
+      "vulnerability": 1.1,
+      "id": "hull_front_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_front_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 0.06,
+      "vulnerability": 1.1,
+      "id": "hull_front_right",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_mid_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 0.06,
+      "vulnerability": 1.1,
+      "id": "hull_mid_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_mid_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 0.06,
+      "vulnerability": 1.1,
+      "id": "hull_mid_right",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_rear_left"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 0.06,
+      "vulnerability": 1.1,
+      "id": "hull_rear_left",
+      "behavior": "structure"
+    },
+    {
+      "roots": [
+        "damage_hull_rear_right"
+      ],
+      "destroy": 6,
+      "wheel": -1,
+      "joint": 2.2,
+      "mass": 0.06,
+      "vulnerability": 1.1,
+      "id": "hull_rear_right",
+      "behavior": "structure"
+    }
+  ],
+  "hull_bone": "bone",
+  "internal_fraction_boxes": {
+    "battery": [
+      0.25,
+      0.2,
+      0.3,
+      0.75,
+      0.8,
+      0.8
+    ]
+  },
+  "shielding": 0.3,
+  "mounts": {
+    "camera": "hull",
+    "rotor_0": "hull",
+    "rotor_1": "hull",
+    "rotor_2": "hull",
+    "rotor_3": "hull"
+  }
+}

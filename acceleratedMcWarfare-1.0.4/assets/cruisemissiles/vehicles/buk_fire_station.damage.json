@@ -1,0 +1,10 @@
+{
+  "version": 1, "mesh": "bukm3_fire_station.geo.json", "hull_bone": "body", "antenna_root": "RADAR",
+  "game_shielding_per_block": 2.5,
+  "internal_fraction_boxes": {
+    "engine": [0.18, 0.25, 0.08, 0.58, 0.68, 0.28],
+    "transmission": [0.25, 0.15, 0.30, 0.65, 0.42, 0.43],
+    "power": [0.65, 0.28, 0.10, 0.86, 0.65, 0.27],
+    "radar_electronics": [0.20, 0.40, 0.52, 0.75, 0.78, 0.74]
+  }
+}

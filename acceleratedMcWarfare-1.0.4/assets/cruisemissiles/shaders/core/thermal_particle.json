@@ -1,0 +1,158 @@
+{
+  "samplers": [
+    {
+      "name": "Sampler0"
+    },
+    {
+      "name": "SceneDepthSampler"
+    },
+    {
+      "name": "DhDepthSampler"
+    }
+  ],
+  "uniforms": [
+    {
+      "type": "matrix4x4",
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "ModelViewMat",
+      "count": 16
+    },
+    {
+      "type": "matrix4x4",
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "ProjMat",
+      "count": 16
+    },
+    {
+      "type": "matrix4x4",
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "SceneInverse",
+      "count": 16
+    },
+    {
+      "type": "matrix4x4",
+      "values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "DhInverse",
+      "count": 16
+    },
+    {
+      "type": "float",
+      "values": [
+        1,
+        1
+      ],
+      "name": "ScreenSize",
+      "count": 2
+    },
+    {
+      "type": "float",
+      "values": [
+        0,
+        0,
+        0
+      ],
+      "name": "CameraOrigin",
+      "count": 3
+    },
+    {
+      "type": "float",
+      "values": [
+        0
+      ],
+      "name": "HasDhDepth",
+      "count": 1
+    },
+    {
+      "type": "float",
+      "values": [
+        0
+      ],
+      "name": "Time",
+      "count": 1
+    },
+    {
+      "name": "DhDepthReversed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    }
+  ],
+  "vertex": "cruisemissiles:thermal_particle",
+  "attributes": [
+    "Position",
+    "UV0",
+    "Color",
+    "UV2"
+  ],
+  "fragment": "cruisemissiles:thermal_particle"
+}

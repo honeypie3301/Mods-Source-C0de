@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation": {
+			"animation_length": 1.375,
+			"bones": {
+				"DOOR4": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.375": {
+							"vector": [0, -100, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"DOOR5": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.375": {
+							"vector": [0, 107.5, 0]
+						}
+					}
+				}
+			}
+		}
+	}
+}

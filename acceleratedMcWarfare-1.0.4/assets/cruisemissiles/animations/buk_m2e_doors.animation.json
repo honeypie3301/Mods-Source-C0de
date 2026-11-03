@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation_doors": {
+      "animation_length": 1.625,
+      "bones": {
+        "doors2": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "1.0": {
+              "vector": [
+                0,
+                -102.5,
+                0
+              ]
+            }
+          },
+          "position": {
+            "vector": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "doors3": {
+          "rotation": {
+            "0.0": {
+              "vector": [
+                0,
+                0,
+                0
+              ]
+            },
+            "1.0": {
+              "vector": [
+                0,
+                110,
+                0
+              ]
+            }
+          },
+          "position": {
+            "vector": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

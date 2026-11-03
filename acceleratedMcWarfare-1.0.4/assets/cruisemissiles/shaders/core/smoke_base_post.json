@@ -1,0 +1,108 @@
+{
+  "vertex": "cruisemissiles:smoke_base_post",
+  "fragment": "cruisemissiles:smoke_base_post",
+  "samplers": [
+    {
+      "name": "Sampler0"
+    },
+    {
+      "name": "DhDepthSampler"
+    }
+  ],
+  "uniforms": [
+    {
+      "name": "DhInvViewProjMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ScreenSize",
+      "type": "float",
+      "count": 2,
+      "values": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HasDhDepth",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    },
+    {
+      "name": "ModelViewMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ProjMat",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DhDepthReversed",
+      "type": "float",
+      "count": 1,
+      "values": [
+        0.0
+      ]
+    }
+  ]
+}

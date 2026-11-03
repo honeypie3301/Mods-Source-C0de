@@ -71,6 +71,7 @@
     "text.apotheosis.tier_info": "World Tier Information",
     "text.apotheosis.monster_augments": "Monster Augments",
     "text.apotheosis.player_augments": "Player Augments",
+    "tier_augment.apotheosis.damage_reduction": "+%s%% %s Resist",
     "text.apotheosis.drop_chances": "Drop Chances",
     "text.apotheosis.rarities": "Rarities",
     "text.apotheosis.purities": "Purities",
@@ -79,6 +80,7 @@
     "text.apotheosis.world_tier_tutorial.2": "Press %s and activate World Tier: Haven to unlock it",
 
     "key.apotheosis.toggle_radial_mining": "Change Radial Mining Mode",
+    "key.apotheosis.toggle_attribute_bonuses": "Toggle Boots Attribute Bonuses",
     "key.apotheosis.open_world_tier_select": "Open World Tier Select",
     "key.apotheosis.compare_equipment": "Compare Hovered Equipment",
     "key.apotheosis.link_item_to_chat": "Link Hovered Item to Chat",
@@ -96,6 +98,11 @@
     "misc.apotheosis.affix_name.four": "%s %s %s %s",
     "misc.apotheosis.affix_bounds": "[%s\u00A0-\u00A0%s]",
 
+    "misc.apotheosis.attribute_toggle.updated": "%s bonuses are now %s",
+    "misc.apotheosis.attribute_toggle.none": "Your boots do not have an attribute toggle affix.",
+    "misc.apotheosis.attribute_toggle.state": "[%s]",
+    "misc.apotheosis.attribute_toggle.on": "On",
+    "misc.apotheosis.attribute_toggle.off": "Off",
     "misc.apotheosis.radial_state_updated": "Radial mining mode updated to \"%s\"",
     "misc.apotheosis.radial_state.require_not_sneaking": "Disabled While Sneaking",
     "misc.apotheosis.radial_state.require_sneaking": "Enabled While Sneaking",
@@ -174,6 +181,12 @@
 
     "affix.apotheosis:weapon/attribute/shredding": "Shredding",
     "affix.apotheosis:weapon/attribute/shredding.suffix": "of the Maelstrom",
+
+    "affix.apotheosis:weapon/attribute/runebreaking": "Runebreaking",
+    "affix.apotheosis:weapon/attribute/runebreaking.suffix": "of the Runebreaker",
+
+    "affix.apotheosis:weapon/attribute/nullifying": "Nullifying",
+    "affix.apotheosis:weapon/attribute/nullifying.suffix": "of Nullification",
 
     "affix.apotheosis:melee/attribute/giant_slaying": "Giant Slaying",
     "affix.apotheosis:melee/attribute/giant_slaying.suffix": "of Colossal Strikes",
@@ -274,6 +287,15 @@
     "affix.apotheosis:melee/cleaving.suffix": "of the Butcher",
     "affix.apotheosis:melee/cleaving.desc": "Attacks have a %s%% chance to also hit up to %s nearby enemies.",
 
+    "affix.apotheosis:boots/ability/unhurried": "Unhurried",
+    "affix.apotheosis:boots/ability/unhurried.suffix": "of the Calm Journey",
+    "affix.apotheosis:boots/ability/unhurried.desc": "Press %s to toggle all Movement Speed bonuses.",
+    "affix.apotheosis:boots/ability/surefooted": "Surefooted",
+    "affix.apotheosis:boots/ability/surefooted.suffix": "of the Measured Step",
+    "affix.apotheosis:boots/ability/surefooted.desc": "Press %s to toggle all Step Height bonuses.",
+    "affix.apotheosis:boots/ability/steadfast": "Steadfast",
+    "affix.apotheosis:boots/ability/steadfast.suffix": "of Rigidity",
+    "affix.apotheosis:boots/ability/steadfast.desc": "Press %s to toggle all Movement Speed and Step Height bonuses.",
     "affix.apotheosis:breaker/ability/enlightened": "Enlightened",
     "affix.apotheosis:breaker/ability/enlightened.suffix": "of the Lightbringer",
     "affix.apotheosis:breaker/ability/enlightened.desc": "This tool can place a light source at the cost of %s durability.",
@@ -504,6 +526,7 @@
     "bonus.apotheosis:multi_attr.desc.and_but": "%s and %s, but %s",
     "bonus.apotheosis:multi_attr.desc.but_and": "%s, but %s and %s",
     "bonus.apotheosis:bloody_arrow.desc": "When firing, you lose %s%% Max Health and deal %s%% damage. %s",
+    "bonus.apotheosis:anti_gravity_arrow.desc": "Fired arrows are unaffected by gravity.",
     "bonus.apotheosis:leech_block.desc": "Blocking an attack heals you for %s%% of the damage. %s",
     "bonus.apotheosis:all_stats.desc": "+%s%% to All Stats",
     "gem.apotheosis:overworld/royalty.bonus.pickaxe": "Breaking Copper Ore has a %s%% chance to drop Raw Gold instead.",
@@ -578,7 +601,7 @@
     "item.apotheosis.sigil_of_unnaming.desc": "Removes the affixed name from an item",
 
     "item.apotheosis.sigil_of_malice": "Sigil of Malice",
-    "item.apotheosis.sigil_of_malice.desc": "Applies Touch of Malice to an Affix Item",
+    "item.apotheosis.sigil_of_malice.desc": "Overcharges one Affix and resets another",
 
     "item.apotheosis.sigil_of_supremacy": "Sigil of Supremacy",
     "item.apotheosis.sigil_of_supremacy.desc": "Overcharges every Affix on an Affix Item",
@@ -700,11 +723,14 @@
     "text.apotheosis.any_x_item": "Any %s Affix Item",
     "text.apotheosis.any_affix_item": "Any Affix Item",
     "text.apotheosis.malice_marker": "Malice will be applied on craft",
-    "text.apotheosis.touched_by_malice": "Touched by Malice",
+    "text.apotheosis.touched_by_malice": "Touched by Malice (x%s)",
     "text.apotheosis.malice_notice": "Malice: %s consumed the strength of %s",
+    "text.apotheosis.malice_notice_final": "Malice intertwines with %s and fully claims your item!",
 
-    "title.apotheosis.smithing": "Apothic Smithing",
     "title.apotheosis.salvaging": "Salvaging",
+    "title.apotheosis.stoneforming": "Stoneforming",
+    "info.apotheosis.stoneforming": "A tool with the %s affix can convert between these blocks.",
+    "info.apotheosis.stoneforming.target": "Shift-right-click a block to select a target.",
 
     "text.apotheosis.anything": "Anything",
     "loot_category.apotheosis.none": "Nothing",
@@ -990,5 +1016,5 @@
     "comment_id": "Guidebook",
     "book.apotheosis.name": "Chronicle of Shadows",
     "book.apotheosis.subtitle": "Guide to Apotheosis",
-    "book.apotheosis.landing": "Welcome to the world of Apotheosis.$(br2)Apotheosis is organized into $(#8080FF)Modules$(), and so is the content of this book.$(br2)Disabled modules are hidden."
+    "book.apotheosis.landing": "Welcome to the world of Apotheosis.$(br2)Apotheosis is one of the $(#8080FF)Apothic$() mods, and this book covers all of them.$(br2)Sections only appear when the matching mod is installed."
 }

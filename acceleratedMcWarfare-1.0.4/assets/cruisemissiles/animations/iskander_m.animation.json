@@ -1,0 +1,1487 @@
+{
+  "animations": {
+    "animation.default_player.new.iskanderM.deployment1": {
+      "animation_length": 17.0417,
+      "bones": {
+        "11_Vertical_launcher_support2": {
+          "rotation": {
+            "6.2083": [
+              0,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              87.5
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "11_Vertical_launcher_support4": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "6.2083": [
+              0,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              87.5
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "05_Left_rear_door2": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "3.6667": [
+              0,
+              0,
+              0
+            ],
+            "5.2083": [
+              0,
+              117.5,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "05_Left_front_door2": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "3.6667": [
+              0,
+              0,
+              0
+            ],
+            "5.2083": [
+              0,
+              -122.5,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "04_Left_open_cover3": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.9583": [
+              105,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners9": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.9167": [
+              -26.06,
+              0,
+              0
+            ],
+            "1.3333": [
+              -38.64,
+              0,
+              0
+            ],
+            "1.9583": [
+              -51.14,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners10": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.9583": [
+              -53,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "04_Left_open_cover4": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.9583": [
+              -100,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners11": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.9167": [
+              23.76,
+              0,
+              0
+            ],
+            "1.3333": [
+              32.78,
+              0,
+              0
+            ],
+            "1.9583": [
+              47.57,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners12": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "1.9583": [
+              52.5,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "tut": {
+          "rotation": {
+            "7.4167": [
+              0,
+              0,
+              -22.5
+            ],
+            "7.625": [
+              0,
+              0,
+              -17.5
+            ],
+            "8.25": [
+              0,
+              0,
+              -12.5
+            ],
+            "9.0833": [
+              0,
+              0,
+              -7.5
+            ],
+            "9.75": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "tut2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": 1
+        }
+      }
+    },
+    "animation.default_player.new.iskM.new": {
+      "animation_length": 16,
+      "bones": {
+        "11_Vertical_launcher_support2": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              87.5
+            ],
+            "9.7917": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "11_Vertical_launcher_support4": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              87.5
+            ],
+            "9.7917": [
+              0,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "05_Left_rear_door2": {
+          "rotation": {
+            "10.7917": [
+              0,
+              117.5,
+              0
+            ],
+            "12.3333": [
+              0,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "05_Left_front_door2": {
+          "rotation": {
+            "10.7917": [
+              0,
+              -122.5,
+              0
+            ],
+            "12.3333": [
+              0,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "04_Left_open_cover3": {
+          "rotation": {
+            "14.0417": [
+              105,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners9": {
+          "rotation": {
+            "14.0417": [
+              -51.14,
+              0,
+              0
+            ],
+            "14.6667": [
+              -38.64,
+              0,
+              0
+            ],
+            "15.0833": [
+              -26.06,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners10": {
+          "rotation": {
+            "14.0417": [
+              -53,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "04_Left_open_cover4": {
+          "rotation": {
+            "14.0417": [
+              -100,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners11": {
+          "rotation": {
+            "14.0417": [
+              47.57,
+              0,
+              0
+            ],
+            "14.6667": [
+              32.78,
+              0,
+              0
+            ],
+            "15.0833": [
+              23.76,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rotatble_opened_fasteners12": {
+          "rotation": {
+            "14.0417": [
+              52.5,
+              0,
+              0
+            ],
+            "16.0": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "tut": {
+          "rotation": {
+            "6.25": [
+              0,
+              0,
+              0
+            ],
+            "6.9167": [
+              0,
+              0,
+              -7.5
+            ],
+            "7.75": [
+              0,
+              0,
+              -12.5
+            ],
+            "8.375": [
+              0,
+              0,
+              -17.5
+            ],
+            "8.5833": [
+              0,
+              0,
+              -22.5
+            ]
+          }
+        },
+        "tut2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": 1
+        }
+      }
+    },
+    "animation.iskander_m.raised_hold": {
+      "loop": true,
+      "animation_length": 0.05,
+      "bones": {
+        "11_Vertical_launcher_support2": {
+          "rotation": [
+            0,
+            0,
+            87.5
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "11_Vertical_launcher_support4": {
+          "rotation": [
+            0,
+            0,
+            87.5
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "05_Left_rear_door2": {
+          "rotation": [
+            0,
+            117.5,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "05_Left_front_door2": {
+          "rotation": [
+            0,
+            -122.5,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "04_Left_open_cover3": {
+          "rotation": [
+            105,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners9": {
+          "rotation": [
+            -51.14,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners10": {
+          "rotation": [
+            -53,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "04_Left_open_cover4": {
+          "rotation": [
+            -100,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners11": {
+          "rotation": [
+            47.57,
+            0,
+            0
+          ]
+        },
+        "rotatble_opened_fasteners12": {
+          "rotation": [
+            52.5,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "tut": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "tut2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": 1
+        }
+      }
+    },
+    "animation.iskander_m.lowered_hold": {
+      "loop": true,
+      "animation_length": 0.05,
+      "bones": {
+        "main2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "11_Vertical_launcher_support2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "tut": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "tut2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rocket block2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rocket_block_dowm2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "11_Vertical_launcher_support4": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rocket block1": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rocket block dowm": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "09_Cab_roofs_and_rear_wall2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "08_Cab_left_walls2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "08_Cab_right_walls2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "07_Cab_lower_shell2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "05_Left_rear_door2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "05_Left_front_door2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "04_right_open_cover3": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners7": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners8": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "04_Left_open_cover3": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners9": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners10": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "04_Left_open_cover4": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners11": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rotatble_opened_fasteners12": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "03_Chamfered_bulkhead_behind_cab2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "02_Right_body_and_wheel_openings2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "02_Left_body_and_wheel_openings2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "01_Chassis2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "DOOR4": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "DOOR5": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "FASTENERS_FOR_WHEELS3": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "FASTENERS_FOR_WHEELS4": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL8": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL10": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL11": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL12": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL13": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL14": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL15": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "WHEEL16": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "10_Windshield2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "seat": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "seat2": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "rule": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "damage_hull_front_left": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "damage_hull_mid_left": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "damage_hull_mid_right": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "damage_hull_rear_left": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.8.0"
+}

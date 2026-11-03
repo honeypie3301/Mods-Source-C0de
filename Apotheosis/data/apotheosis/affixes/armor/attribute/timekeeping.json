@@ -3,7 +3,8 @@
     "attribute": "apothic_attributes:cooldown_reduction",
     "categories": [
         "apotheosis:helmet",
-        "apotheosis:chestplate"
+        "apotheosis:chestplate",
+        "apotheosis:shield"
     ],
     "definition": {
         "affix_type": "stat",
