@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/trapdoor",
+  "textures": {
+    "0": "annoyingvillagers:item/trapdoor",
+    "particle": "annoyingvillagers:item/trapdoor"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/book",
+  "textures": {
+    "2": "annoyingvillagers:item/book",
+    "particle": "annoyingvillagers:item/book"
+  }
+}

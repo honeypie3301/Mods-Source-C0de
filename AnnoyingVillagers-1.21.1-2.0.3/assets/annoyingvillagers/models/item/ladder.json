@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/ladder",
+  "textures": {
+    "0": "annoyingvillagers:item/ladder",
+    "particle": "annoyingvillagers:item/ladder"
+  }
+}

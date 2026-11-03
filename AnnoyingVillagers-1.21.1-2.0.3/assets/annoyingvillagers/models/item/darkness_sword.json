@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/darkness_sword",
+  "textures": {
+    "0": "annoyingvillagers:item/darkness_sword",
+    "particle": "annoyingvillagers:item/darkness_sword"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/null_pickaxe",
+  "textures": {
+    "0": "annoyingvillagers:item/null_pickaxe",
+    "particle": "annoyingvillagers:item/null_pickaxe"
+  }
+}

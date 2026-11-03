@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="GNU GENERAL PUBLIC LICENSE v3.0"
+
+[[mods]]
+modId="annoyingvillagers"
+version="2.0.3"
+displayName="Annoying Villagers"
+authors="pla_is_me"
+credits="See NOTICE.md for the full credit list."
+description='''Annoying Villagers Full features from the original series !!!.'''
+
+[[mixins]]
+config="annoyingvillagers.mixins.json"
+
+[[dependencies.annoyingvillagers]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.251,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.annoyingvillagers]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"

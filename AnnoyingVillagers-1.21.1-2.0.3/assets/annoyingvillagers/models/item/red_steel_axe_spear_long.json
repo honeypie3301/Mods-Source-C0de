@@ -1,0 +1,7 @@
+{
+  "parent": "annoying_villagersbychentu:custom/red_steel_axe_spear_long",
+  "textures": {
+    "1": "annoyingvillagers:item/red_steel_axe_spear",
+    "particle": "annoyingvillagers:item/red_steel_axe_spear"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/double_diamond_glaive",
+  "textures": {
+    "0": "annoyingvillagers:item/double_diamond_glaive",
+    "particle": "annoyingvillagers:item/double_diamond_glaive"
+  }
+}

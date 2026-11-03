@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/hooked_iron_sword",
+  "textures": {
+    "0": "annoyingvillagers:item/hooked_iron_sword",
+    "particle": "annoyingvillagers:item/hooked_iron_sword"
+  }
+}

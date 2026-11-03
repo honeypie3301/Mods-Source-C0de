@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: annoyingvillagers
+Specification-Vendor: pla_is_me
+Specification-Version: 1
+Implementation-Title: AnnoyingVillagers
+Implementation-Version: 2.0.3
+Implementation-Vendor: pla_is_me
+Implementation-Timestamp: 2026-10-19T23:23:53+0700
+

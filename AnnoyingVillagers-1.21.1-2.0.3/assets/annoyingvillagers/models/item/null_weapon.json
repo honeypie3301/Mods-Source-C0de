@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/null_weapon",
+  "textures": {
+    "0": "annoyingvillagers:item/null_sword",
+    "particle": "annoyingvillagers:item/null_sword"
+  }
+}

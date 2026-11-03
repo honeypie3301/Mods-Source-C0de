@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/iron_cleaver",
+  "textures": {
+    "0": "annoyingvillagers:item/iron_cleaver",
+    "particle": "annoyingvillagers:item/iron_cleaver"
+  }
+}

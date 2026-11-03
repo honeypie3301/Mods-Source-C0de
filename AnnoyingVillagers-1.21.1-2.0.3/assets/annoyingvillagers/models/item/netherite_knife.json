@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/netherite_knife",
+  "textures": {
+    "0": "annoyingvillagers:item/netherite_knife",
+    "particle": "annoyingvillagers:item/netherite_knife"
+  }
+}

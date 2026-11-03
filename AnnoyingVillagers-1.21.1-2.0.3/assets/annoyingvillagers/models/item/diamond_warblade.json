@@ -1,0 +1,7 @@
+{
+  "parent": "annoyingvillagers:custom/diamond_warblade",
+  "textures": {
+    "0": "annoyingvillagers:item/diamond_warblade",
+    "particle": "annoyingvillagers:item/diamond_warblade"
+  }
+}
