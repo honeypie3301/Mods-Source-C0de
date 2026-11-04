@@ -1,0 +1,7 @@
+{
+  "type": "the_unkept:structure_feature",
+  "config": {
+    "structure": "the_unkept:stone_hell_level_1_room_5",
+    "ignored_blocks": "the_unkept:stone_hell_portal"
+  }
+}

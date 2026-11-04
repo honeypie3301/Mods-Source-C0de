@@ -1,0 +1,42 @@
+{
+  "wood_creaking": {
+    "sounds": [
+      {
+        "name": "the_unkept:wood_creaking",
+        "stream": false
+      }
+    ]
+  },
+  "flower_death": {
+    "sounds": [
+      {
+        "name": "the_unkept:flower_death",
+        "stream": false
+      }
+    ]
+  },
+  "stone_stalker_chase": {
+    "sounds": [
+      {
+        "name": "the_unkept:stone_stalker_chase",
+        "stream": false
+      }
+    ]
+  },
+  "woodnoise": {
+    "sounds": [
+      {
+        "name": "the_unkept:woodnoise1",
+        "stream": false
+      },
+      {
+        "name": "the_unkept:woodnoise2",
+        "stream": false
+      },
+      {
+        "name": "the_unkept:woodnoise3",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "the_unkept:structure_feature",
+  "config": {
+    "structure": "the_unkept:wooden_hell_top_loot",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "the_unkept:wooden_hell_portal"
+  }
+}

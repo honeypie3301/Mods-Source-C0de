@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "the_unkept:wooden_hell_biome",
+  "spawners": {
+    "type": "the_unkept:wooden_titan",
+    "weight": 7,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

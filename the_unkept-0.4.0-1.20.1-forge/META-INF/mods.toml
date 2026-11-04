@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="the_unkept"
+version="0.4.0"
+displayName="The Unkept"
+displayURL="https://mcreator.net"
+credits="MCreator - code. Allka and FIN Daries - inspiration."
+authors="Alexander25, Brguiireal, Tree, Mali, StickGal, Xaeltus, JD, MCreator"
+description="Added multiple anomalous entities and dimensions that are made out of vanilla matherials"
+
+[[dependencies.the_unkept]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.the_unkept]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

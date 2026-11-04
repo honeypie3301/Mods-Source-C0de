@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "the_unkept:block/stone_hell_portal_ew"
+    },
+    "axis=x": {
+      "model": "the_unkept:block/stone_hell_portal_ns"
+    }
+  }
+}

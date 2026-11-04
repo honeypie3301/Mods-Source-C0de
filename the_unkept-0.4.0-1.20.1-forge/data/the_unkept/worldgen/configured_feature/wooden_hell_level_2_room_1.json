@@ -1,0 +1,7 @@
+{
+  "type": "the_unkept:structure_feature",
+  "config": {
+    "structure": "the_unkept:wooden_hell_level_2_room_1",
+    "ignored_blocks": "the_unkept:wooden_hell_portal"
+  }
+}

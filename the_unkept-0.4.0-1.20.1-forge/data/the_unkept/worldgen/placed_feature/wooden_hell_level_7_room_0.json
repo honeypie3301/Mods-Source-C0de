@@ -1,0 +1,14 @@
+{
+  "feature": "the_unkept:wooden_hell_level_7_room_0",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 225
+        }
+      }
+    }
+  ]
+}

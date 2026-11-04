@@ -1,0 +1,14 @@
+{
+  "feature": "the_unkept:stone_hell_level_2_bridge",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 64
+        }
+      }
+    }
+  ]
+}

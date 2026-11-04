@@ -1,0 +1,8 @@
+{
+  "type": "the_unkept:structure_feature",
+  "config": {
+    "structure": "the_unkept:wooden_hell_level_5_stairs_0",
+    "random_rotation": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

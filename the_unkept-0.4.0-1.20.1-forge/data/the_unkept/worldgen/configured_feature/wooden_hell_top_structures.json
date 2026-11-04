@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "the_unkept:structure_feature",
+          "config": {
+            "structure": "the_unkept:random_wooden_cube",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "the_unkept:wooden_hell_portal"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "the_unkept:structure_feature",
+          "config": {
+            "structure": "the_unkept:random_wooden_portal",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "the_unkept:wooden_hell_portal"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "the_unkept:structure_feature",
+          "config": {
+            "structure": "the_unkept:random_wooden_pyramid",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "the_unkept:wooden_hell_portal"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "the_unkept:structure_feature",
+          "config": {
+            "structure": "the_unkept:random_ruined_wooden_portal",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "the_unkept:wooden_hell_portal"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "the_unkept:structure_feature",
+          "config": {
+            "structure": "the_unkept:random_woodweaver_statue",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "the_unkept:wooden_hell_portal"
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

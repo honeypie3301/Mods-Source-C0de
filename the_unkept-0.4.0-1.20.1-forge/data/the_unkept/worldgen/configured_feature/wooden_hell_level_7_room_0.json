@@ -1,0 +1,7 @@
+{
+  "type": "the_unkept:structure_feature",
+  "config": {
+    "structure": "the_unkept:wooden_hell_level_7_room_0",
+    "ignored_blocks": "minecraft:air"
+  }
+}

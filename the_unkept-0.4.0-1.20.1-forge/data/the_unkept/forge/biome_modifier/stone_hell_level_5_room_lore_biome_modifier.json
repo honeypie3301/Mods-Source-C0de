@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_unkept:stone_hell_biome",
+  "features": "the_unkept:stone_hell_level_5_room_lore",
+  "step": "raw_generation"
+}

@@ -1,0 +1,18 @@
+{
+  "feature": "the_unkept:stone_hell_level_1_room_2",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 6
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 77
+        }
+      }
+    }
+  ]
+}

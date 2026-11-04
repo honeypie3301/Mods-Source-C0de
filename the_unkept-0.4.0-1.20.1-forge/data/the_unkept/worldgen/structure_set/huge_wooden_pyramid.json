@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "the_unkept:huge_wooden_pyramid",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 10,
+    "separation": 5,
+    "salt": 1819857786
+  }
+}

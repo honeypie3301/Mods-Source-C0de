@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "the_unkept:structure_feature",
+          "config": {
+            "structure": "the_unkept:stone_hell_pillar_1",
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "the_unkept:structure_feature",
+          "config": {
+            "structure": "the_unkept:stone_hell_pillar_2",
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

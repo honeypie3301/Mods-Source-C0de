@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_unkept:wooden_hell_biome",
+  "features": "the_unkept:wooden_hell_level_7_room_0",
+  "step": "vegetal_decoration"
+}

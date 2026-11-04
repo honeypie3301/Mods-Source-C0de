@@ -1,0 +1,18 @@
+{
+  "feature": "the_unkept:wooden_hell_level_6_room_1",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 9
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 164
+        }
+      }
+    }
+  ]
+}

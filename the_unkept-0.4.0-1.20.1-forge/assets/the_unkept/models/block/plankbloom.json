@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "the_unkept:block/plankbloom",
+    "particle": "the_unkept:block/oak_planks"
+  },
+  "render_type": "cutout"
+}
